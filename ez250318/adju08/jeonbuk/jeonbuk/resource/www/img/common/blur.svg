@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <filter id="bg-blur" x="0" y="0" width="100%" height="100%">
+        <!-- 배경을 가져오기 -->
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <!-- 투명도 추가 가능 -->
+        <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.5 0"/>
+    </filter>
+</svg>

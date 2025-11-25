@@ -1,0 +1,108 @@
+/* 모든 페이지에 공통으로 들어가는 기본 스타일 */
+body {
+    font-family: "Cormorant Garamond", "Pretendard", "sans-serif";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5; /* 단위는 배수로 한다. */
+    color: #555;
+    word-break: keep-all; /* 단어별 줄바꿈(스페이스 기준)*/
+    word-wrap: break-word; /* 단어가 너무 긴 경우 강제로 줄바꿈 */
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto; /* 가운데 */
+}
+#wrap {
+    /*
+        1260 + 왼쪽여백(60) + 오른쪽여백(60) = 1380
+    */
+    position: relative; /* header 정렬의 기준 */
+    overflow-x: hidden; /* 가로스크롤바 삭제*/
+    width: 100%;
+}
+
+@media screen and (max-width:1380px) { /* 60+60 + 1260 = 1380 */
+    .wrapper {
+        width: auto;
+        margin: 0 60px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 16px;
+    }                
+    .wrapper {
+        width: auto; /* 모바일 좌우여백 20px*/
+        margin: 0 20px;
+    }
+    #wrap {
+        min-width: 0; 
+    }
+}    /* 브라우저 넓이가 768px 이하에서만 작동 */
+
+
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+:root {
+    --header-h: 120px; /* header의 높이 */
+    --header-h-m: -120px; /* header 높이의 마이너스값*/
+    --tit-color: #1b1b1b;
+    --point-color: #7E6956;
+    --base-color: #7B6464;
+    --gray-color: #979797;
+    --bold-weight: 700;
+    --tit-line-height: 1.2;
+
+    --visual-font-size: 80px;
+    --h2-font-size: 65px;
+    --h3-font-size: 40px;
+    --h4-font-size: 25px;
+    --default-font-size: 17px;
+}
+
+@media screen and (max-width:1320px) {
+    :root {
+        --visual-font-size: 70px;
+    }
+}
+
+@media screen and (max-width:1341px) {
+    :root {
+        --visual-font-size: 55px;
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    :root {
+        --header-h: 56px; /* 모바일 header의 높이 */
+        --header-h-m: -56px; /* 모바일 header 높이의 마이너스값*/
+
+        --visual-font-size: 50px;
+        --h2-font-size: 50px;
+        --h3-font-size: 35px;
+        --h4-font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        --visual-font-size: 35px;
+        --h2-font-size: 40px;
+        --h3-font-size: 25px;
+        --h4-font-size: 17px;
+        --default-font-size: 16px;
+    }
+}

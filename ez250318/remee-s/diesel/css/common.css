@@ -1,0 +1,95 @@
+/*모든페이지에 공통으로 들어가는 기본 스타일*/
+html, body{
+    font-family: "Neutro","PressStart2P","Pretendard", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #fff;
+    word-break: keep-all; 
+    word-wrap: break-word; 
+    background-color: #000; 
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 1920px; /*diesel wrapper 사이즈 1920px */
+    margin: 0 auto; /*가운데*/
+}
+#wrap{
+    position: relative;
+    width: 100%; /* wrap이 줄어드는게 부담스러우면 여기에 1920px을 넣으면 됨 */
+    max-width: 1920px;
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1920px){
+    #wrap{
+        position: relative;
+        width: 100%; /* wrap이 줄어드는게 부담스러우면 여기에 1920px을 넣으면 됨 */
+        max-width: 1920px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width:768px){
+    /*브라우저 넓이가 640px 이하에서만 작동 (유지하는 서식은 지움)*/
+    html, body {
+        font-size: 16px;
+    }
+}
+
+/*글자를 숨겨야 하는 경우 blind클래스를 적용*/
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+.txt_upper{ /* 소문자 -> 대문자로 바꾸는 서식 만든거 */
+    text-transform: uppercase;
+}
+
+/* css 변수 내맘대로 커스텀 하는거*/
+:root{
+    --header-h: 100px; /* header의 높이 */
+    --header-h-m: -100px; /* header 높이의 반대값 */
+    --tit-color: #fff;
+    --base-color:#1d1d1d;
+    --point-color:#A70007;
+    --bold-weight: 800;
+    --tit-font-size: 2.94rem;  /* 50/ 17 = 2.94 */
+    --min-font-size: 1rem;
+    --line-height: 1.2;
+    --font-family-2p: 'Press Start 2P';
+}
+@media screen and (max-width:1024px){
+    :root{
+        --header-h: 90px; /* header의 높이 */
+        --header-h-m: -90px;
+        --tit-font-size: 2.35rem;  /* 40/ 17 = 2.35 */
+    }
+}
+@media screen and (max-width:768px){
+    :root{
+        --header-h: 65px; /* header의 높이 */
+        --header-h-m: -65px;
+        --tit-font-size: 1.87rem;  /* 30/ 16 = 2.94 */
+    }
+}
+
+/* 글자를 드레그 해서 선택 했을때 색이 변하는 수식 */
+::selection {
+    color: #000;
+    background-color: #A60000;
+}
+ /* 스크롤바 색상 변경 할 수 있는 방법 */
+html {
+    scrollbar-color: #A60000 #000;
+}

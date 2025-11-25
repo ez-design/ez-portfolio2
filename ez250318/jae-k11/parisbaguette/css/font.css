@@ -1,0 +1,13 @@
+/* 웹 폰트를 선언 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../font/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('../font/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}   

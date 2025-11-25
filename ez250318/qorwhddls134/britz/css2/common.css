@@ -1,0 +1,92 @@
+/* 모든페이지에 공통으로 들어가는 기본 스타일 */
+html, body {
+    font-family: "Pretendard", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto; /* 가운데 */
+}
+#wrap {
+    position: relative; /* header 정렬의 기준 */
+    overflow-x: hidden; /* 가로스크롤 삭제 */
+    width: 100%;
+}
+@media screen and (max-width:1300px){ /* 20+20 = 40 + 1260 = 1300 */
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:768px){
+            html, body {
+                font-size: 16px;
+            }
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.skip_nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #F56765;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+.skip_nav a:focus {
+    top: 0;
+}
+
+/* css  변수 */
+:root {
+    --header-h: 100px; /* header 높이 */
+    --header-h-m: -100px; /* header 높이 마이너스값 */
+    --tit-color: #1d1d1d;
+    --base-color: #555;
+    --main-color: #E75300;
+    --point-color: #CDAC9A;
+    --bold-weight: 700;
+    --tit-font-size: 100px;
+    --tit-line-height: 1.2;
+    --main-font-size: 45px;
+    --sub-font-size: 30px;
+}
+@media screen and (max-width:1024px){
+    :root {
+        --header-h: 56px; /* header 높이 */
+        --header-h-m: -56px;
+        --tit-font-size: 60px;
+        --main-font-size: 35px;
+        --sub-font-size: 25px;
+    }
+}
+@media screen and (max-width:768px){
+    :root {
+        --tit-font-size: 40px;
+        --main-font-size: 30px;
+        --sub-font-size: 20px;
+    }
+}

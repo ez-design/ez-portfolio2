@@ -1,0 +1,32 @@
+body {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #555;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+@media screen and (max-width:1300px) {
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent; /* 칼라 투명 */
+}

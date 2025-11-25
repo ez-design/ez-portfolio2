@@ -1,0 +1,614 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+@import url(layout.css);
+
+
+.home {
+    background: url(../images/main/home_bg.png) no-repeat center center / cover;
+    position: relative;
+}
+.home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/home_img01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/home_img02.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.home .wrapper {
+    position: relative;
+}
+
+.home h2 {
+    font-family: 'Merriweather';
+    font-size: 200px;
+    text-align: center;
+    font-weight: 700;
+}
+.home span {
+    font-family: 'Merriweather';
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 43%;
+    text-align: center;
+    left: 0;
+    top: 90%;
+    position: absolute;
+}
+.home span::before {
+    content: "";
+    position: absolute;
+    left: 40%;
+    top: 13px;
+    width: 256px;
+    height: 33px;
+    background: url(../images/main/p_icon.svg) no-repeat center center / cover;
+}
+
+
+.profile {
+    background: url(../images/main/profile_bg.png) no-repeat center center / cover;
+    position: relative;
+    color: #1d1d1d;
+}
+.profile::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/profile_img02.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.profile::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/profile_img01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.profile .wrapper {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.profile .tit {
+    width: 40%;
+}
+.profile .txt {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 70px;
+    font-size: 22px;
+}
+.profile .txt h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.profile .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 50px;
+}
+.profile .list h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.profile .list ul li strong {
+    margin: 20px 0 5px 0;
+}
+.profile .list ul li strong,
+.profile .list ul li span {
+    display: block;
+}
+
+.profile .list .edu {
+    margin-bottom: 45px;
+    margin: 3px 0 45px 0;
+}
+
+.profile .list .skills h3 {
+    margin-bottom: 30px;
+}
+
+.profile .list .skills ul.skills_01,
+.profile .list .skills ul.skills_02,
+.profile .list .skills ul.skills_03 {
+    display: flex;
+    gap: 10px;
+}
+
+.profile .list .skills ul.skills_03 {
+    padding-left: 10px;
+}
+
+.profile .list .skills .list_sub {
+    display: flex;
+}
+
+.profile .list .lice {
+    margin-bottom: 45px;
+}
+
+
+.project01 {
+    background: url(../images/main/project01_bg.png) no-repeat center center / cover;
+    position: relative;
+}
+.project01::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/project01_img01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project01 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project01 .group {
+    position: relative;
+    z-index: 1;
+}
+
+
+.project01 .tit_font {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+.project01 .tit_font::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #53A3FF;
+    z-index: -1;
+}
+
+.project01 h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 15px 0 30px 0;
+}
+.project01 .menu {
+    display: flex;
+    gap: 30px;
+}
+.project01 .menu li a {
+    display: block;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    border-radius: 20px 0 20px 0;
+}
+.project01 .menu li a:hover {
+    border-color: #53A3FF;
+    background-color: #53A3FF;
+}
+.project01 h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+}
+
+.project01 .box {
+    margin: 60px 0 0 0;
+
+}
+.project01 .box li {
+    display: flex;
+    gap: 30px;
+}
+.project01 .box li strong {
+    width: 90px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+}
+.project01 .box li span {
+    font-size: 22px;
+}
+
+.project01 .group a {
+    display: block;
+}
+.project01 .group a .photo {
+    width: 692px;
+    height: 728px;
+}
+.project01 .group .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.project02 {
+    background: url(../images/main/project02_bg.png) no-repeat center center / cover;
+    position: relative;
+}
+.project02::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 3%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/project02_img01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project02 .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project02 .group {
+    position: relative;
+    z-index: 1;
+}
+
+.project02 .tit_font {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+.project02 .tit_font::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #8C8CF4;
+    z-index: -1;
+}
+
+.project02 h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 15px 0 30px 0;
+}
+.project02 .menu {
+    display: flex;
+    gap: 30px;
+}
+.project02 .menu li a {
+    display: block;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    border-radius: 20px 0 20px 0;
+}
+.project02 .menu li a:hover {
+    border-color: #8C8CF4;
+    background-color: #8C8CF4;
+}
+.project02 h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+}
+
+.project02 .box {
+    margin: 60px 0 0 0;
+
+}
+.project02 .box li {
+    display: flex;
+    gap: 30px;
+}
+.project02 .box li strong {
+    width: 90px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+}
+.project02 .box li span {
+    font-size: 22px;
+}
+
+.project02 .group a {
+    display: block;
+}
+.project02 .group a .photo {
+    width: 676px;
+    height: 513px;
+}
+.project02 .group .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.project03 {
+    background: url(../images/main/project03_bg.png) no-repeat center center / cover;
+    position: relative;
+}
+.project03::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 3%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/project03_img01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project03 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project03 .group {
+    position: relative;
+    z-index: 1;
+}
+
+.project03 .tit_font {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+.project03 .tit_font::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #FF6D6D;
+    z-index: -1;
+}
+
+.project03 h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 15px 0 30px 0;
+}
+.project03 .menu {
+    display: flex;
+    gap: 30px;
+}
+.project03 .menu li a {
+    display: block;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    border-radius: 20px 0 20px 0;
+}
+.project03 .menu li a:hover {
+    border-color: #FF6D6D;
+    background-color: #FF6D6D;
+}
+.project03 h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+}
+
+.project03 .box {
+    margin: 60px 0 0 0;
+
+}
+.project03 .box li {
+    display: flex;
+    gap: 30px;
+}
+.project03 .box li strong {
+    width: 90px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+}
+.project03 .box li span {
+    font-size: 22px;
+}
+
+.project03 .group a {
+    display: block;
+}
+.project03 .group a .photo {
+    width: 740px;
+    height: 443px;
+}
+.project03 .group .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contact {
+    background: url(../images/main/contact_bg.png) no-repeat center center / cover;
+    position: relative;
+}
+.contact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/contact_img01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.contact::before {
+    content: "";
+    position: absolute;
+    left: -30%;
+    bottom: -30%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/contact_img02.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.contact h2 {   
+    font-family: 'Merriweather';
+    font-size: 200px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.contact .txt {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 100px;
+}
+
+
+.cursor { 
+	position: absolute;  /* 반드시 absolute여야 하고 위치는 jquery에서 적용 시킴 */
+	z-index: 1000;
+	transform: translate(-50%, -50%); /* 커서 위치 조정 */
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-family: 'Merriweather';
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(180deg, #A6DDFF, #E2C7FF);
+    text-align: center;
+    padding-top: 27px;
+	pointer-events: none; /* 생성된 cursor에 마우스 오버 이벤트를 주지 않기 - 이걸 주지 않으면 cursor에 마우스가 오버된 것으로 인식되어 하단 요소가 클릭되지 않음 */
+	display:none; /* 평소에는 보이지 않게 하기 위해서 - 만약 원래도 따라다니는 마우스 포인터를 디자인하려면 스타일을 주면 됨. */
+}
+.cursor.on {
+	display: block;  /* jquery에서 특정 요소에 마우스를 오버하면 class명을 추가해주고 그때 나타남 */
+}
+.project01 .group a,
+.project02 .group a,
+.project03 .group a  {
+	cursor: none !important; /* 만약 마우스 오버 시 생성한 cursor만 나타나고 실제 마우스 포인터는 안보이게 하려면 오버하는 요소에서 마우스 포인트를 안보이게 해야 함 */
+}
+
+
+@media screen and (max-width:1600px) {
+    .about .tit {
+        width: 40%;
+    }
+    .about .list {
+        width: 55%;
+    }
+    
+
+    .project01 h2 {
+        font-size: 42px;
+        margin: 10px 0 20px 0;
+    }
+    .project01 .menu {
+        gap: 20px;
+    }
+    .project01 h3 {
+        font-size: 30px;
+    }
+    .project01 .box li {
+        gap: 20px;
+    }
+    .project01 .box li strong {
+        font-size: 22px;
+    }
+    .project01 .box li span {
+        font-size: 20px;
+    }
+
+
+    .project02 h2 {
+        font-size: 42px;
+        margin: 10px 0 20px 0;
+    }
+    .project02 .menu {
+        gap: 20px;
+    }
+    .project02 h3 {
+        font-size: 30px;
+    }
+    .project02 .box li {
+        gap: 20px;
+    }
+    .project02 .box li strong {
+        font-size: 22px;
+    }
+    .project02 .box li span {
+        font-size: 20px;
+    }
+    
+
+    .project03 h2 {
+        font-size: 42px;
+        margin: 10px 0 20px 0;
+    }
+    .project03 .menu {
+        gap: 20px;
+    }
+    .project03 h3 {
+        font-size: 30px;
+    }
+    .project03 .box li {
+        gap: 20px;
+    }
+    .project03 .box li strong {
+        font-size: 22px;
+    }
+    .project03 .box li span {
+        font-size: 20px;
+    }
+    
+}/* @media */

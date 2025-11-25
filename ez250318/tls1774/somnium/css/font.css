@@ -1,0 +1,16 @@
+/* 웹폰트를 선언 */
+@font-face {
+	font-family: 'MaruBuri';
+	font-weight: 400;
+	font-display: swap;
+	src: local('MaruBuriRegular'), 
+	url(../font/MaruBuri-Regular.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'MaruBuri';
+	font-weight: 700;
+	font-display: swap;
+	src: local('MaruBuriBold'),
+	url(../font/MaruBuri-Bold.woff2) format('woff2');
+}

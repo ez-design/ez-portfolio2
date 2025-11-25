@@ -1,0 +1,70 @@
+@mixin default_font() {
+    font-size: inherit;
+    font-weight: inherit;
+}
+@mixin default_font_w() {
+    font-weight: inherit;
+}
+@mixin default_font_s() {
+    font-style: normal;
+}
+@mixin default_li() {
+    list-style: none;
+}
+@mixin default_a() {
+    color: inherit;
+    text-decoration: none;
+}
+@mixin default_button() {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+@mixin default_textarea() {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    line-height: inherit;
+}
+@mixin default_fieldset() {
+    border: 0;
+}
+@mixin default_caption() {
+    display: none;
+}
+@mixin default_all() {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    @include default_font();
+}
+strong,th {
+    @include default_font_w();
+}
+em,address {
+    @include default_font_s();
+}
+li {
+    @include default_li();
+}
+a {
+    @include default_a();
+}
+button, input[type="button"], input[type="submit"] {
+    @include default_button();
+}
+select, input, button, textarea{
+    @include default_textarea();
+}
+fieldset{
+    @include default_fieldset();
+}
+legend, caption{
+    @include default_caption();
+}
+* {
+    @include default_all();
+}

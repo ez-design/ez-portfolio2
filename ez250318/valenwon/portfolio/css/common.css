@@ -1,0 +1,106 @@
+/* 모든 페이지에 공통으로 들어가는 기본 스타일*/
+
+html, body{
+    font-family: "Cal Sans", "Pretendard",sans-serif;
+    /*앞에 쓴 서체를 적용, 지원이 안되면 두 번째 서체 적용*/
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1d1d1d;
+    word-break: keep-all; /*스페이스 기준 단어별로 떨어짐*/
+    word-wrap: break-word; /* 단어가 긴 경우 강제로 줄바꿈을 주는 방법 */
+}
+
+
+.wrapper{
+    width: 1260px;
+    margin: 0 auto; /*가운데*/
+}
+
+#wrap{
+    position: relative; /*header정렬의 기준*/
+   overflow-x: hidden;  /*가로 스크롤바만 삭제*/
+    width: 100%;
+}
+@media screen and (max-width:1580px){
+        .wrapper{
+            width: auto;
+            margin: 0 100px 0 155px;/*가운데*/
+            /* margin: 0 30px; */
+        }
+}
+/* @media screen and (max-width:1024px){ /* 1260 * 0.05 = 63 + 63 = 126 + 1260 = 1386px
+                .wrapper{
+                    width: auto;
+                    margin: 0 20px; /*여백이 브라우저 사이즈에 따라 점점 좁아짐 - 요즘 추세임 -
+                    /* margin: 0 5%; 넣어주면 됨 / max-width:1386px으로 해주기
+                }
+} */
+
+
+/*글자를 숨겨야하는 경우 blind 클래스를 적용*/
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+/*글자를 드래그 했을 때 나타나는 스타일
+::selection { 
+    color: #fff;
+    background-color: #482E1D;
+  }*/
+
+  .skip_nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000; /*맨위*/
+    width: 100%;
+}
+.skip_nav a{
+    display: block;
+    text-align: center;
+    background-color: #FE5C83;
+    padding: 8px 0;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+.skip_nav a:focus{
+    top: 0;
+}
+
+
+/* css 변수 */
+:root{
+    --font-family: 'Pretendard';
+    --line-black: #101010;
+    --tit-font-color: #1d1d1d;
+    --base-font-color: #3d3d3d;
+    --main-font-color: #FEFF01; 
+    --point-font-color: #0CBBF0;
+    --bold-weight: 700;
+    --Extra-bold-weight: 800;
+    --tit-size: 40px;
+    --sub-tit-size: 20px; 
+    --tit-line-height: 1.2; 
+    --visual-size: 20vw;
+    --thank-size: 13vw;
+    --visual-sub-tit: 80px;
+    --vi-intro-size: 28px;
+    --about-size:40px;
+    --doo-txt-size: 20px;
+    --thank-list-size: 30px;
+}
+
+
+
+
+

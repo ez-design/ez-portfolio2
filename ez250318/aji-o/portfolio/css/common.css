@@ -1,0 +1,99 @@
+/* 모든 페이지에 공통으로 들어가는 기본 스타일 */
+body {
+    font-family: "Montserrat" ,"S-CoreDream", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5; /* 단위는 배수로 한다. */
+    color: #0052FF;
+    word-break: keep-all; /* 단어별 줄바꿈(스페이스 기준)*/
+    word-wrap: break-word; /* 단어가 너무 긴 경우 강제로 줄바꿈 */
+}
+
+.wrapper {
+    width: 1260px;
+    margin: 0 auto; /* 가운데 */
+}
+
+#wrap {
+    position: relative; /* header 정렬의 기준 */
+    overflow-x: hidden; /* 25-05-26 - 가로스크롤바 삭제*/
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+                    body {
+                        font-size: 16px;
+                    }
+}
+
+@media screen and (max-width:1300px) { /* 20+20 = 40 + 1260 = 1300 */
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    }
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+.skip_nav {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.skip_nav a {
+    display: block;
+    background-color: #D91226;
+    text-align: center;
+    padding: 10px 0;
+    color: #1d1d1d;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+
+.skip_nav a:focus {
+    top: 0;
+}
+
+
+:root {
+    --header-h: 100px; /* header의 높이 */
+    --point-color: #011EF3;
+    --sub-color: #EEA74F;
+    --white-color: #fff;
+    --bold-weight: 800;
+    --sub-bold-weight: 600;
+    --tit-font-size: 34px;
+    --tit-line-height: 1.2;
+}
+
+/*
+@media screen and (max-width:1024px) {
+    :root {
+        --header-h: 56px; /* 모바일 header의 높이 
+        --header-h-m: -56px; 
+        --tit-font-size: 30px 
+    }
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        --tit-font-size: 20px;
+    }
+}
+
+*/

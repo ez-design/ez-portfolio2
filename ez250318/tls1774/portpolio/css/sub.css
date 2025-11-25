@@ -1,0 +1,29 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+@import url(layout.css);
+@import url(contents.css);
+
+.cursor {
+    position: absolute;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: none;
+    line-height: 5;
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: #008240;
+    color: #fff;
+  }
+  .cursor.gyeongju {
+    background: #009B93;
+  }
+  .cursor.somnium {
+    background: #677333;
+  }
+  .cursor.on {
+    display: block;
+  }

@@ -1,0 +1,185 @@
+/* 이응노 미술관 */
+.visual.leeeungno {
+    background-image: url(../images/contents/leeungno_bg.jpg);
+}
+.visual.leeeungno .device a {
+    top: 154px;
+    right: 110px;
+    width: 781px;
+    height: 539px;
+    background-image: url(../images/contents/lee_device.png);
+}
+
+.visual.leeeungno .link a:hover,
+.detail.leeeungno .mobile .right .sub_link a:hover {
+    background-color: #441213;
+    color: #fff;
+    border-color: #441213;
+}
+.mood.leeeungno .txt_top .typography ul li span.gs_b,
+.mood.leeeungno .txt_top .typography ul li span.gs_m {
+    font-family: 'GmarketSans';
+}
+.mood.leeeungno .txt_top .typography ul li span.rr_b,
+.mood.leeeungno .txt_top .typography ul li span.rr_r {
+    font-family: 'Red Rose';
+}
+.mood.leeeungno .txt_top .typography ul li span.il_r {
+    font-family: "Italiana";
+    font-weight: 400;
+}
+.mood.leeeungno .txt_top .typography ul li span.gs_b,
+.mood.leeeungno .txt_top .typography ul li span.rr_b {
+    font-weight: 700;
+}
+.mood.leeeungno .txt_bottom ul li {
+    min-width: 132px;
+}
+.mood.leeeungno .txt_bottom ul li.long {
+    width: 23.81%;
+}
+.mood.leeeungno .txt_bottom ul li.point {
+    background-color: #441213;
+}
+.mood.leeeungno .txt_bottom ul li.dark {
+    background-color: #231512;
+}
+.mood.leeeungno .txt_bottom ul li.light {
+    background-color: #F0E9DF;
+    color: #1d1d1d;
+}
+.mood.leeeungno .txt_bottom ul li.c_tit {
+    background-color: #1D1D1D;
+}
+.mood.leeeungno .txt_bottom ul li.c_body {
+    background-color: #3D3D3D;
+}
+.detail.leeeungno .mobile {
+    background-image: url(../images/contents/leeeungno_detail.jpg);
+}
+.detail.leeeungno .mobile .left a {
+    background-image: url(../images/contents/lee_iphone.png);
+}
+
+
+
+
+/* 서경대학교 */
+.visual.sku {
+    background-image: url(../images/contents/sku_bg.jpg);
+}
+.visual.sku .device a {
+    top: 165px;
+    right: 150px;
+    width: 577px;
+    height: 550px;
+    background-image: url(../images/contents/sku_device.png);
+}
+.visual.sku .link a:hover,
+.detail .mobile .right .sub_link a:hover {
+    background-color: #02652F;
+    color: #fff;
+    border-color: #02652F;
+}
+.visual.sku .link {
+    display: flex;
+    gap: 10px;
+}
+.mood.sku .txt_top .typography ul li span.pre_b,
+.mood.sku .txt_top .typography ul li span.pre_m {
+    font-family: 'Pretendard';
+}
+.mood.sku .txt_top .typography ul li span.mon_italic {
+    font-family: "Montserrat";
+    font-style: italic;
+}
+.mood.sku .txt_top .typography ul li span.mon_b,
+.mood.sku .txt_top .typography ul li span.pre_b,
+.mood.sku .txt_top .typography ul li span.mon_italic {
+    font-weight: 700;
+}
+.mood.sku .txt_bottom ul li {
+    min-width: 132px;
+}
+.mood.sku .txt_bottom ul li.long {
+    width: 23.81%;
+}
+.mood.sku .txt_bottom ul li.main {
+    background-color: #004F4A;
+}
+.mood.sku .txt_bottom ul li.point {
+    background-color: #02652F;
+}
+.mood.sku .txt_bottom ul li.sub {
+    background-color: #6EB92C;
+}
+.mood.sku .txt_bottom ul li.c_tit {
+    background-color: #1D1D1D;
+}
+.mood.sku .txt_bottom ul li.c_body {
+    background-color: #3D3D3D;
+}
+.detail.sku .mobile {
+    background-image: url(../images/contents/sku_detail.jpg);
+}
+.detail.sku .mobile .left a {
+    background-image: url(../images/contents/sku_iphone.png);
+}
+
+
+
+
+/* 현대코퍼레이션 */
+.visual.hyundaicorp {
+    background-image: url(../images/contents/hyundaicorp_bg.jpg);
+}
+.visual.hyundaicorp .device a {
+    top: 180px;
+    right: 140px;
+    width: 750px;
+    height: 530px;
+    background-image: url(../images/contents/hyundaicorp_device.png);
+}
+.visual.hyundaicorp .link a:hover,
+.detail.hyundaicorp .mobile .right .sub_link a:hover {
+    background-color: #00B4DD;
+    color: #fff;
+    border-color: #00B4DD;
+}
+.mood.hyundaicorp .txt_top .typography ul li span.noto_b,
+.mood.hyundaicorp .txt_top .typography ul li span.noto_m {
+    font-family: "Noto Sans KR";
+    
+}
+.mood.hyundaicorp .txt_top .typography ul li span.ub_b,
+.mood.hyundaicorp .txt_top .typography ul li span.ub_m {
+    font-family: "Ubuntu";
+}
+.mood.hyundaicorp .txt_top .typography ul li span.noto_b,
+.mood.hyundaicorp .txt_top .typography ul li span.ub_b {
+    font-weight: 700;
+}
+.mood.hyundaicorp .txt_bottom ul li {
+    min-width: 132px;
+}
+.mood.hyundaicorp .txt_bottom ul li.long {
+    width: 36.67%;
+}
+.mood.hyundaicorp .txt_bottom ul li.main {
+    background-color: #00264B;
+}
+.mood.hyundaicorp .txt_bottom ul li.point {
+    background-color: #00B4DD;
+}
+.mood.hyundaicorp .txt_bottom ul li.c_tit {
+    background-color: #1D1D1D;
+}
+.mood.hyundaicorp .txt_bottom ul li.c_body {
+    background-color: #3D3D3D;
+}
+.detail.hyundaicorp .mobile {
+    background-image: url(../images/contents/hyundaicorp_detail.jpg);
+}
+.detail.hyundaicorp .mobile .left a {
+    background-image: url(../images/contents/hyundaicorp_iphone.png);
+}

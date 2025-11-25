@@ -1,0 +1,66 @@
+
+html, body {
+    font-family: "Montserrat", "Paperlogy", serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.5;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.wrapper {
+    width: 1750px;
+    margin: 0 auto;
+}
+#wrap {
+    position: relative; /* header */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+@media screen and (max-width:1790px){
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+
+
+/* 마우스 포인터 변경 */
+.cursor { 
+	position: absolute;
+	z-index: 1000;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	display:none;
+}
+.cursor.on {
+	display:block;
+    width: 100px;
+    height: 100px;
+    line-height:100px;
+    background-color: #7964A4;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.popup {
+	cursor: none !important;
+}
+a:not(header a):hover {
+    cursor: none;
+}

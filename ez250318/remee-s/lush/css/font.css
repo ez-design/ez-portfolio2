@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../font/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'S-GmarketSansBold';
+	src: url('../font/GmarketSansBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Lush_Bold';
+	src: url('../font/Lush_Bold.woff') format('woff');
+	src: url('../font/Lush_Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: 800;
+}

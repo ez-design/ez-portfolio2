@@ -1,0 +1,37 @@
+/* 모든 페이지에 공통으로 들어가는 기본 스타일 */
+html, body {
+    font-family: "Pretendard", sans-serif;
+    /* 앞에 쓴 서체를 적용하고 지원이 안되면 두번째 서체를 적용 */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5; /* 배수 */
+    color: #fff;
+    word-break: keep-all; /* 스페이스 기준 단어 별로 줄 바꿈 */
+    word-wrap: break-word; /* 단어가 너무 긴 경우 강제로 줄바꿈을 주는 방법 */
+}
+
+.wrapper {
+    width: 1360px;
+    margin: 0 auto; /* 가운데 */
+}
+
+
+#wrap, body {
+    min-width: 1400px;  
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+
+
+/* 글자를 숨겨야하는 경우 blind 클래스를 적용 */
+.blind {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+

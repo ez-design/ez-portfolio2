@@ -1,0 +1,40 @@
+/*웹 폰드를 선언*/
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url(../font/Pretendard-Bold.woff2) format('woff2'), url(../font/Pretendard-Bold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../font/Pretendard-Regular.woff2) format('woff2'), url(../font/Pretendard-Regular.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../font/Pretendard-Regular.woff2) format('woff2'), url(../font/Pretendard-Regular.woff) format('woff');
+}
+@font-face{
+    font-family: 'HelveticaNeue-Bold';
+    font-weight: 800;
+    font-style: normal;
+	src: local('HelveticaNeue-Bold'), url(../font/HelveticaNeue-Bold.woff2) format('woff2')
+}
+@font-face{
+    font-family: 'HelveticaNeue';
+    font-weight: 400;
+    font-style: normal;
+	src: local('HelveticaNeue-Medium'), url(../font/HelveticaNeue-Medium.woff2) format('woff2')
+}
+@font-face {
+    font-family: "PP Editorial Old";
+    font-weight: 400;
+    font-style: normal;
+	src: local('PP Editorial Old'), url(../font/PP\ Editorial\ Old.woff2) format('woff2')
+}

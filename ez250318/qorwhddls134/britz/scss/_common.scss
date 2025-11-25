@@ -1,0 +1,113 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+@mixin html_body() {
+    font-family: "Pretendard", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+@mixin html_body_m() {
+    font-size: 16px;
+}
+@mixin wrapper() {
+    width: 1260px;
+    margin: 0 auto; /* 가운데 */
+}
+@mixin wrapper_p() {
+    width: auto;
+    margin: 0 20px;
+}
+@mixin wrap() {
+    position: relative; /* header 정렬의 기준 */
+    overflow-x: hidden; /* 가로스크롤 삭제 */
+    width: 100%;
+}
+@mixin blind() {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+@mixin skip_nav() {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+@mixin skip_nav_a() {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #F56765;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+@mixin root() {
+    --header-h: #{$header_h};
+    --header-h-m: #{$header_h_m};
+    --tit-color: #{$tit_color};
+    --base-color: #{$base_color};
+    --main-color: #{$main_color};
+    --point-color: #{$point_color};
+    --bold-weight: #{$bold_weight};
+    --tit-font-size: #{$tit_font_size};
+    --tit-line-height: #{$tit_line_h};
+}
+
+html, body {
+    @include html_body();
+    @media (max-width: #{$breakpoint_mobile}) {
+        @include html_body_m();
+    }
+}
+
+.wrapper {
+    @include wrapper();
+    @media (max-width: 1300px) {
+        @include wrapper_p();
+    }
+}
+
+#wrap {
+    @include wrap();
+}
+
+.blind {
+    @include blind();
+}
+
+.skip_nav {
+    @include skip_nav();
+}
+
+.skip_nav a {
+    @include skip_nav_a();
+}
+
+.skip_nav a:focus {
+    top: 0;
+}
+
+:root {
+    @include root();
+    @include tablet() {
+        --header-h: #{$header_m_h};
+        --header-h-m: #{$header_m_h_m};
+        --tit-font-size:#{$tit_font_size_t};
+    }
+    @include mobile() {
+        --tit-font-size:#{$tit_font_size_m};
+    }
+}
+

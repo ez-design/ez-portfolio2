@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>한국병원</title>
+</head>
+<body>
+    <div class="skip_nav">
+        <a href="#skip_content">본문바로가기</a>
+    </div>
+    <div id="wrap">
+        <!--
+            고정될때 fixed
+            마우스 내려서 메뉴가 상단으로 사라질때 gnb_up
+            pc버전 메뉴에 마우스를 오버하면 menu_over
+            mobile버전에서 메뉴를 클릭하면 menu_open
+        -->
+        <header class="">
+            <h1 class="logo"><a href="index.html"><span class="blind">청주한국병원</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_util">
+                        <div class="search">
+                            <input type="text" id="text" placeholder="검색어를 입력하세요">
+                            <button type="submit" class="search_open"><span class="blind">검색</span></button>
+                        </div><!--//gnb_util-->
+                    </div>
+                    <ul class="depth1">
+                        <li class="">
+                            <a href="#"><span>진료예약</span></a>
+                            <div class="depth2">
+                                <h3 class="title">진료예약</h3>
+                                <ul class="list">
+                                    <li><a href="#"><span>예약안내 </span></a></li>
+                                    <li><a href="#"><span>온라인예약</span></a></li>
+                                    <li><a href="#"><span>건강검진예약</span></a></li>
+                                    <li><a href="#"><span>학생건강검진 예약</span></a></li>
+                                    <li><a href="#"><span>학생건강검진 예약조회</span></a></li>
+                                    <li><a href="#"><span>예약조회</span></a></li>
+                                    <li><a href="#"><span>예약 FAQ</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>진료안내</span></a>
+                            <div class="depth2">
+                                <h3 class="title">진료안내</h3>
+                                <ul class="list">
+                                    <li><a href="#"><span>진료과소개</span></a></li>
+                                    <li><a href="#"><span>센터소개</span></a></li>
+                                    <li><a href="#"><span>진료지원소개</span></a></li>
+                                    <li><a href="#"><span>진료시간표</span></a></li>
+                                    <li><a href="#"><span>외래진료</span></a></li>
+                                    <li><a href="#"><span>응급진료</span></a></li>
+                                    <li><a href="#"><span>입원진료</span></a></li>
+                                    <li><a href="#"><span>진단서발급안내</span></a></li>
+                                    <li><a href="#"><span>의무기록사본발급안내</span></a></li>
+                                    <li><a href="#"><span>장비현황</span></a></li>
+                                    <li><a href="#"><span>비급여비용</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>고객서비스</span></a>
+                            <div class="depth2">
+                                <h3 class="title">고객서비스</h3>
+                                <ul class="list">
+                                    <li><a href="#"><span>온라인상담</span></a></li>
+                                    <li><a href="#"><span>감동을 전합니다</span></a></li>
+                                    <li><a href="#"><span>이달의 친절직원</span></a></li>
+                                    <li><a href="#"><span>고객의소리</span></a></li>
+                                    <li><a href="#"><span>온라인 웹진</span></a></li>
+                                </ul>    
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>병원안내</span></a>
+                            <div class="depth2">
+                                <h3 class="title">병원안내</h3>
+                                <ul class="list">
+                                    <li><a href="#"><span>인사말</span></a></li>
+                                    <li><a href="#"><span>병원연혁</span></a></li>
+                                    <li><a href="#"><span>미션/비전/핵심가치</span></a></li>
+                                    <li><a href="#"><span>HI</span></a></li>
+                                    <li><a href="#"><span>조직도</span></a></li>
+                                    <li><a href="#"><span>발전후원회</span></a></li>
+                                    <li><a href="#"><span>층별안내도</span></a></li>
+                                    <li><a href="#"><span>주요전화번호</span></a></li>
+                                    <li><a href="#"><span>편의시설</span></a></li>
+                                    <li><a href="#"><span>병원둘러보기</span></a></li>
+                                    <li><a href="#"><span>오시는길</span></a></li>
+                                    <li><a href="#"><span>공지사항</span></a></li>
+                                    <li><a href="#"><span>언론보도</span></a></li>
+                                    <li><a href="#"><span>채용안내</span></a></li>
+                                    <li><a href="#"><span>홍보동영상</span></a></li>
+                                    <li><a href="#"><span>TV건강강좌</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--//gnb_wrap-->
+                <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+            </nav>
+            <div class="util">
+                <div class="search">
+                    <input type="text" id="text" placeholder="검색어를 입력하세요">
+                    <button type="submit" class="search_open"><span class="blind">검색</span></button>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                <h2 class="blind">visual팝업</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper"> 
+                        <li class="swiper-slide">
+                            <div class="photo pc"><img src="images/main/visual_pc01.jpg" alt=""></div>   
+                            <div class="photo mobile"><img src="images/main/visual_mobile01.jpg" alt=""></div>       
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo pc"><img src="images/main/visual_pc02.jpg" alt=""></div>
+                            <div class="photo mobile"><img src="images/main/visual_mobile02.jpg" alt=""></div>  
+                        </li> 
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="medical_info" id="skip_content">
+                <div class="wrapper">
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <h2 class="title icon01">온라인 진료예약</h2>
+                                <div class="txt inner">
+                                    <a href="#">
+                                        <span>처음진료 예약</span>
+                                        <span>외래진료 예약</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h2 class="title icon02">건강검진 예약</h2>
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>건강검진 예약</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h2 class="title icon03">오시는 길</h2>
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>위치 안내</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h2 class="title icon04">증명서 발급</h2>
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>발급 안내</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h2 class="title icon05">전화번호 안내</h2>
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h2 class="title icon06">진료 시간표</h2>
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main_search">
+                <div class="wrapper">
+                    <div class="group">
+                        <div class="title">
+                            <div class="search_ico"></div>
+                            <span>청주 한국병원의 진료에 도움이 필요하신가요?</span>
+                            <strong><span>의료진/진료과/전문센터</span>를 찾아보세요.</strong>
+                        </div><!--//title-->
+                         <form name="searchfrom" action="#">
+                            <fieldset>
+                                <legend>의료진/진료과/질환명 검색</legend>
+                                <div class="search_wrap">
+                                    <div class="search">
+                                        <input name="searchkeyword" type="text" placeholder="예) 심장내과, 외과, 종합검진센터">
+                                    </div>
+                                    <div class="submit">
+                                        <button name="submit_from"><span>검색</span></button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="medical_center">
+                <h2 class="blind">medical팝업</h2>
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="title">                        
+                            <div class="title_hd">
+                                <h3>분야별<br>전문 진료센터</h3>
+                                <div class="ctrl_wrap">
+                                    <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                    <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                                </div>
+                            </div>
+                        </div><!--//wrapper-->
+                    </div>
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img src="images/main/medical_center01.jpg" alt="척추센터">
+                                        </div>
+                                        <div class="txt">
+                                            <span>SPINE CENTER</span>
+                                            <strong>척추센터</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img src="images/main/medical_center02.jpg" alt="척추센터">
+                                        </div>
+                                        <div class="txt">
+                                            <span>CARDIAC<br>CARDIOVASCULAR CENTER</span>
+                                            <strong>심장/심혈관 센터</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img src="images/main/medical_center03.jpg" alt="척추센터">
+                                        </div>
+                                        <div class="txt">
+                                            <span>COMPREHENSIVE<br>CHECKUP CENTER</span>
+                                            <strong>종합검진 센터</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img src="images/main/medical_center04.jpg" alt="척추센터">
+                                        </div>
+                                        <div class="txt">
+                                            <span>ARTIFICIAL KIDNEY CENTER</span>
+                                            <strong>인공신장 센터</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img src="images/main/medical_center05.jpg" alt="척추센터">
+                                        </div>
+                                        <div class="txt">
+                                            <span>JOINT<br>REPLACEMENT CENTER</span>
+                                            <strong>인공관절 센터</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img src="images/main/medical_center06.jpg" alt="척추센터">
+                                        </div>
+                                        <div class="txt">
+                                            <span>DENTAL CENTER</span>
+                                            <strong>치과 센터</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!--//swiper-->
+                    </div><!--//list-->
+                </div>
+            </section>
+            <section class="notice">
+                <div class="wrapper">
+                    <div class="notice_inner">
+                        <div class="list">
+                            <div class="tab_list">
+                                <ul role="tablist">
+                                    <li role="tab" aria-selected="true" class="item1 active" data-content="tab_item1"><button>공지사항<span class="blind">선택됨</span></button></li>
+                                    <li role="tab" aria-selected="false" class="item2 " data-content="tab_item2"><button>뉴스레터<span class="blind">선택됨</span></button></li>
+                                    <li role="tab" aria-selected="false" class="item3" data-content="tab_item3"><button>채용안내<span class="blind">선택됨</span></button></li>
+                                </ul>
+                                <a href="#" class="more"><span class="blind">more</span></a>
+                            </div><!--//tab_list-->
+                            <div class="tab_content">
+                                <div class="tab_item item1 active" id="tab_item1">
+                                    <h3 class="blind">공지사항</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">청주한국병원, 영상검사 적정성 평가 ‘1등급’ 획득</span></strong>
+                                                <span class="date">2025.07.31</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">청주한국병원, ‘폐렴 적정성 평가’ 5회 연속 ‘1등급’ 획득</span></strong>
+                                                <span class="date">2025.07.22</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">[의학칼럼]쉴수록 더 아픈 허리 통증, 강직성척추염 의심…JAK 억제제, 빠른 통증 개선 이점</span></strong>
+                                                <span class="date">2025.07.18</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">한국병원, 2025년 간호사 총회</span></strong>
+                                                <span class="date">2025.07.16</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!--//tab_item1-->
+                                <div class="tab_item item2" id="tab_item2">
+                                    <h3 class="blind">뉴스레터</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">청주한국병원, '폐렴 적정성 평가' 5회 연속 '1등급'</span></strong>
+                                                <span class="date">2025.07.20</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">청주한국병원, 2025년 보건관리전문기관평가 A등급..전국 40위 안에 꼽혀</span></strong>
+                                                <span class="date">2025.07.09</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">청주한국병원, 보건복지부 ‘포괄 2차 종합병원’ 선정</span></strong>
+                                                <span class="date">2025-07-01</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">청주한국병원, 2주기 전자의무기록시스템(EMR) 인증 '전국 최초' 획득</span></strong>
+                                                <span class="date">2025.06.19</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!--//tab_item2-->
+                                <div class="tab_item item3" id="tab_item3">
+                                    <h3 class="blind">채용안내</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">[모집]간호부 간호사</span></strong>
+                                                <span class="date">2025.08.06</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">[모집]직업환경의학센터 간호사</span></strong>
+                                                <span class="date">2025.07.31</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">[마감-수술실 증축]수술실 간호사</span></strong>
+                                                <span class="date">2025.07.14</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong><span class="underline">[마감]약제과 약무보조원</span></strong>
+                                                <span class="date">2025.07.11</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!--//tab_item3-->
+                            </div><!--//tab_content-->
+                        </div><!--//list-->
+                        <div class="card">
+                            <div class="swiper">
+                                <ul class="swiper-wrapper"> 
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="photo"><img src="images/main/card01.jpg" alt="충북유일 거점 지역응급의료센터"></div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="photo"><img src="images/main/card02.jpg" alt="간호,간병 통합서비스병동 운영"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--//notice_inner-->
+                </div><!--//wrapper-->
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+            <div class="info_wrap01">
+                <div class="f_nav">
+                    <ul>
+                        <li><a href="#">찾아오시는길</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">비급여수가</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="f_info">
+                    <address>주소 : 충청북도 청주시 상당구 단재로 106</address>
+                    <span>사업자등록번호: 301-82-06242</span>
+                    <span>대표자: 송재승</span>
+                    <span>업체명: 의료법인 인화재단 한국병원</span>
+                </div>
+                <div class="copyright">Copyright© 2015 HANKOOK GENERAL HOSPITAL ALL Right Reserved.</div>
+            </div>
+            <div class="info_wrap02">
+                <div class="sns">
+                    <ul>
+                        <li class="facebook"><a href="#"><span class="blind">페이스북</span></a></li>
+                        <li class="insta"><a href="#"><span class="blind">인스타</span></a></li>
+                        <li class="naver"><a href="#"><span class="blind">네이버</span></a></li>
+                    </ul>
+                </div>
+                <div class="number">
+                    <span>전화: 043.222.7000</span>
+                    <span>팩스: 043.255.7007</span>
+                </div>
+                <div class="f_logo">
+                    <img src="images/common/logo_w.svg" alt="한국병원로고">
+                </div>
+            </div>
+            </div><!--//wrapper-->
+        </footer>
+    </div>
+</body>
+</html>

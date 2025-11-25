@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jquery 라이브러리-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!--swiper 라이브러리-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>가창글램핑</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 
+            고정될때 fixed 
+            메뉴가 상단으로 사라질때 gnb_up 
+            pc버전에서 메뉴에 마우스를 오버하면 menu_over
+        -->
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">가창글램핑</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <ul class="depth1"><!--1차메뉴-->
+                        <li>
+                            <a href="#"><span>ABOUT</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>글램핑소개</span></a></li>
+                                <li><a href="#"><span>외부전경</span></a></li>
+                                <li><a href="#"><span>체험&낚시</span></a></li>
+                                <li><a href="#"><span>오시는길</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>ROOMS</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>객실배치도</span></a></li>
+                                <li><a href="#"><span>텐트A타입</span></a></li>
+                                <li><a href="#"><span>텐트B타입</span></a></li>
+                                <li><a href="#"><span>2층독채</span></a></li>
+                                <li><a href="#"><span>독채</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>FACILITIES</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>야외수영장</span></a></li>
+                                <li><a href="#"><span>야외바베큐</span></a></li>
+                                <li><a href="#"><span>트램플린</span></a></li>
+                                <li><a href="#"><span>포켓볼</span></a></li>
+                                <li><a href="#"><span>탁구장</span></a></li>
+                                <li><a href="#"><span>족구장</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>NOTICE</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>공지사항</span></a></li>
+                                <li><a href="#"><span>갤러리</span></a></li>
+                                <li><a href="#"><span>rieview</span></a></li>
+                                <li><a href="#"><span>문의하기</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>TOUR</span></a>
+                        </li>
+                    </ul>
+                </div><!--gnb_wrap-->
+                <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+            </nav>
+            <div class="nesv"><a href="#"><span>실시간예약</span></a></div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                <div class="wrapper">
+                    <h2>GACHANG GLAMPING<br>YOUR COZY HAVEN</h2>
+                    <p>자연에 기대어 감성과 여유를 채우고 가세요</p>
+                </div>
+                <div class="scroll_down"><span>scroll down</span></div>
+            </section><!--visual-->
+            <section class="canvas">
+                <div class="wrapper">
+                    <h2 class="blind">글램핑장소개</h2>
+                    <div class="info_box">
+                        <img src="imges/main/canvas01.png" alt="">
+                        <h3>ABOUT</h3>
+                        <p>전통적인 캠핑과 편의성을 모두 갖춘<br>자연의 휴식처 가창글램핑장입니다</p>
+                        <a href="#"><span>가창글램핑 소개</span></a>
+                    </div>
+                    <div class="info_box">
+                        <img src="imges/main/canvas02.png" alt="">
+                        <h3>NOTICE</h3>
+                        <p>예약전/후 안내사항을 꼭 확인해주세요<br>당일 예약은 당일 취소 불가합니다</p>
+                        <a href="#"><span>예약 및 이용안내</span></a>
+                    </div>
+                    <div class="info_box">
+                        <img src="imges/main/canvas03.png" alt="">
+                        <h3>Q&A</h3>
+                        <p>문의주시면 모든 질문에<br>빠르게 답변해드리겠습니다</p>
+                        <a href="#"><span>1:1 문의하기</span></a>
+                    </div>
+                </div>
+            </section>
+            <section class="room">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>ROOMS</h2>
+                        <p>모든 객실에 침대와 개별 화장실이 준비되어 있어 편안한 휴식을 누릴 수 있습니다</p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <div class="photo"><img src="imges/main/room01.jpg" alt=""></div>
+                                <div class="subject">
+                                    <h3>텐트 A (총 12동)</h3>
+                                    <p>160,000 ~ </p>
+                                </div>
+                                <div class="capacity">
+                                    <p>2인기준 / 최대 4인</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">객실예약</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="photo"><img src="imges/main/room02.jpg" alt=""></div>
+                                <div class="subject">
+                                    <h3>텐트 B (총 5동)</h3>
+                                    <p>140,000 ~ </p>
+                                </div>
+                                <div class="capacity">
+                                    <p>2인기준 / 최대 2인</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">객실예약</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="photo"><img src="imges/main/room03.jpg" alt=""></div>
+                                <div class="subject">
+                                    <h3>독채 펜션</h3>
+                                    <p>190,000 ~ </p>
+                                </div>
+                                <div class="capacity">
+                                    <p>2인기준 / 최대 4인</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">객실예약</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="photo"><img src="imges/main/room04.jpg" alt=""></div>
+                                <div class="subject">
+                                    <h3>2층 독채 펜션</h3>
+                                    <p>240,000 ~ </p>
+                                </div>
+                                <div class="capacity">
+                                    <p>2인기준 / 최대 6인</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">객실예약</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="banner">
+                <div class="wrapper">
+                    <h2>기억을 담는 공간, 파티룸 대여 패키지</h2>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </section>
+            <section class="service">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>FACILITIES</h2>
+                        <p>자연 속에서 누릴 다양한 즐거움과 함께, 특별한 하루를 준비했습니다</p>
+                    </div>
+                    <div class="list">
+                        <div class="swiper"><!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                            <ul class="swiper-wrapper"><!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="imges/main/service01.jpg" alt=""></div>
+                                        <div class="text">
+                                            <h3>야외수영장</h3>
+                                            <p>햇살 가득한 야외수영장에서<br> 시원한 하루를 즐기세요.</p>
+                                            <span>view more</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="imges/main/service02.jpg" alt=""></div>
+                                        <div class="text">
+                                            <h3>야외바베큐</h3>
+                                            <p>노을빛 바베큐로 특별한<br>저녁을 즐겨보세요.</p>
+                                            <span>view more</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="imges/main/service03.jpg" alt=""></div>
+                                        <div class="text">
+                                            <h3>부대시설 및 체험</h3>
+                                            <p>알차게 준비된 체험과 시설로<br>재미를 더해보세요.</p>
+                                            <span>view more</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="imges/main/service04.jpg" alt=""></div>
+                                        <div class="text">
+                                            <h3>주변관광지</h3>
+                                            <p>글램핑장 주변에서<br>소소한 즐거움을 만나보세요.</p>
+                                            <span>view more</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <button class="top">TOP</button>
+                <div class="group">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                            <li><a href="#">실시간예약</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_info">
+                        <div class="info_wrap">
+                            <strong>상호명</strong>
+                            <p>가창글램핑장</p>
+                        </div>
+                        <div class="info_wrap">
+                            <strong>사업자번호</strong>
+                            <p>216-34-01142</p>
+                        </div>
+                        <div class="info_wrap">
+                            <strong>대표자</strong>
+                            <p>채석규</p>
+                        </div>
+                        <div class="info_wrap">
+                            <strong>주소</strong>
+                            <p>대구광역시 달성군 가창면 단산1길 47-1</p>
+                        </div>
+                        <div class="info_wrap">
+                            <strong>전화번호</strong>
+                            <p>010-2129-7555 / 053-767-2222</p>
+                        </div>
+                    </div>
+                    <div class="copyrigh">COPYRIGHTⓒ GACHANG GLAMPING. All Rights Reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

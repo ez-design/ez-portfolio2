@@ -1,0 +1,468 @@
+/* 소개 > 센터장 인사말 */
+
+.ctn_info{
+    position: relative; /*before 배경, 사진, after 로고 정렬의 기준*/
+}
+.ctn_info::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 760px;
+    background-color: var(--bg-main-color);
+    z-index: -1; /* 영역 안에서 맨 아래*/
+}
+.ctn_info::after{
+    content: "";
+    position: absolute;
+    bottom: 21px;
+    right: 0;
+    width: 534px;
+    height: 501px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='535' height='502' viewBox='0 0 535 502' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M460.046 48.1194C460.046 74.341 438.799 95.5884 412.577 95.5884C386.356 95.5884 365.108 74.341 365.108 48.1194C365.108 21.8977 386.356 0.650391 412.577 0.650391C438.799 0.650391 460.046 21.8977 460.046 48.1194Z' fill='%23E55927' fill-opacity='0.05'/%3E%3Cpath d='M528.337 202.967C515.83 153.011 469.995 116.273 418.689 112.435C369.728 108.811 334.907 124.658 310.889 151.093C273.937 191.669 262.922 266.141 229.523 308.565C242.101 342.106 262.922 376.215 266.902 382.042C302.432 351.273 325.101 307.854 344.714 252.639C353.526 227.839 368.448 195.648 400.71 199.13C425.653 201.83 450.738 225.352 440.789 288.028C428.993 362.003 381.95 421.694 341.374 424.608C311.457 426.74 289.144 411.177 273.653 390.285C287.723 409.33 309.112 441.449 354.236 457.296C401.421 473.853 440.86 465.468 464.95 445.002C477.172 431.785 488.329 416.08 497.922 397.889C535.23 327.112 541.057 253.989 528.337 203.11' fill='%23E55927' fill-opacity='0.05'/%3E%3Cpath d='M354.236 456.94C302.291 441.093 264.841 384.102 239.828 330.38C220.712 289.306 209.129 250.862 199.536 224.072C183.618 179.658 149.011 147.539 96.852 150.168C27.7804 153.65 -2.34965 209.007 0.634933 267.988C3.76163 330.238 44.693 407.41 122.505 419.42C148.727 423.47 174.806 423.399 200.957 416.577C241.533 477.406 286.728 499.79 338.603 501.353C381.95 502.632 428.211 484.725 464.879 445.002C440.789 465.538 402.061 471.65 354.236 457.011M154.767 353.688C110.709 354.256 83.4925 329.456 71.2699 287.388C61.4635 253.704 70.0619 230.61 89.6748 226.204C106.161 222.509 120.516 229.046 133.235 266.424C141.194 289.875 147.164 315.67 165 352.835C161.66 353.404 158.249 353.688 154.767 353.688Z' fill='%23F0A227' fill-opacity='0.05'/%3E%3Cpath d='M142.544 95.661C142.544 118.756 123.855 137.445 100.76 137.445C77.6652 137.445 58.9761 118.756 58.9761 95.661C58.9761 72.5661 77.6652 53.877 100.76 53.877C123.855 53.877 142.544 72.5661 142.544 95.661Z' fill='%23F0A227' fill-opacity='0.05'/%3E%3Cmask id='mask0_279_1774' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='150' width='202' height='272'%3E%3Cpath d='M71.2701 287.379C61.4636 253.696 70.062 230.601 89.675 226.195C92.8017 225.485 95.9284 225.201 98.984 225.343V150.018C98.2734 150.018 97.6339 150.018 96.9232 150.018C27.8516 153.5 -2.27845 208.856 0.70613 267.837C3.83283 330.087 44.7642 407.26 122.576 419.269C148.798 423.32 174.878 423.249 201.028 416.427C197.546 411.239 194.135 405.767 190.724 400.012C180.065 381.891 171.751 366.328 165.071 352.756C161.731 353.324 158.32 353.608 154.838 353.608C110.78 354.177 83.5637 329.377 71.3411 287.308' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_279_1774)'%3E%3Cpath d='M33.9751 72.1726L-107.054 374.611L164.664 501.316L305.693 198.877L33.9751 72.1726Z' fill='url(%23paint0_linear_279_1774)' fill-opacity='0.05'/%3E%3C/g%3E%3Cmask id='mask1_279_1774' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='273' y='112' width='262' height='355'%3E%3Cpath d='M528.337 202.962C515.83 153.006 469.996 116.268 418.689 112.43C414.781 112.146 411.015 112.004 407.248 112.004V200.333C429.775 206.302 449.814 230.89 440.718 288.023C428.922 361.998 381.879 421.689 341.303 424.603C311.386 426.735 289.073 411.172 273.582 390.28C287.652 409.325 309.041 441.444 354.165 457.291C401.35 473.848 440.789 465.463 464.879 444.998C477.102 431.78 488.258 416.076 497.852 397.884C535.159 327.107 540.986 253.985 528.266 203.105' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask1_279_1774)'%3E%3Cpath d='M340.518 -3.79187L117.03 383.301L474.275 589.556L697.763 202.464L340.518 -3.79187Z' fill='url(%23paint1_linear_279_1774)' fill-opacity='0.05'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_279_1774' x1='-4.14888' y1='243.464' x2='232.032' y2='353.597' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F0A227'/%3E%3Cstop offset='0.4' stop-color='%23F0A227'/%3E%3Cstop offset='1' stop-color='%23C2631D'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_279_1774' x1='498.119' y1='140.997' x2='325.525' y2='439.939' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E55927'/%3E%3Cstop offset='0.65' stop-color='%23E55927'/%3E%3Cstop offset='1' stop-color='%23BB3921'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.ctn_info .center_tit{
+    padding: 0 42.30% 99px 0;
+}
+.ctn_info .center_tit h2{
+    font-size: var(--center-tit-size);
+    font-weight: var(--bold-weight);
+    color: var(--tit-font-color);
+}
+.ctn_info .center_tit h2 span{
+    /*글자 색 그라데이션*/
+    background-image: linear-gradient(to right, #3FCCFF, #0043BF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.ctn_info .photo{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 160px;
+    width: 29.16%;
+    height: 572px;
+    border-radius: 20px;
+}
+.ctn_info .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ctn_info .center_detail{
+    padding: 0 56.74% 129px 0;
+    font-family: var(--sub-fontfamily);
+}
+.ctn_info .center_detail p{
+    color: var( --tit-font-color);
+}
+.ctn_info .center_detail .center_sign{
+    margin: 61px 0 0 0;
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    color: var( --tit-font-color);
+}
+.ctn_info .center_detail .center_sign span{
+    font-size: var(--center-sign-size);
+}
+
+@media screen and (max-width: 1300px) {
+   .ctn_info .photo{
+        right: 20px;
+        height: 550px;
+    }
+    .ctn_info .center_tit{
+        padding: 0 42.30% 70px 0;
+    }
+    .ctn_info .center_tit h2 br{
+        display: none;
+    }
+    .ctn_info .center_detail{
+        padding: 0 56.74% 40px 0;
+    }
+    .ctn_info .center_detail .center_sign{
+        margin: 61px 0 0 0;
+        display: flex;
+        gap: 19px;
+        align-items: center;
+        color: var( --tit-font-color);
+    }
+}
+@media screen and (max-width: 1024px){
+    .ctn_info::before{
+        display: none;
+    }
+    .ctn_info::after{
+        display: none;
+    }
+    .ctn_info .center_tit{
+        padding: 0 0 40px 0;
+        text-align: center;
+    }
+    .ctn_info .photo{
+        position: relative;
+        overflow: hidden;
+        top: 0;
+        right: auto;
+        width: auto;
+        height: 350px;
+        margin: 0 0 70px 0;
+    }
+    .ctn_info .center_detail{
+        padding: 0;
+    }
+    .ctn_info .center_detail .center_sign{
+        margin: 51px 0 80px 0;
+        gap: 17px;
+    }
+} /*@media ctn_info :: 1024 모바일*/
+
+@media screen and (max-width: 768px){
+    .ctn_info .center_tit{
+        padding: 0 0 20px 0;
+    }
+    .ctn_info .photo{
+        height: 276px;
+        margin: 0 0 36px 0;
+    }
+    .ctn_info .center_detail .center_sign{
+        margin: 41px 0 67px 0;
+        gap: 15px;
+    }
+} /*@media ctn_info :: 768 모바일*/
+
+/* 소개 > 센터장 인사말 :: 끝 */
+
+
+/* 소개 > 찾아오시는 길 */
+
+.ctn_map .sub_text{
+    padding: 0 0 36px 0;
+    border-bottom: 1px solid #ccc;
+    font-family: var(--sub-fontfamily);
+}
+.ctn_map .map{
+    margin: 43px 0 0 0;
+}
+.ctn_map .map iframe{
+    width: 100%;
+    height: 531px;
+    border: 0;
+}
+.ctn_map .map_info{
+    padding: 45px 0 39px 0;
+    margin: 0 0 90px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.ctn_map .map_info .detail_info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--sub-fontfamily);
+}
+.ctn_map .map_info .detail_info .tit h3{
+    font-size: var(--header-font-size);
+    font-weight: var(--extra-bold-weight);
+    line-height: var(--tit-line-height);
+    color: var(--main-font-color);
+}
+.ctn_map .map_info .detail_info .address_group{
+    width: calc(100% - 63px);
+}
+.ctn_map .map_info .detail_info .tel_group{
+    width: calc(100% - 83px);
+}
+.ctn_map .map_info .detail_info  .address_group .txt p:first-child{
+    margin: 0 0 6px 0;
+}
+.ctn_map .map_info .detail_info  .address_group .txt p span{
+    font-weight: var(--bold-weight);
+}
+
+.ctn_map .vehicle_info .tit{
+    padding: 0 0 36px 0;
+    border-bottom: 2px solid var(--tit-font-color);
+}
+.ctn_map .vehicle_info .tit h3{
+    font-size: var(--center-tit-size);
+    font-weight: var(--extra-bold-weight);
+    line-height: var(--tit-line-height);
+    color: var(--tit-font-color);
+}
+.ctn_map .vehicle_type .taxi{
+    padding: 51px 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.ctn_map .vehicle_type .bus{
+    padding: 51px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+.ctn_map .vehicle_type .car{
+    padding: 51px 0 122px 0 ;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+.ctn_map .vehicle_type .taxi .cate{
+    margin: 0 8%;
+    position: relative;
+}
+.ctn_map .vehicle_type .bus .cate{
+    margin: 0 7%;
+    position: relative;
+}
+.ctn_map .vehicle_type .car .cate{
+    margin: 0 6%;
+    position: relative;
+}
+.ctn_map .vehicle_type > div > .cate > h4{
+    font-size: var(--sub-tit-size);
+    font-weight: var(--extra-bold-weight);
+    line-height: var(--tit-line-height);
+    color: var(--tit-font-color);
+}
+.ctn_map .vehicle_type > div > .cate::before{
+    content: "";
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ctn_map .vehicle_type .taxi .cate::before{
+    top: -36px;
+    left: 27px;
+    width: 36px;
+    height: 31px;
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='31' viewBox='0 0 36 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1196 3.66593H20.8669C21.3425 3.66593 21.7281 3.28024 21.7281 2.80463V0.861275C21.7281 0.385664 21.3425 0 20.8669 0H14.1196C13.644 0 13.2583 0.385664 13.2583 0.861275V2.80463C13.2583 3.28024 13.644 3.66593 14.1196 3.66593Z' fill='%232F8EE0' fill-opacity='0.4'/%3E%3Cpath d='M4.28253 30.1359C4.28253 30.6132 4.66942 31 5.14665 31H7.24112C7.71836 31 8.10524 30.6132 8.10524 30.1359V27.1777H4.28294V30.1359H4.28253Z' fill='%232F8EE0' fill-opacity='0.4'/%3E%3Cpath d='M26.8915 30.1359C26.8915 30.6132 27.2783 31 27.7552 31H29.8496C30.3269 31 30.7134 30.6132 30.7134 30.1359V27.1777H26.8911V30.1359H26.8915Z' fill='%232F8EE0' fill-opacity='0.4'/%3E%3Cpath d='M33.3077 16.3771H33.2226C32.5165 16.3771 31.8821 15.9457 31.6228 15.289L29.1228 9.2049C28.3037 6.60241 25.8912 4.83203 23.1627 4.83203H12.1123C9.45711 4.83203 7.09364 6.50963 6.21615 9.01205C6.20603 9.04041 6.1955 9.06877 6.18334 9.09632L3.34142 15.3117C3.06999 15.9436 2.44853 16.3536 1.76064 16.3536C0.810636 16.3536 0.0405021 17.1238 0.0405021 18.0738L0 24.2632C0 25.2132 0.770133 25.9833 1.72014 25.9833L33.2676 26.0064C34.2176 26.0064 34.9878 25.2363 34.9878 24.2863L35.0283 18.0969C35.0279 17.1473 34.2577 16.3771 33.3077 16.3771ZM9.11276 9.7113C9.48749 8.85649 10.3322 8.3039 11.266 8.30349L23.9466 8.29822C24.9189 8.29782 25.7915 8.89579 26.1416 9.80325L27.7766 14.0384L7.22895 14.008L9.11276 9.7113ZM6.19388 21.7624C5.15393 21.7624 4.31047 20.9193 4.31047 19.879C4.31047 18.839 5.15353 17.9956 6.19388 17.9956C7.23422 17.9956 8.07727 18.8386 8.07727 19.879C8.07727 20.9189 7.23382 21.7624 6.19388 21.7624ZM28.8028 21.7624C27.7624 21.7624 26.9194 20.9193 26.9194 19.879C26.9194 18.839 27.7624 17.9956 28.8028 17.9956C29.8427 17.9956 30.6862 18.8386 30.6862 19.879C30.6858 20.9189 29.8427 21.7624 28.8028 21.7624Z' fill='%232F8EE0'/%3E%3C/svg%3E%0A");
+}
+.ctn_map .vehicle_type .bus .cate::before{
+    top: -40px;
+    left: 39px;
+    width: 31px;
+    height: 36px;
+    background-image: url("data:image/svg+xml,%3Csvg width='31' height='36' viewBox='0 0 31 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.9816 15.5258L30.1878 6.95253C29.8229 3.01318 26.5182 0 22.5618 0H8.60162C4.55344 0 1.17136 3.08311 0.798099 7.11425L0.0192274 15.5258C0.00655222 15.663 0 15.8002 0 15.9379V26.5457C0 29.016 2.00267 31.0183 4.47258 31.0183H26.5273C28.9977 31.0183 30.9999 29.016 30.9999 26.5457V15.9379C31.0008 15.8002 30.9942 15.663 30.9816 15.5258ZM5.25013 7.06836C5.34454 5.98792 6.24885 5.15923 7.33323 5.15923H23.668C24.7524 5.15923 25.6567 5.98792 25.7511 7.06836L26.3503 13.9291H4.6509L5.25013 7.06836ZM5.51719 25.6851C4.39522 25.6851 3.48523 24.7756 3.48523 23.6531C3.48523 22.5307 4.39478 21.6212 5.51719 21.6212C6.63959 21.6212 7.54915 22.5307 7.54915 23.6531C7.54915 24.7751 6.63959 25.6851 5.51719 25.6851ZM25.9823 26.0011C24.8603 26.0011 23.9504 25.0916 23.9504 23.9692C23.9504 22.8472 24.8599 21.9372 25.9823 21.9372C27.1047 21.9372 28.0143 22.8468 28.0143 23.9692C28.0143 25.0911 27.1047 26.0011 25.9823 26.0011Z' fill='%232F8EE0'/%3E%3Cpath d='M3.4765 35.0337C3.4765 35.5486 3.89391 35.966 4.40835 35.966H6.66802C7.18289 35.966 7.6003 35.5486 7.6003 35.0337V31.8418H3.4765V35.0337Z' fill='%232F8EE0' fill-opacity='0.4'/%3E%3Cpath d='M23.9206 35.0337C23.9206 35.5486 24.338 35.966 24.8524 35.966H27.1121C27.627 35.966 28.0444 35.5486 28.0444 35.0337V31.8418H23.9206V35.0337Z' fill='%232F8EE0' fill-opacity='0.4'/%3E%3C/svg%3E%0A");
+}
+.ctn_map .vehicle_type .car .cate::before{
+    top: -31px;
+    left: 51px;
+    width: 36px;
+    height: 27px;
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='27' viewBox='0 0 36 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.28253 25.3019C4.28253 25.7792 4.66942 26.1661 5.14665 26.1661H7.24112C7.71836 26.1661 8.10524 25.7792 8.10524 25.3019V22.3438H4.28294V25.3019H4.28253Z' fill='%232F8EE0' fill-opacity='0.4'/%3E%3Cpath d='M26.8915 25.3019C26.8915 25.7792 27.2783 26.1661 27.7552 26.1661H29.8496C30.3269 26.1661 30.7134 25.7792 30.7134 25.3019V22.3438H26.8911V25.3019H26.8915Z' fill='%232F8EE0' fill-opacity='0.4'/%3E%3Cpath d='M33.3077 11.5451H33.2226C32.5165 11.5451 31.8821 11.1137 31.6228 10.457L29.1228 4.37287C28.3037 1.77038 25.8912 0 23.1627 0H12.1123C9.45711 0 7.09364 1.6776 6.21615 4.18002C6.20603 4.20838 6.1955 4.23674 6.18334 4.26429L3.34142 10.4796C3.06999 11.1116 2.44853 11.5216 1.76064 11.5216C0.810636 11.5216 0.0405021 12.2917 0.0405021 13.2417L0 19.4312C0 20.3812 0.770133 21.1513 1.72014 21.1513L33.2676 21.1744C34.2176 21.1744 34.9878 20.4043 34.9878 19.4543L35.0283 13.2648C35.0279 12.3152 34.2577 11.5451 33.3077 11.5451ZM9.11276 4.87926C9.48749 4.02446 10.3322 3.47186 11.266 3.47146L23.9466 3.46619C24.9189 3.46579 25.7915 4.06375 26.1416 4.97122L27.7766 9.20634L7.22895 9.17595L9.11276 4.87926ZM6.19388 16.9304C5.15393 16.9304 4.31047 16.0873 4.31047 15.0469C4.31047 14.007 5.15353 13.1635 6.19388 13.1635C7.23422 13.1635 8.07727 14.0066 8.07727 15.0469C8.07727 16.0869 7.23382 16.9304 6.19388 16.9304ZM28.8028 16.9304C27.7624 16.9304 26.9194 16.0873 26.9194 15.0469C26.9194 14.007 27.7624 13.1635 28.8028 13.1635C29.8427 13.1635 30.6862 14.0066 30.6862 15.0469C30.6858 16.0869 29.8427 16.9304 28.8028 16.9304Z' fill='%232F8EE0'/%3E%3C/svg%3E%0A");
+}
+.ctn_map .vehicle_type > div > .sub_detail{
+    width: 70%;
+}
+.ctn_map .vehicle_type > div > .sub_detail > .inner{
+    display: flex;
+    flex-direction: column;
+}
+.ctn_map .vehicle_type .bus .sub_detail .inner:first-child {
+    margin: 0 0 30px 0;
+}
+.ctn_map .vehicle_type .car .sub_detail p {
+    margin: 0 0 30px 0;
+}
+.ctn_map .vehicle_type .car .sub_detail .inner{
+    margin: 0 0 30px 0;
+}
+.ctn_map .vehicle_type .car .sub_detail .inner:last-child{
+    margin: 0;
+}
+.ctn_map .vehicle_type > div > .sub_detail > .inner strong{
+    font-weight: var(--bold-weight);
+    color: var(--tit-font-color);
+    line-height: var(--tit-line-height);
+    margin: 0 0 13px 0;
+}
+.ctn_map .vehicle_type > div > .sub_detail >.inner span{
+    font-family: var(--sub-fontfamily);
+}
+
+
+@media screen and (max-width: 1024px){
+    .ctn_map .sub_text{
+        padding: 0 0 30px 0;
+    }
+    .ctn_map .map{
+        margin: 33px 0 0 0;
+    }
+    .ctn_map .map iframe{
+        height: 430px;
+    }
+    .ctn_map .map_info{
+        padding: 35px 0 35px 0;
+        margin: 0 0 80px 0;
+        display: block;
+    }
+    .ctn_map .map_info .detail_info{
+        width:  auto;
+        display: flex;
+    }
+    .ctn_map .map_info .detail_info:first-child{
+        margin: 0 0 35px 0;
+    }
+    .ctn_map .map_info .detail_info .address_group{
+        width: calc(100% - 83px);
+    }
+
+    .ctn_map .vehicle_info .tit{
+        padding: 0 0 33px 0;
+    }
+    .ctn_map .vehicle_type .taxi{
+        padding: 41px 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .ctn_map .vehicle_type .bus{
+        padding: 41px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ctn_map .vehicle_type .car{
+        padding: 41px 0 100px 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ctn_map .vehicle_type .taxi .cate{
+        margin: 0 2%;
+    }
+    .ctn_map .vehicle_type .bus .cate{
+        margin: 0 1%;
+    }
+    .ctn_map .vehicle_type .car .cate{
+        margin: 0;
+    }
+    .ctn_map .vehicle_type .taxi .cate::before{
+        left: 24px;
+    }
+    .ctn_map .vehicle_type .bus .cate::before{
+        left: 37px;
+    }
+    .ctn_map .vehicle_type .car .cate::before{
+        left: 42px;
+    }
+    .ctn_map .vehicle_type > div > .sub_detail{
+        width: 80%;
+    }
+    .ctn_map .vehicle_type .bus .sub_detail .inner:first-child {
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .car .sub_detail p {
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .car .sub_detail .inner{
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type > div > .sub_detail > .inner strong{
+        margin: 0 0 10px 0;
+    }
+} /*@media ctn_map :: 1024 모바일*/
+
+@media screen and (max-width: 768px){
+    .ctn_map .sub_text{
+        padding: 0 0 25px 0;
+    }
+    .ctn_map .map{
+        margin: 28px 0 0 0;
+    }
+    .ctn_map .map iframe{
+        height: 312px;
+    }
+    .ctn_map .map_info{
+        padding: 33px 0 33px 0;
+        margin: 0 0 67px 0;
+    }
+    .ctn_map .map_info .detail_info{
+        width:  auto;
+        display: block;
+    }
+    .ctn_map .map_info .detail_info:first-child{
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .map_info .detail_info > .tit > h3{
+        margin: 0 0 10px;
+    }
+    .ctn_map .map_info .detail_info .address_group{
+        width: auto;
+    }
+    .ctn_map .map_info .detail_info .tel_group{
+        width: auto;
+    }
+    .ctn_map .map_info .detail_info  .address_group .txt p:first-child{
+        margin: 0 0 6px 0;
+    }
+
+    .ctn_map .vehicle_info .tit{
+        padding: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .taxi{
+        padding: 40px 0;
+        display: block;
+    }
+    .ctn_map .vehicle_type .bus{
+        padding: 40px 0;
+        display: block;
+    }
+    .ctn_map .vehicle_type .car{
+        padding: 40px 0 67px 0 ;
+        display: block;
+    }
+    .ctn_map .vehicle_type .taxi .cate{
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .bus .cate{
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .car .cate{
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type > div > .cate::before{
+        display: none;
+    }
+    .ctn_map .vehicle_type > div > .sub_detail{
+        width: auto;
+    }
+    .ctn_map .vehicle_type .taxi .sub_detail .inner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 11px;
+    }
+    .ctn_map .vehicle_type .bus .sub_detail .inner:first-child {
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .car .sub_detail p {
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .car .sub_detail .inner{
+        margin: 0 0 25px 0;
+    }
+    .ctn_map .vehicle_type .car .sub_detail .inner:last-child{
+        margin: 0;
+    }
+    .ctn_map .vehicle_type .taxi .sub_detail .inner strong{
+        margin: 0;
+    }
+    .ctn_map .vehicle_type > div > .sub_detail > .inner strong{
+        margin: 0 0 10px 0;
+    }
+} /*@media ctn_map :: 768 모바일*/

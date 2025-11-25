@@ -1,0 +1,44 @@
+/*웹폰트를 선언*/
+
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400; /*Regular는 두께 동일함*/
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../font/Pretendard-Regular.woff2) format('woff2'), url(../font/Pretendard-Regular.woff) format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url(../font/Pretendard-ExtraBold.woff2) format('woff2'), url(../font/Pretendard-ExtraBold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700; 
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../font/Pretendard-Bold.woff2) format('woff2'), url(../font/Pretendard-Bold.woff) format('woff');
+} 
+
+
+@font-face {
+	font-family: 'SUITE';
+	font-weight: 800; 
+	font-display: swap;
+	src: local('SUITE-ExtraBold'), url(../font/SUITE-ExtraBold.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'SUITE';
+	font-weight: 700;
+	font-display: swap;
+	src: local('SUITE-Bold'), url(../font/SUITE-Bold.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'SUITE';
+	font-weight: 400; /*Regular는 두께 동일함*/
+	font-display: swap;
+	src: local('SUITE-Regular'), url(../font/SUITE-Regular.woff2) format('woff2');
+}
+
+
+

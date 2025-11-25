@@ -1,0 +1,43 @@
+/* 웹폰트를 선언 */
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 700;
+	src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+	url('../font/GmarketSansBold.woff2') format('woff2'),
+	url('../font/GmarketSansBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 500;
+	src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+	url('../font/GmarketSansMedium.woff2') format('woff2'), 
+	url('../font/GmarketSansMedium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 300;
+	src: local('Gmarket Sans Light'), local('GmarketSans-Light'),
+	url('../font/GmarketSansLight.woff2') format('woff2'),
+	url('../font/GmarketSansLight.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'NanumSquareNeo';  font-style: normal;    font-weight: 400;
+	src: local('NanumSquareNeo'), local('NanumSquareNeo'),
+	url('../font/NanumSquareNeoTTF-bRg.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'NanumSquareNeo';  font-style: normal;    font-weight: 700;
+	src: local('NanumSquareNeo'), local('NanumSquareNeo'),
+	url('../font/NanumSquareNeoTTF-cBd.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'NanumSquareNeo';  font-style: normal;    font-weight: 800;
+	src: local('NanumSquareNeo'), local('NanumSquareNeo'),
+	url('../font/NanumSquareNeoTTF-dEb.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'NPSfont'; font-weight: 700; font-style: normal;
+    src: url('../font/NPSfontRegular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'NPSfont'; font-weight: 800; font-style: normal;
+    src: url('../font/NPSfontBold.woff2') format('woff2');
+}
+

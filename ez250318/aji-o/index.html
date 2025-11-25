@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery 라이브러리 -->
+    <script src="portfolio/js/jquery-3.7.1.min.js"></script>
+
+    <!-- swiper 라이브러리 -->
+    <script src="portfolio/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="portfolio/css/swiper-bundle.min.css">
+
+    <script src="portfolio/js/main.js"></script>
+    <link rel="stylesheet" href="portfolio/css/main.css">
+    
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>PORTFOLIO</title>
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+            <nav class="gnb">
+                <ul>
+                    <li class="active"><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#hollys">HOLLYS</a></li>
+                    <li><a href="#hyoseng">HYOSENG</a></li>
+                    <li><a href="#nest">NEST</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="swiper"> <!-- fullpage 전체를 감싸는 요소 -->
+        <div class="swiper-wrapper">
+        <section class="swiper-slide home"> <!-- 한페이지 -->
+            <div class="wrapper">
+                <div class="tit">
+                    <h1>PORT<br>FOLIO</h1>
+                    <p>디자인 그 이상, 사용자를 위한 고민을 담아 퍼블리싱합니다</p>
+                </div>
+                <div class="sub_wrap">
+                    <div class="sub_txt">
+                        <span>김 이름</span>
+                        <span>KIM NAME</span>
+                        <span>WEB DESIGNER & WEB PUBLISHER</span>
+                    </div>
+                    <div class="date">
+                        <span>2025<br>PORTFOLIO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="swiper-slide profile">
+            <div class="wrapper">
+                <h2>PROFILE</h2>
+                <div class="box_wrap">
+                    <div class="box1">
+                        <div class="photo"><img src="portfolio/images/pro_01.png" alt="프로필사진"></div>
+                        <div class="txt">
+                            <strong>KIM NAME / 김이름</strong>
+                        </div>
+
+                        <div class="contact">
+                            <span class="tall">010-1234-1234</span>
+                            <span class="email">email@naver.com</span>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <h3>EDUCATION</h3>
+                        <div class="edu">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <strong>2000. 02</strong>
+                                        <span>OO고등학교 졸업</span>
+                                    </li>
+                                    <li>
+                                        <strong>2025. 07</strong>
+                                        <span>이지디자인컴퓨터학원 웹디자인 & 웹퍼블리셔 <br>Ul/UX 과정 수료</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>SKILLS</h3>
+                            <div class="list">
+                                <ul>
+                                    <li class="phoshop"><span>Adobe <br>Photoshop</span></li>
+                                    <li class="illu"><span>Adobe <br>Illustrator</span></li>
+                                    <li class="fig"><span>Figma</span></li>
+                                    <li class="visu"><span>Visual <br>Studio Code</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--//box_wrap-->
+            </div>
+            
+        </section>
+
+        <section class="swiper-slide hollys">
+            <div class="wrapper">
+                <h2>PROJECT - 1</h2>
+                <div class="tit">
+                    <h3>HOLLYS COFFEE</h3>
+                    <a href="hollys/index.html" target="_blank" title="새창열림">개편 홈페이지 이동</a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <strong>프로젝트 기간</strong>
+                            <span>6일</span>
+                        </li>
+                        <li>
+                            <strong>기여도</strong>
+                            <span>디자인 및 퍼블리싱 100%</span>
+                        </li>
+                        <li>
+                            <strong>SKILL</strong>
+                            <span>Figma, Photoshop, Illustrator, <br>Html5, Css, Jquery</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="hollys/index.html" target="_blank" title="새창열림" class="bg_btn"></a>
+            </div>
+        </section>
+
+        <section class="swiper-slide hyoseng">
+            <div class="wrapper">
+                <h2>PROJECT - 2</h2>
+                <div class="tit">
+                    <h3>효성병원</h3>
+                    <a href="hyosung/index.html" target="_blank" title="새창열림">개편 홈페이지 이동</a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <strong>프로젝트 기간</strong>
+                            <span>8일</span>
+                        </li>
+                        <li>
+                            <strong>기여도</strong>
+                            <span>디자인 및 퍼블리싱 100%</span>
+                        </li>
+                        <li>
+                            <strong>SKILL</strong>
+                            <span>Figma, Photoshop, Illustrator, <br>Html5, Css, Jquery</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="hollys/index.html" target="_blank" title="새창열림" class="bg_btn"></a>
+
+            </div>
+            <div class="bg"></div>
+        </section>
+
+        <section class="swiper-slide nest">
+            <div class="wrapper">
+                <h2>PROJECT - 3</h2>
+                <div class="tit">
+                    <h3>NEST HOTEL</h3>
+                    <a href="nest_hotel/index.html" target="_blank" title="새창열림">개편 홈페이지 이동</a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <strong>프로젝트 기간</strong>
+                            <span>7일</span>
+                        </li>
+                        <li>
+                            <strong>기여도</strong>
+                            <span>디자인 및 퍼블리싱 100%</span>
+                        </li>
+                        <li>
+                            <strong>SKILL</strong>
+                            <span>Figma, Photoshop, Illustrator, <br>Html5, Css, Jquery</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="hollys/index.html" target="_blank" title="새창열림" class="bg_btn"></a>
+
+            </div>            
+        </section>
+
+        <section class="swiper-slide contact">
+            <div class="wrapper">
+                <h2>THANK YOU</h2>
+            </div>
+        </section>
+        </div><!--//swiper-wrapper-->
+
+        <div class="cursor"> click </div>
+    </main><!--//swiper-->
+
+
+
+    
+</body>
+</html>

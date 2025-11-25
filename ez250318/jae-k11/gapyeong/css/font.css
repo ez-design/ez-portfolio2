@@ -1,0 +1,21 @@
+/* 웹 폰트를 선언 */
+@font-face {
+    font-family: 'NanumHumanTTFRegular';
+    src: url('../font/NanumHumanTTFRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumHumanTTFBold';
+    src: url('../font/NanumHumanTTFBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumHumanTTFExtraBold';
+    src: url('../font/NanumHumanTTFExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+

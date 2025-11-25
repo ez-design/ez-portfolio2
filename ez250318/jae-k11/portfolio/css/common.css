@@ -1,0 +1,56 @@
+/* 모든 페이지에 공통적으로 들어가는 기본 스타일 */
+html, body {
+    font-family: "Pretendard", "RiaSans";
+    /* 앞에 쓴 서체를 적용 하고 지원이 안되면 두번쨰 서채 적용 */
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5; /* 배수 */
+    color:#555;
+    word-break: keep-all;
+    word-wrap: break-word;
+    /* 단어가 너무 긴 경우 강제로 줄바꿈을 함 */
+}
+.wrapper01 {
+    width: 1260px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+.wrapper02 {
+    width: 1600px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+#wrap {
+    position: relative; /* header 정렬의 기준 */
+    overflow-x: hidden; /* swiper때문에, 가로스크롤 삭제 ,x-가로만 */
+    width: 100%;
+}
+/* 글자를 숨겨야 하는 경우 blind 클래스를 적용 */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent; /* 칼라 투명 */
+}
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000; /* 맨위 */
+    width: 100%;
+}
+.skip_nav a {
+    display: block;
+    text-align: center ;
+    padding: 10px 0;
+    background-color: aqua;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+.skip_nav a:focus {
+    top: 0;
+}

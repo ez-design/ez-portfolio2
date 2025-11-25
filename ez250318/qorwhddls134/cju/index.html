@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css?v=2507111140">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/count.js"></script>
+    <title>청주대학교</title>
+</head>
+<body>
+    <div class="skip_nav">
+        <a href="skip_content">본문바로가기</a>
+    </div>
+    <div id="wrap">
+        <header>
+            <div class="bg_photo"><img src="images/common/header_bg.jpg" alt=""></div>
+            <h1 class="logo"><a href="index.html"><span class="blind">청주대학교</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_util">
+                        <div class="login">
+                            <a href="#"><span>로그인</span></a>
+                        </div>
+                        <div class="lang">
+                            <button class="lang_open"><span>Language</span></button>
+                        </div>
+                    </div>
+                    <ul class="depth1">
+                        <li class="open">
+                            <a href="#"><span>대학소개</span></a>
+                            <div class="menu_box">
+                                <div class="box_tit"><span>대학소개</span></div>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#"><span>학교소개</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>학교 이념</span></a></li>
+                                            <li><a href="#"><span>연혁</span></a></li>
+                                            <li><a href="#"><span>학교상징</span></a></li>
+                                            <li><a href="#"><span>CJU홍보관</span></a></li>
+                                            <li><a href="#"><span>역사관</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>CJU2030</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>중장기발전계획</span></a></li>
+                                            <li><a href="#"><span>특성화추진계획</span></a></li>
+                                            <li><a href="#"><span>CJU2030 요약본</span></a></li>
+                                            <li><a href="#"><span>학사구조개편결과</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>열린총장실</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>총장인사말</span></a></li>
+                                            <li><a href="#"><span>총장프로필</span></a></li>
+                                            <li><a href="#"><span>총장님께 바랍니다</span></a></li>
+                                            <li><a href="#"><span>역대총장</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>학교법인</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>이사장인사말</span></a></li>
+                                            <li><a href="#"><span>임원소개</span></a></li>
+                                            <li><a href="#"><span>이사회 회의록</span></a></li>
+                                            <li><a href="#"><span>발전기금 현황</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" target="_blank"><span>대학정보</span></a></li>
+                                    <li><a href="#" target="_blank"><span>대학기관</span></a></li>
+                                    <li>
+                                        <a href="#"><span>캠퍼스안내</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>캠퍼스 맵</span></a></li>
+                                            <li><a href="#"><span>통학버스</span></a></li>
+                                            <li><a href="#"><span>주차시설 안내</span></a></li>
+                                            <li><a href="#"><span>찾아오시는 길</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a href="#" class="box_close"><span class="blind">메뉴닫기</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>입학안내</span></a>
+                            <div class="menu_box">
+                                <div class="box_tit"><span>입학안내</span></div>
+                                <ul class="depth2">
+                                    <li><a href="#" target="_blank"><span>대학입학</span></a></li>
+                                    <li><a href="#" target="_blank"><span>대학원입학</span></a></li>
+                                    <li><a href="#" target="_blank"><span>평생교육원</span></a></li>
+                                    <li><a href="#" target="_blank"><span>의사소통교육부</span></a></li>
+                                </ul>
+                                <a href="#" class="box_close"><span class="blind">메뉴닫기</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>대학/대학원</span></a>
+                            <div class="menu_box">
+                                <div class="box_tit"><span>대학/대학원</span></div>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#"><span>대학</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>경상대학</span></a></li>
+                                            <li><a href="#"><span>인문사회대학</span></a></li>
+                                            <li><a href="#"><span>공과대학</span></a></li>
+                                            <li><a href="#"><span>AI/SW융합 대학</span></a></li>
+                                            <li><a href="#"><span>사범대학</span></a></li>
+                                            <li><a href="#"><span>예술대학</span></a></li>
+                                            <li><a href="#"><span>보건의료과학대학</span></a></li>
+                                            <li><a href="#"><span>교양대학</span></a></li>
+                                            <li><a href="#"><span>직할학부</span></a></li>
+                                            <li><a href="#"><span>자유전공학부</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank"><span>일반대학원</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>특수대학원</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>사회복지/공공정책대학원</span></a></li>
+                                            <li><a href="#"><span>보건의료대학원</span></a></li>
+                                            <li><a href="#"><span>융합신기술대학원</span></a></li>
+                                            <li><a href="#"><span>예술대학원</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a href="#" class="box_close"><span class="blind">메뉴닫기</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>학사안내</span></a>
+                            <div class="menu_box">
+                                <div class="box_tit"><span>학사안내</span></div>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#" target="_blank"><span>학사일정</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>교과과정</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>역량기반교육과정</span></a></li>
+                                            <li><a href="#"><span>교육과정개편로드맵</span></a></li>
+                                            <li><a href="#"><span>교육과정편람</span></a></li>
+                                            <li><a href="#"><span>복수전공/부전공</span></a></li>
+                                            <li><a href="#"><span>자기설계전공</span></a></li>
+                                            <li><a href="#"><span>융복합 교육과정</span></a></li>
+                                            <li><a href="#"><span>일반전공트랙</span></a></li>
+                                            <li><a href="#"><span>교원양성과정</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>수업</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>수강신청 안내</span></a></li>
+                                            <li><a href="#"><span>강의시간 및 강의실</span></a></li>
+                                            <li><a href="#"><span>성적예고제</span></a></li>
+                                            <li><a href="#"><span>시험 및 성적</span></a></li>
+                                            <li><a href="#"><span>집중학기제</span></a></li>
+                                            <li><a href="#"><span>유연학기제</span></a></li>
+                                            <li><a href="#"><span>계절학기</span></a></li>
+                                            <li><a href="#"><span>사회봉사과목 이수</span></a></li>
+                                            <li><a href="#"><span>취업관련 교과목 이수</span></a></li>
+                                            <li><a href="#"><span>강의평가</span></a></li>
+                                            <li><a href="#"><span>전자출결(헤이영캠퍼스)</span></a></li>
+                                            <li><a href="#"><span>공결허가</span></a></li>
+                                            <li><a href="#"><span>휴강/보강</span></a></li>
+                                            <li><a href="#"><span>2주연속결석자</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>학적</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>재입학</span></a></li>
+                                            <li><a href="#"><span>휴ㆍ복학</span></a></li>
+                                            <li><a href="#"><span>전공배정</span></a></li>
+                                            <li><a href="#"><span>전과</span></a></li>
+                                            <li><a href="#"><span>유급ㆍ제적</span></a></li>
+                                            <li><a href="#"><span>수료자 졸업안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>등록</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>등록금 납부안내</span></a></li>
+                                            <li><a href="#"><span>학자금 대출안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" target="_blank"><span>졸업</span></a></li>
+                                    <li><a href="#" target="_blank"><span>ROAD-MAP</span></a></li>
+                                    <li>
+                                        <a href="#"><span>증명서발급</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>학적증명서발급</span></a></li>
+                                            <li><a href="#"><span>학생증발급</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>유학생 학사안내</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>학사안내</span></a></li>
+                                            <li><a href="#"><span>유학생체류</span></a></li>
+                                            <li><a href="#"><span>학생증발급</span></a></li>
+                                            <li><a href="#"><span>아르바이트</span></a></li>
+                                            <li><a href="#"><span>유학생 생활</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a href="#" class="box_close"><span class="blind">메뉴닫기</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>캠퍼스생활</span></a>
+                            <div class="menu_box">
+                                <div class="box_tit"><span>캠퍼스생활</span></div>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#"><span>장학</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>교내장학</span></a></li>
+                                            <li><a href="#"><span>해외연수장학</span></a></li>
+                                            <li><a href="#"><span>역량마일리지장학</span></a></li>
+                                            <li><a href="#"><span>교외장학</span></a></li>
+                                            <li><a href="#"><span>학자금융자제도</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>병무</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>병무안내</span></a></li>
+                                            <li><a href="#"><span>예비군</span></a></li>
+                                            <li><a href="#"><span>학군단</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>학생지원</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>진로취업지원포털</span></a></li>
+                                            <li><a href="#"><span>봉사활동지원</span></a></li>
+                                            <li><a href="#"><span>학생상담지원</span></a></li>
+                                            <li><a href="#"><span>국제교류</span></a></li>
+                                            <li><a href="#"><span> 인증제 안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>학생활동</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>학생회</span></a></li>
+                                            <li><a href="#"><span>동아리</span></a></li>
+                                            <li><a href="#"><span>포상/징계</span></a></li>
+                                            <li><a href="#"><span>학생단체여행 및 연수</span></a></li>
+                                            <li><a href="#"><span>학생행사 및 집회</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>편의시설 안내</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>생활관</span></a></li>
+                                            <li><a href="#"><span>대학문화관</span></a></li>
+                                            <li><a href="#"><span>학생보건실</span></a></li>
+                                            <li><a href="#"><span>대천수련원</span></a></li>
+                                            <li><a href="#"><span>석우문화체육관</span></a></li>
+                                            <li><a href="#"><span>재학생편의시설</span></a></li>
+                                            <li><a href="#"><span>셔틀(통학)버스</span></a></li>
+                                            <li><a href="#"><span>주차시설 안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>교내시설 이용신청</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>이용신청 안내</span></a></li>
+                                            <li><a href="#"><span>공연 및 행사시설</span></a></li>
+                                            <li><a href="#"><span>세미나실</span></a></li>
+                                            <li><a href="#"><span>강의실</span></a></li>
+                                            <li><a href="#"><span>체육시설</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>온라인서비스</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>원스톱 서비스</span></a></li>
+                                            <li><a href="#"><span>폰트저작권 안내</span></a></li>
+                                            <li><a href="#"><span>네트워크 서비스</span></a></li>
+                                            <li><a href="#"><span>무선인터넷</span></a></li>
+                                            <li><a href="#"><span>인터넷 메일 서비스</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>복지혜택 안내</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>협약체결기관</span></a></li>
+                                            <li><a href="#"><span>후원의 집</span></a></li>
+                                            <li><a href="#"><span>복지할인몰</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" target="_blank"><span>메타버스 캠퍼스</span></a></li>
+                                </ul>
+                                <a href="#" class="box_close"><span class="blind">메뉴닫기</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>소통공간</span></a>
+                            <div class="menu_box">
+                                <div class="box_tit"><span>소통공간</span></div>
+                                <ul class="depth2">
+                                    <li><a href="#" target="_blank"><span>공지사항</span></a></li>
+                                    <li>
+                                        <a href="#"><span>참여게시판</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>청대인 게시판</span></a></li>
+                                            <li><a href="#"><span>자주하는 질문</span></a></li>
+                                            <li><a href="#"><span>온라인 민원</span></a></li>
+                                            <li><a href="#"><span>온라인 설문조사</span></a></li>
+                                            <li><a href="#"><span>홈페이지 개선사항</span></a></li>
+                                            <li><a href="#"><span>칭찬합시다</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>생활게시판</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>벼룩 시장</span></a></li>
+                                            <li><a href="#"><span>취업ㆍ아르바이트</span></a></li>
+                                            <li><a href="#"><span>유실물 센터</span></a></li>
+                                            <li><a href="#"><span>식단표</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>자료실</span></a>
+                                        <ul class="depth3">
+                                            <li><a href="#"><span>서식자료실</span></a></li>
+                                            <li><a href="#"><span>일반자료실</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a href="#" class="box_close"><span class="blind">메뉴닫기</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+            </nav>
+            <div class="util">
+                <div class="login">
+                    <a href="#"><span>로그인</span></a>
+                </div>
+                <div class="lang">
+                    <button class="lang_open"><span>Language</span></button>
+                </div>
+                <div class="search">
+                    <button class="search_open"><span class="blind">검색</span></button>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual01.jpg" alt=""></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <h3>미래를 연다, <br>세계로 간다 청주대학교</h3>
+                                    <p>청주대학교는 새로운 가치를 만드는 중심이 되겠습니다</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual02.jpg" alt=""></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <h3>자연속의 첨단캠퍼스! <br>열린 실용학풍 대학!</h3>
+                                    <p>청주대학교는 새로운 가치를 만드는 중심이 되겠습니다</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual03.jpg" alt=""></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <h3>민족사학 76년 역사, <br>더 큰 미래를 향해 도약!</h3>
+                                    <p>청주대학교는 새로운 가치를 만드는 중심이 되겠습니다</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="paging"></div>
+                </div>
+                <div class="ctrl_wrap">
+                    <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                    <button class="btn_stop"><span class="blind">일시정지</span></button>
+                    <button class="btn_play"><span class="blind">재생</span></button>
+                    <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                </div>
+            </div>
+            <div class="service">
+                <div class="wrapper">
+                    <div class="list">
+                        <div class="swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide"><a href="#" class="service01"><span>차세대포털시스템</span></a></li>
+                                <li class="swiper-slide"><a href="#" class="service02"><span>국제교류처</span></a></li>
+                                <li class="swiper-slide"><a href="#" class="service03"><span>취창업지원단</span></a></li>
+                                <li class="swiper-slide"><a href="#" class="service04"><span>평생교육원</span></a></li>
+                                <li class="swiper-slide"><a href="#" class="service05"><span>증명서발급</span></a></li>
+                                <li class="swiper-slide"><a href="#" class="service06"><span>산학협력단</span></a></li>
+                                <li class="swiper-slide"><a href="#" class="service07"><span>발전기금</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notice">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>NOTICE</h2>
+                    </div>
+                    <div class="list">
+                        <div class="tab_list">
+                            <ul class="tablist">
+                                <li role="tab" aria-selected="true" class="item1 active" data-content="tab_item1"><button>학사 <span class="blind">선택됨</span></button></li>
+                                <li role="tab" aria-selected="false" class="item2" data-content="tab_item2"><button>장학 <span class="blind"></span></button></li>
+                                <li role="tab" aria-selected="false" class="item3" data-content="tab_item3"><button>입학 <span class="blind"></span></button></li>
+                                <li role="tab" aria-selected="false" class="item4" data-content="tab_item4"><button>채용 <span class="blind"></span></button></li>
+                                <li role="tab" aria-selected="false" class="item5" data-content="tab_item5"><button>일반 <span class="blind"></span></button></li>
+                            </ul>
+                        </div>
+                        <div class="tab_content">
+                            <div class="tab_item item1 active" id="tab_item1">
+                                <h3 class="blind">학사공지</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>2025-2학기 재입학생 선발 결과 안내</h4>
+                                            <span>2025.07.02</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>2024학년도 후기(2025.08.졸업) 학사학위취득유예(졸업유예) 안내</h4>
+                                            <span>2025.07.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>2025-2학기 유급 시행 안내</h4>
+                                            <span>2025.07.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>2025년 여름방학 토익 집중캠프 입소식(필참) 및 개강 안내</h4>
+                                            <span>2025.06.30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>2025학년도 찾아보기UP! 지역기업 발굴 및 가치창출 프로그램 참가학생 모집(연장)</h4>
+                                            <span>2025.06.30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>2025 CJU 인문강좌 '리좀' 수강생 모집</h4>
+                                            <span>2025.06.26</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>2025학년도 하계 계절학기 등록금 납부 안내(추가) 및 수강취소 안내</h4>
+                                            <span>2025.06.25</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>학사</strong>
+                                            <h4>[NAVI DAY] 2025년 6월 네 번째 소식지</h4>
+                                            <span>2025.06.23</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab_item item2" id="tab_item2">
+                                <h3 class="blind">장학공지</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>2025 YWCA 길·꿈기회찾기 프로젝트 신청기간 연장 안내</h4>
+                                            <span>2025.07.04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>2025학년도 재학생 보훈장학 신규 신청 안내</h4>
+                                            <span>2025.07.03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>2025-2학기 학원교직장학(고지서 감면) 신청 안내</h4>
+                                            <span>2025.07.03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>2025-2학기 청대가족장학 1차(등록금 고지서 감면) 신청 안내</h4>
+                                            <span>2025.07.03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>2025년 1학기 주거안정장학금 6월분 지급요청서 제출 안내</h4>
+                                            <span>2025.07.02</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>[국립국제교육원] 2025-2026 불가리아 정부초청 장학생 선발 안내</h4>
+                                            <span>2025.07.02</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>2025년 하반기 한·미 대학생 연수(WEST) 프로그램 참가자 모집 안내</h4>
+                                            <span>2025.06.27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>장학</strong>
+                                            <h4>2026-2027 독일정부초청장학생(DAAD) 선발 안내</h4>
+                                            <span>2025.06.27</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab_item item3" id="tab_item3">
+                                <h3 class="blind">입학공지</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2026학년도 예체능전형 미술실기 실기고사 문제은행(만화애니메이션학과 제외)</h4>
+                                            <span>2025.06.10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2026학년도 신입학 순수외국인 모집요강 안내</h4>
+                                            <span>2025.05.31</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2026학년도 신입학 재외국민과 외국인 모집요강 안내</h4>
+                                            <span>2025.05.30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2026학년도 신입학 수시모집 모집요강 안내</h4>
+                                            <span>2025.05.30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2027학년도 청주대학교 대학입학전형 시행계획 안내</h4>
+                                            <span>2025.04.30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2025학년도 입학전형 선행학습 영향평가 보고서</h4>
+                                            <span>2025.03.31</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2025학년도 추가모집 2차 충원(추가) 합격자 발표 안내</h4>
+                                            <span>2025.02.27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>입학</strong>
+                                            <h4>2025학년도 신입학 추가모집 2차 모집요강 안내(2025.02.26. 15시 30분 기준)</h4>
+                                            <span>2025.02.25</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab_item item4" id="tab_item4">
+                                <h3 class="blind">채용공지</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>전산정보팀 조교 모집 안내</h4>
+                                            <span>2025.07.08</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>[생활관운영팀] 생활관 조교(우암 1,2동(남) / 진원관(남)) 모집</h4>
+                                            <span>2025.07.08</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>[공개채용] 2025년 하반기 개발협력 영프로페셔널(YP) 채용 공고</h4>
+                                            <span>2025.07.07</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>[제약공학과] 일반조교 모집</h4>
+                                            <span>2025.07.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>대학일자리플러스센터 재학생 맞춤형 고용서비스 · 졸업생 특화 프로그램 사업 전담 컨설턴트 채용 공고</h4>
+                                            <span>2025.06.30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>[항공서비스학과] 일반조교 모집</h4>
+                                            <span>2025.06.27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>[군사학과] 실습조교 모집(1명)</h4>
+                                            <span>2025.06.26</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>채용</strong>
+                                            <h4>[항공운항학과] 실습조교 모집</h4>
+                                            <span>2025.06.24</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab_item item5" id="tab_item5">
+                                <h3 class="blind">일반공지</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>캠퍼스 전산망 장비점검 안내</h4>
+                                            <span>2025.07.08</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>KT 에이블스쿨 8기 모집(지역인재추천-7월 25일까지)</h4>
+                                            <span>2025.07.07</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>[취업지원팀] 주간채용정보지 550호(07.07)</h4>
+                                            <span>2025.07.07</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>2025년 청춘예찬 모범병사 병역이행 수기 공모전 참가 안내</h4>
+                                            <span>2025.07.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>[취업지원팀] 주간채용정보지 549호(06.30)</h4>
+                                            <span>2025.06.30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>2025년 ESG경영인사이트전문가 자격 과정 안내</h4>
+                                            <span>2025.06.27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>2025년 물산업 단기 진로(취업)캠프 교육생 모집</h4>
+                                            <span>2025.06.27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>일반</strong>
+                                            <h4>2025년 의약품 MR/마케팅 직무과정 교육생 모집</h4>
+                                            <span>2025.06.26</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="more"><span class="blind">더보기</span></a>
+                </div>
+            </div>
+            <div class="news">
+                <div class="wrapper">
+                    <h2>NEWS</h2>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="news_txt">
+                                    <h3>청주대, ‘세계 3대 디자인어워드’ 석권</h3>
+                                    <p>
+                                        청주대학교(총장 김윤배)가 '2025 레드닷 디자인어워드 디자인컨셉' 분야에서 본상을 수상하며 ‘세계 3대 디자인어워드 18년 연속 수상’이라는 대기록을 달성했다.
+                                        청주대는 올해 독일 '이프 디자인어워드' 1점, 미국 '아이디어 디자인어워드' 4점 수상에 이어 최근 독일 '레드닷 디자인어워드' 2점까지 세계 3대 디자인어워드 모두에서 총 7점의 본상을 수상하며 그랜드슬램을 달성했다고 2일 밝혔다.
+                                        특히 ‘세계 3대 디자인어워드 18년 연속 수상’이라는 진기록을 달성하며 대한민국 디자인교육의 위상을 한층 드높였다. 
+                                        이번 레드닷 디자인어워드 본상 수상자는 산업디자인학과 김동희(20), 최원정(22) 학생이다. 이들 학생은 각각 운송디자인과 제품디자인 컨셉 부문에서 혁신적인 프로젝트 아이디어로 심사위원들로부터 높은 평가를 받았다.
+                                    </p>
+                                    <a href="#" class="more"><span>자세히보기</span></a>
+                                </div>
+                                <div class="photo_bg"></div>
+                                <div class="photo"><img src="images/main/news01.jpg" alt=""></div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_txt">
+                                    <h3>청주대-청주시문화산업진흥재단 업무협약</h3>
+                                    <p>
+                                        청주대학교(총장 김윤배) 산학협력단은 청주지역 문화예술 교육 활성화와 ‘SK하이닉스가 함께하는 문화예술융합아카데미(CACA)’의 원활한 운영을 위해 청주시문화산업진흥재단과 업무협약(MOU)를 체결했다.
+                                        이번 협약을 통해 양 기관은 각자가 보유한 우수한 인적·물적 자원을 바탕으로, 청주 지역의 초·중·고등학생들을 대상으로 한 통합예술교육을 공동으로 추진하기로 합의했다. 이를 통해 학생들이 문화예술 활동을 통해 창의력과 바른 가치관을 함양하고, 공동체에 대한 책임의식을 기를 수 있도록 지원할 계획이다.
+                                    </p>
+                                    <a href="#" class="more"><span>자세히보기</span></a>
+                                </div>
+                                <div class="photo_bg"></div>
+                                <div class="photo"><img src="images/main/news02.jpg" alt=""></div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_txt">
+                                    <h3>청주대 산학협력단-한국존슨앤드존슨 업무협약</h3>
+                                    <p>
+                                        청주대학교(총장 김윤배) 산학협력단은 주식회사 한국존슨앤드존슨(켄뷰)과 ‘컨슈머 헬스케어산업 진흥 및 지역정주 인재양성을 위한 업무협약’을 체결했다고 27일 밝혔다.
+                                        이날 협약식에는 홍양희 산학협력부총장과 정현자 산학협력단 교수, 김태형 항공기계공학과 교수, 김수정 ㈜한국존슨앤드존슨(켄뷰) 청주공장장, 박종철 공무과 부서장, 김예림 인사담당 등 관계자가 참석했다.
+                                    </p>
+                                    <a href="#" class="more"><span>자세히보기</span></a>
+                                </div>
+                                <div class="photo_bg"></div>
+                                <div class="photo"><img src="images/main/news03.jpg" alt=""></div>
+                            </li>
+                        </ul>
+                        <div class="paging"></div>
+                        <div class="ctrl_wrap">
+                            <button class="btn_prev"></button>
+                            <button class="btn_next"></button>
+                        </div>
+                    </div>
+                    <a href="#" class="news_more"><span class="blind">더보기</span></a>
+                </div>
+            </div>
+            <div class="pride">
+                <div class="wrapper">
+                    <div class="pride_txt">
+                        <h2><span>CJU</span> <br>PRIDE</h2>
+                        <p>
+                            실용학문을 바탕으로 성숙한 <br>
+                            문화세계를 창조 <br>
+                            청주대학교
+                        </p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="list01">
+                                <strong><span class="counter" data-start="0" data-end="98">98</span>.<span class="counter" data-start="0" data-end="5">5</span></strong>
+                                <span>%</span>
+                                <p>2024년도 재학생 <br>충원률</p>
+                            </li>
+                            <li class="list02">
+                                <strong><span class="counter" data-start="0" data-end="66">66</span>.<span class="counter" data-start="0" data-end="5">5</span></strong>
+                                <span>%</span>
+                                <p>2023년도 취업률</p>
+                            </li>
+                            <li class="list03">
+                                <strong><span class="counter" data-start="0" data-end="99">99</span>.<span class="counter" data-start="0" data-end="9">9</span></strong>
+                                <span>%</span>
+                                <p>2025년도 신입생 <br>충원률</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="community">
+                <div class="wrapper">
+                    <div class="com_tit">
+                        <h2>COMMUNITY</h2>
+                        <p>톡톡! 소통을 나눠요</p>
+                        <a href="#" class="more"><span>자세히 보기</span></a>
+                    </div>
+                    <div class="photo"><a href="#"><img src="images/main/community01.jpg" alt=""></a></div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="#"><img src="images/main/community01.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/main/community02.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/main/community03.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="com_more"><span class="blind">더보기</span></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="group01">
+                    <div class="family_site">
+                        <button class="family_open" title="열기">대학/대학원 홈페이지</button>
+                        <ul class="family_txt">
+                            <li>
+                                <a href="#" class="txt_tit">대학</a>
+                                <ul>
+                                    <li><a href="#">경상대학</a></li>
+                                    <li><a href="#">인문사회대학</a></li>
+                                    <li><a href="#">공과대학</a></li>
+                                    <li><a href="#">사범대학</a></li>
+                                    <li><a href="#">예술대학</a></li>
+                                    <li><a href="#">보건의료과학대학</a></li>
+                                    <li><a href="#">교양대학</a></li>
+                                    <li><a href="#">직할학부</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="txt_tit">대학원</a>
+                                <ul>
+                                    <li><a href="#">일반대학원</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="txt_tit">특수대학원</a>
+                                <ul>
+                                    <li><a href="#">사회복지ㆍ공공정책대학원</a></li>
+                                    <li><a href="#">보건의료대학원</a></li>
+                                    <li><a href="#">융합신기술대학원</a></li>
+                                    <li><a href="#">예술대학원</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="family_close" title="닫기">대학/대학원 홈페이지</button>
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li class="youtube"><a href="#"><span class="blind">유튜브</span></a></li>
+                            <li class="facebook"><a href="#"><span class="blind">페이스북</span></a></li>
+                            <li class="instagram"><a href="#"><span class="blind">인스타그램</span></a></li>
+                            <li class="blog"><a href="#"><span class="blind">블로그</span></a></li>
+                            <li class="kakao"><a href="#"><span class="blind">카카오톡</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group02">
+                    <div class="logo"><img src="images/common/f_logo.svg" alt=""></div>
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#">이메일주소수집거부</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                            <li><a href="#">대학별정보공시</a></li>
+                            <li><a href="#">예결산공고</a></li>
+                            <li><a href="#">채용공고</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_info">
+                        <address>[28503] 충청북도 청주시 청원구 대성로 298</address>
+                        <span>TEL : 043-229-8114</span>
+                        <span>FAX : 043-229-8110</span>
+                        <span>사업자등록번호 : 301-82-00345</span>
+                    </div>
+                    <div class="copyright">COPYRIGHTⓒ 2017 CHEONGJU UNIVERSITY. ALL RIGHTS RESERVED.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

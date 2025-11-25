@@ -1,0 +1,126 @@
+/* 모든 페이지에 공통으로 들어가는 기본 스타일 */
+body {
+    font-family: "Pretendard", "sans-serif";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5; /* 단위는 배수로 한다. */
+    color: #555;
+    word-break: keep-all; /* 단어별 줄바꿈(스페이스 기준)*/
+    word-wrap: break-word; /* 단어가 너무 긴 경우 강제로 줄바꿈 */
+}
+.wrapper {
+    width: 1440px;
+    margin: 0 auto; /* 가운데 */
+}
+#wrap {
+    /*
+        1440 + 왼쪽여백(90) + 오른쪽여백(90) = 1,620
+    */
+    position: relative; /* header 정렬의 기준 */
+    overflow-x: hidden; /* 가로스크롤바 삭제*/
+    width: 100%;
+}
+
+@media screen and (max-width:1620px) { /* 90+90 + 1440 = 1,620 */
+    .wrapper {
+        width: auto;
+        margin: 0 90px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 16px;
+    }                
+    .wrapper {
+        width: auto; /* 모바일 좌우여백 20px*/
+        margin: 0 20px;
+    }
+    #wrap {
+        min-width: 0; 
+    }
+}    /* 브라우저 넓이가 768px 이하에서만 작동 */
+
+
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+:root {
+    --header-h: 90px; /* header의 높이 */
+    --header-h-m: -90px; /* header 높이의 마이너스값*/
+    --tit-color: #1b1b1b;
+    --point-color: #3777BC;
+    --sub-color: #37BCA6;
+    --visual-color: #FFE100;
+    --gray-color: #F0F4FA;
+    --white-color: #fff;
+    --bold-weight: 700;
+    --tit-line-height: 1.2;
+
+    --visual-font-size: 60px;
+    --visual-subfont-size: 35px;
+    --h2-font-size: 40px;
+    --h3-font-size: 25px;
+    --sub-font-size:19px;
+
+
+    --default-font-size: 17px;
+}
+
+@media screen and (max-width:1440px) {
+    :root {
+        --visual-font-size: 55px;
+        --visual-subfont-size: 25px;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    :root {
+        --visual-font-size: 50px;
+        --visual-subfont-size: 22px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    :root {
+        --header-h: 56px; /* 모바일 header의 높이 */
+        --header-h-m: -56px; /* 모바일 header 높이의 마이너스값*/
+
+        --visual-font-size: 45px;
+        --visual-subfont-size: 20px;
+        --h2-font-size: 40px;
+        --h3-font-size: 20px;
+        --sub-font-size:17px;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        --visual-font-size: 40px;
+        --visual-subfont-size: 18px;
+
+        --h2-font-size: 26px;
+        --h3-font-size: 18px;
+
+        --sub-font-size:16px;
+        --default-font-size: 16px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    :root {
+        --visual-font-size: 35px;
+        --visual-subfont-size: 17px;
+    }
+}

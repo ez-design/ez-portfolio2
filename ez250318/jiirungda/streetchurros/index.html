@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery 라이브러리-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!--swiper 라이브러리-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="images/x-icon">
+    <title>스트릿츄러스</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 
+            고정될때 fixed 
+            메뉴가 상단으로 사라질때 gnb_up 
+            pc버전에서 메뉴에 마우스를 오버하면 menu_over
+        -->
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">스트릿츄러스</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <ul class="depth1"><!--1차메뉴-->
+                        <li>
+                            <a href="#"><span>스트릿 츄러스</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>스토리</span></a></li>
+                                <li><a href="#"><span>CEO인사말</span></a></li>
+                                <li><a href="#"><span>연혁/조직</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>메뉴소개</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>츄러스</span></a></li>
+                                <li><a href="#"><span>커피&음료</span></a></li>
+                                <li><a href="#"><span>아이스크림</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>매장안내</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>국내</span></a></li>
+                                <li><a href="#"><span>해외</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>채용안내</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>인재상</span></a></li>
+                                <li><a href="#"><span>복리후생</span></a></li>
+                                <li><a href="#"><span>채용정보</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>커뮤니티</span></a>
+                            <ul class="depth2"><!--2차메뉴-->
+                                <li><a href="#"><span>공지사항</span></a></li>
+                                <li><a href="#"><span>방송&뉴스</span></a></li>
+                                <li><a href="#"><span>고객문의</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--gnb_wrap-->
+                <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+            </nav>
+            <div class="stup"><a href="#"><span>창업안내</span></a></div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                    <h2 class="blind">팝업</h2>
+                    <div class="swiper"><!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                            <li class="swiper-slide">
+                                <div class="photo">
+                                    <img src="imges/main/visual01.jpg" class="pc_img" alt="">
+                                    <img src="imges/main/visual01_m.jpg" class="m_img" alt="">
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="photo">
+                                    <img src="imges/main/visual02.jpg" class="pc_img" alt="">
+                                    <img src="imges/main/visual02_m.jpg" class="m_img" alt="">
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="photo">
+                                    <img src="imges/main/visual03.jpg" class="pc_img" alt="">
+                                    <img src="imges/main/visual03_m.jpg" class="m_img" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                        <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                    </div><!--btn_wrap--> 
+            </section>
+            <section class="category">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>OTHER <span>MENU</span></h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/menu01.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>츄러스</h3>
+                                        <p>매일 아침, 신선한 재료로<br>정서껏 구워낸 따뜻한 츄러스</p>
+                                        <div class="more"><span>view more</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/menu02.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>커피 & 음료</h3>
+                                        <p>고소한 풍미가 어우러진<br>커피, 음료를 즐겨보세요</p>
+                                        <div class="more"><span>view more</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/menu03.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>아이스크림</h3>
+                                        <p>입안 가득 퍼지는 달콤함을<br>한번에 즐기는 아이스크림</p>
+                                        <div class="more"><span>view more</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="snsarea">
+                <div class="tit">
+                    <h2><span>INSTA</span>GRAM</h2>
+                </div>
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/snsarea01.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>@streetchurros.korea</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/snsarea02.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>@streetchurros.korea</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/snsarea03.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>@streetchurros.korea</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/snsarea04.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>@streetchurros.korea</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/snsarea05.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>@streetchurros.korea</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="imges/main/snsarea06.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>@streetchurros.korea</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rolling">
+                    <p>STREET CHURROS STREET CHURROS STREET CHURROS STREET CHURROS</p>
+                </div>
+            </section>
+            <section class="banner">
+                <div class="wrapper">
+                    <h2 class="blind">매장창업안내</h2>
+                    <div class="box">
+                        <div class="left_box">
+                            <div class="photo"><img src="imges/main/banner01.jpg" alt=""></div>
+                            <div class="txt">
+                                <h3>매장정보</h3>
+                                <p>내 주변 가까운<br> ‘Street Churros’를 찾아보세요.</p>
+                                <a href="#"><span class="blind">더보기</span></a>
+                            </div>
+                        </div>
+                        <div class="right_box">
+                            <div class="photo"><img src="imges/main/banner02.jpg" alt=""></div>
+                            <div class="txt">
+                                <h3>창업안내</h3>
+                                <p>맛있고 건강한 츄러스만의<br>특별한 경쟁력을 알아보세요.</p>
+                                <a href="#"><span class="blind">더보기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="f_top">
+                    <div class="f_brand">
+                        <h3>STREET CHURROS</h3>
+                        <p>24시간 창업상담 (주말 포함) : 02-6263-0303</p>
+                    </div>
+                    <div class="link_wrap">
+                        <ul class="sns">
+                            <li class="facebook"><a href="#" target="_blank" title="새창열림"><span class="blind">페이스북</span></a></li>
+                            <li class="instagram"><a href="#" target="_blank" title="새창열림"><span class="blind">인스타그램</span></a></li>
+                            <li class="naver"><a href="#" target="_blank" title="새창열림"><span class="blind">네이버</span></a></li>
+                            <li class="youtube"><a href="#" target="_blank" title="새창열림"><span class="blind">유튜브</span></a></li>
+                        </ul>       
+                    </div>
+                </div>
+                <div class="f_info">
+                    <div class="info_row">
+                        <p>상호명<span>주식회사 솔라벨</span></p>
+                        <p>사업자등록번호<span>106-87-09917</span></p>
+                        <p>대표자<span>소상우</span></p>
+                    </div>
+                    <div class="info_row">
+                        <p>주소<span>서울특별시 강남구 도산대로 45길 10-4</span></p>
+                        <p>전화번호<span>02-6263-0303</span></p>
+                    </div>
+                    <div class="info_row">
+                        <p>이메일<span>ds.hwang@solabel.co.kr</span></p>
+                        <p>마케팅/제휴문의<span>hk.seon@solabel.co.kr</span></p>
+                    </div>
+                </div>
+                <div class="copyright">ⓒ2017 스트릿츄러스. All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

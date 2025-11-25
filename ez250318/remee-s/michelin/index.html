@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquary 라이브러리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- swiper 라이브러리 -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css?v=2507071441">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>MICHELIN GUIDE</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class=""> <!--open-->
+            <h1 class="logo"><a href="#"><img src="images/layout/logo.svg" alt="미쉐린로고"></a></h1>
+            <nav class="gnb">
+                <button class="open"><span class="blind">메뉴열기</span></button>     
+                <div class="gnb_wrap">
+                    <ul class="depth1">
+                        <li><a href="#"><span>About</span></a></li>
+                        <li><a href="#"><span>Best guide</span></a></li>
+                        <li><a href="#"><span>Restaurant</span></a></li>
+                        <li><a href="#"><span>Magazine</span></a></li>
+                    </ul><!--//depth1-->
+                </div><!--//gnb_wrap-->
+            </nav> 
+            <div class="total_menu "><!-- 모바일 메뉴 show 클래스가 추가되면 보임  -->
+                <div class="total_menu_wrap">
+                    <nav class="t_list">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Best guide</a></li>
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Magazine</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <input type="text" class="search_input" placeholder="search here...">
+                        <button class="search_btn"><span class="blind">검색</span></button>
+                    </div>
+                    <button class="close"><span class="blind">전체메뉴닫기</span></button>
+                </div><!--//total_menu_wrap-->
+            </div><!--//total_menu-->
+        </header>
+        <main class="container">
+            <section class="visual">
+                <div class="txt_wrap">
+                    <h2>Join our Michelin guide</h2>
+                </div>    
+            </section>
+            <section class="new_rest">
+                <div class="tit" data-aos="fade-up">
+                    <h2>Michelin Guide's</h2>
+                    <p>New Restaurant</p>
+                </div>
+                <div class="list" data-aos="fade-up">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/new_rest01.jpg" alt="두리"></div>
+                                    <div class="list_top"> "All of Today's Spots"</div>
+                                    <div class="list_sub">                              
+                                        <div class="name">
+                                            <strong>두리</strong>
+                                            <span>한식과 양식</span>
+                                        </div>
+                                        <div class="local">용산구 원효로63길 27, Seoul, 04364, 한국</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide up">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/new_rest02.jpg" alt="오니바"></div>
+                                    <div class="list_top">“Special menu after 9pm”</div>
+                                    <div class="list_sub">                              
+                                        <div class="name">
+                                            <strong>오니바</strong>
+                                            <span>프렌치</span>
+                                        </div>
+                                        <div class="local">강남구 도산대로 75길 15, 지하 1층, 한국</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/new_rest03.jpg" alt="비움"></div>
+                                    <div class="list_top">“Refined Korean meal”</div>
+                                    <div class="list_sub">                              
+                                        <div class="name">
+                                            <strong>비움</strong>
+                                            <span>한식과 사찰음식</span>
+                                        </div>
+                                        <div class="local">강남구 학동로 97길 41, Seoul, 한국</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide up">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/new_rest04.jpg" alt="곰탕랩"></div>
+                                    <div class="list_top">“Collagen Beef Bone Soup”</div>
+                                    <div class="list_sub">                              
+                                        <div class="name">
+                                            <strong>곰탕랩</strong>
+                                            <span>한식(곰탕)</span>
+                                        </div>
+                                        <div class="local">강남구 도산대로 153, Seoul, 06037, 한국</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="progress"></div>
+                </div><!--//list-->
+            </section><!--//new_rest-->
+            <section class="popular">
+                <div class="wrap">
+                    <div class="wrapper">
+                        <div class="p_txt">
+                            <h2>오늘, 미각을 깨우는 특별한 한 접시</h2>
+                            <a href="#"><span>자세히 보기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section><!--//popular-->
+            <section class="idea">
+                <div class="idea_txt" data-aos="fade-up">
+                    <h2>Guides d’Exception</h2>
+                    <p>미쉐린이 엄선한<br> 최고의 미식 여정</p>
+                    <span>세계 미식의 정수를 집대성한 ‘Guides d’Exception’은 미쉐린 가이드가 직접 선정한<br> 
+                        최고의 레스토랑, 셰프, 그리고 미식 여행지들을 소개합니다.<br>
+                        정교한 기술과 창의성, 그리고 감동을 불러일으키는 맛이 만나 진정한 미식의 예술을 이룹니다.<br>
+                        지금, 전 세계 미식가들의 영감을 자극하는 미쉐린 베스트 셀렉션을 만나보세요.</span>
+                </div>
+                <div class="guide_box black">
+                    <div class="photo"><img src="images/main/Guide_photo01.jpg" alt="쌀 요리"></div>
+                    <div class="g_txt">
+                        <div class="main_txt" data-aos="fade-up">
+                            <h2>Best Seoul Guide</h2>
+                            <p>3 Restaurant</p>
+                        </div>
+                        <div class="sub_txt" data-aos="fade-up">
+                            <h3>한중일의 쌀 요리를 맛볼 수 있는 곳</h3>
+                            <p>한국과 중국, 일본은 지역적으로 가깝지만 서로 다른 쌀문화를 가지고 있습니다.<br> 
+                                한국에서 맛볼 수 있는 동아시아 지역의 쌀 요리들을 선보이는<br> 
+                                레스토랑 중 미쉐린이 선정한 곳들을 소개합니다.</p>
+                        </div>
+                        <a href="#" data-aos="fade-up">자세히 보기</a>
+                    </div>
+                </div>  
+                <div class="guide_box brown">
+                    <div class="photo"><img src="images/main/Guide_photo02.jpg" alt="게장"></div>
+                    <div class="g_txt">
+                        <div class="main_txt" data-aos="fade-up">
+                            <h2>Best Seoul Guide</h2>
+                            <p>3 Restaurant</p>
+                        </div>
+                        <div class="sub_txt" data-aos="fade-up">
+                            <h3>최고의 게장을 맛볼 수 있는 곳</h3>
+                            <p>밥도둑 하면 가장 먼저 떠오르는 한국의 음식은 무엇일까요?<br>
+                                현재는 다양한 음식에 사용되는<br> 
+                                수식어이기는 하지만, 원조로 따지자면 밥도둑의 대명사는 역시 간장게장입니다.</p>
+                        </div>
+                        <a href="#" data-aos="fade-up">자세히 보기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="guide">
+                <div class="guide_wrap">
+                    <div class="g_txt">
+                        <h2>Michelin Guide Selection</h2>
+                        <p>전 세계 미쉐린 가이드의 미식 도시들을 둘러 보고,<br>
+                            최고의 레스토랑과 특별함을 발견해 보세요.</p>
+                    </div>
+                    <div class="g_group">
+                        <div class="g_photo" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#"><img src="images/main/Guide01.jpg" alt="Vietnam"></a>
+                            <div class="g_list">
+                                <h3>Vietnam</h3>
+                                <p>181 Restaurant</p>
+                            </div>
+                        </div>        
+                        <div class="g_photo02" data-aos="fade-up" data-aos-delay="500">
+                            <a href="#"><img src="images/main/Guide02.jpg" alt="Canada"></a>
+                            <div class="g_list02">
+                                <h3>Canada</h3>
+                                <p>275 Restaurant</p>
+                            </div>
+                        </div>        
+                        <div class="g_photo" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#"><img src="images/main/Guide03.jpg" alt="Turkey"></a>
+                            <div class="g_list">
+                                <h3>Turkey</h3>
+                                <p>127 Restaurant</p>
+                            </div>
+                        </div>        
+                    </div>    
+                </div>
+            </section>
+            <section class="magazine">
+                <div class="magazine_txt">
+                    <h2>Issue Magazine</h2>
+                </div>
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine01.jpg" alt="magazine"></div>
+                                    <h3><span>Travel</span></h3>
+                                    <strong>'미쉐린 키' 호텔 12선</strong>
+                                    <p>2025년 6월 25일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine02.jpg" alt="magazine"></div>
+                                    <h3><span>Travel</span></h3>
+                                    <strong>미쉐린 가이드,<br>
+                                        사우디아라비아 상륙</strong>
+                                    <p>2025년 6월 24일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine03.jpg" alt="magazine"></div>
+                                    <h3><span>Dining Out</span></h3>
+                                    <strong>미각 위에 놓인 한 방울의 시간</strong>
+                                    <p>2025년 6월 23일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine04.jpg" alt="magazine"></div>
+                                    <h3><span>People</span></h3>
+                                    <strong>비교할 수 없는 오리지널</strong>
+                                    <p>2025년 6월 6일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine05.jpg" alt="magazine"></div>
+                                    <h3><span>Features</span></h3>
+                                    <strong>계절과 함께 자라난 에빗의 이야기</strong>
+                                    <p>2025년 5월 12일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine06.jpg" alt="magazine"></div>
+                                    <h3><span>News & Views</span></h3>
+                                    <strong>타이완 셀렉션 지역확대</strong>
+                                    <p>2025년 5월 7일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine07.jpg" alt="magazine"></div>
+                                    <h3><span>Dining In</span></h3>
+                                    <strong>식사의 끝, 김치찌개의 시작</strong>
+                                    <p>2025년 4월 29일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine08.jpg" alt="magazine"></div>
+                                    <h3><span>Travel</span></h3>
+                                    <strong>2 Days In Seoul</strong>
+                                    <p>2025년 1월 16일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine09.jpg" alt="magazine"></div>
+                                    <h3><span>Dining In</span></h3>
+                                    <strong>장진모 셰프의 감태 비빔국수</strong>
+                                    <p>2024년 9월 31일</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/Magazine10.jpg" alt="magazine"></div>
+                                    <h3><span>Dining Out</span></h3>
+                                    <strong>미쉐린 가이드 서울 2025</strong>
+                                    <p>2024년 8월 27일</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--//magazine_swiper-->
+                </div>
+                <div class="scrollbar">
+                    <div class="swiper-scrollbar"></div> <!-- 스크롤바 -->
+                </div>    
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="f_right">
+                <div class="logo">
+                    <img src="images/layout/logo.svg" alt="michelin">
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li class="instargram"><a href="#"><span class="blind">인스타그램</span></a></li>
+                        <li class="youtube"><a href="#"><span class="blind">유튜브</span></a></li>
+                        <li class="facebook"><a href="#"><span class="blind">페이스북</span></a></li>
+                        <li class="tictik"><a href="#"><span class="blind">틱톡</span></a></li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="f_left">
+                <div class="f_nav">
+                    <ul>
+                        <li><a href="#"><span>Legal Notice</span></a></li>
+                        <li><a href="#">Use</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Michelin Guide</a></li>
+                        <li><a href="#">Policy</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                    </ul>
+                </div>
+                <div class="f_info">
+                    <div class="f_info01">
+                        <span>Companies Registry No. 855 200 507</span>
+                        <span>Adress. 23, Place des Carmes-Déchaux</span>
+                    </div>
+                    <div class="f_info02">  
+                        <span>Telephone/Fax: +33 (0)1 55 19 57 00/01</span>
+                        <span>EU VAT No.: FR33855200507</span>
+                    </div>  
+                </div>
+                <div class="copyright">Copyright © 2025 MICHELIN. All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

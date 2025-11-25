@@ -1,0 +1,418 @@
+@import url(common.css);
+@import url(font.css);
+@import url(default.css);
+
+header{
+    position: absolute; /* body를 기준으로 정렬 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: var(--header-h);
+    padding: 0 80px; /* 좌우 여백 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .txt1,
+header .txt2{
+    font-size: 30px;
+    font-family: var(--font-family-p);
+}
+header .txt1 span{
+    margin: 0 90px;
+}
+header .txt1 p{
+    text-align: right;
+} 
+header .txt2 p{
+    margin: 0 0 0 100px;
+}
+header .txt2 span{
+    margin: 0 95px;
+}
+.visual .photo{
+    width: 100%;
+    height: 1000px;
+    background-color: #1d1d1d;
+}
+/* infor */
+.infor{
+    text-transform: uppercase;
+    color: #1d1d1d;
+    position: relative;
+}
+.infor::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background: url(../images/infor01_bg.png) repeat center center;
+}
+.infor::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+.infor .infor_wrap{
+    display: flex;
+    justify-content: center;
+}
+.infor .tit1{
+    background: url(../images/infor01.png)no-repeat center center /cover;
+}
+.infor .tit1 p {
+    padding: 95px 190px 46px 190px;
+    text-align: center;
+    font-family: 'HelveticaNeue';
+}
+.infor .tit1 .phone{
+    width: 586px;
+    height: 611px;
+    background: url(../images/phone.png)no-repeat center center /cover;
+    margin: 0 27px 144px 27px;
+}
+.infor .tit2{
+    font-family: 'HelveticaNeue';
+    color: #fff;
+    padding: 96px 117px 46px 55px;
+    background: url(../images/infor02.png)no-repeat center center /cover;
+}
+.infor .tit2 .txt01{
+    margin-bottom: 80px;
+}
+.infor .tit2 .txt01 p.and{
+    margin-left: 120px;
+}
+.infor .tit2 .txt01 p span{
+    margin: 0 24px 0 24px;
+}
+.infor .tit2 .txt01 strong{
+    margin-right: 27px;
+}
+.infor .tit2 .txt02 span{
+    margin: 0 35px;
+}
+.infor .tit2 .txt02 strong{
+    margin-left: 97px;
+}
+.infor .tit2 .txt03{
+    margin: 342px 0 218px 0;
+}
+.infor .tit2 .txt03 h2{
+    font-size: 100px;
+    font-family: 'HelveticaNeue-Bold';
+}
+.infor .tit2 .txt04{
+    display: flex;
+    gap: 40px;
+}
+.infor .tit3{
+    background-color: #fff;
+    padding: 135px 45px 61px 45px;
+}
+.infor .tit3 .txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 37px;
+    position: relative;
+}
+.infor .tit3 .txt h3{
+    font-size: var(--tit-font-size);
+    font-family: var(--font-family-p);
+    margin: 0 80px;
+}   
+.infor .tit3 .txt::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_45_4' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='24' width='24' height='24'%3E%3Crect y='24' width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_45_4)'%3E%3Cpath d='M13 45V37H21V45H13ZM13 35V27H21V35H13ZM3 35V27H11V35H3ZM3 45V37H11V45H3Z' fill='%231C1B1F'/%3E%3C/g%3E%3Cmask id='mask1_45_4' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask1_45_4)'%3E%3Cpath d='M12 15C12.8333 15 13.5417 14.7083 14.125 14.125C14.7083 13.5417 15 12.8333 15 12C15 11.1667 14.7083 10.4583 14.125 9.875C13.5417 9.29167 12.8333 9 12 9C11.1667 9 10.4583 9.29167 9.875 9.875C9.29167 10.4583 9 11.1667 9 12C9 12.8333 9.29167 13.5417 9.875 14.125C10.4583 14.7083 11.1667 15 12 15ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z' fill='%231C1B1F'/%3E%3C/g%3E%3Cmask id='mask2_45_4' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='24' y='24' width='24' height='24'%3E%3Crect x='24' y='24' width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask2_45_4)'%3E%3Cpath d='M36.1 46C34.7 46 33.3875 45.7333 32.1625 45.2C30.9375 44.6667 29.8708 43.9458 28.9625 43.0375C28.0542 42.1292 27.3333 41.0625 26.8 39.8375C26.2667 38.6125 26 37.3 26 35.9C26 33.4667 26.775 31.3208 28.325 29.4625C29.875 27.6042 31.85 26.45 34.25 26C33.95 27.65 34.0417 29.2625 34.525 30.8375C35.0083 32.4125 35.8417 33.7917 37.025 34.975C38.2083 36.1583 39.5875 36.9917 41.1625 37.475C42.7375 37.9583 44.35 38.05 46 37.75C45.5667 40.15 44.4167 42.125 42.55 43.675C40.6833 45.225 38.5333 46 36.1 46Z' fill='%231C1B1F'/%3E%3C/g%3E%3Cmask id='mask3_45_4' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='24' y='0' width='24' height='24'%3E%3Crect x='24' width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask3_45_4)'%3E%3Cpath d='M36 23.3L32.65 20H28V15.35L24.7 12L28 8.64995V3.99995H32.65L36 0.699951L39.35 3.99995H44V8.64995L47.3 12L44 15.35V20H39.35L36 23.3Z' fill='%231C1B1F'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.infor .tit3 .txt::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 555px;
+    border: 1px solid #1d1d1d;
+}
+.infor .tit3 .kind1{
+    margin: 30px 0 30px 0;
+}
+.infor .tit3 .kind1 ul{
+    margin-top: 86px;
+}
+.infor .tit3 .kind2{
+    margin-bottom: 50px;
+}
+.infor .tit3 .kind1 ul,
+.infor .tit3 .kind2 ul{
+    display: flex;
+    gap: 24px;
+    align-items: center;    
+    justify-content: center;
+}
+.infor .tit3 .kind1 ul li,
+.infor .tit3 .kind2 ul li{
+    text-align: center;
+    background-color: #1d1d1d;
+    border-radius: 120px 120px 0 0;
+    width: 263px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.infor .tit3 .kind1 ul li:hover,
+.infor .tit3 .kind2 ul li:hover{
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+.infor .tit3 .kind1 ul li a,
+.infor .tit3 .kind2 ul li a{
+    display: block;
+    color: #fff;
+}
+.infor .tit3 .kind1 ul li a p,
+.infor .tit3 .kind2 ul li a p{
+    padding: 10px 0 0 0;
+}
+.infor .tit3 .kind1 ul li a h3,
+.infor .tit3 .kind2 ul li a h3{
+    font-size: 30px;
+    font-family: var(--font-family-p);
+    padding: 50px 0 0 0;
+    position: relative;
+}
+.infor .tit3 .kind1 ul li a h3::after,
+.infor .tit3 .kind2 ul li a h3::after{
+    content: "";
+    position: absolute;
+    left: 117px;
+    top: 0;
+    width: 33px;
+    height: 33px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.infor .tit3 .kind1 ul li.design a h3::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_20_384' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='33' height='33'%3E%3Crect width='33' height='33' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_20_384)'%3E%3Cpath d='M16.5 20.625C17.6458 20.625 18.6198 20.224 19.4219 19.4219C20.224 18.6198 20.625 17.6458 20.625 16.5C20.625 15.3542 20.224 14.3802 19.4219 13.5781C18.6198 12.776 17.6458 12.375 16.5 12.375C15.3542 12.375 14.3802 12.776 13.5781 13.5781C12.776 14.3802 12.375 15.3542 12.375 16.5C12.375 17.6458 12.776 18.6198 13.5781 19.4219C14.3802 20.224 15.3542 20.625 16.5 20.625ZM16.5 30.25C14.5979 30.25 12.8104 29.8891 11.1375 29.1672C9.46458 28.4453 8.00938 27.4656 6.77187 26.2281C5.53437 24.9906 4.55469 23.5354 3.83281 21.8625C3.11094 20.1896 2.75 18.4021 2.75 16.5C2.75 14.5979 3.11094 12.8104 3.83281 11.1375C4.55469 9.46458 5.53437 8.00938 6.77187 6.77187C8.00938 5.53437 9.46458 4.55469 11.1375 3.83281C12.8104 3.11094 14.5979 2.75 16.5 2.75C18.4021 2.75 20.1896 3.11094 21.8625 3.83281C23.5354 4.55469 24.9906 5.53437 26.2281 6.77187C27.4656 8.00938 28.4453 9.46458 29.1672 11.1375C29.8891 12.8104 30.25 14.5979 30.25 16.5C30.25 18.4021 29.8891 20.1896 29.1672 21.8625C28.4453 23.5354 27.4656 24.9906 26.2281 26.2281C24.9906 27.4656 23.5354 28.4453 21.8625 29.1672C20.1896 29.8891 18.4021 30.25 16.5 30.25ZM16.5 27.5C19.5708 27.5 22.1719 26.4344 24.3031 24.3031C26.4344 22.1719 27.5 19.5708 27.5 16.5C27.5 13.4292 26.4344 10.8281 24.3031 8.69688C22.1719 6.56563 19.5708 5.5 16.5 5.5C13.4292 5.5 10.8281 6.56563 8.69688 8.69688C6.56563 10.8281 5.5 13.4292 5.5 16.5C5.5 19.5708 6.56563 22.1719 8.69688 24.3031C10.8281 26.4344 13.4292 27.5 16.5 27.5Z' fill='url(%23paint0_linear_20_384)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_20_384' x1='16.5' y1='2.75' x2='16.5' y2='30.25' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='0.1'/%3E%3Cstop offset='0.485577' stop-color='%23A70007'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.infor .tit3 .kind1 ul li.Publ a h3::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_20_387' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='33' height='33'%3E%3Crect width='33' height='33' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_20_387)'%3E%3Cpath d='M16.4999 32.0374L11.8937 27.4999H5.4999V21.1062L0.962402 16.4999L5.4999 11.8937V5.4999H11.8937L16.4999 0.962402L21.1062 5.4999H27.4999V11.8937L32.0374 16.4999L27.4999 21.1062V27.4999H21.1062L16.4999 32.0374Z' fill='url(%23paint0_linear_20_387)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_20_387' x1='16.4999' y1='0.962402' x2='16.4999' y2='32.0374' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='0.1'/%3E%3Cstop offset='0.653846' stop-color='%23A70007'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.infor .tit3 .kind2 ul li.palette a h3::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_20_390' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='33' height='33'%3E%3Crect width='33' height='33' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_20_390)'%3E%3Cpath d='M17.875 28.875V17.875H28.875V28.875H17.875ZM17.875 15.125V4.125H28.875V15.125H17.875ZM4.125 15.125V4.125H15.125V15.125H4.125ZM4.125 28.875V17.875H15.125V28.875H4.125Z' fill='url(%23paint0_linear_20_390)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_20_390' x1='16.5' y1='4.125' x2='16.5' y2='28.875' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='0.1'/%3E%3Cstop offset='0.557692' stop-color='%23A70007'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.infor .tit3 .kind2 ul li.list a h3::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_20_550' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='33' height='33'%3E%3Crect width='33' height='33' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_20_550)'%3E%3Cpath d='M16.6375 30.25C14.7125 30.25 12.9078 29.8833 11.2234 29.15C9.53906 28.4167 8.0724 27.4255 6.82344 26.1766C5.57448 24.9276 4.58333 23.4609 3.85 21.7766C3.11667 20.0922 2.75 18.2875 2.75 16.3625C2.75 13.0167 3.81562 10.0661 5.94688 7.51094C8.07812 4.95573 10.7937 3.36875 14.0938 2.75C13.6812 5.01875 13.8073 7.23594 14.4719 9.40156C15.1365 11.5672 16.2823 13.4635 17.9094 15.0906C19.5365 16.7177 21.4328 17.8635 23.5984 18.5281C25.7641 19.1927 27.9813 19.3188 30.25 18.9062C29.6542 22.2062 28.0729 24.9219 25.5063 27.0531C22.9396 29.1844 19.9833 30.25 16.6375 30.25Z' fill='url(%23paint0_linear_20_550)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_20_550' x1='16.5' y1='2.75' x2='16.5' y2='30.25' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='0.1'/%3E%3Cstop offset='0.802885' stop-color='%23A70007'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.infor .tit3 span{
+    font-size: 25px;
+}
+/* contents */
+.contents{
+    text-transform: uppercase;
+    padding: 144px 0 40px 0;
+    color: #1d1d1d;
+    background: url(../images/contents_bg.png)no-repeat center center / cover;
+    overflow: hidden;
+}
+.contents h2{
+    font-size: 150px;
+    color: #fff;
+    mix-blend-mode: difference;
+    text-align: left;
+}
+.contents .loop01 {
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation-name: loop01;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.contents .loop01 p{
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    background-color: #1d1d1d;
+}
+@keyframes loop01 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50.15%)
+    }
+}
+.contents .loop02 {
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation-name: loop02;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*.contents .loop02 .loop02_txt{
+} 각도 바꾸기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.contents .loop02 .loop02_txt p{
+    display: inline-block;
+    font-size: 30px;
+    background-color: #fff;
+}
+/* transform은 같은 속성이라 동시에 넣으면 하나가 취소가 됨 
+    div class를 하나 더 줘서 거기에 적용 시켜야 중첩이 안된다고함 */
+@keyframes loop02 { 
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-30.15%);
+    }
+}
+.contents .txt{
+    padding-top: 40px;
+}
+.contents .txt ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 81px;
+    margin-top: 40px;
+}
+.contents .txt ul li a{
+    display: block;
+    position: relative;
+    cursor: none !important;
+}
+.contents .txt ul li a p{
+    font-size: 80px;
+    color: #fff;
+    transition: 0.3s;
+    border-bottom: 1px solid #1d1d1d;
+    width: 542px;
+    text-align: right;
+}
+
+.contents .txt ul li.diesel a:hover p{
+    color: #a70007;
+}
+.contents .txt ul li.mechelin a:hover p{
+    color: #42181B;
+}
+.contents .txt ul li.lush a:hover p{
+    color: #EB3C87;
+}
+
+.contents .txt ul li a h3{
+    font-size: 30px;
+    position: absolute;
+}
+.contents .txt ul li a h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #1d1d1d;
+    width: 186px;
+}
+.contents .txt ul li.diesel a h3{
+    left: -2px;
+    top: -50px;
+}
+.contents .txt ul li.mechelin a h3{
+    left: 2px;
+    top: -50px;
+}
+.contents .txt ul li.lush a h3{
+    left: 0px;
+    top: -50px;
+}
+
+.contents .txt ul li a h3::after{
+    content: "";
+    position: absolute;
+    border-right: 1px solid #1d1d1d;
+    height: 40px;
+    transform: rotate3d(1, 1, 1, -70deg);
+}
+.contents .txt ul li.diesel a h3::after{
+    right: -86px;
+    bottom: -8px;
+}
+.contents .txt ul li.mechelin a h3::after{
+    right: -42px;
+    bottom: -8px;
+}
+.contents .txt ul li.lush a h3::after{
+    right: -79px;
+    bottom: -8px;
+}
+/* 마우스 커서 변경 */
+.contents .txt .cursor{
+    position: absolute;  /* 반드시 absolute여야 하고 위치는 jquery에서 적용 시킴 */
+	z-index: 1000;
+	transform: translate(-50%, -50%); /* 커서 위치 조정 */
+	pointer-events: none; /* 생성된 cursor에 마우스 오버 이벤트를 주지 않기 - 이걸 주지 않으면 cursor에 마우스가 오버된 것으로 인식되어 하단 요소가 클릭되지 않음 */
+	display:none; /* 평소에는 보이지 않게 하기 위해서 - 만약 원래도 따라다니는 마우스 포인터를 디자인하려면 스타일을 주면 됨. */
+}
+.contents .txt .cursor.on {
+	display: block;  /* jquery에서 특정 요소에 마우스를 오버하면 class명을 추가해주고 그때 나타남 */
+	/* 기본적인 스타일 주기 */
+    background-color: #fff;
+	mix-blend-mode: difference;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 30px 15px; /* 만약 블랜딩 모드를 주고 싶다면.. (반드시 background색상이 존재해야 적용됨 주의) */
+}
+
+
+
+
+footer{
+    padding: 100px 0;
+    background: url(../images/footer.png)no-repeat center center/cover;
+}
+footer .f_txt{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+footer .f_txt h2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 2px solid #fff;
+    width: 200px;
+}
+footer .f_txt p{
+    transform: translateY(100px);
+}
+footer .f_txt p::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top: 2px solid #fff;
+    width: 250px;
+}

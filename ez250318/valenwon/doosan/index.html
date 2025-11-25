@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AOS를 작동시키기 위한 css와 js파일 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--jqeury 라이브러리-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- swiper 라이브러리  -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css?v=2507190904">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>두산아트센터&두산갤러리</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">두산아트센터</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_util"><!--mobileopen-->
+                        <div class="search">
+                            <button class="search_open"><span class="blind">검색</span></button>
+                        </div>
+                        <div class="lang">
+                            <button class="lang_open"><span class="blind">언어</span></button>
+                        </div>
+                    </div><!--//gnb_util-->
+                    <ul class="depth1">
+                        <li>
+                            <a href="#"><span>소개</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>미션</span></a></li>
+                                <li><a href="#"><span>두산연강재단</span></a></li>
+                                <li><a href="#"><span>관람</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>두산연강예술상</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>소개</span></a></li>
+                                <li><a href="#"><span>수상자</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>전시</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>현재전시</span></a></li>
+                                <li><a href="#"><span>다음전시</span></a></li>
+                                <li><a href="#"><span>지난전시</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>해외프로그램</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>두산 해외 레지던시</span></a></li>
+                                <li><a href="#"><span>소개</span></a></li>
+                                <li><a href="#"><span>참여자</span></a></li>
+                                <li><a href="#"><span>두산 해외 전시</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>두산 큐레이터 워크숍</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>소개</span></a></li>
+                                <li><a href="#"><span>참여자</span></a></li>
+                                <li><a href="#"><span>아카이브</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>공모</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>두산 큐레이터 워크숍</span></a></li>
+                                <li><a href="#"><span>두산 해외 레지던시</span></a></li>
+                                <li><a href="#"><span>두산 아트랩 전시</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div><!--//gnb_wrap-->
+                <div class="gnb_bg"></div>
+            </nav><!--//nav-->
+            <div class="util">
+                <div class="search">
+                    <button class="search_open"><span class="blind">검색열기</span></button>
+                </div>
+                <div class="lang">
+                    <button class="lang_open"><span class="blind">언어선택</span></button>
+                </div>
+            </div><!--//util-->
+        </header>
+        <main class="container">
+            <section class="visual">
+                <h2 class="popup"><span class="blind">팝업</span></h2>
+                <div class="swiper"> 
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual01.jpg" alt="미술관 내부 샹들리에"></div>
+                            <div class="txt_wrap">
+                                <div class="wrapper">
+                                    <div class="txt pc delay1">
+                                        <p>DOOSAN ART CENTER</p>
+                                    </div>
+                                    <div class="txt pc delay2">
+                                        <p>DOOSAN GALLERY</p>
+                                    </div>
+
+                                    <div class="txt mobile delay1">
+                                        <p>DOOSAN</p>
+                                    </div>
+                                    <div class="txt mobile delay2">
+                                        <p>ART CENTER</p>
+                                    </div>
+                                    <div class="txt mobile delay3">
+                                        <p>DOOSAN GALLERY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual02.jpg" alt="어두운 공간에 있는 조각상"></div>
+                            <div class="txt_wrap">
+                                <div class="wrapper">
+                                    <div class="txt pc delay1">
+                                        <p>KOREAN CONTEMPORARY</p>
+                                    </div>
+                                    <div class="txt pc delay2">
+                                        <p>VISUAL ARTS</p>
+                                    </div>
+
+                                    <div class="txt mobile delay1">
+                                        <p>KOREAN</p>
+                                    </div>
+                                    <div class="txt mobile delay2">
+                                        <p>CONTEMPORARY</p>
+                                    </div>
+                                    <div class="txt mobile delay3">
+                                        <p>VISUAL ARTS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual03.jpg" alt="중앙에 작품이 보이는 미술관"></div>
+                            <div class="txt_wrap">
+                                <div class="wrapper">
+                                    <div class="txt pc delay1">
+                                        <p>SUPPORT FOR ARTISTS</p>
+                                    </div>
+                                    <div class="txt pc delay2">
+                                        <p>AND CURATORS</p>
+                                    </div>
+
+                                    <div class="txt mobile delay1">
+                                        <p>SUPPORT</p>
+                                    </div>
+                                    <div class="txt mobile delay2">
+                                        <p>FOR ARTISTS</p>
+                                    </div>
+                                    <div class="txt mobile delay3">
+                                        <p>AND CURATORS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--//swiper-->
+                <div class="ctrl_wrap">
+                    <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                    <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                    <button class="btn_stop"><span class="blind">일시정지</span></button>
+                    <button class="btn_play"><span class="blind">재생</span></button>
+                </div>
+                <div class="scroll_down"><a href="#">scroll down</a></div>
+            </section><!--visual-->
+            <section class="info">
+                <h2><span class="blind">관람안내</span></h2>
+                <div class="wrapper">
+                    <ul class="guide">
+                        <li>
+                            <h3 class="clock">관람시간</h3>
+                            <p>화 - 토 11 a.m - 7p.m</p>
+                        </li>
+                        <li>
+                            <h3 class="price">관람료</h3>
+                            <p>무료</p>
+                        </li>
+                        <li>
+                            <h3 class="day">휴관일</h3>
+                            <p>월요일, 일요일 휴관</p>
+                        </li>
+                    </ul>
+                    <div class="btn_announ"><a href="#">관람안내</a></div>
+                </div>
+            </section><!--info-->
+            <section class="exhibit">
+                <div class="exhibit_bg"></div> <!--bg-->
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-in">
+                        <h2>EXHIBITION</h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/exhibit01.jpg" alt="두산갤러리Ringing Saga전시포스터"></div>
+                                    <div class="subject">
+                                        <h3>Ringing Saga</h3>
+                                        <div class="detail">
+                                            <p>두산갤러리</p>
+                                            <span class="date">2025. 6. 4. — 7 . 12.</span>
+                                        </div>
+                                    </div>
+                                    <div class="more">MORE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/exhibit02.jpg" alt="두산갤러리August is the cruelest전시포스터"></div>
+                                    <div class="subject">
+                                        <h3>August is the cruelest</h3>
+                                        <div class="detail">
+                                            <p>두산갤러리</p>
+                                            <span class="date">2025. 4. 2. — 5. 10.</span>
+                                        </div>
+                                    </div>
+                                    <div class="more">MORE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/exhibit03.jpg" alt="두산갤러리두산아트랩 전시 2025전시포스터"></div>
+                                    <div class="subject">
+                                        <h3>두산아트랩 전시 2025</h3>
+                                        <div class="detail">
+                                            <p>두산갤러리</p>
+                                            <span class="date">2025. 1 .22. — 3. 8.</span>
+                                        </div>
+                                    </div>
+                                    <div class="more">MORE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/exhibit04.jpg" alt="두산갤러리Ringing Saga전시포스터"></div>
+                                    <div class="subject">
+                                        <h3>한나 허: 8</h3>
+                                        <div class="detail">
+                                            <p>두산갤러리</p>
+                                            <span class="date">2024. 11 .13. — 12. 21.</span>
+                                        </div>
+                                    </div>
+                                    <div class="more">MORE</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="read_more"><a href="#"><span class="blind">더보기</span></a></div>
+                </div><!--wrapper-->
+            </section><!--exhibit-->
+            <section class="public">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-in">
+                        <h2>PUBLIC CONTEST</h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <strong class="cate">Curator Workshop</strong>
+                                    <h3>두산 큐레이터 워크숍</h3>
+                                    <p>2025년 DCW는, 시대에 따라 변화하는 동시대 미술 안에서 큐레이터의 역할과 가능성에 주목하며 새롭게 변화합니다.</p>
+                                    <span class="register_wrap">
+                                        <span class="register">접수기간</span>
+                                        <span class="date">2025년 1월 6일(월) - 1월 19일(일) 23:59</span>
+                                    </span>
+                                    <div class="more">MORE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <strong class="cate">International Residency</strong>
+                                    <h3>두산 해외 레지던시</h3>
+                                    <p>두산 해외 레지던시는 창작자들의 확장된 경험과 활동을 지원합니다. 선정된 창작자에게는 뉴욕 ISCP 입주와 활동비를 제공합니다.</p>
+                                    <span class="register_wrap">
+                                        <span class="register">접수기간</span>
+                                        <span class="date">2025년 4월 21일(월) - 5월 4일(일) 23:59</span>
+                                    </span>
+                                    <div class="more">MORE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <strong class="cate">ART LAB Exhibition</strong>
+                                    <h3>두산아트랩 전시</h3>
+                                    <p>두산아트랩 전시는 미술 분야의 잠재력 있는 35세 이하의 젊은 작가를 발굴하고 지원하기 위한 프로그램으로, 공모를 통해 5명(팀)을 선정하고
+                                        단체전의 형태로 소개합니다. </p>
+                                    <span class="register_wrap">
+                                        <span class="register">접수기간</span>
+                                        <span class="date">2025년 6월 2일(월) — 6월 14일(토) 18:00</span>
+                                    </span>
+                                    <div class="more">MORE</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!--public-->
+            <section class="workshop">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-in">
+                        <h2>DOOSAN<br>CURATOR WORKSHOP</h2>
+                        <p><strong>도산 큐레이터 워크샵</strong>은 큐레이터를 발굴하고 지원하기 위해<br>
+                            <span class="color">2011년부터</span> 운영되어 온 프로그램입니다. </p>
+                    </div>
+                    <div class="workshop_pt">
+                        <div class="photo">
+                            <img src="images/main/workshop01.jpg" alt="전시작품을 관람하고 있는 사람들">
+                        </div>
+                    </div>
+                    <div class="more"><a href="#">MORE</a></div>
+                </div>
+            </section><!--workshop-->
+            <section class="inter">
+                <div class="inter_wrap">
+                    <div class="tit" data-aos="fade-in">
+                        <h2>DOOSAN<br> INTERNATIONAL<br> EXIBITION</h2>
+                        <div class="more"><a href="#">VIEW MORE</a></div>
+                    </div>
+                    <div class="list">
+                        <div class="swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/inter01.jpg" alt="Return to Roots전시회 전시공간"></div>
+                                        <h3>Return to Roots: A Retrospective in Memory of Cherry Jang (1984-2019)</h3>
+                                        <div class="artist_wrap">
+                                            <span class="artist">류성실</span>
+                                            <span class="date">2024. 10. 5. — 11. 3.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/inter02.jpg" alt="어두운 공간 속 전시작품"></div>
+                                        <h3>두산아트랩 전시 2024</h3>
+                                        <div class="artist_wrap">
+                                            <span class="artist">김영미 외 4명</span>
+                                            <span class="date">2024. 1. 17. — 2. 24.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/inter03.jpg" alt="사람이 2명 있는 블루 모드의 회화작품"></div>
+                                        <h3>두산 큐레이터 워크숍 기획전: #2</h3>
+                                        <div class="artist_wrap">
+                                            <span class="artist">곽소진 외 4명</span>
+                                            <span class="date">2023. 7. 26. — 8. 30.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/inter04.jpg" alt="TESTER 전시회 한 회화작품"></div>
+                                        <h3>TESTER</h3>
+                                        <div class="artist_wrap">
+                                            <span class="artist">김영나</span>
+                                            <span class="date">2023. 6. 7. — 7. 8.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/inter05.jpg" alt="eoracle 전시회 미디어 아트 속 한 장면"></div>
+                                        <h3>eoracle</h3>
+                                        <div class="artist_wrap">
+                                            <span class="artist">업체eobchae</span>
+                                            <span class="date">2022. 9. 21. — 10. 19.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="scroll_wrap">
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div> 
+                        <div class="scroll_wrap">
+                            <div class="swiper-scrollbar"></div>
+                        </div> 
+                    </div>
+                </div>
+            </section><!--inter-->
+        </main>
+        <footer>
+            <div class="wrapper">
+                <button class="top">TOP</button>
+                <div class="info_wrap">
+                    <div class="sns">
+                        <ul>
+                            <li class="instagram"><a href="#"><span class="blind">인스타그램</span></a></li>
+                            <li class="email"><a href="#"><span class="blind">이메일</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#">두산아트센터</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">관련사이트</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="inner">
+                    <div class="f_logo">
+                        <img src="images/common/logo.w.png" alt="두산아트센터&두산갤러리">
+                    </div>
+                    <div class="copyright">
+                        © DOOSAN ART CENTER. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

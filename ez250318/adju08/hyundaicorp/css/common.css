@@ -1,0 +1,104 @@
+html, body {
+    font-family: "Ubuntu", "Noto Sans KR", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #3d3d3d;
+    line-height: 1.5;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+#wrap {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:1540px){
+    .wrapper {
+        width: auto;
+        margin: 0 110px 0 150px;
+    }
+}
+@media screen and (max-width:1024px){
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:768px){
+            html, body {
+                font-size: 16px;
+            }
+}/*media*/
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.skip_nav a {
+    background-color: mediumslateblue;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+.skip_nav a:focus {
+    top: 0;
+}
+
+/* 변수 */
+:root {
+    --header-h: 100px; /* header 높이 */
+    --header-h-m:-100px;/* header 높이 마이너스값 */
+    --tit-color: #1d1d1d;
+    --base-color: #3d3d3d;
+    --main-color: #00264B;
+    --bg-color: #EDEDED;
+    --sub-bg-color: #F5F0EA;
+    --bold-weight: 700;
+    --tit-line-height: 1.2;
+    --tit-size: 45px; /* 45px / 17 = 2.65 */
+    --sub-tit-size: 22px; /* 22px / 17 */
+    --display-size: 60px;
+}
+@media screen and (max-width:1024px){
+    :root {
+        --header-h: 56px; /* header 높이 */
+        --header-h-m: -56px;
+        --tit-size: 35px; /* 35/17 */
+        --sub-tit-size: 21px; /* 21/17 */
+        --display-size: 48px;
+    }
+}
+@media screen and (max-width:768px){
+    :root {
+        --tit-size: 25px; /* 25px / 16 = 1.56 */
+        --sub-tit-size: 19px; /* 19/16 */
+        --display-size: 35px;
+    }
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery 라이브러리-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!--swiper 라이브러리-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main copy.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>솜니움트리</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class="fixed">
+            <h1 class="logo"><a href="#"><span class="blind">솜니움트리</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <ul class="depth1">
+                        <li>
+                            <a href="#">ABOUT</a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>인사말</span></a></li>
+                                <li><a href="#"><span>건축이야기</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ROOMS</a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>독채 풀빌라</span></a></li>
+                                <li><a href="#"><span>황토 하우스</span></a></li>
+                                <li><a href="#"><span>솜니움 하우스</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SPECIAL</a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>공용 수영장</span></a></li>
+                                <li><a href="#"><span>개별 수영장</span></a></li>
+                                <li><a href="#"><span>개별 바베큐</span></a></li>
+                                <li><a href="#"><span>개별 스파</span></a></li>
+                                <li><a href="#"><span>보트 대여</span></a></li>
+                                <li><a href="#"><span>어촌체험</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">RESERVE</a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>예약하기</span></a></li>
+                                <li><a href="#"><span>예약안내</span></a></li>
+                                <li><a href="#"><span>실시간 예약</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TRAVEL</a></li>
+                        <li><a href="#">LOCATION</a></li>
+                        <li>
+                            <a href="#">COMMUNITY</a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>공지사항</span></a></li>
+                                <li><a href="#"><span>FAQ</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="gnb_close"><span>메뉴닫기</span></button>
+            </nav>
+            <div class="util">
+                <a href="#" class="calendar"><span class="blind">스케쥴</span></a>
+                <a href="#" class="search"><span class="blind">검색</span></a>
+            </div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                <div class="swiper visualSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('images/visual01.jpg')"></div>
+                        <div class="swiper-slide" style="background-image: url('images/visual02.jpg')"></div>
+                        <div class="swiper-slide" style="background-image: url('images/visual03.jpg')"></div>
+                    </div>
+                     <div class="paging"></div>
+                    <!-- 좌우 버튼 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="wrapper">
+                    <h2>“ Somnium tree ”</h2>
+                    <p>종합적 숙박 형태로 오시는 고객분들의 개성과 숙박 목적에 맞게 선택할 수 있는<br>또 하나의 휴식과 힐링의 지도를 그린 곳 “솜니움 트리”</p>
+                    <div class="checkin">
+                        <h3>실시간 예약</h3>
+                        <div class="time_wrap">
+                            <strong>CHECK IN/OUT</strong>
+                            <span>2025 . 06 . 28 토 - 2025 . 06 . 30 월</span>
+                        </div><!--time_wrap-->
+                        <div class="count">
+                            <div class="item">
+                                <strong>ROOM</strong>
+                                <span>1</span>
+                            </div>
+                            <div class="item m_no">/</div>
+                            <div class="item">
+                                <strong class="item_gue">GUEST</strong>
+                                <span>5</span>
+                         </div>
+                        </div><!--count-->
+                        <button class="search">SEARCH</button>
+                    </div><!--checkin-->
+                </div>
+                <div class="scroll_down"><span>scroll down</span></div>
+            </section>
+            <section class="about">
+                <div class="wrapper">
+                    <div class="txt">
+                        <strong>About</strong>
+                        <h2>바다를 품은 공간,<br>바람이 스치는 안락함.</h2>
+                        <p>Somnium Tree, 꿈꾸는 나무.<br>꿈처럼 포근하고, 나무처럼 단단한 쉼을 담았습니다.<br>바다를 향해 열린 창과, 바람이 흐르는 공간에서<br>당신의 하루가 고요하게 머물기를 바랍니다.</p>
+                        <a href="#"><span>OUR STORY</span></a>
+                    </div>
+                    <div class="photo"><img src="images/intro_img.jpg" alt=""></div>
+                </div>
+            </section>
+            <section class="room">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>객실안내</h2>
+                        <div class="list">
+                            <ul>
+                                <li class="active"><button>두드림</button></li>
+                                <li><button>들림</button></li>
+                                <li><button>누림</button></li>
+                                <li><button>어울림</button></li>
+                                <li><button>황토하우스</button></li>
+                                <li><button>솜니움하우스 TOP</button></li>
+                                <li><button>솜니움하우스</button></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="more"><span>DETAIL VIEW</span></a>
+                    </div>
+                    <div class="info">
+                        <h3>ROOM INFO</h3>
+                        <h4>두드림 (독채 풀빌라)</h4>
+                        <div class="list">
+                            <ul>
+                                <li class="list01">
+                                    <h5>평수</h5>
+                                    <div class="item_wrap">
+                                        <div class="item">
+                                            <strong>내부공간</strong>
+                                            <span>40평</span>
+                                        </div>
+                                        <div class="item">
+                                            <strong>외부공간</strong>
+                                            <span>70평</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list02">
+                                    <h5>인원</h5>
+                                    <div class="item_wrap">
+                                        <div class="item">
+                                            <strong>최소 4명 - 최대 6명</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list03">
+                                    <h5>요금</h5>
+                                    <div class="item_wrap">
+                                        <div class="item">
+                                            <strong>주중 (일-월)</strong>
+                                            <span>130,000원</span>
+                                        </div>
+                                        <div class="item">
+                                            <strong>금요일</strong>
+                                            <span>150,000원</span>
+                                        </div>
+                                        <div class="item">
+                                            <strong>토요일</strong>
+                                            <span>160,000원</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!--list-->
+                        <a href="#">RESERVATION</a>
+                        <div class="photo"><img src="images/room_01.jpg" alt=""></div>
+                    </div><!--info-->
+                </div>
+            </section>
+            <section class="special">
+                <div class="special_wrap">
+                    <div class="tit">
+                        <h2>SPECIAL</h2>
+                        <p>편안하게 머물 수 있도록<br>공간 하나하나에 여유와 사적인 순간을 담았습니다.<br>오롯이 쉬고, 충분히 즐기다 가세요.</p>
+                        <a href="#" class="btn_viewall"><span>VIEW ALL</span></a>
+                    </div><!--txt-->
+                    <div class="list">
+                        <ul>
+                            <li class="item01">
+                                <a href="#">
+                                    <div class="photo"><img src="images/special01.jpg" alt="전 객실 바다전망"></div>
+                                    <h3>ocean view</h3>
+                                    <div class="txt_over">
+                                        <strong>전 객실 바다전망</strong>
+                                        <span class="btn_viewmore">View More</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item02">
+                                <a href="#">
+                                    <div class="photo"><img src="images/special02.jpg" alt="프라이빗한 개별 수영장"></div>
+                                    <h3>swimming pool</h3>
+                                    <div class="txt_over">
+                                        <strong class="icon_01">프라이빗한 개별 수영장</strong>
+                                        <span class="btn_viewmore">View More</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item03">
+                                <a href="#">
+                                    <div class="photo"><img src="images/special03.jpg" alt="개별 바베큐장"></div>
+                                    <h3>private Barbecue</h3>
+                                    <div class="txt_over">
+                                        <strong>개별 바베큐장</strong>
+                                        <span class="btn_viewmore">View More</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item04">
+                                <a href="#">
+                                    <div class="photo"><img src="images/special04.jpg" alt="전 객실 개별 스파"></div>
+                                    <h3>spa</h3>
+                                    <div class="txt_over">
+                                        <strong>전 객실 개별 스파</strong>
+                                        <span class="btn_viewmore">View More</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item05">
+                                <a href="#">
+                                    <div class="photo"><img src="images/special05.jpg" alt="청결하고 섬세한 어메니티"></div>
+                                    <h3>amenity</h3>
+                                    <div class="txt_over">
+                                        <strong class="icon_02">청결하고 섬세한 어메니티</strong>
+                                        <span class="btn_viewmore">View More</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item06">
+                                <a href="#">
+                                    <div class="photo"><img src="images/special06.jpg" alt="다양한 어촌체험"></div>
+                                    <h3>activity</h3>
+                                    <div class="txt_over">
+                                        <strong>다양한 어촌체험</strong>
+                                        <span class="btn_viewmore">View More</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--special_wrap-->
+            </section><!--special-->
+            <section class="travel">
+                <div class="wrapper">
+                    <h2>SOMNIUM TREE’S NEAR TRAVEL</h2>
+                    <p>태안 안면도 풀빌라 솜니움 트리와 가까운 주변 여행지를 찾아보세요.</p>
+                    <a href="#" class="btn_travel">GO TRAVEL</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <button class="top">TOP</button>
+            <div class="wrapper">
+                <div class="f_logo"><img src="images/logo_w.svg" alt="솜니움트리 로고"></div>
+                <div class="f_info">
+                    <div class="row">
+                        <span class="line">대표 : 김필중</span>
+                        <span class="line">사업자번호 : 509-09-72339</span>
+                        <span>통신판매번호 : 제2019-충남태안-0004호</span>
+                    </div>
+                    <div class="row">
+                        <address class="line">주소 : 충청남도 태안군 안면읍 대야로 315-19</address>
+                        <span>모바일 : 010-7673-3039</span>
+                    </div>
+                </div><!--f_info-->
+                <div class="sns">
+                    <ul>
+                        <li class="instagram"><a href="#" target="_blank" title="인스타"><span class="blind">인스타바로가기</span></a></li>
+                        <li class="youtube"><a href="#" target="_blank" title="유튜브"><span class="blind">유튜브바로가기</span></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">COPYRIGHT © ‌2019 somniumtree.co.kr All RIGHTS RESERVED 'Somnium Tree'.</div>
+            </div><!--wrapper-->
+        </footer>
+    </div>
+</body>
+</html>

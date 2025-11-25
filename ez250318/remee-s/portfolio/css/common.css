@@ -1,0 +1,51 @@
+/*모든페이지에 공통으로 들어가는 기본 스타일*/
+html, body{
+    font-family: "HelveticaNeue-Bold","PP Editorial Old","Pretendard", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #fff;
+    word-break: keep-all; 
+    word-wrap: break-word; 
+}
+
+.wrapper{
+    width: 1830px;
+    margin: 0 auto; /*가운데*/
+}
+#wrap{
+    position: relative; /*header 정렬의 기준*/
+    width: 100%;
+    min-width: 1870px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*글자를 숨겨야 하는 경우 blind클래스를 적용*/
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+.txt_upper{ /* 소문자 -> 대문자로 바꾸는 서식 만든거 */
+    text-transform: uppercase;
+}
+
+/* css 변수 내맘대로 커스텀 하는거*/
+:root{
+    --header-h: 100px; /* header의 높이 */
+    --header-h-m: -100px; /* header 높이의 반대값 */
+    --tit-color: #1d1d1d;
+    --point-color:#a70007;
+    --bold-weight: 800;
+    --tit-font-size: 2.94rem;  /* 50/ 17 = 2.94 */
+    --min-font-size: 1rem;
+    --line-height: 1.2;
+    --font-family-p: 'PP Editorial Old';
+}
+
+
+

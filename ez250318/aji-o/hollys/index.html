@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery 라이브러리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- swiper 라이브러리 -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>할리스 커피</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class=""> <!--  pc - menu_over / mo - menu_open -->
+            <div class="heading">
+                <h1 class="logo"><a href="index.html"><span class="blind">로고</span></a></h1>
+                <div class="h_info">
+                    <div class="coffee_car">
+                        <button class="car_open"><span class="">커피차 안내</span></button>
+                    </div>
+                    <div class="fran">
+                        <button class="fran_open"><span class="">가맹문의</span></button>
+                    </div>
+                </div>
+                <div class="h_util">
+                    <div class="login">
+                        <button class="login_open"><span class="">멤버십 로그인</span></button>
+                    </div>
+                    <div class="customer">
+                        <button class="customer_open"><span class="">고객센터</span></button>
+                    </div>
+                    <div class="lang">
+                        <button class="lang_open"><span class="">English</span></button>
+                    </div>
+                </div>
+
+            </div><!--heding-->
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_util"> <!--모바일 메뉴창 안쪽-->
+                        <div class="login">
+                            <button class="login_open"><span class="">로그인</span></button>
+                        </div>
+                        <div class="lang">
+                            <button class="lang_open"><span class="">English</span></button>
+                        </div>
+                    </div> <!-- gnb_util -->
+                    <ul class="depth1">
+                        <!--     pc = over 클래스 추가
+                             mobile = open 클래스 추가 -->
+                        <li class="">
+                            <!-- 1차메뉴는 첫번째 하위메뉴로 이동 -->
+                            <a href="#"><span>메뉴</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>COFFEE</span></a></li>
+                                <li><a href="#"><span>음료</span></a></li>
+                                <li><a href="#"><span>디저트</span></a></li>
+                                <li><a href="#"><span>MD</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>할리스 몰</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>할리스콘</span></a></li>
+                                <li><a href="#"><span>할리스카드</span></a></li>
+                                <li><a href="#"><span>E-Store</span></a></li>
+                                <li><a href="#"><span>구매내역</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>멤버십</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>스마트오더</span></a></li>
+                                <li><a href="#"><span>멤버십 혜택</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>공지 및 이벤트</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>공지사항</span></a></li>
+                                <li><a href="#"><span>이벤트</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>할리스 소개</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>Hollys</span></a></li>
+                                <li><a href="#"><span>위치 및 연락처</span></a></li>
+                                <li><a href="#"><span>채용안내</span></a></li>
+                                <li><a href="#"><span>가맹문의 및 절차</span></a></li>
+                                <li><a href="#"><span>B2B사업</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div> <!-- gnb_wrap -->
+                <div class="gnb_bg"></div><!-- 메뉴 아래에서 검은색을 깔아줄 담당 -->
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+            
+                <!-- PC -->
+                <div class="swiper pc-visual">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><div class="photo"><img src="images/visual_01.jpg" alt=""></div></li>
+                        <li class="swiper-slide"><div class="photo"><img src="images/visual_02.jpg" alt=""></div></li>
+                    </ul>
+                    <div class="ctrl_wrap pc">
+                        <div class="count"></div>
+                        <button class="button-stop"><span class="blind">일시정지</span></button>
+                        <button class="button-play"><span class="blind">재생</span></button>
+                    </div>
+                </div>
+
+                <!-- Mo -->
+                <div class="swiper mo-visual">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><div class="photo"><img src="images/visual_m_01.jpg" alt=""></div></li>
+                        <li class="swiper-slide"><div class="photo"><img src="images/visual_m_02.jpg" alt=""></div></li>
+                    </ul>
+                    <div class="ctrl_wrap mo">
+                        <div class="count"></div>
+                        <button class="button-stop"><span class="blind">일시정지</span></button>
+                        <button class="button-play"><span class="blind">재생</span></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <h2><span>PRODUCT</span></h2>
+                <div class="list">
+                    <div class="tap_list">
+                        <ul role="tablist">
+                            <li role="tab" aria-selected="true" class="item1 active" data-content="tap_item1"><button>시즌<span class="blind">선택됨</span></button></li>
+                            <li role="tab" aria-selected="false" class="item2" data-content="tap_item2"><button>커피<span class="blind"></span></button></li>
+                            <li role="tab" aria-selected="false" class="item3" data-content="tap_item3"><button>음료<span class="blind"></span></button></li>
+                            <li role="tab" aria-selected="false" class="item4" data-content="tap_item4"><button>디저트<span class="blind"></span></button></li>
+                            <li role="tab" aria-selected="false" class="item5" data-content="tap_item5"><button>MD<span class="blind"></span></button></li>
+                        </ul>
+                    </div><!--//tab_list-->
+                    <div class="con_wrap">
+                        <div class="wrapper">
+                            <div class="tap_item item1 active" id="tap_item1">
+                                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_01.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>팥 듬뿍 컵 빙수</h3>
+                                                    <p>부드러운 우유얼음에 국내산 팥, <br>쫀득한 찹쌀떡이 어우러진 전통 빙수</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_02.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>애플망고 듬뿍 컵 빙수</h3>
+                                                    <p>상큼한 망고가 한가득! <br>시원함 그 자체 망고빙수</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_03.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>딸기베리 듬뿍 컵 빙수</h3>
+                                                    <p>빨간맛 궁금해 허니♥ 딸기와 블루베리 가득 올라간 딸기베리 빙수</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_04.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>리얼 수박 생과일 주스</h3>
+                                                    <p>신선한 수박 그대로 갈아만든 <br>생과일 주스</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_08.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>망고 코코 할리치노</h3>
+                                                    <p>부드러운 코코넛 스무디에 <br>달콤한 망고 과육 듬뿍!</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_05.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>팥 듬뿍 빙수</h3>
+                                                    <p>부드러운 우유얼음에 국내산 팥, <br>쫀득한 찹쌀떡이 어우러진 전통 빙수</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_06.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>애플망고 듬뿍 빙수</h3>
+                                                    <p>상큼한 망고가 한가득! <br>시원함 그 자체 망고빙수</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_sig_07.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>딸기베리 듬뿍 빙수</h3>
+                                                    <p>빨간맛 궁금해 허니♥ 딸기와 블루베리 가득 올라간 딸기베리 빙수</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ctrl_wrap">
+                                    <button class="btn_next"><span class="blind">이전팝업보기</span></button>
+                                    <button class="btn_prev"><span class="blind">다음팝업보기</span></button>
+                                </div>
+                            </div>
+                            <div class="tap_item item2" id="tap_item2">
+                                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_cof_01.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>아메리카노</h3>
+                                                    <p>진한 에스프레소의 맛과 향을 부드럽게 즐길 수 있는 아메리칸 스타일의 커피</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_cof_03.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>돌체 라떼</h3>
+                                                    <p>달콤한 연유와 고소한 원두, 크리미한 바디가 어우러진 스페셜 메뉴</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_cof_02.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>몬스터 아메리카노</h3>
+                                                    <p>에너지 충전이 필요할 때! <br>청량감 가득 몬스터와 아메리카노가 만난 #에너지부스터</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_cof_04.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>카페 모카</h3>
+                                                    <p>진한 에스프레소와 우유, 달콤 쌉싸름한 초콜릿이 어우러진 커피</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_cof_05.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>카푸치노</h3>
+                                                    <p>에스프레소에 실키하고 폭신폭신한 우유 거품이 풍부하게 더해진 커피</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ctrl_wrap">
+                                    <button class="btn_next"><span class="blind">이전팝업보기</span></button>
+                                    <button class="btn_prev"><span class="blind">다음팝업보기</span></button>
+                                </div>
+                            </div>
+                            <div class="tap_item item3" id="tap_item3">
+                                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_drink_01.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>딸기유자 스파클링</h3>
+                                                    <p>레몬 소르베로 상큼함 UP! <br>달콤 상큼하게 즐기는 딸기 유자 스파클링</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_drink_02.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>피치 딸기 블렌디드</h3>
+                                                    <p>과즙 가득한 복숭아 슬러쉬 안에 톡톡 씹히는 딸기 과육이 더해진 블렌디드 음료</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_drink_03.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>오렌지 자몽 생과일 주스</h3>
+                                                    <p>오렌지와 자몽을 그대로 갈아 만들어 상큼함 그 자체 생과일 주스</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_drink_04.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>민트 초코</h3>
+                                                    <p>진한 민트 맛이 특징인 상쾌하면서 부드러운 맛의 민트 초코 라떼</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_drink_05.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>딸기 라떼</h3>
+                                                    <p>상큼달콤한 풍미 가득한, 딸기가 씹히는 식감이 매력적인 딸기라떼</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_drink_06.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>제주 레몬 애플티</h3>
+                                                    <p>상큼한 제주 레몬과 달달한 사과다이스가 어우러진 과일차</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ctrl_wrap">
+                                    <button class="btn_next"><span class="blind">이전팝업보기</span></button>
+                                    <button class="btn_prev"><span class="blind">다음팝업보기</span></button>
+                                </div>
+                            </div>
+                            <div class="tap_item item4" id="tap_item4">
+                                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_food_01.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>순수 우유 롤케이크</h3>
+                                                    <p>촉촉 쫀쫀한 롤케이크에 순수 우유 생크림이 가득!</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_food_02.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>소시지 크루아상</h3>
+                                                    <p>과탱글한 식감의 소시지가 들어간 버터 풍미 가득 크루아상</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_food_03.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>헤이즐넛 초코 크루아상</h3>
+                                                    <p>진한 헤이즐넛 초코잼이 듬뿍 들어간 크루아상</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_food_04.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>더블 치즈롤</h3>
+                                                    <p>스트링치즈 페스츄리에 에멘탈 치즈까지 더해 맛있게 구운 더블 치즈롤</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_food_05.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>동글동글 멜론 돔케이크</h3>
+                                                    <p>멜론이야 케이크야? <br>동글동글 귀엽고 달콤한 멜론 케이크</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_food_06.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>애플망고 듬뿍 라운드</h3>
+                                                    <p>달콤하고 진한 애플망고를 아낌없이 올린 과일 생크림 라운드</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_food_07.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>피치 딸기 케이크</h3>
+                                                    <p>상큼하고 싱그러운 복숭아 한가득! <br>여름의 맛 듬뿍 담은 시즌 한정 홀케이크</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ctrl_wrap">
+                                    <button class="btn_next"><span class="blind">이전팝업보기</span></button>
+                                    <button class="btn_prev"><span class="blind">다음팝업보기</span></button>
+                                </div>
+                            </div>
+                            <div class="tap_item item5" id="tap_item5">
+                                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_md_01.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>시그니처 아메리카노 미니 10T</h3>
+                                                    <p>고소한 풍미가 어우러진 시그니처 아메리카노 스틱 미니!</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_md_02.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>디카페인 아메리카노 미니 30T</h3>
+                                                    <p>커피의 자연스러운 산미와 풍미를 그대로 살린 디카페인 아메리카노</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_md_03.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>헤이즐넛 아메리카노 12T</h3>
+                                                    <p>은은한 헤이즐넛 향과 달콤한 풍미가 어우러져 부드럽게 즐길 수 있는 헤이즐넛 아메리카노 스틱</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_md_04.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>롤업 실리콘 텀블러(화이트)</h3>
+                                                    <p>돌돌말아 쏙! 간편하게 들고 다니는 롤업 실리콘 텀블러</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_md_05.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>퓨어 세라믹 텀블러(버터)</h3>
+                                                    <p>내부 세라믹 코팅으로 커피 본연의 맛을 오래도록 유지해주는 퓨어 세라믹 텀블러</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="popup"><span class="blind">자세히보기</span></div>
+                                                <div class="pro_bg"></div>
+                                                <div class="photo"><img src="images/pro_md_06.png" alt="01"></div>
+                                                <div class="txt">
+                                                    <h3>미피 여행용 파우치 세트</h3>
+                                                    <p>활용도 높은 사이즈로 실속 있게! <br>실용적인 3종 구성의 파우치 세트</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ctrl_wrap">
+                                    <button class="btn_next"><span class="blind">이전팝업보기</span></button>
+                                    <button class="btn_prev"><span class="blind">다음팝업보기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="brand">
+                <div class="intro">
+                        <div class="txt">
+                            <h2>ABOUT HOLLYS</h2>
+                            <p>할리스는 의미 있는 작은 차이가 평범함과 특별함을 <br>
+                                가르는 기준이 된다고 생각합니다.</p>
+                        </div>
+                        <a href="#">브랜드 소개</a>
+                </div>
+                <div class="startup">
+                        <div class="txt">
+                            <h2>FRANCHISE</h2>
+                            <p>창업의 꿈, 할리스와 함께하세요.</p>
+                        </div>
+                        <a href="#">창업 문의</a>
+                </div>
+            </section>
+
+            <section class="news">
+                <div class="wrapper">
+                    <div class="list_wrap">
+                        <div class="notice">
+                            <h2>NOTICE</h2>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>[제휴 안내] SKT 7월 T day 혜택 이용 안내</strong>
+                                            <span>2025.07.22</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>[제휴 안내] 25년 할리스 M포인트 사용 매장 안내</strong>
+                                            <span>2025.07.13</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>[할리스 멤버십] 등급별 혜택 변경 안내</strong>
+                                            <span>2025.07.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>SKT 7월 T day 혜택 이용 안내</strong>
+                                            <span>2025.06.28</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="more"><span class="blind">더보기</span></a>
+                        </div>
+                        <div class="popup"><a href="#"><div class="photo"><img src="images/news_02.jpg" alt=""></div></a></div>
+                    </div><!--//list_wrap-->
+                    <div class="event">
+                        <h2>이벤트</h2>
+                        <div class="list swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/event_01.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <h3><span>[매장이벤트]</span> 여름 느낌 물씬! 퓨어 세라믹 텀블러 3종 출시</h3>
+                                            <span class="date">2025-07-04 ~ 2025-09-23</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/event_02.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <h3><span>[온라인이벤트]</span> 멤버십 회원만을 위한 7월의 혜택 안내</h3>
+                                            <span class="date">2025-07-01 ~ 2025-07-31</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/event_03.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <h3><span>[매장이벤트]</span> #에너지부스터, 몬스터 아메리카노로 에너지 충전하세요!</h3>
+                                            <span class="date">2025-03-28 ~ 2025-09-30</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/event_04.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <h3><span>[매장이벤트]</span> 빙수와 함께 한 입 가득 여름 충전!</h3>
+                                            <span class="date">2025-05-14 ~ 2025-10-14</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="more"><span>VIEW MORE</span></a>
+                    </div>
+                </div>
+                <div class="members mem_pc">
+                    <div class="photo"><img src="images/members_01.jpg" alt="APP으로 더욱 편리하게! 할리스 멤버십의 특별한 혜택을 만나보세요!"></div>
+                </div>
+                <div class="members mem_tab">
+                    <div class="photo"><img src="images/members_m_01.png" alt="APP으로 더욱 편리하게! 할리스 멤버십의 특별한 혜택을 만나보세요!"></div>
+                </div>
+                <div class="members mem_mo">
+                    <div class="photo"><img src="images/members_m_02.jpg" alt="APP으로 더욱 편리하게! 할리스 멤버십의 특별한 혜택을 만나보세요!"></div>
+                </div>
+            </section>
+
+            <section class="store">
+                <div class="wrapper">
+                    <div class="txt">
+                        <h2><span>HOLLYS</span> 커피와 <br>함께하는 소중한 순간</h2>
+                        <p class="sub_t">창립 이래 꾸준히 성장해 온 할리스는<br>
+                            현재 약 570여개 매장을 운영하고 있습니다.</p>
+                        <p>앞으로도 할리스를 방문하시는<br>
+                            고객의 이야기에 귀 기울이고<br>
+                            진심을 담아 서비스하는 마음을 담겠습니다.</p> 
+                    </div>
+                    <div class="search">
+                        <h2>가까운 할리스 매장을 찾아보세요.</h2>
+                        <div class="search_box">
+                            <input type="text" placeholder="찾고자 하는 지역을 입력해주세요.">
+                        </div>
+                        <button>매장검색</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="f_top">
+                    <div class="f_logo"><img src="images/f_logo.png" alt="hollys coffee"></div>
+                    <div class="f_nav">
+                        <ul>                      
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">서비스이용약관</a></li>
+                            <li><a href="#">멤버십이용약관</a></li>
+                            <li><a href="#">할리스카드이용약관</a></li>
+                            <li><a href="#">고객문의</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">BI 소개</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f_wrap">
+                    <div class="call_wrap">
+                        <div class="item">
+                            <span>대표전화</span>
+                            <p>02-2188-7100</p>
+                        </div>
+                        <div class="item">
+                            <span>가맹문의</span>
+                            <p>02-6350-7229</p>
+                        </div>
+                        <div class="sns">
+                            <ul>
+                                <li class="insta"><a href="#"><span class="blind">인스타그램</span></a></li>
+                                <li class="face"><a href="#"><span class="blind">페이스북</span></a></li>
+                            </ul>
+                        </div>
+                    </div><!--//call_wrap-->
+                    <div class="f_info">
+                        <span><strong>법인명 :</strong>(주)케이지에프앤비</span>
+                        <span><strong>대표자 :</strong>윤석찬 사업자등록번호 211-87-61044</span>
+                        <span><strong>통신판매업 : </strong>제2019-서울종로-0193호</span>
+                        <address><strong>주소 : </strong>서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</address>
+                        <div class="copyright">COPYRIGHT (C) KG F&B. All Rights Reserved.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>

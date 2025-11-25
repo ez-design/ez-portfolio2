@@ -1,0 +1,36 @@
+/*header footer 공통*/
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    height: var(--header-h);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    z-index: 100;
+    color: var(--tit-font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+header .gnb ul {
+    display: flex;
+}
+header .gnb ul li {
+    width: 130px;
+}
+header .gnb ul li a {
+    display: block;
+    font-weight: var(--bold-weight);
+    color: var(--tit-font-color);
+    line-height: 100px;
+    text-align: center;
+}
+header .gnb ul li.active span {
+    background-color: var(--point-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    white-space: nowrap;
+}

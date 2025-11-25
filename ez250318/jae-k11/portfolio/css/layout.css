@@ -1,0 +1,30 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+}
+.header_wrap ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.header_wrap ul li a {
+    display: block;
+    line-height: 100px;
+}
+
+.header_wrap ul li span {
+    font-size: 24px;
+    color: #FF9724;
+    line-height: 1.2;
+}
+.header_wrap ul li.active span{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+

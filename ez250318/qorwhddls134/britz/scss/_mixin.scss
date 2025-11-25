@@ -1,0 +1,62 @@
+@import "_variables.scss";
+
+@mixin mobile_p {
+    @media (max-width: #{$breakpoint_mobile_p}) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: #{$breakpoint_mobile}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$breakpoint_desktop}) {
+        @content;
+    }
+}
+@mixin desktop_p2 {
+    @media (max-width: #{$breakpoint_desktop_p2}) {
+        @content;
+    }
+}
+@mixin desktop_p {
+    @media (max-width: #{$breakpoint_desktop_p}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$breakpoint_desktop + 1px}) {
+        @content;
+    }
+}
+
+@mixin absolute_v_t() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin txt_cen() {
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+@mixin business_b() {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 93.75%;
+    height: 100%;
+}
+
+@mixin tit_txt() {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1d1d1d;
+}

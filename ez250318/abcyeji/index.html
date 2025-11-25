@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--fullpage 라이브러리 파일-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css">
+    
+     <!--jquery 라이브러리-->
+    <script src="startpage/js/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="startpage/css/main.css">
+    <script src="startpage/js/common.js"></script>
+    <script src="startpage/js/main.js"></script>
+    <title>김이름 포트폴리오 </title>
+</head>
+<body>
+    <header>
+        <nav class="gnb">
+            <ul>
+                <li  class="active"><a href="#home"><span>Home</span></a></li>
+                <li><a href="#proflie"><span>Profile1st</span></a></li>
+                <li><a href="#project1"><span>Project2st</span></a></li>
+                <li><a href="#project2"><span>Project</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="fullpage"> 
+        <section class="section home"> 
+            <div class="wrapper">
+                <h2>PORTPOLIO</h2>
+                <p>2025 OO Portfolio<br>
+                Web Designer & Web Publisher</p>
+            </div>
+        </section>
+        <section class="section profile">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="inner_left">
+                        <h2>profile</h2>
+                        <div class="photo"></div>
+                        <div class="name">
+                            <h3>김이름</h3>
+                            <strong>Kim Name</strong>
+                            <span>010 - 1234 - 1234 <br>email@naver.com</span>
+                        </div>
+                    </div>
+                    <div class="inner_right">
+                        <div class="education">
+                            <h3>education</h3>
+                            <div class="txt">
+                                <strong>2024.07</strong>
+                                <span >이지디자인컴퓨터학원 반응형웹디자인(UI/UX) 및 웹퍼블리셔 수료</span>
+                                <strong class="sub_txt">1234.12</strong>
+                                <span>OO대학교 OO학과 졸업</span>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h3>skills</h3>
+                            <div class="txt">
+                                <strong>포토샵<br>
+                                일러스트레이터<br>
+                                XD<br>
+                                Figma<br>
+                                Visual Studio code</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	    </section>
+        <section class="section project1">
+            <div class="wrapper">
+                <div class="project_txt">
+                    <h3>담양리조트</h3>
+                    <p>리조트라는 특성상 이용자의 니즈를 충족시킬 수 있도록 상단에 예약 영역을 배치하고,  은은하고 고급진 컬러감과 사용자가 직관적으로 이해하기 쉬운 오브제를 배치하여 제작하였습니다.</p>
+                    <ul>
+                        <li>
+                            <strong>Tools</strong>
+                            <span>Illustrator, figma, Html5, Css,  jquery</span>
+                        </li>
+                        <li>
+                            <strong>Contribution</strong>
+                            <span>100%</span>
+                        </li>
+                        <li>
+                            <strong>Font</strong>
+                            <span>unna,  pretendard</span>
+                        </li>
+                        <li>
+                            <strong>Color</strong>
+                            <span>#896447</span>
+                        </li>
+                    </ul>
+                    <a href="damyang/index.html">리디자인 홈페이지 보기</a>
+                </div>
+                <div class="project_photo">
+                    <a href="damyang/index.html"><img src="startpage/images/project1.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="section project2">
+            <div class="wrapper">
+                <div class="project_txt">
+                    <h3>종로문화관광</h3>
+                    <p>전통과 현대가 공존하는 문화 중심지라는 특성을 살려, 방문자가 종로의 매력을 쉽게 체험할 수 있도록 시각적으로 직관적인 구조로 설계하였습니다.고유의 역사성과 품격을 담아내기 위해 따뜻하고 안정감 있는 컬러를 사용하였으며,  다양한 콘텐츠(문화유산, 축제, 체험 등)를 쉽게 탐색할 수 있도록 통합된 메뉴와 이미지 중심의 레이아웃을 적용하였습니다.</p>
+                    <ul>
+                        <li>
+                            <strong>Tools</strong>
+                            <span>Photoshop, Illustrator, figma, Html5, Css,  jquery</span>
+                        </li>
+                        <li>
+                            <strong>Contribution</strong>
+                            <span>100%</span>
+                        </li>
+                        <li>
+                            <strong>Font</strong>
+                            <span>Gmarket Sans</span>
+                        </li>
+                        <li>
+                            <strong>Color</strong>
+                            <span>#3BA479</span>
+                        </li>
+                    </ul>
+                    <a href="p_jongro/index.html">리디자인 홈페이지 보기</a>
+                </div>
+                <div class="project_photo">
+                    <a href="p_jongro/index.html"><img src="startpage/images/project2.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="section end">
+            <h2>Thank you!</h2>
+            <p>Thank you for watching my portfolio.</p>
+        </section>
+        
+    </div>
+    <div class="cursor"> click </div>   <!-- 마우스 커서가 될 html 요소를 코딩 (wrap 밖이 안전) -->
+</body>
+</html>

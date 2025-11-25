@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PUB INDEX</title>
+
+    <link href="markup/images/favicon.ico" rel="shortcut icon">
+
+    <script type="text/javascript" src="markup/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="markup/js/ui.js"></script>
+
+    <link rel="stylesheet" href="markup/css/publish_list.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="projectTit">
+            2025-07 서울영화센터
+            <small>POWERED BY <em>innodis</em></small>
+            <div class="counter">
+                <span class="total"></span>page 중 <span class="fin"></span>page 작업완료
+                <div class="percent_div">프로젝트 퍼블리싱 진행률: <span class="percent"></span>% </div>
+            </div>
+            <button type="button" class="openDevLog is-active">DevLog</button>
+        </h1>
+
+        <div class="container is-active">
+            <div class="left">
+                <h2>DevLog</h2>
+            </div>
+            <div class="right">
+                <h2 class="title">사용자 페이지 - tr 클래스 값으로 상태제어 (아무값이 없으면 진행중 , fin : 완료 , del : 삭제 )</h2>
+                <table>
+                    <colgroup>
+                        <col style="width:20%">
+                        <col style="width:8%">
+                        <col style="width:12%">
+                        <col style="width:10%">
+                        <col style="width:60px">
+                        <col style="width:60px">
+                        <col style="width:60px">
+                        <col style="width:80px">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>MENU</th>
+                            <th>URL</th>
+                            <th>VIEW</th>
+                            <th>페이지타입</th>
+                            <th>디자인(PC)</th>
+                            <th>디자인(MO)</th>
+                            <th>완료여부</th>
+                            <th>작업자</th>
+                            <th>COMMENT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fin">
+                            <td>메인</td>
+                            <td>
+                                <p class="target"><span class='link'>main.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="main.html" target="_blank">PC</a>
+                                <a class="btnMo" href="main.html">MO</a>
+                            </td>
+                            <td class="t_center">메인</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>회원가입</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000101_회원가입.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000101_회원가입.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000101_회원가입.html">MO</a>
+                            </td>
+                            <td class="t_center">회원가입</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>회원가입 > 본인인증</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000102_본인인증.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000102_본인인증.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000102_본인인증.html">MO</a>
+                            </td>
+                            <td class="t_center">회원가입</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>회원가입 > 보호자인증</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000102_보호자인증.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000102_보호자인증.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000102_보호자인증.html">MO</a>
+                            </td>
+                            <td class="t_center">회원가입</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>회원가입 > 약관동의</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000103_약관동의.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000103_약관동의.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000103_약관동의.html">MO</a>
+                            </td>
+                            <td class="t_center">회원가입</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>회원가입 > 정보입력</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000104_정보입력.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000104_정보입력.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000104_정보입력.html">MO</a>
+                            </td>
+                            <td class="t_center">회원가입</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>회원가입 > 어린이 정보입력</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000104_어린이 정보입력.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000104_어린이 정보입력.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000104_어린이 정보입력.html">MO</a>
+                            </td>
+                            <td class="t_center">회원가입</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>회원가입 > 완료</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000105_회원가입 완료.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000105_회원가입 완료.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000105_회원가입 완료.html">MO</a>
+                            </td>
+                            <td class="t_center">회원가입</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>로그인</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000201_로그인.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000201_로그인.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000201_로그인.html">MO</a>
+                            </td>
+                            <td class="t_center">로그인</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>로그인 > 아이디 찾기</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000301_아이디 찾기.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000301_아이디 찾기.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000301_아이디 찾기.html">MO</a>
+                            </td>
+                            <td class="t_center">로그인</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>로그인 > 아이디 찾기 완료</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000302_아이디 찾기 완료.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000302_아이디 찾기 완료.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000302_아이디 찾기 완료.html">MO</a>
+                            </td>
+                            <td class="t_center">로그인</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>로그인 > 비밀번호 찾기</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000401_비밀번호 찾기.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000401_비밀번호 찾기.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000401_비밀번호 찾기.html">MO</a>
+                            </td>
+                            <td class="t_center">로그인</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>로그인 > 비밀번호 재설정</td>
+                            <td>
+                                <p class="target"><span class='link'>sub00/sub000402_비밀번호 재설정.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub000402_비밀번호 재설정.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub000402_비밀번호 재설정.html">MO</a>
+                            </td>
+                            <td class="t_center">로그인</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>영화 > 영화예매 > 리스트</td>
+                            <td>
+                                <p class="target"><span class='link'>sub01/sub010101_영화예매_리스트.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub010101_영화예매_리스트.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub010101_영화예매_리스트.html">MO</a>
+                            </td>
+                            <td class="t_center">게시물</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>영화 > 영화예매 > 상세</td>
+                            <td>
+                                <p class="target"><span class='link'>sub01/sub010102_영화예매_상세.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub010102_영화예매_상세.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub010102_영화예매_상세.html">MO</a>
+                            </td>
+                            <td class="t_center">상세</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>영화 > 지난 상영작 > 리스트</td>
+                            <td>
+                                <p class="target"><span class='link'>sub01/sub010201_지난 상영작_리스트.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub010201_지난 상영작_리스트.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub010201_지난 상영작_리스트.html">MO</a>
+                            </td>
+                            <td class="t_center">게시물</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>영화 > 지난 상영작 > 상세</td>
+                            <td>
+                                <p class="target"><span class='link'>sub01/sub010202_지난 상영작_상세.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub010202_지난 상영작_상세.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub010202_지난 상영작_상세.html">MO</a>
+                            </td>
+                            <td class="t_center">게시물</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>전시행사 > 전시행사 > 리스트</td>
+                            <td>
+                                <p class="target"><span class='link'>sub02/sub020101_전시행사_리스트.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub020101_전시행사_리스트.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub020101_전시행사_리스트.html">MO</a>
+                            </td>
+                            <td class="t_center">게시물</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>전시행사 > 전시행사 > 상세</td>
+                            <td>
+                                <p class="target"><span class='link'>sub02/sub020102_전시행사_상세.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub020102_전시행사_상세.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub020102_전시행사_상세.html">MO</a>
+                            </td>
+                            <td class="t_center">게시물</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>교육 > 교육강좌 신청 > 리스트</td>
+                            <td>
+                                <p class="target"><span class='link'>sub03/sub030101_교육강좌 신청_리스트.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub030101_교육강좌 신청_리스트.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub030101_교육강좌 신청_리스트.html">MO</a>
+                            </td>
+                            <td class="t_center">게시물</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>교육 > 교육강좌 신청 > 상세</td>
+                            <td>
+                                <p class="target"><span class='link'>sub03/sub030102_교육강좌 신청_상세.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub030102_교육강좌 신청_상세.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub030102_교육강좌 신청_상세.html">MO</a>
+                            </td>
+                            <td class="t_center">게시물</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>교육 > 교육강좌 신청 > 정보입력</td>
+                            <td>
+                                <p class="target"><span class='link'>sub03/sub030103_교육강좌 신청_정보입력.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub030103_교육강좌 신청_정보입력.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub030103_교육강좌 신청_정보입력.html">MO</a>
+                            </td>
+                            <td class="t_center">신청</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>교육 > 교육강좌 신청 > 어린이 정보입력</td>
+                            <td>
+                                <p class="target"><span class='link'>sub03/sub030103_교육강좌 신청_어린이 정보입력.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub030103_교육강좌 신청_어린이 정보입력.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub030103_교육강좌 신청_어린이 정보입력.html">MO</a>
+                            </td>
+                            <td class="t_center">신청</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>교육 > 교육강좌 신청 > 신청완료</td>
+                            <td>
+                                <p class="target"><span class='link'>sub03/sub030104_교육강좌 신청_신청완료.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub030104_교육강좌 신청_신청완료.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub030104_교육강좌 신청_신청완료.html">MO</a>
+                            </td>
+                            <td class="t_center">신청</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>교육 > 교육강좌 신청 > 대기 신청완료</td>
+                            <td>
+                                <p class="target"><span class='link'>sub03/sub030104_교육강좌 신청_대기 신청완료.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub030104_교육강좌 신청_대기 신청완료.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub030104_교육강좌 신청_대기 신청완료.html">MO</a>
+                            </td>
+                            <td class="t_center">신청</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="fin">
+                            <td>시설대관 > 시설대관 신청</td>
+                            <td>
+                                <p class="target"><span class='link'>sub04/sub040101_시설대관 신청.html</span></p>
+                            </td>
+                            <td class="btn">
+                                <a class="btnPc" href="sub040101_시설대관 신청.html" target="_blank">PC</a>
+                                <a class="btnMo" href="sub040101_시설대관 신청.html">MO</a>
+                            </td>
+                            <td class="t_center">신청</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="t_center">완료</td>
+                            <td class="t_center">작업자1</td>
+                            <td></td>
+                        </tr>
+                        <!-- 완료 mod -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

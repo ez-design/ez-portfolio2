@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, address, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, header, footer, nav, section, p {
+	margin:0;padding:0;border:0;font-family:'Paperlogy',sans-serif; 
+}/* q:따움표 */
+span, h1, h2, h3, h4, h5, h6, address, strong, em, a, button, b, i, label, p {
+	transform:rotate(-0.03deg);
+}
+html {font-size: 62.5%;}
+body {min-width:320px;line-height:1.5; font-size: 1.7rem; color:#1d1d1d;-webkit-text-size-adjust:100%;}/* -webkit-text-size-adjust:100%; - 아이폰 가로화면에서 폰트 자동확대 방지 */
+ol, ul {list-style:none;}
+table {border:0;border-spacing:0;}
+table caption {overflow:hidden;width:0px;height:0px;}
+hr {display:block;height:1px;border-top:1px solid #ccc;}
+input, select {vertical-align:middle;font-family: "Pretendard"; border: 0; letter-spacing: inherit;}
+textarea {font-family: "Pretendard";resize: vertical; }
+input { -webkit-appearance:none; -webkit-border-radius:0 }
+input::placeholder {font-family: "Pretendard"; font-size: 14px; color:#757575;}
+textarea::placeholder {font-family: "Pretendard"; font-size: 14px; color:#757575;}
+input::-ms-input-placeholder {color:#757575;}
+input::-webkit-input-placeholder {color:#757575;}
+input::-moz-input-placeholder {color:#757575;}
+input[type="checkbox"] {-webkit-appearance:checkbox;margin:0; padding: 0;}
+input[type="radio"] {-webkit-appearance:radio;border-radius:8px;}
+address, em, i {font-style:normal}/* 기울임 방지 */
+button {border:none;cursor:pointer;background:none;font-family: "Pretendard"; letter-spacing: inherit;}/* 기본보더 삭제, 오버시 기본 화살표로 되므로 커서포인트는 반드시 넣어야함 */
+a, img {vertical-align:top;}
+a {text-decoration:none;color:#666;color:inherit;}/* inherit 상위 객체의 값을 그대로 적용(상속) */
+a:link,a:visited {}
+iframe { border: 0 !important; }
+/* a:hover,a:focus,a:active {color:#000;} */
+::selection {color: #000; background: #dadada; }
+
+/* 브라우저 공통으로 보이게 */
+* {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+*:before,
+*:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+@media only screen and (max-width: 1200px) {
+	html {font-size: 61.5%;}
+}
+@media only screen and (max-width: 1023px) {
+	html {font-size: 60.5%;}
+}
+@media only screen and (max-width: 767px) {
+	html {font-size: 59.5%;}
+}
+@media only screen and (max-width: 560px) {
+	html {font-size: 58.5%;}
+}

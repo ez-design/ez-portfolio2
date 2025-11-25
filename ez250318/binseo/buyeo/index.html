@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css?v=2507122054">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>부여문화관광</title>
+</head>
+<body>
+    <div class="skip_nav">
+        <a href="#skip_content">본문바로가기</a>
+        <!-- id ="#skip_content" 인 요소로 바로가기 (내부링크) -->
+    </div>
+    <div id="wrap">
+        <header>
+            <h1 class="logo_wrap">
+                <a href="#" class="logo"><span class="blind">부여군</span></a>
+                <a href="#" class="cultural"><span>문화관광</span></a>
+                <a href="#" target="_blank" title="새창열림" class="cn_mark"><span class="blind"></span></a>
+            </h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <ul class="depth1">
+                        <!-- pc버전에서 over클래스추가, 모바일에서는 open클래스 추가 -->
+                        <li>
+                            <!-- 1차 메뉴는 첫번 째 하위 메뉴로 이동 -->
+                            <a href="#"><span>관광정보</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>부여10경</span></a></li>
+                                <li><a href="#"><span>테마별여행</span></a></li>
+                                <li><a href="#"><span>홍보동영상</span></a></li>
+                                <li><a href="#"><span>수학여행</span></a></li>
+                                <li><a href="#"><span>관광지사진</span></a></li>
+                                <li><a href="#"><span>관광단지및 휴양림</span></a></li>
+                                <li><a href="#"><span>백제역사문화탐방</span></a></li>
+                                <li><a href="#"><span>연계관광</span></a></li>
+                                <li><a href="#"><span>이웃사촌 초대방</span></a></li>
+                                <li><a href="#"><span>공지사항</span></a></li>
+                                <li><a href="#"><span>관광자료실</span></a></li>
+                                <li><a href="#"><span>이용후기</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>축제/체험</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>부여축제</span></a></li>
+                                <li><a href="#"><span>백제문화제</span></a></li>
+                                <li><a href="#"><span>부여서동연꽃축제</span></a></li>
+                                <li><a href="#"><span>부여국가유산야행</span></a></li>
+                                <li><a href="#"><span>생태체험여행</span></a></li>
+                                <li><a href="#"><span>문화체험여행</span></a></li>
+                                <li><a href="#"><span>레저체험</span></a></li>
+                                <li><a href="#"><span>전시관람여행</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>역사/문화</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>국가유산</span></a></li>
+                                <li><a href="#"><span>문화제</span></a></li>
+                                <li><a href="#"><span>세시민속행사</span></a></li>
+                                <li><a href="#"><span>전통민속놀이</span></a></li>
+                                <li><a href="#"><span>설화전설</span></a></li>
+                                <li><a href="#"><span>역사적개요</span></a></li>
+                                <li><a href="#"><span>온라인군지</span></a></li>
+                                <li><a href="#"><span>디지털부여문화대전</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="#">
+                            <a href="#"><span>관광도우미</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>숙박정보</span></a></li>
+                                <li><a href="#"><span>모범음식점</span></a></li>
+                                <li><a href="#"><span>쇼핑정보</span></a></li>
+                                <li><a href="#"><span>교통안내</span></a></li>
+                                <li><a href="#"><span>관광홍보물신청</span></a></li>
+                                <li><a href="#"><span>자주하는 질문</span></a></li>
+                                <li><a href="#"><span>운영시간및요금</span></a></li>
+                                <li><a href="#"><span>관광안내소</span></a></li>
+                                <li><a href="#"><span>관광안내도</span></a></li>
+                                <li><a href="#"><span>문화관광해설사요청</span></a></li>
+                                <li><a href="#"><span>관광불편신고</span></a></li>
+                                <li><a href="#"><span>관광문의</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>시티투어</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>운영안내</span></a></li>
+                                <li><a href="#"><span>코스 및 요금</span></a></li>
+                                <li><a href="#"><span>이용후기</span></a></li>
+                                <li><a href="#"><span>시범코스운영안내</span></a></li>
+                                <li><a href="#"><span>설문조사</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="새창열림"><span>세계유산</span></a>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div><!--gnb_wrap-->
+                <div class="gnb_bg"></div> <!--메뉴 아래 검은색-->
+            </nav>
+            <div class="util">
+                <button class="search_open"><span class="blind">검색 열기</span></button>
+                <a href="#" target="_blank" title="새창열림" class="map"><span class="blind">사이트 맵</span></a>
+            </div><!--util-->
+        </header>
+        <main class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual01.jpg" alt="제1경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 1 경 부소산 낙화암</h3>
+                                        <p>부소산은 부여읍 쌍북리, 구아리, 구교리에 걸쳐 있는 부여의 진산이다. 부소산은 평상시에는 백제왕실에 딸린 후원 구실을 하였으며, 전쟁때에는 사비도성의 최후를 지키는 장소가 되었던 곳이다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual02.jpg" alt="제2경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 2 경 정림사지5층석탑</h3>
+                                        <p>정림사지5층석탑은 백제가 부여로 도읍을 옮긴 6세기 초반에 세워진 석탑이다. 정림사는 백제 성왕이 538년 사비성(부여)으로 도읍을 옮길 때 건축한 백제의 대표적인 사찰로 왕궁 정남쪽에 위치하고 있다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual03.jpg" alt="제3경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 3 경 궁남지사계</h3>
+                                        <p>궁남지는 신라 선화공주와 결혼한 무왕의 서동요 전설이 깃든 곳이다. 7월에는 천만송이 연꽃들의 아름다운 향연인 서동연꽃축제가 열리고, 10~11월에는 국화전시회가 열려 궁남지의 아름다움을 더해준다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual04.jpg" alt="제4경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 4 경 부여왕릉원</h3>
+                                        <p>사비시대(538~660)의 백제왕릉묘역이다. 동쪽 나성(羅城)의 바로 바깥에 위치하고 있다. 이 가운데 중앙구역에 위치한 무덤들이 그 크기나 위치로 보아 사비시대 역대 왕들의 왕릉이었을 것으로 추정된다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual05.jpg" alt="제5경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 5 경 천정대 백제보</h3>
+                                        <p>『삼국유사』의 기록에 의하면 재상(宰相)을 선출할 때 그 후보자의 이름을 적어 봉함한 뒤 이곳에 놓아 두었다가 이름 위에 도장이 찍힌 사람을 재상으로 임명하였다고 한다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual06.jpg" alt="제6경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 6 경 백마강 수상관광</h3>
+                                        <p>부여를 감싸돌며 곳곳을 적시는 어머니와 같은 강으로 비단결 강물이 흐른다 하여 지어진 금강(錦江)은 전라북도 장수에서 시작해 충청북도와 충청남도를 흘러 서해로 들어간다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual07.jpg" alt="제7경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 7 경 백제문화단지</h3>
+                                        <p>백제 왕궁인 사비궁과 대표적 사찰인 능사, 묘제는 물론 백제의 역사와 문화를 한눈에 볼 수 있는 백제역사문화관 등 1,500년 전 문화대국이었던 백제의 모습을 보여주고 있다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual08.jpg" alt="제8경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 8 경 만수산 무량사</h3>
+                                        <p>무량사는 수양대군이 조카 단종을 살해한 뒤 임금이 된 것을 비판하며 평생을 은둔한 천재시인 매월당 김시습이 말년을 머물다가 세상을 떠난 곳이기도 하다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual09.jpg" alt="제9경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 9 경 서동요테마파크</h3>
+                                        <p>백제무왕(서동)과 선화공주와의 국경을 초월한 사랑을 극화한 한국 최초의 백제역사 SBS 드라마 서동요 오픈세트장으로 2005년에 약 1만여 평의 대지 위에 조성되었다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual10.jpg" alt="제10경"></div>
+                            <div class="visual_txt">
+                                <div class="wrapper">
+                                    <p class="sub_tit">천년의 역사가 들려주는 이야기 속으로</p>
+                                    <div class="tit_photo"><img src="images/main/visual_tit.png" alt="걸어서 만나는 백제, 부여"></div>
+                                    <div class="group">
+                                        <h3>제 10 경 성흥산 사랑나무</h3>
+                                        <p>성흥산성에 위치(해발 약240m)한 이 느티나무는 사랑나무라 불린다. 사랑나무는 멀리서도 눈에 잘 띠어 성흥산의 상징이 되는 나무이다. 키22m, 가슴직경 125cm, 수령 400여년 된 것으로 추정된다.</p>
+                                        <a href="#">자세히보기</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="slide_control">
+                        <div class="paging"></div>  <!-- 컨트롤 요소는 swiper 안에 배치-->
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="ctrl_wrap">
+                            <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                            <button class="btn_stop"><span class="blind">일시정지</span></button>
+                            <button class="btn_play"><span class="blind">재생</span></button>
+                            <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                        </div>
+                    </div>
+                </div><!--//swiper-->
+            </section><!--visual-->
+            <section class="theme" id="skip_content">
+                <div class="tit">
+                    <div class="wrapper">
+                        <h2>사계절 흐르는 백제의 유산과 함께</h2>
+                        <p class="tit_font">부여 테마별 여행</p>
+                    </div><!--wrapper-->
+                    <div class="theme_tab">
+                        <ul role="tablist">
+                            <li role="tab" aria-selected="true" class="item1 active" data-content="tab_item1"><button><strong>01</strong>추천 여행<span class="blind">선택됨</span></button></li>
+                            <li role="tab" aria-selected="false" class="item2 " data-content="tab_item2"><button><strong>02</strong>산성 여행<span class="blind"></span></button></li>
+                            <li role="tab" aria-selected="false" class="item3 " data-content="tab_item3"><button><strong>03</strong>백마강 여행<span class="blind"></span></button></li>
+                            <li role="tab" aria-selected="false" class="item4 " data-content="tab_item4"><button><strong>04</strong>문화 체험 여행<span class="blind"></span></button></li>
+                        </ul>
+                    </div>
+                </div><!--tit-->
+                <div class="list">
+                    <div class="tab_item item1 active" id="tab_item1">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img01.jpg" alt="부여왕릉원"></div>
+                                        <div class="txt">
+                                            <h3>부여왕릉원</h3>
+                                            <p>위치 충남 부여군 부여읍 왕릉로 61</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img02.jpg" alt="국립부여박물관"></div>
+                                        <div class="txt">
+                                            <h3>국립부여박물관</h3>
+                                            <p>위치 충남 부여군 부여읍 금성로 5</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img03.jpg" alt="부소산(고란사, 낙화암)"></div>
+                                        <div class="txt">
+                                            <h3>부소산(고란사, 낙화암)</h3>
+                                            <p>위치 충남 부여군 부여읍 성왕로 247-9(주차장)</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img04.jpg" alt="정림사지박물관"></div>
+                                        <div class="txt">
+                                            <h3>정림사지박물관</h3>
+                                            <p>위치 충남 부여군 부여읍 정림로 83</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img05.jpg" alt="궁남지(서동공원)"></div>
+                                        <div class="txt">
+                                            <h3>궁남지(서동공원)</h3>
+                                            <p>위치 충남 부여군 부여읍 궁남로 52</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img06.jpg" alt="백제문화단지"></div>
+                                        <div class="txt">
+                                            <h3>백제문화단지</h3>
+                                            <p>위치 충남 부여군 규암면 백제문로 455</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img07.jpg" alt="무량사"></div>
+                                        <div class="txt">
+                                            <h3>무량사</h3>
+                                            <p>위치 충남 부여군 외산면 무량로 203</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item1_img08.jpg" alt="서동요테마파크"></div>
+                                        <div class="txt">
+                                            <h3>서동요테마파크</h3>
+                                            <p>위치 충청남도 부여군 충화면 충신로 616</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ctrl_wrap">
+                                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                <div class="paging"></div>
+                                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                            </div>
+                        </div><!--swiper-->
+                    </div><!--tab_item1-->
+                    <div class="tab_item item2 " id="tab_item2">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item2_img01.jpg" alt="부소산성"></div>
+                                        <div class="txt">
+                                            <h3>부소산성</h3>
+                                            <p>위치 충남 부여군 부여읍 관북리 산1</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item2_img02.jpg" alt="청마산성"></div>
+                                        <div class="txt">
+                                            <h3>청마산성</h3>
+                                            <p>위치 충남 부여군 부여읍 능산리 산1-1외</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item2_img03.jpg" alt="부여나성"></div>
+                                        <div class="txt">
+                                            <h3>부여나성</h3>
+                                            <p>위치 충남 부여군 부여읍 염창리 565외</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item2_img04.jpg" alt="성흥산성"></div>
+                                        <div class="txt">
+                                            <h3>성흥산성</h3>
+                                            <p>위치 충남 부여군 임천면 군사리 산1-1외</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ctrl_wrap">
+                                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                <div class="paging"></div>
+                                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                            </div>
+                        </div><!--swiper-->
+                    </div><!--tab_item2-->
+                    <div class="tab_item item3 " id="tab_item3">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item3_img01.jpg" alt="천정대"></div>
+                                        <div class="txt">
+                                            <h3>천정대</h3>
+                                            <p>위치 충남 부여군 규암면 호암리 5</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item3_img02.jpg" alt="조룡대"></div>
+                                        <div class="txt">
+                                            <h3>조룡대</h3>
+                                            <p>위치 충남 부여군 부여읍 쌍북리 산4</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item3_img03.jpg" alt="부산"></div>
+                                        <div class="txt">
+                                            <h3>부산</h3>
+                                            <p>위치 충남 부여군 규암면 신리 산</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item3_img04.jpg" alt="수북정"></div>
+                                        <div class="txt">
+                                            <h3>수북정</h3>
+                                            <p>위치 충남 부여군 규암면 규암리 147-2</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ctrl_wrap">
+                                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                <div class="paging"></div>
+                                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                            </div>
+                        </div><!--swiper-->
+                    </div><!--tab_item4-->
+                    <div class="tab_item item4 " id="tab_item4">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item4_img01.jpg" alt="백제기와문화관"></div>
+                                        <div class="txt">
+                                            <h3>백제기와문화관</h3>
+                                            <p>위치 충남 부여군 장암면 의자로 1059 (정암리와요지 관내)</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item4_img02.jpg" alt="백제관"></div>
+                                        <div class="txt">
+                                            <h3>백제관</h3>
+                                            <p>위치 충남 부여군 부여읍 왕중로87</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item4_img03.jpg" alt="백마강달밤야시장"></div>
+                                        <div class="txt">
+                                            <h3>백마강달밤야시장</h3>
+                                            <p>위치 부여시장 광장</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item4_img04.jpg" alt="백제문화체험"></div>
+                                        <div class="txt">
+                                            <h3>백제문화체험</h3>
+                                            <p>위치 충남 부여군 부여읍 사비로60 상군회관 3층</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide up">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item4_img05.jpg" alt="백제토기 만들기"></div>
+                                        <div class="txt">
+                                            <h3>백제토기 만들기</h3>
+                                            <p>위치 충남 부여군 부여읍 삼충로 99</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/item4_img06.jpg" alt="백강문화관"></div>
+                                        <div class="txt">
+                                            <h3>백강문화관</h3>
+                                            <p>위치 충남 부여군 부여읍 사비로 91</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ctrl_wrap">
+                                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                <div class="paging"></div>
+                                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                            </div>
+                        </div><!--swiper-->
+                    </div><!--tab_item4-->
+                </div><!--list-->
+            </section><!--theme-->
+            <section class="reserve">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>백제의 시간 속으로 떠나는</h2>
+                        <p class="tit_font">부여 여행 예약</p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#" class="reserve01">
+                                    <h3>부여테마여행</h3>
+                                    <p>다채로운 코스와 체험이 가득한 부여 테마여행을 예약해보세요.</p>
+                                    <span>예약하기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="reserve02">
+                                    <h3>백제역사문화탐방</h3>
+                                    <p>1500년 전 백제의 숨결을 따라가는 역사문화탐방 프로그램입니다.</p>
+                                    <span>예약하기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="reserve03">
+                                    <h3>부여감성야(<strong>夜</strong>)행</h3>
+                                    <p>감성과 낭만이 흐르는 특별한 야간 여행을 만나보세요.</p>
+                                    <span>예약하기</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!--reserve-->
+            <section class="festival">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>역사와 감성이 함께하는 특별한 시간</h2>
+                        <p class="tit_font">부여 감성 축제</p>
+                    </div>
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/festival01.jpg" alt="국화축제"></div>
+                                        <h3>제22회 백제고도국화축제</h3>
+                                        <span class="date">2025-10-31 ~ 2025-11-09</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/festival02.jpg" alt="미디어아트"></div>
+                                        <h3>국가유산 미디어아트 부여</h3>
+                                        <span class="date">2025-10-02 ~ 2025-10-12</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/festival03.jpg" alt="백제문화제"></div>
+                                        <h3>제71회 백제문화제</h3>
+                                        <span class="date">2025-10-03 ~ 2025-10-12</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/festival04.png" alt="연꽃축제"></div>
+                                        <h3>제23회 부여서동연꽃축제</h3>
+                                        <span class="date">2025-07-04 ~ 2025-07-06</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/festival05.jpg" alt="유채꽃 축제"></div>
+                                        <h3>세도방울토마토&유채꽃 축제</h3>
+                                        <span class="date">2025.04.18 ~ 2025.04.20</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!--swiper-->
+                        <div class="swiper_btm">
+                            <div class="ctrl_wrap">
+                                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                            </div>
+                            <a href="#" class="more"><span>자세히보기</span></a>
+                        </div>
+                    </div><!--list-->
+                </div>
+            </section><!--festival-->
+            <section class="guide">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>부여의 명소를 찾아 떠나는</h2>
+                        <p class="tit_font">여행도우미</p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="icon01">
+                                <a href="#">
+                                    <strong>음식</strong>
+                                </a>
+                            </li>
+                            <li class="icon02">
+                                <a href="#">
+                                    <strong>숙박</strong>
+                                </a>
+                            </li>
+                            <li class="icon03">
+                                <a href="#">
+                                    <strong>교통</strong>
+                                </a>
+                            </li>
+                            <li class="icon04">
+                                <a href="#">
+                                    <strong>부여날씨</strong>
+                                </a>
+                            </li>
+                            <li class="icon05">
+                                <a href="#">
+                                    <strong>관광홍보물신청</strong>
+                                </a>
+                            </li>
+                            <li class="icon06">
+                                <a href="#">
+                                    <strong>이용후기</strong>
+                                </a>
+                            </li>
+                            <li class="icon07">
+                                <a href="#">
+                                    <strong>문화관광해설사</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!--guide-->
+            <section class="notice">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>오늘의 부여, 우리 함께 만들어요</h2>
+                        <p class="tit_font">부여 이용안내</p>
+                    </div>
+                    <div class="inner">
+                        <div class="group">
+                            <h3>공지사항</h3>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>부여왕릉원 아트뮤지엄 임시휴관 안내</strong>
+                                            <span class="date">2025-05-04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>정림사지박물관 대체휴관 알림</strong>
+                                            <span class="date">2025-05-04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>2025년 부여군충남국악단 토요상설공연 안내</strong>
+                                            <span class="date">2025-02-24</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>부여왕릉원 아트뮤지엄 운영시간 안내</strong>
+                                            <span class="date">2025-01-25</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="more">자세히보기</a>
+                        </div><!--group-->
+                        <div class="popup">
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="photo"><img src="images/main/popup01.png" alt="부여기차여행"></div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="photo"><img src="images/main/popup02.png" alt="템플스테이테마"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="ctrl_wrap">
+                                    <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                    <div class="paging"></div>
+                                    <button class="btn_stop"><span class="blind">일시정지</span></button>
+                                    <button class="btn_play"><span class="blind">재생</span></button>
+                                    <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                                </div>
+                            </div><!--swiper-->
+                        </div><!--popup-->
+                    </div><!--inner-->
+                </div>
+            </section><!--notice-->
+        </main>
+        <footer>
+            <button class="top">TOP</button>
+            <div class="wrapper">
+                <div class="f_logo"><img src="images/common/footer_logo.svg" alt="부여문화관광"></div>
+                <div class="info_wrap">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#">군청소개</a></li>
+                            <li><a href="#">뷰어다운로드</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">저작권정책</a></li>
+                            <li><a href="#">이메일주소집단수집거부</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_info">
+                        <address>[33168] 충남 부여군 부여읍 사비로 33</address>
+                        <span>Tel. 041-830-2219(문화체육관광과)</span>
+                        <span>Tel. 041-830-2880(관광안내소)</span>
+                        <span>Fax. 041-830-2229</span>
+                    </div>
+                    <div class="copyright">Copyright 2014 BUYEO-GUN. All Rights Reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

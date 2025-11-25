@@ -1,0 +1,210 @@
+/* 서브페이지 중복요소 */
+@import url(font.css);
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+@import url(contents.css);
+
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+#wrap {
+    position: relative; /* header 정렬 기준 */
+    width: 100%;
+    min-width: 1300px;     /* 최소 너비 지정 */
+}
+
+@media screen and (max-width:1300px){
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+
+.container {
+    padding-top: 100px;
+}
+.visual {
+    position: relative; /* device */
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+.visual .device a {
+    display: block;
+    position: absolute; /*visual*/
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.visual h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-top: 205px;
+}
+.visual .txt {
+    padding: 30px 0 40px 0;
+}
+.visual .txt ul li {
+    display: flex;
+    margin: 20px 0;
+}
+.visual .txt ul li strong {
+    font-weight: 700;
+    width: 156px;
+}
+.visual .link a {
+    display: inline-block;
+    padding: 12px 81px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+
+
+
+
+.mood {
+    margin: 132px 0;
+}
+.mood h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1d1d1d;
+}
+.mood .txt_top {
+    margin: 80px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.mood .txt_top .about {
+    width: 45%;
+}
+.mood .txt_top h3,
+.mood .txt_bottom h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+}
+.mood .txt_top .typography {
+    width: 48%;
+}
+.mood .txt_top .typography ul {
+    display: flex;
+    justify-content: space-between;
+}
+.mood .txt_top .typography ul li {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.mood .txt_top .typography ul li strong {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #7964A4;
+    margin-bottom: 18px;
+}
+.mood .txt_top .typography ul li span {
+    line-height: 1.2;
+    margin-bottom: 5px;
+    color: #1d1d1d;
+}
+.mood .txt_bottom ul {
+    display: flex;
+    justify-content: space-between;
+}
+.mood .txt_bottom ul li {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 0 20px 20px;
+    border-radius: 10px;
+}
+.detail .photo {
+    overflow: hidden;
+    text-align: center;
+}
+.detail .photo img {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    object-fit: contain;
+}
+.detail .mobile {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 900px;
+}
+.detail .mobile .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.detail .mobile .left {
+    padding-top: 176px;
+    position: relative;
+}
+.detail .mobile .left a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 134px;
+    width: 273px;
+    height: 548px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation-name: phone_down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes phone_down {
+    0% { top: 176px; }
+    50% { top: 210px; }
+    100% { top: 176px; }
+}
+
+.detail .mobile .right {
+    padding-top: 254px;
+    width: 53.17%;
+}
+.detail .mobile .right .txt {
+    margin-bottom: 60px;
+    color: #1d1d1d;
+    line-height: 1.2;
+}
+.detail .mobile .right .txt h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.detail .mobile .right .txt .group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.detail .mobile .right .txt .group strong {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.detail .mobile .right .sub_link a {
+    display: inline-block;
+    padding: 12px 58px;
+    color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    border-radius: 40px;
+}

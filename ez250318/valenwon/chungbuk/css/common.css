@@ -1,0 +1,148 @@
+/* 모든 페이지에 공통으로 들어가는 기본 스타일*/
+
+html, body{
+    font-family: "SUITE", "Pretendard",sans-serif;
+    /*앞에 쓴 서체를 적용, 지원이 안되면 두 번째 서체 적용*/
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3d3d3d;
+    word-break: keep-all; /*스페이스 기준 단어별로 떨어짐*/
+    word-wrap: break-word; /* 단어가 긴 경우 강제로 줄바꿈을 주는 방법 */
+
+}
+
+.wrapper{
+    width: 1260px;
+    margin: 0 auto; /*가운데*/
+}
+
+#wrap{
+    position: relative; /*header정렬의 기준*/
+    /* overflow-x: hidden; sticky를 쓰면은 overflow-x: hidden을 없애줘야 함*/
+    width: 100%;
+}
+
+@media screen and (max-width:1300px){ /* 1260 * 0.05 = 63 + 63 = 126 + 1260 = 1386px*/
+                .wrapper{
+                    width: auto;
+                    margin: 0 20px; /*여백이 브라우저 사이즈에 따라 점점 좁아짐 - 요즘 추세임 -*/
+                    /* margin: 0 5%; 넣어주면 됨 / max-width:1386px으로 해주기*/
+                }
+}
+@media screen and (max-width:1024px){
+                #wrap{
+                    overflow-x: hidden; /*1024모바일 사이즈부터는 sticky빼주려고 넣어주기*/
+                }
+                /*.aos-init,
+                .aos-animate { aos 효과빼주기
+                    opacity: 1 !important;
+                    transform: none !important;
+                    transition: none !important;
+                }*/
+}
+@media screen and (max-width:768px){
+                /*브라우저 넓이가 768px이하에서만 작용*/
+                html, body{
+                    font-size: 16px;
+                }
+}
+
+/*글자를 숨겨야하는 경우 blind 클래스를 적용*/
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+
+/*글자를 드래그 했을 때 나타나는 스타일
+::selection { 
+    color: #fff;
+    background-color: #482E1D;
+  }*/
+
+.skip_nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000; /*맨위*/
+    width: 100%;
+}
+.skip_nav a{
+    display: block;
+    text-align: center;
+    background-color: #FE5C83;
+    padding: 8px 0;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+.skip_nav a:focus{
+    top: 0;
+}
+
+
+/* css 변수 */
+:root{
+    --header-h: 95px; /* 95px header 높이 */
+    --header-h-m: -95px; /* header 높이 마이너스 값 */
+    --sub-fontfamily: 'Pretendard';
+    --tit-font-color: #1d1d1d;
+    --base-font-color: #3d3d3d;
+    --main-font-color: #2F8EE0;
+    --point-color: #033056;
+    --bg-main-color : #F0F2F6;
+    --bg-black-color : #101010;
+    --more-weight: 500;
+    --bold-weight: 700;
+    --extra-bold-weight: 800;
+    --sub-depthname-size : 65px;
+    --display-font-size: 45px; /*45 / 17*/
+    --tit-size: 45px; /* 45 / 17 */
+    --sub-tit-size: 25px; /* 25 / 17 */
+    --header-font-size: 23px; /* 23 / 17 */
+    --news-font-size : 20px; /* 20 / 17*/
+    --banner-font-size: 35px; /*35 / 17*/
+    --center-tit-size : 35px;
+    --center-sign-size: 30px;
+    --sub-lnb-size: 16px;
+    --tit-line-height: 1.2; 
+    
+}
+@media screen and (max-width:1024px) {
+    :root{
+        --header-h: 56px; /* 56px header 높이 */
+        --header-h-m: -56px;
+        --sub-depthname-size : 50px;
+        --display-font-size: 43px; /*43 / 17*/
+        --tit-size: 40px; /* 40 / 17 */
+        --sub-tit-size: 23px; /* 23 / 17 */
+        --header-font-size: 21px; /* 21 / 17 */
+        --news-font-size : 19px; /* 19 / 17*/
+        --banner-font-size: 30px; /*30 / 17*/
+        --center-tit-size : 30px;
+        --sub-lnb-size: 15px;
+    }
+}
+@media screen and (max-width:768px) {
+    :root{
+        --sub-depthname-size : 40px;
+        --display-font-size: 25px; /*25 / 16*/
+        --tit-size: 23px; /* 23 / 16 */
+        --sub-tit-size: 21px; /* 21 / 16 */
+        --header-font-size: 20px; /* 20 / 16 */
+        --news-font-size : 16px; /* 16 / 16*/
+        --banner-font-size: 28px; /*28 / 16*/
+        --center-tit-size : 23px;
+        --sub-lnb-size: 14px;
+    }
+}
+
+
+

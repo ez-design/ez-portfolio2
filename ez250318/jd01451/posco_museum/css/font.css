@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'SUIT';
+    font-display: swap;
+    font-weight: 400;
+    src:
+        local('SUIT-Regular'),
+        url(../font/SUIT-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-display: swap;
+    font-weight: 400;
+    src: 
+        local('HelveticaNeueRoman'),
+        url(../font/helveticanenu-roman.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-display: swap;
+    font-weight: 700;
+    src: 
+        local('HelveticaNeueBold'),
+        url(../font/helveticaneue-bold.woff2) format('woff2');
+}

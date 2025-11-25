@@ -1,0 +1,29 @@
+/*웹 폰드를 선언*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../font/ko/Pretendard-Bold.woff2) format('woff2'), url(../font/ko/Pretendard-Bold.woff) format('woff');
+}
+@font-face{
+    font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../font/ko/Pretendard-Regular.woff2) format('woff2'), url(../font/ko/Pretendard-Regular.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Neutro';
+    font-weight: 800;
+    font-style: normal;
+	src: local('Neutro'), url(../font/en/Neutro-Bold.otf) format('woff2')
+}
+@font-face {
+	font-family: 'Press Start 2P';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/pressstart2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nYivN04w.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }

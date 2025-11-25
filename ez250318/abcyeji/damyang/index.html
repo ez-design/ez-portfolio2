@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- jquery 라이브러리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--swiper 라이브러리-->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css?v=2507011606">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/layout.js"></script>
+
+    <title>담양 리조트</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class="">
+            <h1 class="logo"><a href="index.html"><span class="blind">담양리조트</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <ul class="depth1">
+                        <li class="">
+                            <a href="#"><span>ROOM</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>WESTENRN-STYLE</span></a></li>
+                                <li><a href="#"><span>KOREAN-STYLE</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>OFFERS</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>EVENT</span></a></li>
+                                <li><a href="#"><span>PROMOTION</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>DINING</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>GROVE TABLE</span></a></li>
+                                <li><a href="#"><span>ARTPIA CAFE</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>FACILITIES</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>MEETING</span></a></li>
+                                <li><a href="#"><span>BANQUET</span></a></li>
+                                <li><a href="#"><span>WEDDING</span></a></li>
+                                <li><a href="#"><span>SERVICE</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>ABOUT</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>ABOUT ILLUA</span></a></li>
+                                <li><a href="#"><span>NOTICE</span></a></li>
+                                <li><a href="#"><span>CONTACT</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+            </nav>
+            <div class="util">
+                <div class="lang">
+                    <button class="lang_open"><span class="blind">언어선택</span></button>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide popup1">
+                            <h3>Breathe in the Calm, Stay in the Green</h3>
+                        </li>
+                        <li class="swiper-slide popup2">
+                            <h3>Where Nature Meets Tranquility</h3>
+                        </li>
+                        <li class="swiper-slide popup3">
+                            <h3>Breathe Deep, Stay Slow, Feel Damyang</h3>
+                        </li>
+                    </ul>
+                    <div class="paging"></div>  <!-- 컨트롤 요소는 swiper 안에 배치-->
+                    <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                    <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                </div>
+                <div class="m_reservation">
+                    <a href="#">RESERVATION</a>
+                </div>
+                <div class="reservation">
+                    <ul>
+                        <li>
+                            <strong>Check-in</strong>
+                            <span>날짜선택</span>
+                        </li>
+                        <li>
+                            <strong>Check-out</strong>
+                            <span>날짜선택</span>
+                        </li>
+                        <li>
+                            <strong class="bold">Roon</strong>
+                        </li>
+                        <li>
+                            <strong class="bold">Adult</strong>
+                        </li>
+                        <li>
+                            <strong class="bold">Children</strong>
+                        </li>
+                        <li class="search">
+                            <button>Search</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="event_pro">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>Event & Promotion</h2>
+                        <p>호텔인터시티에서 진행되는 다양한 이벤트를 소개합니다.</p>
+                    </div>
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/event01.jpg" alt=""></div>
+                                        <h3>300만 돌파기념 이벤트</h3>
+                                        <p>담양리조트 신규 가입하고 행운의 주인공이 되어보세요!</p>
+                                        <ul class="sub_tit">
+                                            <li>
+                                                <strong>예약기간</strong>
+                                                <span>2025.01.01~ 2025.02.28</span>
+                                            </li>
+                                            <li>
+                                                <strong>투숙기간</strong>
+                                                <span>2025.02.28~ 2025.12.31</span>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/event02.jpg" alt=""></div>
+                                        <h3>숙박고객 파크골프장 무료이용</h3>
+                                        <p>하룻밤의 휴식, 무료 파크골프로 완성하세요.</p>
+                                        <ul class="sub_tit">
+                                            <li>
+                                                <strong>예약기간</strong>
+                                                <span>2025.01.01~ 2025.12.31</span>
+                                            </li>
+                                            <li>
+                                                <strong>투숙기간</strong>
+                                                <span>2025.01.01~ 2025.12.31</span>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/event03.jpg" alt=""></div>
+                                        <h3>특별한 날을 위한 시즌 이벤트</h3>
+                                        <p>담양리조트가 추천하는 국내에 숨겨진여행지를 방문해보세요.</p>
+                                        <ul class="sub_tit">
+                                            <li>
+                                                <strong>예약기간</strong>
+                                                <span>2025.01.01~ 2025.12.31</span>
+                                            </li>
+                                            <li>
+                                                <strong>투숙기간</strong>
+                                                <span> 2025.01.01~ 2025.12.31</span>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="more">VIEW MORE</a>
+                </div>
+            </section>
+            <section class="rest">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>The best rest</h2>
+                        <p>담양리조트만이 드릴 수 있는 편안함과 재충전 공간을 경험해보세요.</p>
+                    </div>
+                </div> 
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                            <li class="swiper-slide bg1">
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <h3>Hotel</h3>
+                                        <strong>디럭스 양실</strong>
+                                        <span>Western-style Room</span>
+                                        <span>더블</span>
+                                        <p>현대적 감각의 하이디럭스 룸.<br>카키와 그레이 컬러가 조화로운 고급스러운 인테리어의<br>객실에서는 최상의 휴식을 즐기실 수 있습니다.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="swiper-slide bg2">
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <h3>Hotel</h3>
+                                        <strong>스텐다드 양실</strong>
+                                        <span>Western-style Room</span>
+                                        <span>더블</span>
+                                        <p>현대적 감각의 하이디럭스 룸.<br>블루와 우드의 조합이 조화롭고 고급스러운 인테리어의<br>객실에서는 최상의 휴식을 즐기실 수 있습니다.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="swiper-slide bg3">
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <h3>Hotel</h3>
+                                        <strong>디럭스 한실</strong>
+                                        <span>Korean-style Room</span>
+                                        <span>더블</span>
+                                        <p>고풍스럽고 넉넉한 한국 전통 룸.<br>모던풍의 편안한 분위기의 디럭스 룸에서는 내 집 같이<br>편안하고 여유로운 휴식을 느낄 수 있습니다.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="swiper-slide bg4">
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <h3>Hotel</h3>
+                                        <strong>디럭스 한실</strong>
+                                        <span>Korean-style Room</span>
+                                        <span>더블</span>
+                                        <p>고풍스럽고 넉넉한 한국 전통 온돌 룸.<br>한국 고유의 분위기를 즐길 수 있으며,  특히 온돌형 더블<br>은 한국의 전통적인 분위기와 웨스턴 스타일의 편안함을<br>함께 누릴 수 있는 타입의 객실입니다.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="ctrl_wrap">
+                        <div class="wrapper">
+                            <button class="btn_prev"></button>
+                            <button class="btn_next"></button>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <section class="resort_add">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>Damyang Resort Facilities</h2>
+                        <p>온 가족이 함께 즐길 수 있는 다양한 여가 시설이 준비되어 있습니다. 즐거움을 더해줄 다양한 시설을 만나보세요.</p>
+                    </div>
+                    <div class="list">
+                        <div class="swiper">  <!--팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                            <ul class="swiper-wrapper">  <!--각 팝업 콘텐츠를 감싸는 요소-->
+                                <li class="swiper-slide">
+                                    <div class="photo"><img src="images/resort01.jpg" alt=""></div>
+                                    <div class="inner">
+                                        <h3>ARTPIA CAFE</h3>
+                                        <p>자연 속의 여유를 담은 공간, 아트피아 커피숍.<br>맑은 공기와 푸른 숲을 벗 삼아 즐기는 한 잔의 커피는<br>일상에 지친 마음에 따뜻한 쉼표가 되어줍니다.<br>내부는 아늑한 분위기로 꾸며져 있어, 가족이나 연인과<br>함께 머물기 좋으며 창밖으로 펼쳐진 담양의 풍경은 또<br>하나의 예술이 됩니다.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="photo"><img src="images/resort02.jpg" alt=""></div>
+                                    <div class="inner">
+                                        <h3>THE GROVE TABLE</h3>
+                                        <p>담양리조트의 프리미엄 다이닝.<br>제철 식재료로 정성껏 준비한 한식과 양식을 즐기실 수<br>있습니다.  지역의 풍미를 살린 건강한 메뉴와 정갈한<br>셰프의 손길이 어우러진 공간입니다.<br>고요한 자연 속에서 미각과 감성을 모두 만족시켜줄<br>식사를 경험해보세요.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </li> 
+                                <li class="swiper-slide">
+                                    <div class="photo"><img src="images/resort03.jpg" alt=""></div>
+                                    <div class="inner">
+                                        <h3>WEDDING</h3>
+                                        <p>자연이 축복하는 순간,<br>푸르른 대나무숲과 고즈넉한 풍경 속에서<br>단 하나뿐인 특별한 결혼식을 완성해보세요.<br>야외 가든부터 세련된 연회장까지 다양한 스타일의<br>웨딩 공간을 갖추고 있습니다.<br>당신의 로맨틱한 이야기를 아름답게 채워드립니다.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </li> 
+                                <li class="swiper-slide">
+                                    <div class="photo"><img src="images/resort04.jpg" alt=""></div>
+                                    <div class="inner">
+                                        <h3>FOREST SPA</h3>
+                                        <p> 가족, 연인 모두에게 특별한 시간을 선사하는<br>프리미엄 워터힐링 공간.<br>맑은 공기와 대나무 숲 속에서 즐기는 따뜻한 온천욕은<br>몸과 마음을 편안하게 감싸줍니다.<br>사계절 내내 운영되는 야외수영장에서는<br>탁 트인 하늘과 숲의 풍경을 동시에 만끽할 수 있어요.</p>
+                                        <a href="#">VIEW MORE</a>
+                                    </div>
+                                </li> 
+                            </ul>
+                            <div class="paging"></div>  <!--컨트롤 요소는 swiper 안에 배치-->
+                        </div>
+                    </div>
+                        <button class="btn-prev"><span class="blind">이전팝업보기</span></button>
+                        <button class="btn-next"><span class="blind">다음팝업보기</span></button>
+                </div>
+            </section> 
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="f_logo"><img src="images/logo_w.svg" alt="담양리조트로고"></div>
+                <div class="sns">
+                    <ul>
+                        <li class="naver"><a href="#" target="_blank" title="새창열림">Naver blog</a></li>
+                        <li class="kakao"><a href="#" target="_blank" title="새창열림">Kakao talk</a></li>
+                        <li class="insta"><a href="#" target="_blank" title="새창열림">Instargram</a></li>
+                        <li class="facebook"><a href="#" target="_blank" title="새창열림">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="f_inner">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">저작권보호 및 정책</a></li>
+                            <li><a href="#">이메일수집거부</a></li>
+                            <li><a href="#">문의하기</a></li>
+                            <li><a href="#">예약하기</a></li> 
+                        </ul>
+                    </div>
+                    <div class="f_info">
+                        <address>전라남도 담양군 금성면 금성산성길 202 담양리조트 </address>
+                        <span> TEL: 061-380-5000 </span> <br> 
+                        <span>kshys114@hanmail.net </span>
+                        <span>사업자등록번호: 351-81-02282</span>
+                    </div>
+                    <div class="copyright">COPYRIGHT© 2017 담양리조트. All right Reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

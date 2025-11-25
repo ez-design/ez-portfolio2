@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Gohu';
+    font-display: swap;
+    font-weight: 400;
+    src:
+        /* local('GohuFont'), */
+        url(../fonts/gohufont-uni-11.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Galmuri';
+    font-display: swap;
+    font-weight: 400;
+    src: 
+        local('Galmuri11'),
+        url(../fonts/Galmuri11.woff2) format('woff2');
+}

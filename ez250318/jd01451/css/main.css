@@ -1,0 +1,549 @@
+@import url(common.css);
+@import url(default.css);
+@import url(font.css);
+@import url(layout.css);
+
+.swiper {
+  height: 100dvh;
+}
+
+.visual, .introduce, .project1, .project2, .project3 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/visual_bg.jpg);
+}
+.introduce {
+  background-image: url(../images/introduce_bg.jpg);
+}
+.project1 {
+  background-image: url(../images/project1_bg.jpg);
+}
+.project2 {
+  background-image: url(../images/project2_bg.jpg);
+}
+.project3 {
+  background-image: url(../images/project3_bg.jpg);
+}
+
+.visual {
+  position: relative;
+}
+.visual h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--display-size);
+  filter: var(--tit-box-shadow);
+  line-height: var(--tit-line-height);
+  color: #fff;
+  transition: 0.3s;
+}
+.visual .scroll_down {
+  position: absolute;
+  height: 30px;
+  background-color: var(--main-bg);
+  border-top: 1px solid var(--box-stroke);
+  overflow: hidden;
+  bottom: 0;
+}
+.visual .scroll_ani {
+  display: flex;
+  gap: 26px;
+  animation-name: scroll_down;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.visual .scroll_down span {
+  position: relative;
+  white-space: nowrap;
+  filter: var(--tit-box-shadow);
+}
+.visual .scroll_down span::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  animation-name: scroll_icon;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_63_331' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='16' height='16'%3E%3Crect width='16' height='16' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_63_331)'%3E%3Cpath d='M8 12.6662L4 8.66624L4.93333 7.73291L8 10.7829L11.0667 7.73291L12 8.66624L8 12.6662ZM8 8.66624L4 4.66624L4.93333 3.73291L8 6.78291L11.0667 3.73291L12 4.66624L8 8.66624Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+@keyframes scroll_down {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes scroll_icon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.swiper-slide.introduce {
+  display: flex;
+  align-items: center;
+  padding: 2vw 4vw;
+}
+.introduce .box {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--main-bg);
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5vw 7vw;
+  gap: 3vw;
+  height: auto;
+  max-height: 90dvh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.introduce .box .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  gap: 1.5vw;
+  transition: 0.3s;
+}
+.introduce .box .left .photo {
+  width: 35vw;
+  max-width: 236px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.introduce .box .left .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.introduce .box .left .des {
+  width: 100%;
+  text-align: center;
+  word-break: keep-all;
+}
+.introduce .box .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vw;
+  width: 55%;
+  transition: 0.3s;
+}
+.introduce .box .right .info-section {
+  display: flex;
+  gap: 5vw;
+}
+.introduce .box .right .info-section:last-child {
+  align-items: center;
+}
+.introduce .box .right .info-section ul {
+  width: 20vw;
+  max-width: 295px;
+}
+.introduce .box .right .info-section h2 {
+  font-size: var(--tit-size);
+  filter: var(--tit-box-shadow);
+  line-height: var(--tit-line-height);
+  color: #fff;
+  width: 18vw;
+  max-width: 241px;
+}
+@media screen and (max-width: 1100px) {
+  .introduce .box {
+    flex-direction: column;
+    padding: 4vw 5vw;
+    max-height: none;
+    gap: 4vw;
+  }
+  .introduce .box .left {
+    display: none;
+  }
+  .introduce .box .right {
+    width: 100%;
+  }
+  .introduce .box .right .info-section {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .introduce .box .right .info-section ul,
+  .introduce .box .right .info-section h2 {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+.project1 .box:hover, .project2 .box:hover, .project3 .box:hover,
+div > .sub_box .font_box:hover, div > .sub_box .color_box:hover, div > .sub_box .tool_box:hover {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.8);
+}
+.project1 .box, .project2 .box, .project3 .box,
+div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
+  transition: 0.5s;
+}
+
+.swiper-slide.project1 {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4vw;
+  overflow: hidden;
+}
+.project1 .box {
+  background-color: var(--main-bg);
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  margin-bottom: 2vw;
+  padding: 2vw 3vw;
+  width: 100%;
+  height: auto;
+  min-height: 380px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project1 .box .isu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 87%;
+  gap: 3vw;
+}
+.project1 .box .isu .photo {
+  overflow: hidden;
+  width: 35vw;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.project1 .box .isu .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project1 .box .isu .tit {
+  width: 50%;
+  max-width: 600px;
+}
+.project1 .box .isu .tit h2 {
+  font-size: var(--tit-size);
+  filter: var(--tit-box-shadow);
+  line-height: var(--tit-line-height);
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.project1 .sub_box {
+  display: flex;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  transition: 0.3s;
+}
+.project1 .sub_box > div {
+  padding: 1rem 2.5rem;
+  background-color: var(--main-bg);
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.project1 .sub_box .color_box span {
+  position: relative;
+  padding-right: 23px;
+}
+.project1 .sub_box .color_box span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' fill='%23003780' stroke='%23C9C9C9'/%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width: 1000px) {
+  .project1 .box {
+    flex-direction: column;
+    height: auto;
+    padding: 4vw 3vw;
+  }
+  .project1 .box .isu {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project1 .box .isu .photo {
+    width: 60vw;
+    max-width: none;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .project1 .box .isu .tit {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .project1 .sub_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project1 .sub_box > div {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.swiper-slide.project2 {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4vw;
+  overflow: hidden;
+}
+.project2 .box {
+  background-color: var(--main-bg);
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  margin-bottom: 2vw;
+  padding: 2vw 3vw;
+  width: 100%;
+  height: auto;
+  min-height: 380px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project2 .box .posco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  width: 87%;
+  gap: 3vw;
+}
+.project2 .box .posco .photo {
+  overflow: hidden;
+  width: 35vw;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.project2 .box .posco .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project2 .box .posco .tit {
+  width: 50%;
+  max-width: 600px;
+}
+.project2 .box .posco .tit h2 {
+  font-size: var(--tit-size);
+  filter: var(--tit-box-shadow);
+  line-height: var(--tit-line-height);
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.project2 .sub_box {
+  display: flex;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  transition: 0.3s;
+}
+.project2 .sub_box > div {
+  padding: 1rem 2.5rem;
+  background-color: var(--main-bg);
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.project2 .sub_box .color_box span {
+  position: relative;
+  padding-right: 23px;
+}
+.project2 .sub_box .color_box span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' fill='%23000000' stroke='%23C9C9C9'/%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width: 1000px) {
+  .project2 .box {
+    flex-direction: column;
+    height: auto;
+    padding: 4vw 3vw;
+  }
+  .project2 .box .posco {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project2 .box .posco .photo {
+    width: 60vw;
+    max-width: none;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .project2 .box .posco .tit {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .project2 .sub_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project2 .sub_box > div {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.swiper-slide.project3 {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4vw;
+  overflow: hidden;
+}
+.project3 .box {
+  background-color: var(--main-bg);
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  margin-bottom: 2vw;
+  padding: 2vw 3vw;
+  width: 100%;
+  height: auto;
+  min-height: 380px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project3 .box .korea {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 87%;
+  gap: 3vw;
+}
+.project3 .box .korea .photo {
+  overflow: hidden;
+  width: 35vw;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.project3 .box .korea .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project3 .box .korea .tit {
+  width: 50%;
+  max-width: 600px;
+}
+.project3 .box .korea .tit h2 {
+  font-size: var(--tit-size);
+  filter: var(--tit-box-shadow);
+  line-height: var(--tit-line-height);
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.project3 .sub_box {
+  display: flex;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  transition: 0.3s;
+}
+.project3 .sub_box > div {
+  padding: 1rem 2.5rem;
+  background-color: var(--main-bg);
+  border: 1px solid var(--box-stroke);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.project3 .sub_box .color_box span {
+  position: relative;
+  padding-right: 23px;
+}
+.project3 .sub_box .color_box span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' fill='%23003780' stroke='%23C9C9C9'/%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width: 1000px) {
+  .project3 .box {
+    flex-direction: column;
+    height: auto;
+    padding: 4vw 3vw;
+  }
+  .project3 .box .korea {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project3 .box .korea .photo {
+    width: 60vw;
+    max-width: none;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .project3 .box .korea .tit {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .project3 .sub_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project3 .sub_box > div {
+    flex: none;
+    width: 100%;
+  }
+}
+
+
+.project3 .copyright {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

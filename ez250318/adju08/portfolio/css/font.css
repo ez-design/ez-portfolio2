@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 800;
+	font-style: italic;
+	src: url(../font/montserrat-800-italic.woff2) format('woff2');
+}
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 800;
+	font-style: normal;
+	src: url(../font/montserrat-800.woff2) format('woff2');
+	font-display: swap;
+}
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-style: italic;
+	src: url(../font/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXx0poK5.woff2) format('woff2');
+}
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-style: normal;
+	src: url(../font/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w9aXpsog.woff2) format('woff2');
+}
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-style: normal;
+	src: url(../font/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw9aXpsog.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('../font/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('../font/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* 이응노 미술관 */
+@font-face {
+	font-family: "Italiana";
+	font-weight: 400;
+	font-style: normal;
+	src: url(../../leeeungno/font/QldNNTtLsx4E__B0XQmWaXw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Red Rose';
+  	font-weight: 500;
+  	font-style: normal;
+	src: local('Red Rose Medium'), url(../../leeeungno/font/QdVISTYiLBjouPgEUajvsfWwDtc3MH8yn_szdT6t.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Red Rose';
+  	font-weight: 700;
+  	font-style: normal;
+	src: local('Red Rose Bold'), url(../../leeeungno/font/QdVISTYiLBjouPgEUajvsfWwDtc3MH8ySvwzdT6t.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url(../../leeeungno/font/GmarketSansMedium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url(../../leeeungno/font/GmarketSansBold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* 서경대학교 */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url(../../sku/font/Pretendard-ExtraBold.woff2) format('woff2'), url(../font/Pretendard-ExtraBold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url(../../sku/font/Pretendard-Medium.woff2) format('woff2'), url(../font/Pretendard-Medium.woff) format('woff');
+}
+
+
+/* 현대코퍼레이션 */
+@font-face {
+	font-family: "Ubuntu";
+  	font-weight: 500;
+  	font-style: normal;
+	src: url(../../hyundaicorp/font/4iCv6KVjbNBYlgoCjC3jvWyNL4U.woff2) format('woff2');
+}
+@font-face {
+	font-family: "Ubuntu";
+	font-weight: 700;
+	font-style: normal;
+	src: url(../../hyundaicorp/font/4iCv6KVjbNBYlgoCxCvjtGyNL4U.woff2) format('woff2');
+}
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 500;
+	font-style: normal;
+	src: url(../../hyundaicorp/font/PbykFmXiEBPT4ITbgNA5Cgm20xz64px_1hVWr0wuPNGmlQNMEfD4.0.woff2) format('woff2');
+}
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 700;
+	font-style: normal;
+	src: url(../../hyundaicorp/font/PbykFmXiEBPT4ITbgNA5Cgm20xz64px_1hVWr0wuPNGmlQNMEfD4.0.woff2) format('woff2');
+}

@@ -1,0 +1,42 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+strong, th {
+    font-weight: inherit;
+}
+address, em {
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+button, input[type="button"], input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: left;
+}
+select, input, textarea, button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+fieldset {
+    border: 0;
+}
+legend, caption {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

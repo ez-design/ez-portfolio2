@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fullpage 라이브러리 파일 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css">
+
+    <!-- swiper 라이브러리 파일 -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- jquery 라이브러리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <title>대전소방본부</title>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <div class="top_util">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">대전광역시청</a></li>
+                </ul>
+            </div>
+        </div><!--header_top-->
+        <div class="header_wrap">
+            <div class="nav_container">
+                <h1 class="logo"><a href="index.html"><span class="blind">대전소방본부</span></a></h1>
+                <nav class="gnb">
+                    <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                    <div class="gnb_wrap">
+                        <ul class="depth1">
+                            <li class="customer">
+                                <a href="#"><span>고객민원</span></a>
+                                <div class="gnb_bg">
+                                    <div class="title">
+                                        <strong>고객민원</strong>
+                                    </div>
+                                    <ul class="depth2">
+                                        <li class="">
+                                            <a href="#"><span>고객민원</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>위험물</span></a></li>
+                                                <li><a href="#"><span>소방시설업등록</span></a></li>
+                                                <li><a href="#"><span>소방시설공사</span></a></li>
+                                                <li><a href="#"><span>다중이용업소</span></a></li>
+                                                <li><a href="#"><span>소방안전관리</span></a></li>
+                                                <li><a href="#"><span>행정처분 사실요청</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>화재피해 주민지원센터</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>화재피해주민 지원개요</span></a></li>
+                                                <li><a href="#"><span>화재증명원 발급</span></a></li>
+                                                <li><a href="#"><span>임시주거 및 주택복구 지원 </span></a></li>
+                                                <li><a href="#"><span>생활안정지원</span></a></li>
+                                                <li><a href="#"><span>보험 및 의료지원</span></a></li>
+                                                <li><a href="#"><span>세제 및 금융지원</span></a></li>
+                                                <li><a href="#"><span>기타지원</span></a></li>
+                                                <li><a href="#"><span>지원서비스 주요기관안내</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>소방관련업현황</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>민원안내</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>구조·구급 증명</span></a></li>
+                                                <li><a href="#"><span>화재증명</span></a></li>
+                                                <li><a href="#"><span>소방시설업</span></a></li>
+                                                <li><a href="#"><span>소방시설관리업</span></a></li>
+                                                <li><a href="#"><span>방염처리업</span></a></li>
+                                                <li><a href="#"><span>건축물소방시설</span></a></li>
+                                                <li><a href="#"><span>다중이용업소 소방시설</span></a></li>
+                                                <li><a href="#"><span>위험물 민원</span></a></li>
+                                                <li><a href="#"><span>소방안전관리자 및 소방안전관리보조자 </span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul><!--depth2-->
+                                </div><!--gnb_bg-->
+                            </li><!--//intro-->
+                            <li class="safety">
+                                <a href="#"><span>생활안전</span></a>
+                                <div class="gnb_bg">
+                                    <div class="title">
+                                        <strong>생활안전</strong>
+                                    </div>
+                                    <ul class="depth2">
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>자연재난</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>사회재난</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>화재사고대처요령</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>화재 대처요령</span></a></li>
+                                                <li><a href="#"><span>산불사고 대처요령</span></a></li>
+                                                <li><a href="#"><span>소화기 사용법</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>생활사고대처요령</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>놀이시설</span></a></li>
+                                                <li><a href="#"><span>물놀이안전사고</span></a></li>
+                                                <li><a href="#"><span>승강기</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>119신고요령</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>응급상황대처요령</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>심폐소생술</span></a></li>
+                                                <li><a href="#"><span>기도폐쇄 시 응급처치</span></a></li>
+                                                <li><a href="#"><span>생활 응급처치</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul><!--depth2-->
+                                </div><!--gnb_bg-->
+                            </li><!--//admission-->
+                            <li class="data">
+                                <a href="#"><span>소방자료</span></a>
+                                <div class="gnb_bg">
+                                    <div class="title">
+                                        <strong>소방자료</strong>
+                                    </div>
+                                    <ul class="depth2">
+                                        <li>
+                                            <a href="#"><span>소방의역사</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>시대별역사</span></a></li>
+                                                <li><a href="#"><span>제도변천</span></a></li>
+                                                <li><a href="#"><span>행정변천</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>소방장비</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>소방의날</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>행정자료</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>통계자료</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>연구논문</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>소방의 복제 및 계급</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>소방복제</span></a></li>
+                                                <li><a href="#"><span>소방계급 구조 및 비교</span></a></li>
+                                                <li><a href="#"><span>세계의 소방계급 구조</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>소방홍보</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>소방사진</span></a></li>
+                                                <li><a href="#"><span>소방동영상</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul><!--depth2-->
+                                </div><!--gnb_bg-->
+                            </li><!--//education-->
+                            <li class="notification">
+                                <a href="#"><span>알림/참여마당</span></a>
+                                <div class="gnb_bg">
+                                    <div class="title">
+                                        <strong>알림/참여마당</strong>
+                                    </div>
+                                    <ul class="depth2">
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>공지사항</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>일일소방활동</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>시험정보</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>보도자료</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>칭찬합시다</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>묻고답하기</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>어린이공간</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>안전어린이</span></a></li>
+                                                <li><a href="#"><span>교육자료</span></a></li>
+                                                <li><a href="#"><span>공부방</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>소방체험 및 교육신청</span></a>
+                                        </li>
+                                    </ul><!--depth2-->
+                                </div><!--gnb_bg-->
+                            </li><!--//research-->
+                            <li class="institution">
+                                <a href="#"><span>기관소개</span></a>
+                                <div class="gnb_bg">
+                                    <div class="title">
+                                        <strong>기관소개</strong>
+                                    </div>
+                                    <ul class="depth2">
+                                        <li>
+                                            <a href="#"><span>소방본부</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>인사말</span></a></li>
+                                                <li><a href="#"><span>연혁</span></a></li>
+                                                <li><a href="#"><span>소방서비스헌장</span></a></li>
+                                                <li><a href="#"><span>장비현황</span></a></li>
+                                                <li><a href="#"><span>동부소방서</span></a></li>
+                                                <li><a href="#"><span>둔산소방서</span></a></li>
+                                                <li><a href="#"><span>대덕소방서</span></a></li>
+                                                <li><a href="#"><span>유성소방서</span></a></li>
+                                                <li><a href="#"><span>서부소방서</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>119특수대응단</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>인사말</span></a></li>
+                                                <li><a href="#"><span>주요 임무 및 연혁</span></a></li>
+                                                <li><a href="#"><span>주요 현황</span></a></li>
+                                                <li><a href="#"><span>주요 성과</span></a></li>
+                                                <li><a href="#"><span>찾아오시는 길</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>의용소방대</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>소개</span></a></li>
+                                                <li><a href="#"><span>인사말</span></a></li>
+                                                <li><a href="#"><span>연혁</span></a></li>
+                                                <li><a href="#"><span>조직 및 현황</span></a></li>
+                                                <li><a href="#"><span>활동실적</span></a></li>
+                                                <li><a href="#"><span>포토갤러리</span></a></li>
+                                                <li><a href="#"><span>자유게시판</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>119시민체험센터</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>119시민체험센터 소개</span></a></li>
+                                                <li><a href="#"><span>소방체험안내</span></a></li>
+                                                <li><a href="#"><span>이수증 신청</span></a></li>
+                                                <li><a href="#"><span>묻고답하기</span></a></li>
+                                                <li><a href="#"><span>포토갤러리</span></a></li>
+                                                <li><a href="#"><span>찾아오시는 길</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>조직도</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>업무검색</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>인사말</span></a></li>
+                                                <li><a href="#"><span>주요 임무 및 연혁</span></a></li>
+                                                <li><a href="#"><span>주요 현황</span></a></li>
+                                                <li><a href="#"><span>주요 성과</span></a></li>
+                                                <li><a href="#"><span>찾아오시는 길</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul><!--depth2-->
+                                </div><!--gnb_bg-->
+                            </li><!--//campus-->
+                            <li class="center">
+                                <a href="#"><span>신고센터</span></a>
+                                <div class="gnb_bg">
+                                    <div class="title">
+                                        <strong>신고센터</strong>
+                                    </div>
+                                    <ul class="depth2">
+                                        <li>
+                                            <a href="#" target="_blank" title="새창열림"><span>소방공무원 비리 익명 신고센터</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>클린신고센터(소방공무원)</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>클린신고센터란?</span></a></li>
+                                                <li><a href="#"><span>신고하기</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>클린신고센터(의소대)</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>클린신고센터란?</span></a></li>
+                                                <li><a href="#"><span>신고하기</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>소방시설 폐쇄 등 불법행위 신고센터</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>소방시설 폐쇄 등 불법행위 신고센터란?</span></a></li>
+                                                <li><a href="#"><span>신고하기</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>소방시설 품질시공 위반 신고센터</span></a>
+                                            <ul class="depth3">
+                                                <li><a href="#"><span>소방시설 품질시공 위반 신고센터란?</span></a></li>
+                                                <li><a href="#"><span>신고하기</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul><!--depth2-->
+                                </div><!--gnb_bg-->
+                            </li><!--//community-->
+                        </ul><!--depth1-->
+                    </div><!--gnb_wrap-->
+                    <div class="gnb_black"></div>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </nav><!--gnb-->
+            </div>
+            <div class="util">
+                <a href="#" class="mypage"><span class="blind">마이페이지</span></a>
+                <div class="lang">
+                    <a href="#" class="lang_open"><span class="blind">언어선택</span></a>
+                </div><!--lang-->
+                <div class="search">
+                    <button class="search_open"><span class="blind">검색 열기</span></button>
+                </div><!--search-->
+            </div><!--util-->
+        </div><!--header_wrap-->
+    </header>
+    <div id="fullpage">
+        <!-- fp-auto-height-responsive 모바일에서 높이 100% 해제 -->
+        <section class="section visual fp-auto-height-responsive">
+            <h2 class="blind">팝업</h2>
+            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                    <li class="swiper-slide bg01">
+                        <div class="wrapper">
+                            <h3>재난 속 한 줄기 희망,<br> 대전소방이 가장 먼저 달려갑니다.</h3>
+                        </div>
+                    </li>
+                    <li class="swiper-slide bg02">
+                        <div class="wrapper">
+                            <h3>안전한 하루의 시작,<br> 대전소방이 언제나 당신 곁을 지킵니다.</h3>
+                        </div>
+                    </li>
+                    <li class="swiper-slide bg03">
+                        <div class="wrapper">
+                            <h3>생명의 골든타임,<br> 한 순간도 놓치지 않겠습니다.</h3>
+                        </div>
+                    </li>
+                </ul>
+                <div class="inner">
+                    <div class="paging"></div> 
+                </div>
+            </div><!--swiper-->
+            <div class="ctrl_wrap">
+                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                <button class="btn_stop"><span class="blind">일시정지</span></button>
+                <button class="btn_play"><span class="blind">재생</span></button>
+                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+            </div><!--ctrl_wrap-->
+        </section><!--visual-->
+        <section class="section service fp-auto-height-responsive">
+            <div class="wrapper">
+                <div class="tit">
+                    <h2 class="tit_font">자주 찾는 서비스</h2>
+                </div>
+                <div class="service_link">
+                    <ul>
+                        <li class="icon01">
+                            <a href="#">
+                                <div class="link_inner">
+                                    <strong>소방안전교육</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="icon02">
+                            <a href="#">
+                                <div class="link_inner">
+                                    <strong>민원안내</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="icon03">
+                            <a href="#">
+                                <div class="link_inner">
+                                    <strong>칭찬합시다</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="icon04">
+                            <a href="#">
+                                <div class="link_inner">
+                                    <strong>일일소방활동</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="icon05">
+                            <a href="#">
+                                <div class="link_inner">
+                                    <strong>신고센터</strong>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service_box">
+                    <div class="box_group item01">
+                        <h3>소방본부</h3>
+                        <ul>
+                            <li>
+                                <strong>전화</strong>
+                                <span>주간 : 042-270-6116 <br> 야간 : 042-270-6106</span>
+                            </li>
+                            <li>
+                                <strong>팩스</strong>
+                                <span>042-270-6119</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_group item02">
+                        <h3>안전교육</h3>
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" title="새창열림">자연재난</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="새창열림">사회재난</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="새창열림">응급처치요령</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="새창열림">소화기사용법</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="새창열림">물놀이안전사고</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="current">
+                    <h3>오늘의 소방활동 현황</h3>
+                    <span class="date">2025.07.15 화요일</span>
+                    <ul>
+                        <li class="fire">
+                            <h4>화재</h4>
+                            <strong class="number">002<span>건</span></strong>
+                        </li>
+                        <li class="structure">
+                            <h4>구조</h4>
+                            <strong class="number">036<span>건</span></strong>
+                        </li>
+                        <li class="aid">
+                            <h4>구급</h4>
+                            <strong class="number">208<span>건</span></strong>
+                        </li>
+                    </ul>
+                    <a href="#" target="_blank" title="새창열림" class="link_shortcut"><span>소방청 민원 바로가기</span></a>
+                </div>
+            </div>
+        </section><!--service-->
+        <section class="section news fp-auto-height-responsive">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="notice">
+                        <div class="tit">
+                            <h2 class="tit_font">한눈에 보는 소식</h2>
+                        </div>
+                        <div class="notice_btn">
+                            <ul role="tablist">
+                                <li role="tab" aria-selected="true" class="item1 active" data-content="tab_item1"><button>공지사항<span class="blind">선택됨</span></button></li>
+                                <li role="tab" aria-selected="false" class="item2 " data-content="tab_item2"><button>보도자료<span class="blind"></span></button></li>
+                            </ul>
+                        </div><!--notice_btn-->
+                        <div class="notice_box">
+                            <div class="tab_item item1 active" id="tab_item1">
+                                <div class="swiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>공지사항</strong>
+                                                <h3>2025년 재난발생시 국민행동요령 홍보자료</h3>
+                                                <p>2025년 재난발생시 국민행동요령 홍보자료를 붙임과 같이 보내드립니다. 붙임 사항 숙지하여 재난발생시 대처에 활용하시기 바랍니다.</p>
+                                                <span class="date">2025.07.20</span>  
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>공지사항</strong>
+                                                <h3>[서부소방서] 노후 공동주택 화재안전조사 대상 사전 공개</h3>
+                                                <p>1. 화재의 예방 및 안전관리에 관한 법률 제8조(화재안전조사의 방법ㆍ절차 등)와 관련됩니다. 2. 화재안전조사를 실시하고자 "조사대상, 조사기간 및 조사사유 등"의 내용을 붙임과 같이 공개합니다. 붙임  화재안전조사계획 사전 공개 대상  1부.   끝.</p>
+                                                <span class="date">2025.07.18</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>공지사항</strong>
+                                                <h3>「소방본부 주관」 노후 아파트 긴급 화재안전조사 게획 사전안내</h3>
+                                                <p>「소방본부 주관」노후 아파트 긴급 화재안전조사 계획 사전 공개 1. 화재의 예방 및 안전관리에 관한 법률 제8조(화재안전조사의 방법ㆍ절차 등)와 관련됩니다. 2. 화재안전조사를 실시하고자 "조사대상, 조사기간 및 조사사유 등"의 내용을 붙임과 같이 공개합니다.</p>
+                                                <span class="date">2025.07.16</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>공지사항</strong>
+                                                <h3>[둔산소방서] 2025년 2월 중 화재안전조사 결과 공개</h3>
+                                                <p>1. 화재의 예방 및 안전관리에 관한 법률 제16조(화재안전조사 결과 공개)와 관련됩니다. 2. "화재안전조사에 관한 세부운영규정"에 따라 화재안전조사 결과를 붙임과 같이 공개합니다. 붙임  2월 화재안전조사 결과 공개(둔산소방서) 1부.  끝</p>
+                                                <span class="date">2025.07.14</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>공지사항</strong>
+                                                <h3>[동부소방서] 7월 지방화재안전조사계획 사전 공개</h3>
+                                                <p>1. 화재의 예방 및 안전관리에 관한 법률 제8조(화재안전조사의 방법ㆍ절차 등)와 관련됩니다. 2. 화재안전조사를 실시하고자 "조사대상, 조사기간 및 조사사유 등"의 내용을 붙임과 같이 공개합니다. 붙임  화재안전조사계획 사전 공개 1부.  끝.</p>
+                                                <span class="date">2025.07.13</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>공지사항</strong>
+                                                <h3>건설현장 화재예방 안전수칙</h3>
+                                                <p>1. 화재 예방 수칙 - 사전준비 및 예방조치, 작업 중 화재예방 및 관리, 공사장 정리정돈 및 안전순찰
+                                                   2. 화재 발생 시 대응 수칙 - 초기 진화  및 신고, 비상 대피 및 인명 보호, 소방시설 및 비상구 유지</p>
+                                                <span class="date">2025.07.10</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!--swiper-->
+                                <div class="group">
+                                    <div class="ctrl_wrap">
+                                        <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                        <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                                    </div>
+                                    <a href="#" class="more"><span>더보기</span></a>
+                                </div><!--group-->
+                            </div><!--tab_item item1-->
+                            <div class="tab_item item2 " id="tab_item2">
+                                <div class="swiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>보도자료</strong>
+                                                <h3>대전소방, 공동주택 돌봄세대 화재안전망 강화</h3>
+                                                <p>대전서부소방서(서장 김화식)는 김화식 서장이 23일 오전 8시 19분께 관내 건물 붕괴사고 현장을 점검했다고 밝혔다. 소방서에 따르면 전날 오후 8시께 철거 작업이 진행되던 한 건물이 붕괴했다. 작업이 진행되고 있지 않아 다행히 인명피해는 없었다.</p>
+                                                <span class="date">2025.07.24</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>보도자료</strong>
+                                                <h3>대전서부소방서, 대전대 학생 대상 119구급차 동승실습</h3>
+                                                <p>대전대학교 응급구조학과 4학년 학생들을 대상으로 21일부터 내달 14일까지 119구급차 동승실습을 실시한다고 21일 밝혔다. 이번 실습은 응급구조학과 학생들의 현장 대응 능력을 강화하고 실무 경험을 확대하기 위해 추진됐다.</p>
+                                                <span class="date">2025.07.22</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>보도자료</strong>
+                                                <h3>전국소방기술경연대회 1위한 대덕소방서 대원 특별승진</h3>
+                                                <p>대덕소방서(서장 김종화)는 ‘제38회 전국소방기술 경연대회’에서 1위에 입상한 4명에게 특별승진 임용장을 수여했다고 밝혔다. 이번 특별승진의 주인공은 윤덕수 소방장과 김성완ㆍ정원영 소방교, 지현석 소방사다.</p>
+                                                <span class="date">2025.07.15</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>보도자료</strong>
+                                                <h3>대덕소방서, 초등학교ㆍ특수학교 대상 긴급 소방안전교육</h3>
+                                                <p>대덕소방서(서장 김종화)는 지난 10일부터 이달 29일까지 관내 초등학교와 특수학교를 대상으로 긴급 소방안전교육을 추진한다고 11일 밝혔다. 소방서는 최근 잇따라 발생한 부산 아파트 화재로 초등학생 다수가 사망한 사건을 계기로 유사 사고의 재발을 막고자 이번 교육을 기획했다.</p>
+                                                <span class="date">2025.07.13</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>보도자료</strong>
+                                                <h3>대덕소방서, 노후 공동주택 관서장 현장 지도점검</h3>
+                                                <p>이번 점검은 스프링클러가 설치되지 않은 노후 아파트의 소방안전관리 실태를 점검하고 관계자와 입주민들을 대상으로 화재 예방, 재난 초기 대응 등을 안내하고자 추진됐다.</p>
+                                                <span class="date">2025.07.10</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <svg width="256" height="291" viewBox="0 0 256 291" xmlns="http://www.w3.org/2000/svg" class="line">
+                                                    <path d="M18.5 0.5H237.5C247 0.5 255 9 255 20V271C255 281.5 247 290.5 237.5 290.5H18.5C9 290.5 1 281.5 1 271V20C1 9 9 0.5 18.5 0.5Z"
+                                                    fill="none" stroke="#DB444A" stroke-width="4" vector-effect="non-scaling-stroke" stroke-dasharray="3000" stroke-dashoffset="3000" />
+                                                </svg>
+                                                <strong>보도자료</strong>
+                                                <h3>대전동부소방서, 여름철 재난 대비 ‘소방안전관리자 5대 수칙’ 집중 홍보</h3>
+                                                <p>소방서는 무더위와 국지성 집중호우 등으로 인한 전기화재ㆍ침수사고 위험이 높아지는 시기를 맞아 관내 다중이용시설과 중점관리대상 등의 소방안전관리자가 준수해야 할 안전수칙을 안내하고 있다.</p>
+                                                <span class="date">2025.07.06</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!--swiper-->
+                                <div class="group">
+                                    <div class="ctrl_wrap">
+                                        <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                        <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                                    </div>
+                                    <a href="#" class="more"><span>더보기</span></a>
+                                </div><!--group-->
+                            </div><!--tab_item item2-->
+                        </div><!--notice_box-->
+                    </div><!--notice-->
+                    <div class="notice_popup">
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#"><div class="photo"><img src="images/main/popup_img01.jpg" alt="화재 주의사항"></div></a>
+                                </li> 
+                                <li class="swiper-slide">
+                                    <a href="#"><div class="photo"><img src="images/main/popup_img02.jpg" alt="소방 장비 기업 모집"></div></a>
+                                </li> 
+                                <li class="swiper-slide">
+                                    <a href="#"><div class="photo"><img src="images/main/popup_img03.jpg" alt="보이스피싱 사기 주의"></div></a>
+                                </li> 
+                                <li class="swiper-slide">
+                                    <a href="#"><div class="photo"><img src="images/main/popup_img04.jpg" alt="국제소방안전박람회"></div></a>
+                                </li> 
+                            </ul>
+                            <div class="ctrl_wrap">
+                                <div class="paging"></div>
+                                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                                <button class="btn_stop"><span class="blind">일시정지</span></button>
+                                <button class="btn_play"><span class="blind">재생</span></button>
+                                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                            </div><!--ctrl_wrap-->
+                        </div><!--swiper-->
+                    </div><!--notice_popup-->
+                </div><!--inner-->
+            </div>
+        </section><!--news-->
+        <section class="section action fp-auto-height-responsive">
+            <div class="wrapper">
+                <div class="tit">
+                    <h2 class="tit_font">활동사진</h2>
+                </div>
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/action_img01.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>제62주년 소방의 날 기념식</h3>
+                                        <span class="date">2024.11.08</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/action_img02.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>대덕소방서 철거예정 건물 활용 가상화재 훈련</h3>
+                                        <span class="date">2024.10.29</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/action_img03.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>대전광역시 행정자치위원회 소방관서 현장 방문</h3>
+                                        <span class="date">2024.10.17</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/action_img04.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>에어매트 인명구조 훈련</h3>
+                                        <span class="date">2024.08.28</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/action_img05.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>2024년 을지연습 연계 소방차 길터주기 훈련</h3>
+                                        <span class="date">2024.08.22</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/action_img06.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <h3>0시 축제 119음악회</h3>
+                                        <span class="date">2024.08.16</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--swiper-->
+                    <div class="group">
+                        <div class="ctrl_wrap">
+                            <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                            <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                        </div>
+                        <a href="#" class="more"><span>더보기</span></a>
+                    </div><!--group-->
+                </div><!--list-->
+            </div>
+        </section><!--action-->
+        <section class="section experience fp-auto-height-responsive">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="tit">
+                        <h2 class="tit_font">119 시민 체험센터</h2>
+                        <p>대전시는 시민의 위기대처능력 향상과 안전문화 확산을 위해<br> 지진, 화재 등 재난 체험 프로그램을 운영합니다.</p>
+                    </div>
+                    <div class="list">
+                        <div class="item item1">
+                            <a href="#">
+                                <strong>체험안내</strong>
+                            </a>
+                        </div>
+                        <div class="item item2">
+                            <a href="#">
+                                <strong>체험예약</strong>
+                            </a>
+                        </div>
+                        <div class="item item3">
+                            <a href="#">
+                                <strong>이수증신청</strong>
+                            </a>
+                        </div>
+                    </div><!--list-->
+                </div><!--inner-->
+                <a href="#" target="_blank" title="새창열림" class="link_shortcut"><span>119 체험센터 바로가기</span></a>
+            </div>
+        </section><!--experience-->
+        <section class="section map fp-auto-height-responsive">
+            <div class="wrapper">
+                <div class="tit">
+                    <h2 class="tit_font">소방서 안내</h2>
+                </div><!--tit-->
+                <div class="inner">
+                    <div class="map_btn"></div>
+                    <div class="map_box"></div>
+                </div>
+            </div>
+        </section><!--map-->
+        <footer class="section fp-auto-height">
+        </footer><!--footer-->
+    </div>
+</body>
+</html>

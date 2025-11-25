@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fullpage 라이브러리 파일 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css">
+
+    <!-- jquery 라이브러리 -->
+    <script src="portfolio/js/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="portfolio/css/main.css">
+    <script src="portfolio/js/common.js"></script>
+    <script src="portfolio/js/main.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>포트폴리오</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1>PORTFOLIO</h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#home"><span>HOME</span></a></li>
+                        <li><a href="#profile"><span>PROFILE</span></a></li>
+                        <li><a href="#project01"><span>단국대학교</span></a></li>
+                        <li><a href="#project02"><span>부여문화관광</span></a></li>
+                        <!-- <li><a href="#project03"><span>대전소방본부</span></a></li> -->
+                        <li><a href="#contact"><span>CONTACT</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="fullpage">
+            <!-- fp-auto-height-responsive 모바일에서 높이 100% 해제 -->
+            <section class="section home fp-auto-height-responsive" data-anchor="home">
+                <div class="wrapper">
+                    <h2>PortFolio</h2>
+                    <span>2025</span>
+                </div>
+            </section><!--home-->
+            <section class="section profile fp-auto-height-responsive" data-anchor="profile">   
+                <div class="wrapper">
+                    <div class="tit">
+                        <div class="photo"><img src="portfolio/images/main/profile_photo.png" alt="증명사진"></div>
+                        <div class="txt">
+                            <h2>서이름</h2>
+                            <span>2000.08.00</span>
+                            <span>010.1234.1234</span>
+                            <span>email@naver.com</span>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="group">
+                            <div class="edu">
+                                <h3>EDUCATION</h3>
+                                <ul>
+                                    <li>
+                                        <strong>UI/UX 반응형웹디자인&웹퍼블리셔 과정 수료</strong>
+                                        <span>2025.03.18 ~ 2025.07.24</span>
+                                    </li>
+                                    <li>
+                                        <strong>OO대학교 OO학부 OO전공 졸업</strong>
+                                        <span>2000.02</span>
+                                    </li>
+                                </ul>
+                            </div><!--edu-->
+                            <div class="skills">
+                                <h3>SKILLS</h3>
+                                <ul class="skills_01">
+                                    <li><img src="portfolio/images/main/skills01.svg" alt="photoshop"></li>
+                                    <li><img src="portfolio/images/main/skills02.svg" alt="illustrator"></li>
+                                    <li><img src="portfolio/images/main/skills03.svg" alt="Adobe XD"></li>
+                                    <li><img src="portfolio/images/main/skills04.svg" alt="figma"></li>
+                                </ul>
+                                <div class="list_sub">
+                                    <ul class="skills_02">
+                                        <li><img src="portfolio/images/main/skills05.svg" alt="visual studio code"></li>
+                                        <li><img src="portfolio/images/main/skills06.svg" alt="github"></li>
+                                    </ul>
+                                    <ul class="skills_03">
+                                        <li><img src="portfolio/images/main/skills07.svg" alt="html"></li>
+                                        <li><img src="portfolio/images/main/skills08.svg" alt="css"></li>
+                                        <li><img src="portfolio/images/main/skills09.svg" alt="jquery"></li>
+                                    </ul>
+                                </div><!--list-->
+                            </div><!--skills-->
+                        </div><!--group-->
+                        <div class="group">
+                            <div class="lice">
+                                <h3>LICENSE</h3>
+                                <ul>
+                                    <li>
+                                        <strong>GTQ 포토샵 1급</strong>
+                                        <span>2025.05.16</span>
+                                    </li>
+                                    <li>
+                                        <strong>ITQ 한글엑셀 A등급</strong>
+                                        <span>2018.06.28</span>
+                                    </li>
+                                </ul>
+                            </div><!--lice-->
+                            <div class="award">
+                                <h3>AWARD</h3>
+                                <ul>
+                                    <li>
+                                        <strong>교내 콘텐츠 OO 경진대회 우수상</strong>
+                                        <span>2000.10.00</span>
+                                    </li>
+                                    <li>
+                                        <strong>교내 OO페스티벌(경진대회) 우수상</strong>
+                                        <span>2000.11.00</span>
+                                    </li>
+                                </ul>
+                            </div><!--award-->
+                        </div><!--group-->
+                    </div><!--list-->
+                </div>
+            </section><!--profile-->
+            <section class="section project01 fp-auto-height-responsive" data-anchor="project01">
+                <div class="wrapper">
+                    <div class="group">
+                        <strong class="tit_font">Project01</strong>
+                        <h2>단국대학교</h2>
+                        <ul class="menu">
+                            <li><a href="dankook/index.html" target="_blank" title="새창열림">리디자인 홈페이지 보기</a></li>
+                        </ul>
+                        <h3>단국대학교 반응형 웹 디자인</h3>
+                        <p>단국대학교의 창의성과 실용성을 반영해 홈페이지를 직관적이고<br>
+                            세련된 디자인으로 개편하였습니다. 주요 정보는 통합 구조로<br>
+                            재배치하고, 단국 블루를 활용해 신뢰감과 활기를 표현했습니다.</p>
+                        <ul class="box">
+                            <li>
+                                <strong>작업기한</strong>
+                                <span>약 8일</span>
+                            </li>
+                            <li>
+                                <strong>기여도</strong>
+                                <span>100% 개인작업</span>
+                            </li>
+                            <li>
+                                <strong>SKILLS</strong>
+                                <span>Figma, HTML5, CSS, Jquery, Git</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <a href="dankook/index.html" target="_blank" title="새창열림">
+                            <div class="photo"><img src="portfolio/images/main/project01_img02.png" alt="단국대학교 홈페이지 사진"></div>
+                        </a>
+                    </div>
+                </div>
+            </section><!--project01-->
+            <section class="section project02 fp-auto-height-responsive" data-anchor="project02">
+                <div class="wrapper">
+                    <div class="group">
+                        <strong class="tit_font">Project02</strong>
+                        <h2>부여문화관광</h2>
+                        <ul class="menu">
+                            <li><a href="buyeo/index.html" target="_blank" title="새창열림">리디자인 홈페이지 보기</a></li>
+                        </ul>
+                        <h3>부여문화관광 반응형 웹 디자인</h3>
+                        <p>백제의 찬란한 문화유산과 사계절 내내 아름다운 자연, 다양한 축제와 <br>
+                            체험 프로그램을 감각적으로 전달하기 위해, 콘텐츠 중심의 직관적이면서도 <br>
+                            일러스트를 활용해 부드럽고 친근한 분위기의 디자인으로 구성하였습니다.</p>
+                        <ul class="box">
+                            <li>
+                                <strong>작업기한</strong>
+                                <span>약 7일</span>
+                            </li>
+                            <li>
+                                <strong>기여도</strong>
+                                <span>100% 개인작업</span>
+                            </li>
+                            <li>
+                                <strong>SKILLS</strong>
+                                <span>Figma, illustlater, HTML5, CSS, Jquery, Git</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <a href="buyeo/index.html" target="_blank" title="새창열림">
+                            <div class="photo"><img src="portfolio/images/main/project02_img02.png" alt="부여문화관광 홈페이지 사진"></div>
+                        </a>
+                    </div>
+                </div>
+            </section><!--project02-->
+            <!-- <section class="section project03 fp-auto-height-responsive" data-anchor="project03">
+                <div class="wrapper">
+                    <div class="group">
+                        <strong class="tit_font">Project03</strong>
+                        <h2>대전소방본부</h2>
+                        <ul class="menu">
+                            <li><a href="#">홈페이지 제작 중</a></li>
+                        </ul>
+                        <h3>대전소방본부 반응형 웹 디자인</h3>
+                        <p>대전소방본부의 신속한 대응과 공공 안전 이미지를 강조하기 위해 <br>
+                            홈페이지를 효율적이고 안정감 있게 개편하였습니다. 재난 안내, <br>
+                            신고 서비스 등 핵심 정보를 명확히 배치해 시민이 쉽게 접근하도록 <br>
+                            구성했습니다.</p>
+                        <ul class="box">
+                            <li>
+                                <strong>작업기한</strong>
+                                <span>...</span>
+                            </li>
+                            <li>
+                                <strong>기여도</strong>
+                                <span>100% 개인작업</span>
+                            </li>
+                            <li>
+                                <strong>SKILLS</strong>
+                                <span>Figma, illustlater, HTML5, CSS, Jquery, Git</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <a href="#">
+                            <div class="photo"><img src="portfolio/images/main/project03_img02.png" alt="대전소방본부 홈페이지 사진"></div>
+                        </a>
+                    </div>
+                </div>
+            </section> project03 -->
+            <section class="section contact fp-auto-height-responsive" data-anchor="contact">
+                <div class="wrapper">
+                    <h2>THANK YOU</h2>
+                    <div class="txt">
+                        <span>서이름</span>
+                        <span>010.1234.1234</span>
+                        <span>email@naver.com</span>
+                    </div>
+                </div>
+            </section><!--contact-->
+        </div>
+    </div><!--wrap-->
+    <div class="cursor"> click </div>
+</body>
+</html>

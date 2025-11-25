@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery 라이브러리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- swiper 라이브러리 -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- aos 애니메이션 라이브러리 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>이응노미술관</title>
+</head>
+<body>
+    <div class="skip_nav">
+        <a href="#skip_content">본문바로가기</a>
+    </div>
+    <div id="wrap">
+        <header class="fixed">
+            <h1 class="logo"><a href="index.html"><span class="blind">이응노미술관</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_util">
+                        <div class="lang">
+                            <button class="lang_open"><span>KR</span></button>
+                        </div><!--//lang-->
+                        <div class="search">
+                            <button class="search_open"><span class="blind">검색</span></button>
+                        </div><!--//search-->
+                    </div><!--//gnb_util-->
+                    <ul class="depth1">
+                        <!--pc버전에서 over 클래스 추가, 모바일에서는 open 클래스 추가-->
+                        <li class="">
+                            <a href="#"><span>이응노</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>고암연보</span></a></li>
+                                <li><a href="#"><span>예술세계</span></a></li>
+                                <li><a href="#"><span>파리동양미술학교</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>소개</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>관장인사말</span></a></li>
+                                <li><a href="#"><span>미술관 건축물 및 MI</span></a></li>
+                                <li><a href="#"><span>연혁</span></a></li>
+                                <li><a href="#"><span>조직</span></a></li>
+                                <li><a href="#"><span>인권.윤리경영</span></a></li>
+                                <li><a href="#"><span>경영공시</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>전시</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>현재전시</span></a></li>
+                                <li><a href="#"><span>과거전시</span></a></li>
+                                <li><a href="#"><span>전시예정</span></a></li>
+                                <li><a href="#"><span>작가지원 프로젝트</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>교육/행사</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>교육프로그램</span></a></li>
+                                <li><a href="#"><span>이응노어린이미술대회</span></a></li>
+                                <li><a href="#"><span>행사</span></a></li>
+                                <li><a href="#"><span>파리이응노레지던스</span></a></li>
+                                <li><a href="#"><span>아트랩대전</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>소식/홍보</span></a>
+                            <ul class="depth2">
+                                <li><a href="#"><span>미술관소식</span></a></li>
+                                <li><a href="#"><span>보도자료</span></a></li>
+                                <li><a href="#"><span>채용공고</span></a></li>
+                                <li><a href="#"><span>소식지</span></a></li>
+                                <li><a href="#"><span>후원</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div><!--//gnb_wrap-->
+                <div class="gnb_bg"></div>
+                
+            </nav>
+            <div class="util">
+                <div class="lang">
+                    <button class="lang_open"><span>KR</span></button>
+                </div><!--//lang-->
+                <div class="search">
+                    <button class="search_open"><span class="blind">검색</span></button>
+                </div><!--//search-->
+            </div><!--//util-->
+        </header>
+
+        <main class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual01.jpg" alt=""></div>
+                            <div class="txt_wrap">
+                                <div class="wrapper">
+                                    <div class="v_txt">
+                                        <div class="txt pc delay1"><p>Let art shine—</p></div>
+                                        <div class="txt pc delay2"><p>and let the museum shine with it.</p></div>
+
+                                        <div class="txt mobil"><p>Let art shine—</p></div>
+                                        <div class="txt mobil"><p>and let the museum </p></div>
+                                        <div class="txt mobil"><p>shine with it.</p></div>
+                                    </div><!--//v_txt-->
+
+                                    <span>예술을 비추는 공간, 그 자체도 하나의 예술이어야 합니다.</span>
+                                </div><!--//wrapper-->
+                            </div><!--//txt_wrap-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual02.jpg" alt=""></div>
+                            <div class="txt_wrap">
+                                <div class="wrapper">
+                                    <div class="v_txt">
+                                        <div class="txt pc delay1"><p>Born of exile, </p></div>
+                                        <div class="txt pc delay2"><p>shaped by tradition, speaking to now.</p></div>
+                                        
+                                        <div class="txt mobil"><p>Born of exile, </p></div>
+                                        <div class="txt mobil"><p>shaped by tradition, </p></div>
+                                        <div class="txt mobil"><p>speaking to now.</p></div>
+                                    </div><!--//v_txt-->
+
+                                    <span>망명에서 태어나, 전통으로 빚어져, 오늘을 말하다.</span>
+                                </div><!--//wrapper-->
+                            </div><!--//txt_wrap-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual03.jpg" alt=""></div>
+                            <div class="txt_wrap">
+                                <div class="wrapper">
+                                    <div class="v_txt">
+                                        <div class="txt pc delay1"><p>A gentle journey weaving</p></div>
+                                        <div class="txt pc delay2"><p>the rich legacies of East and West.</p></div>
+                                        
+                                        <div class="txt mobil"><p>A gentle journey </p></div>
+                                        <div class="txt mobil"><p>weaving the rich </p></div>
+                                        <div class="txt mobil"><p>legacies of East and </p></div>
+                                        <div class="txt mobil"><p>West.</p></div>
+                                    </div><!--//v_txt-->
+
+                                    <span>동서양의 풍부한 유산을 부드럽게 엮어가는 여정.</span>
+                                </div><!--//wrapper-->
+                            </div><!--//txt_wrap-->
+                        </li>
+                    </ul>
+                </div><!--//swiper-->
+                <div class="ctrl_wrap">
+                        <div class="group">
+                            <div class="count_pc"></div>
+                            <div class="count_mobil"></div>
+                            <button class="btn_next"><span class="blind">다음버튼</span></button>
+                        </div>
+                </div>
+            </section>
+
+            <section class="bar">
+                <h2>안내</h2>
+                <div class="research">
+                    <a href="#">
+                        <h3>LeeEungno<br>Research Institute</h3>
+                        <span>이응노 연구소</span>
+                    </a>
+                </div>
+                <div class="inner">
+                    <h3>Visitor Info</h3>
+                    <div class="list">
+                        <ul>
+                            <li class="info"><a href="#">관람정보</a></li>
+                            <li class="map"><a href="#">오시는 길</a></li>
+                            <li class="guide"><a href="#">이용안내</a></li>
+                            <li class="support"><a href="#">작가지원</a></li>
+                        </ul>
+                    </div><!--//list-->
+                </div><!--//inner-->
+            </section>
+
+            <section class="exhibitions" id="skip_content">
+                <div class="wrapper">
+                    <div class="txt" data-aos="fade-up">
+                        <div class="tit">
+                            <strong>(Exhibitions)</strong>
+                            <h2>展, 지금</h2>
+                        </div>
+                        <p>이응노의 붓끝에서 피어난 사유와 시대의 이야기, 지금 전시된 작품 속에 살아 숨 쉽니다.</p>
+                    </div><!--//txt-->
+                    <div class="list" data-aos="fade-up">
+                        <div class="swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/exhibitions01.jpg" alt=""></div>
+                                        <h3>신중덕, 추상, 생명</h3>
+                                        <p>2025. 06 .17 - 08. 24</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/exhibitions02.jpg" alt=""></div>
+                                        <h3>2025 이응노미술관 상설전 - 이응노, 문자로 엮은 추상 -</h3>
+                                        <p>2025. 01. 17 - 12. 25</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="photo"><img src="images/main/exhibitions03.jpg" alt=""></div>
+                                        <h3>이응노미술관-빛의 시어터 공동기획전 - 이응노 : 위대한 예술적 여정, 서울-파리 -</h3>
+                                        <p>2024. 12. 19 - 2025. 06. 30</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--//list-->
+                    <div class="more" data-aos="fade-up">
+                        <a href="https://www.naver.com/"><span>More</span></a>
+                    </div>
+                </div><!--//wrapper-->
+            </section>
+
+            <section class="public">
+                <div class="tit" data-aos="fade-up">
+                    <div class="wrapper">
+                        <strong>(Public Engagement)</strong>
+                        <h2>이음, 참여</h2>
+                    </div>
+                </div>
+                <div class="list" data-aos="fade-up">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="ticket">
+                                    <div class="ticket_edge left">
+                                        <span class="bg left"></span>
+                                    </div>
+                                    <div class="ticket_inner">
+                                        <div class="photo"><img src="images/main/public01.jpg" alt=""></div>
+                                        <div class="txt_wrap">
+                                            <h3>2025 문화가있는날 교육 프로그램<br> -Sound Bath : 사색의 미술관- 안내</h3>
+                                            <div class="txt_cont">
+                                                <ul>
+                                                    <li>
+                                                        <strong>일정</strong>
+                                                        <p>2025년 5 - 10월 마지막 주 수요일</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>장소</strong>
+                                                        <p>이응노미술관 전시실, 야외잔디마당 등</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>프로그램</strong>
+                                                        <p>교육</p>
+                                                    </li>
+                                                </ul>
+                                            </div><!--//txt_cont-->
+                                            <a href="#">참여신청</a>
+                                        </div><!--//txt_wrap-->
+                                    </div><!--//ticket_inner-->
+                                    <div class="ticket_edge right">
+                                        <span class="bg right"></span>
+                                    </div>
+                                </div><!--//ticket-->
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="ticket">
+                                        <div class="ticket_edge left">
+                                            <span class="bg left"></span>
+                                        </div>  
+                                    <div class="ticket_inner">
+                                        <div class="photo"><img src="images/main/public02.jpg" alt=""></div>
+                                        <div class="txt_wrap">
+                                            <h3>2025 이응노연구소 학술심포지엄<br>- 횡단하는 미술 - 아시아와 유럽의 이응노 -</h3>
+                                            <div class="txt_cont">
+                                                <ul>
+                                                    <li>
+                                                        <strong>일정</strong>
+                                                        <p>2505. 05. 24.</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>장소</strong>
+                                                        <p>이응노미술관 세미나실 (엑스포 시민광장 1BF)</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>프로그램</strong>
+                                                        <p>행사</p>
+                                                    </li>
+                                                </ul>
+                                            </div><!--//txt_cont-->
+                                            <a href="#">참여신청</a>
+                                        </div><!--//txt_wrap-->
+                                    </div><!--//ticket_inner-->
+                                    <div class="ticket_edge right">
+                                        <span class="bg right"></span>
+                                    </div>
+                                </div><!--//ticket-->
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="ticket">
+                                        <div class="ticket_edge left">
+                                            <span class="bg left"></span>
+                                        </div>
+                                    <div class="ticket_inner">
+                                        <div class="photo"><img src="images/main/public03.jpg" alt=""></div>
+                                        <div class="txt_wrap">
+                                            <h3>2025 일반인 대상 교육 프로그램<br>- 체크인이응노> 참여신청 - 2회차 -</h3>
+                                            <div class="txt_cont">
+                                                <ul>
+                                                    <li>
+                                                        <strong>일정</strong>
+                                                        <p>2025. 05. 14</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>장소</strong>
+                                                        <p>이응노미술관</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>프로그램</strong>
+                                                        <p>교육</p>
+                                                    </li>
+                                                </ul>
+                                            </div><!--//txt_cont-->
+                                            <a href="#">참여신청</a>
+                                        </div><!--//txt_wrap-->
+                                    </div><!--//ticket_inner-->
+                                    <div class="ticket_edge right">
+                                        <span class="bg right"></span>
+                                    </div>
+                                </div><!--//ticket-->
+                            </li>
+                        </ul>
+                        <div class="paging"></div>
+                    </div>
+                </div><!--//list-->
+                <div class="more">
+                    <a href="https://www.naver.com/"><span>More</span></a>
+                </div>
+                <div class="rolling">
+                    <p>LEEUNGNO MUSEUM    LEEUNGNO MUSEUM    LEEUNGNO MUSEUM    LEEUNGNO MUSEUM</p>
+                </div>
+            </section>
+
+            <section class="notice">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up">
+                        <strong>(Notice)</strong>
+                        <h2>소식, 곁에</h2>
+                    </div>
+                    <div class="list" data-aos="fade-up">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <strong>미술관 소식</strong>
+                                    <p><span>- 신중덕, 추상, 생명 - 전시 기자간담회 개최 알림</span></p>
+                                    <span>2025. 06. 11</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <strong>보도자료</strong>
+                                    <p><span>2025 이응노미술관 기획전 - 신중덕, 추상, 생명 - 개최</span></p>
+                                    <span>2025. 06. 09</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <strong>미술관 소식</strong>
+                                    <p><span>(재)대전고암미술문화재단 2025 지역작가 전시프로젝트 참여작가 모집공고</span></p>
+                                    <span>2025. 06. 02</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <strong>미술관 소식</strong>
+                                    <p><span>이응노미술관 전시교체기간 안내</span></p>
+                                    <span>2025. 06. 01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="https://www.naver.com/"><span>More</span></a>
+                    </div>
+                </div><!--//wrapper-->
+            </section>
+
+            <section class="collection">
+                <div class="wrapper">
+                    <div class="txt" data-aos="fade-up">
+                        <div class="tit">
+                            <strong>(Collection)</strong>
+                            <h2>시간의 단면</h2>
+                        </div>
+                        <div class="more"><a href="https://www.naver.com/"><span>More</span></a></div>
+                    </div><!--//txt-->
+                    <div class="list_pc" data-aos="fade-up">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection01.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>구성</h3>
+                                        </div>
+                                        <span>1972</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection02.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection03.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>판화</strong>
+                                            <h3>구성</h3>
+                                        </div>
+                                        <span>1974</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection04.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection05.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>조각</strong>
+                                            <h3>군상(群像)</h3>
+                                        </div>
+                                        <span>1973</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection06.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection07.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>아카데미</strong>
+                                            <h3>꽃</h3>
+                                        </div>
+                                        <span>1971</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection08.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection09.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>군상</h3>
+                                        </div>
+                                        <span>1984</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="brand"><span class="blind">로고 이미지</span></div>
+                            </li>
+                        </ul>
+                    </div><!--//list_pc-->
+                </div><!--//wrapper-->
+
+                <div class="list_mobil" data-aos="fade-up">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection01.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>구성</h3>
+                                        </div>
+                                        <span>1972</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection02.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection03.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>판화</strong>
+                                            <h3>구성</h3>
+                                        </div>
+                                        <span>1974</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection04.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>    
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection05.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>조각</strong>
+                                            <h3>군상(群像)</h3>
+                                        </div>
+                                        <span>1973</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection06.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection07.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>아카데미</strong>
+                                            <h3>꽃</h3>
+                                        </div>
+                                        <span>1971</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection08.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>동방견문록시리즈</h3>
+                                        </div>
+                                        <span>1980</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/collection09.jpg" alt=""></div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_inner">
+                                            <strong>회화</strong>
+                                            <h3>군상</h3>
+                                        </div>
+                                        <span>1984</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--//swiper-->
+                    <div class="ctrl_wrap">
+                        <button class="btn_prev"></button>
+                        <div class="paging"></div>
+                        <button class="btn_next"></button>
+                    </div>
+                </div><!--//list_mobil-->
+            </section>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="sns">
+                    <ul>
+                        <li class="facebook"><a href="#"><span class="blind">페이스북</span></a></li>
+                        <li class="kakao"><a href="#"><span class="blind">카카오톡</span></a></li>
+                        <li class="insta"><a href="#"><span class="blind">인스타그램</span></a></li>
+                        <li class="youtube"><a href="#"><span class="blind">유튜브</span></a></li>
+                    </ul>
+                </div><!--//sns-->
+                <div class="info_wrap">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">Artshop</a></li>
+                            <li><a href="#">카페테리아</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_info">
+                        <span>대전고암미술문화재단</span><br>
+                        <address>(35204) 대전광역시 서구 둔산대로 157</address><br>
+                        <span>Tel : 042 - 611 - 9800</span>
+                        <span>Fax : 042 - 611 - 9819</span><br>
+                        <span>사업자등록 번호 : 314 - 82 - 15539</span>
+                        <span>통신판매업 신고번호 : 제 2017 - 대전서구 - 0403</span>
+                    </div>
+                    <div class="copyright">Copyright © LEEUNGNO MUSEUM. All Rights Reserved.</div>
+                </div><!--//info_wrap-->
+            </div><!--//wrapper-->
+        </footer>
+    </div>
+</body>
+</html>

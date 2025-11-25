@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AOS 라이브러리  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- jquery 라이브러리  -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- swiper 라이브러리  -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css?v=2507120319">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>충청북도광역치매센터</title>
+</head>
+<body>
+    <div id="wrap">
+        <header> 
+            <div class="wrapper">
+                <h1 class="logo"><a href="index.html"><span class="blind">충청북도광역치매센터</span></a></h1>
+                <nav class="gnb">
+                    <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                    <div class="gnb_wrap">
+                        <div class="gnb_util"><!--모바일 util-->
+                            <div class="login_wrap">
+                                <div class="login">
+                                    <a href="#"><span>로그인</span></a>
+                                </div>
+                                <div class="signup">
+                                    <a href="#"><span>회원가입</span></a>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <button class="search_open"><span class="blind">검색열기</span></button>
+                            </div>
+                        </div><!--//gnb_util-->
+                        <ul class="depth1">
+                            <li>
+                                <a href="contents/info.html"><span>소개</span></a>
+                                <ul class="depth2">
+                                    <li><a href="contents/info.html"><span>센터장 인사말</span></a></li>
+                                    <li><a href="contents/map.html"><span>센터사업안내</span></a></li>
+                                    <li><a href="contents/info.html"><span>조직도</span></a></li>
+                                    <li><a href="contents/map.html"><span>연혁</span></a></li>
+                                    <li><a href="contents/info.html"><span>비전 및 운영체제</span></a></li>
+                                    <li><a href="contents/map.html"><span>슬로건 및 CI</span></a></li>
+                                    <li><a href="contents/map.html"><span>찾아오시는 길</span></a></li>
+                                </ul>
+                            </li><!--1차 메뉴 소개-->
+                            <li>
+                                <a href="contents/info.html"><span>알림</span></a>
+                                <ul class="depth2">
+                                    <li><a href="contents/info.html"><span>공지사항</span></a></li>
+                                    <li><a href="contents/map.html"><span>센터일정안내</span></a></li>
+                                    <li><a href="contents/info.html"><span>센터활동일지</span></a></li>
+                                    <li><a href="contents/map.html"><span>치매관련뉴스</span></a></li>
+                                    <li><a href="contents/info.html"><span>뉴스레터</span></a></li>
+                                    <li><a href="contents/map.html"><span>채용공고</span></a></li>
+                                </ul>
+                            </li><!--1차 메뉴 알림-->
+                            <li>
+                                <a href="contents/info.html"><span>정보</span></a>
+                                <ul class="depth2">
+                                    <li><a href="contents/info.html"><span>지역치매관련현황</span></a></li>
+                                    <li><a href="contents/map.html"><span>치매안심센터</span></a></li>
+                                    <li><a href="contents/info.html"><span>치매안심마을</span></a></li>
+                                    <li><a href="contents/map.html"><span>치매관련시설정보</span></a></li>
+                                    <li><a href="contents/info.html"><span>치매관련 제도</span></a></li>
+                                    <li><a href="contents/map.html"><span>알짜정보내비게이션</span></a></li>
+                                    <li><a href="contents/info.html"><span>치매관련도서</span></a></li>
+                                    <li><a href="contents/map.html"><span>자료실</span></a></li>
+                                </ul>
+                            </li><!--1차 메뉴 정보-->
+                            <li>
+                                <a href="contents/info.html"><span>지원</span></a>
+                                <ul class="depth2">
+                                    <li><a href="contents/info.html"><span>치매공공후견</span></a></li>
+                                    <li><a href="contents/map.html"><span>치매자조모임</span></a></li>
+                                    <li><a href="contents/info.html"><span>실종치매노인지원</span></a></li>
+                                    <li><a href="contents/map.html"><span>치매 검사하기</span></a></li>
+                                    <li><a href="contents/info.html"><span>마음건강수첩</span></a></li>
+                                    <li><a href="contents/map.html"><span>치매상담콜센터</span></a></li>
+                                </ul>
+                            </li><!--1차 메뉴 지원-->
+                            <li>
+                                <a href="contents/info.html"><span>참여</span></a>
+                                <ul class="depth2">
+                                    <li><a href="contents/info.html"><span>행사 및 교육</span></a></li>
+                                    <li><a href="contents/map.html"><span>치매파트너</span></a></li>
+                                    <li><a href="contents/info.html"><span>희망우체통</span></a></li>
+                                    <li><a href="contents/map.html"><span>설문조사</span></a></li>
+                                    <li><a href="contents/info.html"><span>커뮤니티</span></a></li>
+                                </ul>
+                            </li><!--1차 메뉴 참여-->
+                        </ul>
+                    </div><!--//gnb_wrap-->
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </nav><!--//gnb-->
+                <div class="util">
+                    <div class="login_wrap">
+                        <div class="login">
+                            <a href="#"><span>로그인</span></a>
+                        </div>
+                        <div class="signup">
+                            <a href="#"><span>회원가입</span></a>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <button class="search_open"><span class="blind">검색열기</span></button>
+                    </div>
+                </div><!--//util-->
+            </div><!--//wrapper-->
+        </header>
+        <main class="container">
+            <section class="visual">
+                <div class="wrapper">
+                    <h2 class="blind">팝업</h2>
+                    <div class="visual_wrap">
+                        <div class="swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide visual_main">
+                                    <div class="photo"><img src="images/main/visual01.jpg" alt="노부부가 야외에서 함께 앉아있는 뒷모습"></div>
+                                    <div class="txt_wrap">
+                                        <h3>치매가 있어도<br>걱정이 없는 충북</h3>
+                                        <p>충청북도광역치매센터가 치매를 함께 고민하겠습니다.</p>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide visual_main">
+                                    <div class="photo"><img src="images/main/visual02.jpg" alt="노부부가 야외에서 함께 앉아있는 뒷모습"></div>
+                                    <div class="txt_wrap">
+                                        <h3>기억을 잇는 손길,<br> 마음을 나누는 공간</h3>
+                                        <p>치매 예방부터 돌봄까지, 충북 광역치매센터가 함께합니다.</p>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide visual_main">
+                                    <div class="photo"><img src="images/main/visual03.jpg" alt="노부부가 야외에서 함께 앉아있는 뒷모습"></div>
+                                    <div class="txt_wrap">
+                                        <h3>뇌 건강! 내 건강!<br>치매 극복 파트너</h3>
+                                        <p>치매, 충청북도광역치매센터와 극복해나갈 수 있습니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="inner">
+                                <div class="paging"></div> <!--페이지-->
+                                <div class="ctrl_wrap">
+                                    <button class="btn_play"><span class="blind">재생하기</span></button>
+                                    <button class="btn_stop"><span class="blind">정지하기</span></button>
+                                </div>
+                            </div>
+                        </div><!--//swiper-->
+                        <div class="visual_side">
+                            <div class="near_side">
+                                <a href="contents/info.html">
+                                    <p>바로가기</p>
+                                    <div>
+                                        <h3>가까운<br> 치매안심센터 찾기</h3>
+                                        <div class="more"><span class="blind">더보기</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="navi_side">
+                                <a href="contents/map.html">
+                                    <p>맞춤형 서비스</p>
+                                    <div>
+                                        <h3>알짜정보내비게이션</h3>
+                                        <div class="more"><span class="blind">더보기</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="search_side">
+                                <h3>통합검색</h3>
+                                <div class="bg">
+                                    <div class="txt_bg">
+                                        <strong>검색어 입력</strong>
+                                        <div class="down"><span class="blind">아래</span></div>
+                                    </div>
+                                </div>
+                                <div class="search_inner">
+                                    <div class="tag">
+                                        <a href="#"><span>#마음우체통</span></a>
+                                        <a href="#"><span>#치매극복선도단체</span></a>
+                                        <a href="#"><span>#치매관련 제도 및 서비스</span></a>
+                                        <a href="#"><span>#센터사업안내</span></a>
+                                        <a href="#"><span>#치매안심마을</span></a>
+                                    </div>
+                                    <div class="form">
+                                        <input type="text" id="text" placeholder="검색어를 입력해주세요">
+                                        <button class="srch">
+                                            <span class="blind">검색</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--//visual_wrap-->
+                </div><!--//wrapper-->
+            </section><!--visual-->
+            <section class="visit">
+                <div class="tit">
+                    <div class="wrapper">
+                        <h2>치매안심센터<span>에 방문하세요</span></h2>
+                        <div class="visit_tag">
+                            <div class="visit_tag1">
+                                <p>#치매조기검진</p>
+                            </div>
+                            <div class="visit_tag2">
+                                <p>#맞춤형관리</p>
+                            </div>
+                            <div class="visit_tag3">
+                                <p>#치매지원서비스</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--tit-->
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/visit01.jpg" alt="사람이 문서를 작성하고 있는 모습"></div>
+                                    <div class="txt">
+                                        <h3>치매 조기검진</h3>
+                                        <p>치매안심센터에서 치매선별검사(무료)를 정기적으로 실시하고, 검사결과에 이상이 있을 경우 치매진단·감별검사 지원</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/visit02.jpg" alt="여러 사람이 함께 얘기 나누고 있는 모습"></div>
+                                    <div class="txt">
+                                        <h3>치매환자 가족상담</h3>
+                                        <p>치매환자 가족 상담을 통해 가족이 느끼는 치매환자 돌봄에 대한 부담을 파악하고, 부담을 줄일 수 있도록 적절한 서비스 연결 및 돌봄부담분석, 가족교실, 자조모임 등을 이용가능</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/visit03.jpg" alt="어린아이와 노인의 뒷모습"></div>
+                                    <div class="txt">
+                                        <h3>맞춤형 사례관리</h3>
+                                        <p>치매지원서비스에 대한 교육이나 정보제공만으로는 상황을 개선할 수 없는 치매어르신을 위하여 치매지원서비스를 적극적으로 제공 및 연계한 돌봄 서비스 제공</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/visit04.jpg" alt="사람이 종이에 글씨를 작성하고 있는 모습"></div>
+                                    <div class="txt">
+                                        <h3>치매예방교실·인지강화교실</h3>
+                                        <p>건강한 어르신을 위한 치매예방교실과 치매에 걸릴 위험이 높은 어르신을 위한 인지강화 프로그램 제공</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/visit05.jpg" alt="두 노부부의 걸어가는 뒷모습"></div>
+                                    <div class="txt">
+                                        <h3>치매환자 쉼터</h3>
+                                        <p>치매어르신의 인지기능 악화를 방지하기 위한 인지재활 프로그램을 제공하고, 사회적 접촉 및 교류를 증진시킬 수 있도록 도움 제공</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="photo"><img src="images/main/visit06.jpg" alt="소포를 전달하고 있는 모습"></div>
+                                    <div class="txt">
+                                        <h3>조호물품 제공</h3>
+                                        <p>치매어르신의 상태에 따라 돌봄에 필요한 물품을 무상공급 또는 대여하여 가족의 경제적 부담을 줄일 수 있도록 도움 제공</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--//swiper-->
+                </div><!--//list-->
+                <div class="ctrl_wrap">
+                    <div class="wrapper">
+                        <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                        <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                    </div>
+                </div>
+            </section><!--visit-->
+            <section class="rolling">
+                <h2 class="롤링"><span class="blind">롤링</span></h2>
+                <div class="rolling_wrap">
+                    <div class="heart">
+                        <p>희망우체통에 치매환자들을 위한 마음을 담아주세요!</p>
+                        <div class="heart_icon">
+                            <div class="red_heart"><span class="blind">하트</span></div>
+                            <div class="post"><span class="blind">편지</span></div>
+                        </div>
+                    </div>
+                    <div class="letter">
+                        <div class="letter_icon"><span class="blind">우편</span></div>
+                    </div>
+                    <div class="current">
+                        <p>우리지역 지역치매관련현황 알아보기</p>
+                    </div>
+                    <div class="village">
+                        <p>치매안심마을</p>
+                    </div>
+                    <div class="check">
+                        <p>치매가 의심된다면? ‘치매체크’로 GO GO!</p>
+                    </div>
+                    <div class="paper">
+                        <div class="paper_icon"><span class="blind">종이</span></div>
+                    </div>
+                    <div class="partner">
+                        <p>30분이면 치매 파트너가 될 수 있어요</p>
+                        <div class="partner_icon">
+                            <span class="blind">파트너</span>
+                        </div>
+                    </div>
+                    <div class="heart"> <!--하나 더 복사해서 반복하기-->
+                        <p>희망우체통에 치매환자들을 위한 마음을 담아주세요!</p>
+                        <div class="heart_icon">
+                            <div class="red_heart"><span class="blind">하트</span></div>
+                            <div class="post"><span class="blind">편지</span></div>
+                        </div>
+                    </div>
+                    <div class="letter">
+                        <div class="letter_icon"><span class="blind">우편</span></div>
+                    </div>
+                    <div class="current">
+                        <p>우리지역 지역치매관련현황 알아보기</p>
+                    </div>
+                    <div class="village">
+                        <p>치매안심마을</p>
+                    </div>
+                    <div class="check">
+                        <p>치매가 의심된다면? ‘치매체크’로 GO GO!</p>
+                    </div>
+                    <div class="paper">
+                        <div class="paper_icon"><span class="blind">종이</span></div>
+                    </div>
+                    <div class="partner">
+                        <p>30분이면 치매 파트너가 될 수 있어요</p>
+                        <div class="partner_icon">
+                            <span class="blind">파트너</span>
+                        </div>
+                    </div>
+                </div>
+            </section><!--rolling-->
+            <section class="notice">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>오늘의 소식</h2>
+                    </div>
+                    <div>
+                        <div class="list">
+                            <ul>
+                                <li data-aos="fade-up">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <strong>청주시청원구치매안심센터 치매안심센터</strong>
+                                            <h3>비대면 걷기 챌린지 <br>'기억발자국'</h3>
+                                            <span class="date">2025-06-17</span>
+                                        </div>
+                                        <div class="photo"><img src="images/main/notice01.jpg" alt="가족들이 함께 걷는 일러스트레이터"></div>
+                                    </a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="400">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <strong>옥천군치매안심센터 치매안심센터</strong>
+                                            <h3>치매인식개선<br> - 치매예방에 좋은 식재료 안내</h3>
+                                            <span class="date">2025-06-17</span>
+                                        </div>
+                                        <div class="photo"><img src="images/main/notice02.jpg" alt="베리를 두 손에 담은채 보여주는 사진"></div>
+                                    </a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="600">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <strong>괴산군치매안심센터 치매안심센터</strong>
+                                            <h3>치매예방수칙<br> 3·3·3 알아보아요!</h3>
+                                            <span class="date">2025-06-17</span>
+                                        </div>
+                                        <div class="photo"><img src="images/main/notice03.jpg" alt="블록을 쌓고 있는 듯한 사람의 모습"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!--//list-->
+                    </div>
+                    <a href="#" class="more"><span class="blind">더보기</span></a>
+                </div>
+            </section><!--notice-->
+            <section class="news">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>치매관련뉴스<span>를 알려드려요</span></h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="txt">
+                                        <strong>[충북일보]</strong>
+                                        <h3>자연 속 힐링부터 영화 감상까지…충주시, 치매 예방 프로그램</h3>
+                                        <span class="date">2025-06-19</span>
+                                        <div class="more"><span class="blind">더보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="txt">
+                                        <strong>[충청일보]</strong>
+                                        <h3>옥천경찰서, 치매노인 조기 발견에 기여 공무원에 감사장 수여</h3>
+                                        <span class="date">2025-06-17</span>
+                                        <div class="more"><span class="blind">더보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="txt">
+                                        <strong>[동양일보]</strong>
+                                        <h3>제천시치매안심센터, ‘치매愛안심극장’ 운영</h3>
+                                        <span class="date">2025-06-12</span>
+                                        <div class="more"><span class="blind">더보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="txt">
+                                        <strong>[불교공뉴스]</strong>
+                                        <h3>충북도, 제9회 노인학대 예방의 날 기념 거리 행진</h3>
+                                        <span class="date">2025-06-10</span>
+                                        <div class="more"><span class="blind">더보기</span></div>
+                                    </div>
+                                </a>
+                            </li>   
+                        </ul>
+                    </div>
+                    <a href="#" class="more"><span class="blind">더보기</span></a>
+                </div>
+            </section><!--news-->
+            <section class="banner">
+                <div class="wrapper">
+                    <div data-aos="fade-right">
+                        <ul>
+                            <li>
+                                <div class="banner_bg">
+                                    <div class="ban_partner">
+                                        <div class="tit">
+                                            <h2>치매파트너로 따뜻한 동반자가 되어주세요!</h2>
+                                            <p>치매파트너 홈페이지(국가치매교육홈페이지 연계)에서<br>
+                                                치매파트너 온라인 교육(30분) 영상을 시청하면 치매파트너가 됩니다.</p>
+                                        </div>
+                                        <div class="ban_wrap">
+                                            <div class="edu">
+                                                <a href="#"><span>치매파트너 교육 이수하기</span></a>
+                                            </div>
+                                            <div class="plus">
+                                                <a href="#"><span>치매파트너 <strong>플러스</strong> 소개</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--//banner_bg-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!--banner-->
+            <section class="program">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2><span>치매환자를 위한</span><br> 지원 프로그램</h2>
+                        <p class="section_tit">충청북도 광역치매센터의 치매환자들을 위한 <br>지원 프로그램입니다.</p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="photo">
+                                        <img src="images/main/program01.jpg" alt="자전거를 밀고있는 두사람의 뒷모습">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="main_txt">
+                                            <h3>치매공공후견 서비스</h3>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <div class="object">
+                                                <h4>지원대상</h4>
+                                                <p>치매환자</p>
+                                                <strong>그 외 선정기준에 해당하는 자</strong>
+                                            </div>
+                                            <div class="select">
+                                                <h4>선정기준</h4>
+                                                <p>기초생활수급자, 차상위자 등 저소득자 및 기초연금 수급자</p>
+                                                <strong>그 외 더보기 참조</strong>
+                                            </div>
+                                            <div class="content">
+                                                <h4>지원내용</h4>
+                                                <p>후견심판청구 절차 및 비용 지원</p>
+                                                <strong>치매공공후견인 활동비 지원 : 월 20만원(월 최대 40만원)</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more"><span class="blind">더보기</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo">
+                                        <img src="images/main/program02.jpg" alt="자전거를 밀고있는 두사람의 뒷모습">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="main_txt">
+                                            <h3>치매자조모임</h3>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <div class="object"> <!--intro-->
+                                                <h4>소개</h4>
+                                                <p>치매 환자와 그 가족들이 상호 지원하고 정보를 공유하는 모임</p>
+                                            </div>
+                                            <div class="select"> <!--meet-->
+                                                <h4>치매자조모임 검색</h4>
+                                                <p>검색을 통해 자신의 지역에 따른 담당기관을 찾을 수 있습니다. </p>
+                                                <strong>자조모임명과 모임일정을 참고하세요.</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more"><span class="blind">더보기</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo">
+                                        <img src="images/main/program03.jpg" alt="자전거를 밀고있는 두사람의 뒷모습">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="main_txt">
+                                            <h3>실종치매노인지원</h3>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <div class="object">
+                                                <h4>대처요령</h4>
+                                                <p>실종 후에 대처할 수 있는 방법 명시</p>
+                                            </div>
+                                            <div class="select">
+                                                <h4>실종노인 찾기</h4>
+                                                <p>실종 일련번호로 검색을 할 수 있습니다.</p>
+                                                <strong>그 외 더보기 참조</strong>
+                                            </div>
+                                            <div class="content"> 
+                                                <h4>무료 홍보물 제작 신청</h4>
+                                                <p>지원대상자로 선정되시면 홍보물을 무료로 제작하여 발송해 드립니다.</p>
+                                                <strong>실종 후 1주일이 경과한 분들께만 신청 자격이 주어집니다.</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more"><span class="blind">더보기</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo">
+                                        <img src="images/main/program04.jpg" alt="자전거를 밀고있는 두사람의 뒷모습">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="main_txt">
+                                            <h3>치매상담콜센터</h3>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <div class="object">
+                                                <h4>소개</h4>
+                                                <p>치매상담콜센터는 보건복지부에 의해 개소하여 중앙치매센터가 운영합니다.</p>
+                                            </div>
+                                            <div class="select">
+                                                <h4>이용방법</h4>
+                                                <p>국번 없이 1899-9988로 전화</p>
+                                                <strong>그 외 더보기 참조</strong>
+                                            </div>
+                                            <div class="content"> 
+                                                <h4>상담종류</h4>
+                                                <p>돌봄상담 <br>정보상담</p>
+                                                <strong>그 외 더보기 참조</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more"><span class="blind">더보기</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo">
+                                        <img src="images/main/program05.jpg" alt="자전거를 밀고있는 두사람의 뒷모습">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="main_txt">
+                                            <h3>치매검사하기</h3>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <div class="object">
+                                                <h4>앱 치매체크</h4>
+                                                <p>치매 종합포털 모바일 앱 치매체크, 스마트폰 사용자라면 누구나 간단하게 서비스를 이용 할 수 있습니다.</p>
+                                            </div>
+                                            <div class="select"> 
+                                                <h4>서비스</h4>
+                                                <p>치매예방서비스<br>실종노인예방서비스<br>돌봄 서비스</p>
+                                                <strong>그 외 더보기 참조</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more"><span class="blind">더보기</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo">
+                                        <img src="images/main/program06.jpg" alt="자전거를 밀고있는 두사람의 뒷모습">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="main_txt">
+                                            <h3>마음건강수첩</h3>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <div class="object">
+                                                <h4>소개</h4>
+                                                <p>주로 치매 환자와 그 가족이 정신적, 정서적 건강을 관리하고 지원받을 수 있도록 돕기 위한 도구</p>
+                                            </div>
+                                            <div class="select"> 
+                                                <h4>이용방법</h4>
+                                                <p>간단하게 질문의 답을 클릭하면서 자신의 상태를 자가진단 할 수 있습니다.</p>
+                                                <strong>그 외 더보기 참조</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more"><span class="blind">더보기</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!--program-->
+            <section class="center">               
+                <div class="wrapper">
+                    <div data-aos="fade-in">
+                        <ul>
+                            <li>
+                                <div class="bg_wrap">
+                                    <div class="tit">
+                                        <h2>치매 걱정 없는 충청북도를 만들기 위해<br> 
+                                            끊임없이 노력할 것입니다.</h2>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li>
+                                                <div class="call">
+                                                    <h3>국번없이 1899-9988</h3>
+                                                    <div class="num"><span class="blind">번호</span></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h3>충북 치매관련 현황</h3>
+                                                    <div class="more"><span class="blind">더보기</span></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h3>찾아오시는 길</h3>
+                                                    <div class="more"><span class="blind">더보기</span></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h3>센터일정 안내</h3>
+                                                    <div class="more"><span class="blind">더보기</span></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!--//bg_wrap-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!--center-->
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="f_group">
+                    <div class="family_site">
+                        <div class="center_group">
+                            <button class="family_open" title="열기">
+                                치매안심센터 <span>바로가기</span>
+                            </button>
+                            <button class="family_open" title="열기">
+                                광역치매센터 <span>바로가기</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div><!--//f_group-->
+                <div class="f_info">
+                    <address>주소  충북 청주시 서원구 1순환로 767 (개신동, 지오빌딩)3층</address>
+                    <div class="info_wrap">
+                        <span>Tel : 043-269-6891</span>
+                        <span> E-mail : cbpdc@daum.net</span>
+                    </div>
+                </div><!--//f_info-->
+                <div class="f_inner">
+                    <div class="copyright">
+                        Copyright 2025(c) 충북광역치매센터 All right reserved.
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li class="youtube"><a href="#"><span class="blind">유튜브</span></a></li>
+                            <li class="facebook"><a href="#"><span class="blind">페이스북</span></a></li>
+                            <li class="daum"><a href="#"><span class="blind">다음카페</span></a></li>
+                        </ul>
+                    </div>
+                </div><!--//f_inner-->
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

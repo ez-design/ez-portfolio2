@@ -1,0 +1,91 @@
+html, body {
+    font-family: 'Helvetica Neue', 'SUIT', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #0b0b0b;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+@media screen and (max-width:768px){
+    html, body {
+        font-size: 16px;
+    }
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+@media screen and (max-width:1300px){
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+#wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000; /* 맨위 */
+    width: 100%;
+}
+.skip_nav a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffeaa3;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+    font-size: 30px;
+}
+.skip_nav a:focus {
+    top: 0;
+    height: 80px;
+}
+
+:root {
+    --header-h: 80px; /* 헤더 높이 */
+    --header-h-m: -80px; /* 헤더 마이너스 높이 */
+    --point-color: #F5DB5C; /* 포인트 색깔 */
+    --tit-line-height: 1.2; /* 타이틀 행간 */
+    --tit-size: 45px; /* 타이틀 폰트 크기 */
+    --tit-weight: 700;
+    --sub-tit-size: 35px; /* 서브 타이틀 폰트 크기 */
+    --display-size: 25px; /* 디스플레이 크기 (visaul) */
+    --category-size: 20px; /* 카테고리 사이즈 (header) */
+}
+@media screen and (max-width:1024px) {
+    :root {
+        --header-h: 64px; /* 모바일 헤더 높이 */
+        --header-h-m: 64px; /* 모바일 헤더 마이너스 높이 */
+        --tit-size: 40px; /* 1024px 타이틀 폰트 크기 */
+        --sub-tit-size: 30px; /* 1024px 서브 타이틀 폰트 크기 */
+        --display-size: 22px; /* 1024px 디스플레이 크기 (visaul) */
+    }
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        --tit-size: 35px; /* 모바일 타이틀 폰트 크기 */
+        --display-size: 20px; /* 모바일 디스플레이 크기 (visaul) */
+    }
+}

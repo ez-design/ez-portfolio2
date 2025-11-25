@@ -1,0 +1,71 @@
+/* header와 footer 같이 모든 페이지 공통사항 저장 */
+
+header {
+    position: fixed; /* body를 기준으로 정렬 */
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    padding: 0 90px;
+    background-color: #fff;
+    align-items: center;
+    color: #1d1d1d;
+
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+header .gnb {
+    display: flex; /* 좌우 */
+    justify-content: space-between;
+    align-items: center;
+}
+header .gnb .back a {
+    font-size: 28px;
+    position: relative;
+    padding-left: 53px;
+}
+header .gnb .back a:hover {
+    color: #B72324;
+}
+header .gnb .back a::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_3' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='45' height='45'%3E%3Crect width='45' height='45' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_3)'%3E%3Cpath d='M11.25 35.625H17.5242V26.1778C17.5242 25.6978 17.6866 25.2953 18.0112 24.9703C18.3362 24.6456 18.7387 24.4833 19.2188 24.4833H25.7812C26.2613 24.4833 26.6638 24.6456 26.9888 24.9703C27.3134 25.2953 27.4758 25.6978 27.4758 26.1778V35.625H33.75V19.0383C33.75 18.9423 33.7289 18.8553 33.6867 18.7772C33.6448 18.6991 33.5878 18.6298 33.5156 18.5695L22.8427 10.5469C22.7464 10.4628 22.6322 10.4208 22.5 10.4208C22.3678 10.4208 22.2536 10.4628 22.1573 10.5469L11.4844 18.5695C11.4122 18.6298 11.3552 18.6991 11.3133 18.7772C11.2711 18.8553 11.25 18.9423 11.25 19.0383V35.625ZM8.4375 35.625V19.0383C8.4375 18.5017 8.5575 17.9934 8.7975 17.5134C9.03781 17.0331 9.36969 16.6377 9.79312 16.327L20.4666 8.28609C21.0588 7.83421 21.7356 7.60828 22.4972 7.60828C23.2588 7.60828 23.9375 7.83421 24.5334 8.28609L35.2069 16.327C35.6303 16.6377 35.9622 17.0331 36.2025 17.5134C36.4425 17.9934 36.5625 18.5017 36.5625 19.0383V35.625C36.5625 36.3919 36.2855 37.0523 35.7314 37.6064C35.1773 38.1605 34.5169 38.4375 33.75 38.4375H26.3583C25.878 38.4375 25.4755 38.275 25.1508 37.95C24.8258 37.6253 24.6633 37.2228 24.6633 36.7425V27.2958H20.3367V36.7425C20.3367 37.2228 20.1742 37.6253 19.8492 37.95C19.5245 38.275 19.122 38.4375 18.6417 38.4375H11.25C10.4831 38.4375 9.82266 38.1605 9.26859 37.6064C8.71453 37.0523 8.4375 36.3919 8.4375 35.625Z' fill='%23D44144'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+header .gnb .list ul {
+    display: flex;
+}
+header .gnb .list ul .samwon,
+header .gnb .list ul .gj,
+header .gnb .list ul .som {
+    position: relative;
+    padding-left: 18px;
+}
+header .gnb .list ul .samwon::before,
+header .gnb .list ul .gj::before,
+header .gnb .list ul .som::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #B72324;
+}
+header .gnb .list ul li {
+    width: 250px;
+}
+header .gnb .list ul li a {
+    line-height: 4.5;
+    font-size: 22px;
+}
+header .gnb .list ul li:hover a {
+    color: #B72324;
+}

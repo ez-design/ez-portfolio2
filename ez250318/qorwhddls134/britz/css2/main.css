@@ -1,0 +1,64 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual {
+    position: relative;
+}
+.visual .visual_txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.visual .visual_txt span {
+    font-size: 140px;
+    font-weight: var(--bold-weight);
+}
+.visual .visual_bg {
+    background-image: url(../images/main/visual_bg.jpg);
+}
+.visual .scroll_visual .circle {
+    background-color: #F0F0F0;
+    height: 100dvh;
+}
+.visual .scroll_visual .circle .visual_txt {
+    color: var(--tit-color);
+    width: 100%;
+    text-align: center;
+}
+.visual .scroll_visual .circle .visual_bg {
+    width: 100%;
+    height: 100%;
+    background: url(../images/main/visual_bg.jpg) no-repeat center center / cover;
+    overflow: hidden;
+    clip-path: circle(19vw);
+}
+.visual .scroll_visual .circle .visual_bg .visual_txt {
+    color: #fff;
+}
+@media screen and (max-width:1500px){
+    .visual .visual_txt span {
+        font-size: var(--tit-font-size);
+    }
+}/*@media*/
+@media screen and (max-width:1024px){
+            .visual .scroll_visual .circle .visual_bg {
+                clip-path: circle(18vw);
+            }
+}/*@media*/
+@media screen and (max-width:768px){
+            .visual .scroll_visual .circle .visual_bg {
+                clip-path: circle(16vw);
+            }
+}/*@media*/
+@media screen and (max-width:500px){
+            .visual .scroll_visual .circle .visual_bg {
+                clip-path: circle(21vw);
+            }
+}/*@media*/
+
+.britz {
+    margin: 500px 0 0 0;
+}

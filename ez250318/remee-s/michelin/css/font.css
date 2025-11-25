@@ -1,0 +1,33 @@
+/*웹 폰드를 선언*/
+@font-face {
+	font-family: 'S-CoreDream';
+	src: url('../font/ko/scdream4-webfont.woff') format('woff');
+	src: url('../font/ko/scdream4-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'S-CoreDream';
+	src: url('../font/ko/scdream6-webfont.woff') format('woff');
+	src: url('../font/ko/scdream6-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'EditorialNew';
+	src: url('../font/en/EditorialNew-Regular.woff') format('woff');
+	src: url('../font/en/EditorialNew-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'EditorialNew';
+	src: url('../font/en/EditorialNew-Ultrabold.woff') format('woff');
+	src: url('../font/en/EditorialNew-Ultrabold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: 600;
+}

@@ -1,0 +1,242 @@
+
+/* 삼원강재 */
+
+.samwon .visual {
+    padding: 130px 0 144px 0;
+    background: url(../images/samwom_logo_bg.svg) no-repeat center center ;
+}
+.samwon .visual .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.samwon .visual .left .top strong {
+    font-size: 120px;
+    line-height: 1;
+    color: rgba(0, 97, 48, 0.21);
+}
+.samwon .visual .left .top h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #006130;
+    font-family: 'Exo 2', sans-serif;
+}
+.samwon .visual .bottom {
+    margin: 46px 0 0 0;
+}
+.samwon .visual .bottom strong {
+    font-size: 20px;
+    font-weight: 600;
+    color: #006130;
+}
+.samwon .visual .bottom .date,
+.samwon .visual .bottom .tool,
+.samwon .visual .bottom .typ {
+    margin-bottom: 22px;
+}
+.samwon .visual .bottom .color ul {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.samwon .visual .bottom .color ul .green {
+    background-color: #008240;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+}
+.samwon .visual .bottom .color ul .blue {
+    background-color: #153F91;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+}
+.samwon .visual .go {
+    text-align: center;
+}
+.samwon .visual .go a {
+    border-radius: 50px;
+    padding: 15px 50px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #008240;
+    color: #fff;
+}
+.samwon .visual .go a:hover  {
+    border: 1px solid #008240;
+    background-color: #fff;
+    color: #008240;
+    transition: 0.3s;
+}
+.samwon .visual .right .pc img {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.samwon .detail {
+    background: url(../images/noise.png);
+}
+.samwon .photo {
+    background: url(../images/samwon_detail.png) no-repeat center center;
+    height: 3964px;
+}
+
+/*  경주시어린이시청 */
+
+.gyeonju .visual {
+    padding: 130px 0 144px 0;
+    background: url(../images/gj_bg.png) no-repeat center center /cover ;
+    background-color: #F0FFFF;
+}
+.gyeonju .visual .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.gyeonju .visual .left .top strong {
+    font-size: 120px;
+    line-height: 1;
+    color: rgba(0, 155, 147, 0.39);
+}
+.gyeonju .visual .left .top h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #008E87;
+    font-family: 'NPSfont';
+}
+.gyeonju .visual .bottom {
+    margin: 46px 0 0 0;
+}
+.gyeonju .visual .bottom strong {
+    font-size: 20px;
+    font-weight: 600;
+    color: #009B93;
+}
+.gyeonju .visual .bottom .date,
+.gyeonju .visual .bottom .tool,
+.gyeonju .visual .bottom .typ {
+    margin-bottom: 22px;
+}
+.gyeonju .visual .bottom .color ul {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.gyeonju .visual .bottom .color ul .green {
+    background-color: #009B93;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+}
+.gyeonju .visual .bottom .color ul .pastel {
+    margin-top: 15px;
+}
+.gyeonju .visual .go {
+    text-align: center;
+}
+.gyeonju .visual .go a {
+    border-radius: 50px;
+    padding: 15px 50px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #009B93;
+    color: #fff;
+}
+.gyeonju .visual .go a:hover  {
+    border: 1px solid #009B93;
+    background-color: #fff;
+    color: #009B93;
+    transition: 0.3s;
+}
+.gyeonju .visual .right .pc img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.gyeonju .detail {
+    background: url(../images/noise_gj.png);
+}
+.gyeonju .photo {
+    background: url(../images/gj_detail.png) no-repeat center center;
+    height: 2957px;
+}
+
+/* 솜니움 */
+
+
+.somnium .visual {
+    padding: 130px 0 144px 0;
+    background: url(../images/som_bg.png) no-repeat center center /cover ;
+    position: relative;
+    background-color: #F0FFFF;
+}
+.somnium .visual .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.somnium .visual .left .top strong {
+    font-size: 120px;
+    line-height: 1;
+    color: rgba(59, 134, 12, 0.1);
+}
+.somnium .visual .left .top h2 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #6A782D;
+    font-family: 'MaruBuri';
+}
+.somnium .visual .bottom {
+    margin: 46px 0 0 0;
+}
+.somnium .visual .bottom strong {
+    font-size: 20px;
+    font-weight: 600;
+    color: #677333;
+}
+.somnium .visual .bottom .date,
+.somnium .visual .bottom .tool,
+.somnium .visual .bottom .typ {
+    margin-bottom: 22px;
+}
+.somnium .visual .bottom .color ul {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.somnium .visual .bottom .color ul .green {
+    background-color: #677333;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+}
+.somnium .visual .bottom .color ul .pastel {
+    margin-top: 15px;
+}
+.somnium .visual .go {
+    text-align: center;
+}
+.somnium .visual .go a {
+    border-radius: 50px;
+    padding: 15px 50px;
+    display: inline-block;
+    right: 26%;
+    bottom: 16%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #677333;
+}
+.somnium .visual .go a:hover  {
+    border: 1px solid #677333;
+    background-color: #fff;
+    color: #677333;
+    transition: 0.3s;
+}
+.somnium .visual .right .pc img {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.somnium .detail {
+    background: url(../images/noise_som.png);
+}
+.somnium .photo {
+    background: url(../images/som_detail.png) no-repeat center center;
+    height: 2439px;
+}
+
+

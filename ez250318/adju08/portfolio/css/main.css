@@ -1,0 +1,371 @@
+@import url(font.css);
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+
+.accordion .conts {
+    position: relative; /* h_txt */
+}
+.accordion .conts .h_txt {
+    position: absolute; /* conts */
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.visual {
+    position: relative;
+    background: url(../images/main/visual_bg.jpg) no-repeat center center / cover;
+    height: 100vh;
+    color: #fff;
+}
+.visual::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    width: 581px;
+    height: 775px;
+    background: url(../images/main/visual_sub.png) no-repeat center center / cover;
+}
+.visual .wrapper {
+    position: relative; /* txt, main_tit */
+    height: 100%;
+}
+
+.visual .main_tit {
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+.visual .main_tit h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 150px;
+    font-weight: 800;
+    line-height: 1;
+}
+.visual .main_tit h1 span {
+    font-size: 80px;
+    font-style: italic;
+}
+.visual .main_tit strong {
+    position: absolute;
+    bottom: 189px;
+    left: 267px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.visual .main_tit strong::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: -43px;
+    width: 270px;
+    height: 77px;
+    background-image: url("data:image/svg+xml,%3Csvg width='270' height='77' viewBox='0 0 270 77' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M135 0.5C172.246 0.5 205.948 4.80569 230.322 11.7568C242.513 15.2334 252.342 19.3642 259.111 23.9287C265.899 28.5052 269.5 33.4384 269.5 38.5C269.5 43.5616 265.899 48.4948 259.111 53.0713C252.342 57.6358 242.513 61.7666 230.322 65.2432C205.948 72.1943 172.246 76.5 135 76.5C97.7537 76.5 64.0519 72.1943 39.6777 65.2432C27.4873 61.7666 17.6585 57.6358 10.8887 53.0713C4.10125 48.4948 0.5 43.5616 0.5 38.5C0.5 33.4384 4.10125 28.5052 10.8887 23.9287C17.6585 19.3642 27.4873 15.2334 39.6777 11.7568C64.0519 4.80569 97.7537 0.5 135 0.5Z' stroke='white'/%3E%3Crect x='26.8284' y='35' width='6' height='6' transform='rotate(45 26.8284 35)' fill='white'/%3E%3Crect x='243.243' y='35' width='6' height='6' transform='rotate(45 243.243 35)' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.visual .txt {
+    position: absolute;
+    top: 17%;
+    right: 0;
+}
+.visual .txt strong {
+    font-size: 50px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+}
+.visual .txt p {
+    display: block;
+    margin-top: 25px;
+    text-align: right;
+}
+.visual .under {
+    position: absolute;
+    bottom: 71px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+}
+.visual .under strong {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.visual .under .group {
+    display: flex;
+    align-items: flex-end;
+    gap: 33px;
+}
+.visual .under .group p {
+    padding: 15px 36px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+.accordion_wrap .accordion:not(.visual) .conts {
+    padding-top: 190px;
+}
+.accordion_wrap .accordion .conts:last-child {
+    height: 100vh !important;
+}
+.accordion_wrap .accordion .conts .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion_wrap .accordion .conts .inner .profile {
+    display: flex;
+    align-items: center;
+    gap: 101px;
+    margin-right: 20px;
+}
+.accordion_wrap .accordion .conts .inner .profile .photo {
+    height: 489px;
+    overflow: hidden;
+}
+.accordion_wrap .accordion .conts .inner .profile .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group01 {
+    display: flex;
+    flex-direction: column;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group01 strong {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group01 strong.name {
+    font-size: 35px;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group01 p {
+    margin-top: 7px;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group02 .phone,
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group02 .email {
+    display: flex;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group02 .phone {
+    margin-bottom: 7px;
+}
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group02 .phone strong,
+.accordion_wrap .accordion .conts .inner .profile .profile_txt .group02 .email strong {
+    color: #1d1d1d;
+    font-weight: 700;
+    width: 80px;
+}
+.accordion_wrap .accordion .conts .inner .information {
+    display: flex;
+    gap: 103px;
+}
+.accordion_wrap .accordion .conts .inner .information .left {
+    width: 360px;
+}
+.accordion_wrap .accordion .conts .inner .information .left .ed {
+    margin-bottom: 40px;
+}
+.accordion_wrap .accordion .conts .inner .information .left .ed strong,
+.accordion_wrap .accordion .conts .inner .information .left .cert strong,
+.accordion_wrap .accordion .conts .inner .information .right strong {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 16px;
+    display: block;
+}
+.accordion_wrap .accordion .conts .inner .information .left .ed .list ul li,
+.accordion_wrap .accordion .conts .inner .information .left .cert .list ul li,
+.accordion_wrap .accordion .conts .inner .information .right .list ul li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 4px 0;
+}
+.accordion_wrap .accordion .conts .inner .information .left .ed .list ul li p {
+    word-break: normal;
+}
+.accordion_wrap .accordion .conts .inner .information .right {
+    width: 315px;
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 13px;
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li {
+    font-size: 12px;
+    flex: 1 0 48%; /* 두 줄로 딱 나눔 = 두 개 per row */
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li span {
+    position: relative;
+    padding-left: 44px;
+    display: block;
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li span::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.il span::before {
+    background-image: url(../images/main/il.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.vsc span::before {
+    background-image: url(../images/main/vsc.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.ps span::before {
+    background-image: url(../images/main/ps.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.html span::before {
+    background-image: url(../images/main/html.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.xd span::before {
+    background-image: url(../images/main/xd.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.css span::before {
+    background-image: url(../images/main/css.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.figma span::before {
+    background-image: url(../images/main/figma.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.js span::before {
+    background-image: url(../images/main/js.jpg);
+}
+.accordion_wrap .accordion .conts .inner .information .right .list ul li.git span::before {
+    background-image: url(../images/main/git.jpg);
+}
+
+
+
+.accordion_wrap .accordion.p_link {
+    background-color: #F6F4F9;
+}
+.accordion_wrap .accordion.p_link .conts .list ul li {
+    position: relative; /* span */
+}
+.accordion_wrap .accordion.p_link .conts .list ul li a {
+    position: relative;
+    display: block;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    color: #201B2C;
+    line-height: 1;
+}
+.accordion_wrap .accordion.p_link .conts .list ul li a:hover {
+    background-color: #201B2C;
+    color: #fff;
+}
+.accordion_wrap .accordion.p_link .conts .list ul li a::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 0;
+    width: 84px;
+    height: 84px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='84' viewBox='0 0 84 84' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_13_1095' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='84' height='84'%3E%3Crect x='84' width='84' height='84' transform='rotate(90 84 0)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_13_1095)'%3E%3Cpath d='M60.9421 37.3626L45.8694 22.3012L52.4013 15.8184L78.583 42.0001L52.4013 68.2309L45.8309 61.699L60.9421 46.6376L39.39 46.6376L39.39 37.3626L60.9421 37.3626ZM21.5934 37.3626L32.39 37.3626L32.39 46.6376L21.5934 46.6376L21.5934 37.3626ZM5.31837 37.3626L14.5934 37.3626L14.5934 46.6376L5.31837 46.6376L5.31837 37.3626Z' fill='%23201B2C'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.accordion_wrap .accordion.p_link .conts .list ul li a:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='84' viewBox='0 0 84 84' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_13_1095' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='84' height='84'%3E%3Crect x='84' width='84' height='84' transform='rotate(90 84 0)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_13_1095)'%3E%3Cpath d='M60.9421 37.3626L45.8694 22.3012L52.4013 15.8184L78.583 42.0001L52.4013 68.2309L45.8309 61.699L60.9421 46.6376L39.39 46.6376L39.39 37.3626L60.9421 37.3626ZM21.5934 37.3626L32.39 37.3626L32.39 46.6376L21.5934 46.6376L21.5934 37.3626ZM5.31837 37.3626L14.5934 37.3626L14.5934 46.6376L5.31837 46.6376L5.31837 37.3626Z' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.accordion_wrap .accordion.p_link .conts .list ul li a strong {
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    padding-right: 43px;
+}
+.accordion_wrap .accordion.p_link .conts .list ul li a span {
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.accordion_wrap .accordion.p_link .conts .list ul li > span {
+    position: absolute; /* li */
+    bottom: 18px;
+    right: 13px;
+    font-size: 13px;
+    color: #767676;
+}
+.accordion_wrap .accordion.p_link .conts .list ul li:hover > span {
+    display: none;
+}
+.final {
+    background: url(../images/main/final_bg.jpg) no-repeat center center / cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.final .h_txt {
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.final .txt {
+    text-align: center;
+    padding-top: 16%;
+}
+.final .txt p {
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+    margin-top: 10px;
+}
+.final .contact {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.final .contact p.bold {
+    font-size: 25px;
+    font-weight: 800;
+}
+.final .contact p span {
+    position: relative;
+}
+.final .contact p span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -440px;
+    width: 390px;
+    height: 2px;
+    background-color: #fff;
+}
+.accordion_wrap .accordion { background-color:#fff; }
