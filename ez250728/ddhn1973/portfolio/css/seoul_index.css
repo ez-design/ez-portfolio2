@@ -1,0 +1,245 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: var(--header-h);
+    color: var(--color-title);
+    padding: 0 var(--wrapper-margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    background-color: #fff;
+}
+header .logo a {
+    display: block;
+    width: 75px;
+    height: 55px;
+    background: url(../images/logo.png) no-repeat center center / cover;
+}
+header .gnb li:hover a span{
+    font-weight: 700;
+}
+header .gnb .gnb_wrap ul.depth1 {
+    display: flex;
+}
+header .gnb .gnb_wrap ul.depth1 >li > a {
+    display: block;
+    line-height: var(--header-h);
+    font-family: 'on';
+    font-size: 32px;
+    padding: 0 clamp(10px, 2vw, 40px);
+}
+header {
+    transition: transform 0.35s ease; /* ← 추가 */
+}
+header.hide {
+    transform: translateY(-100%);  /* 위로 숨기기 */
+}
+header.scrolled {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.project .wrapper {
+    margin-top: 140px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project .wrapper .concept p {
+    font-size: 17px;
+}
+.project .wrapper .txt {
+    width: 40%;
+}
+.project .wrapper .txt .tit strong {
+    font-family: 'on';
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.project .wrapper .txt .tit h3 {    
+    font-size: 60px;
+    font-weight: 700;
+    margin: 20px 0 40px 0;
+    color: #0088FF;
+}
+.project .wrapper .txt .tit a {
+    display: block;
+    border: 1px solid #1d1d1d;
+    border-radius: 50px;
+    color: #1d1d1d;
+    font-weight: 700;
+    padding: 16px 20px;
+    width: 226px;
+}
+.project .wrapper .txt .tit a:hover {
+    background-color: #0088FF;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.project .wrapper .concept {
+    margin: 60px 0 40px 0;
+}
+.project .wrapper .concept h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+}
+.project .wrapper .tag {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.project .wrapper .tag strong {
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.project .wrapper .tag .date strong,
+.project .wrapper .tag .key strong {
+    margin-right: 16px;
+}
+.skill {
+    margin-top: 16px;
+    display: flex;
+    gap: 0 12px;
+}
+.skill img {
+    width: 60px;
+}
+.mood .wrapper {
+    padding-top: 140px;
+    padding-bottom: 150px;
+}
+.mood .tit h3 {
+    font-family: 'on';
+    font-size: 60px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 60px;
+}
+.mood .Typography h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+}
+.mood .Typography .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 120px;
+    margin-bottom: 40px;
+}
+.mood .Typography .list h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0088FF;
+    margin-bottom: 20px;
+}
+.mood .Typography .list .Point p,
+.mood .Typography .list .Point span {
+    font-family: 'Lib';
+    line-height: 1.3;
+    color: #1d1d1d;
+}
+.mood .Typography .list .Point p {
+    width: 270px;
+}
+.mood .Typography .list .Title p {
+    width: 290px;
+}
+.mood .Typography .list .Title p,
+.mood .Typography .list .Title span {
+    font-weight: 700;
+    line-height: 1.3;
+    color: #1d1d1d;
+}
+.mood .Typography .list p {
+    margin-bottom: 10px;
+}
+.mood .color h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+}
+.mood .color {
+    margin-top: 40px;
+}
+.mood .color .wrap {
+    display: flex;
+    gap: 25px;
+}
+.mood .color .wrap > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 256px; /* 카드 넓이 */
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.mood .color .co_box {
+    width: 236px;
+    height: 236px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.mood .color .main_color { background: #0088FF; display:block; width:100%; height:100%; }
+.mood .color .title_color { background: #1D1D1D; display:block; width:100%; height:100%; }
+.mood .color .sub_title_color { background: #555555; display:block; width:100%; height:100%; }
+
+/* 텍스트 */
+.mood .color h4 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #1D1D1D;
+}
+.mood .color span {
+    font-size: 17px;
+    color: #1d1d1d;
+}
+.part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.btn-top {
+    position: fixed;      /* 화면 기준 고정 */
+    right: 30px;          /* 오른쪽 여백 */
+    bottom: 30px;         /* 아래 여백 */
+    width: 60px;
+    height: 60px;
+    background: #0088FF;
+    color: #fff;
+    font-family: 'on';
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+.btn-top.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}

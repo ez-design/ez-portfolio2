@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--라이브러리 파일-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <!--컨트롤 파일-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>Dr.felis │ 닥터펠리스</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">닥터펠리스</span></a></h1>
+            <nav class="gnb">
+                <button class="menu_open"><span class="blind">메뉴열기</span></button>
+                <div class="mobile_overlay"></div>
+                <div class="gnb_wrap">
+                    <div class="gnb_logo"><span class="blind">닥터펠리스</span></div>
+                    <ul class="depth1">
+                        <li>
+                            <a href="#n">제품목록</a>
+                            <ul class="depth2">
+                                <li><a href="#n">베스트</a></li>
+                                <li><a href="#n">모래</a></li>
+                                <li><a href="#n">영양케어</a></li>
+                                <li><a href="#n">간식</a></li>
+                                <li><a href="#n">용품</a></li>
+                                <li><a href="#n">체험팩</a></li>
+                                <li><a href="#n">집사only</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">정기구독</a>
+                        </li>
+                        <li>
+                            <a href="#n">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="#n">커뮤니티</a>
+                        </li>
+                    </ul><!--depth1-->
+                    <button class="menu_close"><span class="blind">메뉴닫기</span></button>
+                </div>
+            </nav>
+            <div class="gnb_util">
+                <button class="search"><span class="blind">검색</span></button>
+                <div class="search_panel">
+                    <div class="search_inner">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button class="search_submit">검색</button>
+                    </div>
+                </div>
+                <a href="#n" class="login"><span class="blind">로그인</span></a>
+                <button class="all_menu"><span class="blind">전체메뉴</span></button>
+                <div class="all_menu_list on">
+                    <div class="all_logo"></div>
+                    <ul class="all_depth1">
+                        <li>
+                            <a href="#n">제품목록</a>
+                            <ul class="all_depth2">
+                                <li><a href="#n">베스트</a></li>
+                                <li><a href="#n">모래</a></li>
+                                <li><a href="#n">영양케어</a></li>
+                                <li><a href="#n">간식</a></li>
+                                <li><a href="#n">용품</a></li>
+                                <li><a href="#n">체험팩</a></li>
+                                <li><a href="#n">집사only</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">정기구독</a>
+                        </li>
+                        <li>
+                            <a href="#n">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="#n">커뮤니티</a>
+                        </li>
+                    </ul><!--all_depth1-->
+                </div>
+                <button class="all_menu_close"><span class="blind">전체메뉴닫기</span></button>
+            </div>
+        </header>
+        <div class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide bg1">
+                            <div class="wrapper">
+                                <h3>집사들의 쉼터<br> 닥터펠리스</h3>
+                                <strong>사랑과 함께 피어오르는 털뭉치</strong>
+                            </div>
+                        </li>
+                        <li class="swiper-slide bg2">
+                            <div class="wrapper">
+                                <h3>고양이의 하루를 위한<br> 작은 발걸음</h3>
+                                <strong>포근함 속에서 자라는 믿음</strong>
+                            </div>
+                        </li>
+                        <li class="swiper-slide bg3">
+                            <div class="wrapper">
+                                <h3>집사의 마음에 닿는<br> 첫 번째 선택</h3>
+                                <strong>고양이와 생활의 온도를 맞추다</strong>
+                            </div>
+                        </li>
+                        <li class="swiper-slide bg4">
+                            <div class="wrapper">
+                                <h3>사랑을 켜는 순간<br> 함께 하는 시간</h3>
+                                <strong>냥이와 일상의 무드를 채우다</strong>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn_wrap">
+                        <button class="visual_prev"><span class="blind">이전팝업</span></button>
+                        <div class="paging"></div>
+                        <button class="visual_next"><span class="blind">다음팝업</span></button>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <h2 class="blind">제품목록</h2>
+                <div class="wrapper">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product01.svg" alt=""></div>
+                                    <span>회원혜택</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product02.svg" alt=""></div>
+                                    <span>플친혜택</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product03.svg" alt=""></div>
+                                    <span>정기구독</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product04.svg" alt=""></div>
+                                    <span>이벤트</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product05.svg" alt=""></div>
+                                    <span>모래</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product06.svg" alt=""></div>
+                                    <span>영양보조제</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product07.svg" alt=""></div>
+                                    <span>간식</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/product08.svg" alt=""></div>
+                                    <span>용품</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="ctl_wrap">
+                            <button class="prev"><span class="blind">이전</span></button>
+                            <button class="next"><span class="blind">다음</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscription">
+                <div class="wrapper">
+                    <h2>닥터펠리스 정기구독</h2>
+                    <strong>첫 구독부터 확실한 최대 할인 혜택</strong>
+                    <div class="accordion_wrap"> <!-- 고정요소를 감싸는 요소 -->
+                        <div class="accordion"> <!-- 고정요소, 이름은 자유롭게 설정가능 -->
+                            <div class="conts"><img src="images/main/subscription01.jpg" alt=""></div> <!-- 내용 -->
+                        </div>
+                        <div class="accordion"> <!-- 고정요소, 이름은 자유롭게 설정가능 -->
+                            <div class="conts"><img src="images/main/subscription02.jpg" alt=""></div> <!-- 내용 -->
+                        </div>
+                        <div class="accordion last"> <!-- 고정요소, 이름은 자유롭게 설정가능 반드시 마지막 요소에는 last라는 클래스를 줘야함 -->
+                            <div class="conts"><img src="images/main/subscription03.jpg" alt=""></div> <!-- 내용 -->
+                        </div>
+                    </div>
+                    <div class="more"><a href="#n"><span>정기구독 신청하기</span></a></div>
+                </div>
+            </section>
+            <section class="bestseller">
+                <div class="wrapper">
+                    <h2>닥터펠리스 베스트셀러</h2>
+                    <strong>냥냥! 이건 꼭 사라 집사야!</strong>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller01.jpg" alt=""></div>
+                                <h3>펠리스샌드 마스터 4.3kg</h3>
+                                <p>[배변 스트레스 ZERO] 논문 연구 기반 + 고양이 본능 최적화 모래</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller02.jpg" alt=""></div>
+                                <h3>프로바이오틱스</h3>
+                                <p>오직 고양이를 위한 프리미엄 유산균 [프리미엄 다니스코 원료] [타우린 함유]</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller03.jpg" alt=""></div>
+                                <h3>퍼펙트 케어 스틱</h3>
+                                <p>[신장에 무리 없는 칼슘:인 비율] 최신 연구기반 영양성분 한가득</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller04.jpg" alt=""></div>
+                                <h3>포캣츄</h3>
+                                <p>[인공첨가제 NO] 전연령 급여 가능한 안심 간식 (치킨/연어/참치맛)</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller05.jpg" alt=""></div>
+                                <h3>퓨저나이트 슈퍼볼 4.3kg</h3>
+                                <p>[단독 신기술] [강력 흡수+탈취+항균] 벤토나이트의 한계를 뛰어넘다!</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller06.jpg" alt=""></div>
+                                <h3>포캣트릿</h3>
+                                <p>[100% 원물] [냉장육 사용! 차원이 다른 신선함] 고양이가 좋아하는 한입 사이즈 트릿</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller07.jpg" alt=""></div>
+                                <h3>세븐플러스 7+ 케어 스틱</h3>
+                                <p>[면역력+정서+인지 저하예방] 7세 이상 노령묘를 위한 저속노화 종합 영양보조제</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller08.jpg" alt=""></div>
+                                <h3>바이바이배드 500ml</h3>
+                                <p>[유해균 99.999% 제거] NO향료 NO색소</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/bestseller09.jpg" alt=""></div>
+                                <h3>데일리솔루션 이뮨</h3>
+                                <p>[1일 1포 = 건강 관리 끝] 높은 기호성으로 꾸준한 면역/스트레스 케어</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="ctl_wrap">
+                        <button class="prev"><span class="blind">이전</span></button>
+                        <button class="next"><span class="blind">다음</span></button>
+                    </div>
+                </div>
+                <div class="more"><a href="#n"><span>자세히보기</span></a></div>
+            </section>
+            <section class="month_itm">
+                <div class="wrapper">
+                    <h2>닥터펠리스 이달의 아이템</h2>
+                    <strong class="sub_tit">집사님들의 뜨거운 관심은?!</strong>
+                    <div class="item_inner">
+                        <div class="photo"><a href="#n"><img src="images/main/month_itm01.jpg" alt=""></a></div>
+                        <div class="txt">
+                            <h3>퓨저나이트 슈퍼볼 4.3kg</h3>
+                            <span>[단독 신기술] [강력 흡수+탈취+항균] 벤토나이트의 한계를 뛰어넘다!</span>
+                            <strong>벤토나이트 모래의 한계를 돌파한 신개념 모래!</strong>
+                            <p>3.3배 강한 흡수력!</p>
+                            <p>3.1배 빠른 응고력!</p>
+                            <p>97.8% 향균력!</p>
+                            <p>20% 모래 소비 효율 절감!</p>
+                            <p>1년 6개월 간의 연구 끝에 등장한 신개념 퓨저나이트 모래가 드디어 집사님들의 성원에 힘입어 출시 되었습니다!</p>
+                            <div class="more"><a href="#n"><span>자세히보기</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="promise">
+                <div class="wrapper">
+                    <h2>닥터 펠리스가 약속 드리는 것</h2>
+                    <strong>고양이에게 꼭 필요한 것들이 꼭 필요한 만큼 채워질 수 있도록</strong>
+                    <div class="photo"><img src="images/main/endbg.png" alt=""></div>
+                    <span>오늘, 우리집 고양이의 하루는 어땠을까요?</span>
+                    <p>집이라는 공간이 삶의 전부인 고양이들은 인간과 함께 살기 시작하면서 안락함을 얻은 대신 삶의 역동성을 조금 양보해야 했습니다 <br> 
+                        신선한 먹거리, 안락한 잠자리, 충분한 사냥활동… <br>
+                        이 모든 것이 자연에서는 고양이 스스로 해결해야 하는 일이지만, 집에서는 반려인의 역할이 꼭 필요하죠. <br>
+                        하지만…우리가 주고 싶은 것과 고양이가 필요로 하는 것에는 ‘작은 차이’가 있는 것 같아요. <br>
+                        때문에 집사라면, 누구나 반려생활을 누리며 발을 동동 굴러 본 경험이 있을 겁니다. 고양이와 집사의 언어는 서로 다르니까요. <br>
+                        그 사소하지만 중요한 ‘작은 차이’를 매꾸기 위해 TEAM DR.FELIS가 모였습니다</p>
+                    <div class="end_tit">
+                        <h3>
+                            고양이로부터 시작합니다 <br>
+                            집사와 고양이는 마음껏 사랑하고 행복하세요 <br>
+                            닥터펠리스가 전심전력으로 돕겠습니다
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <button class="top"><span>TOP</span></button>
+                <div class="f_info">
+                    <ul>
+                        <li><a href="#n">이용약관</a></li>
+                        <li><a href="#n">이용안내</a></li>
+                        <li><a href="#n"><span>개인정보처리방침</span></a></li>
+                    </ul>
+                </div>
+                <div class="f_inner">
+                    <div class="f_left">
+                        <ul>
+                            <li>상호 : 주식회사 포바이투</li>
+                            <li>주소 : 서울 강남구 테헤란로 503 하이브로빌딩 15층 1508호</li>
+                            <li>사업자등록번호 : 559-87-02457 [사업자정보확인]</li>
+                        </ul>
+                    </div>
+                    <div class="f_right">
+                        <ul>
+                            <li>통신판매업 신고 : 2022-서울강남-01960</li>
+                            <li>개인정보책임관리자 : Subeen Kim (help@drfelis.com)</li>
+                            <li>마케팅 문의 : brand@drfelis.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">ⓒ Dr.felis. All Rights Reserved.</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

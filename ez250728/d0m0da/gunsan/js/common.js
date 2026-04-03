@@ -1,0 +1,132 @@
+$(document).ready(function(){
+    let mobile_size = 1024;
+    let window_w;
+    let device_status;
+
+    function device_chk(){
+        window_w = $(window).outerWidth();
+        if(window_w > mobile_size){
+            device_status = 'pc';
+        }else{
+            device_status = 'mobile';
+            $('header').removeClass('menu_pc'); 
+        }
+    }
+    
+    device_chk();
+    $(window).resize(function(){
+        device_chk();
+    });
+
+    /* --- [PC 메뉴 동작] --- */
+
+    // 1. 메뉴 열기 (마우스 진입 또는 키보드 탭 진입)
+    $('.gnb .depth1 > li').on('mouseenter focusin', function(){
+        if(device_status == 'pc'){
+            $('header').addClass('menu_pc');
+        }
+    });
+
+    // 2. 메뉴 닫기 (마우스가 헤더 밖으로 나감)
+    $('header').on('mouseleave', function(){
+        if(device_status == 'pc'){
+            $('header').removeClass('menu_pc');
+        }
+    });
+
+    // 3. 메뉴 닫기 (키보드: GNB를 완전히 벗어나 검색 버튼으로 이동했을 때)
+    // -> 이 부분이 요청하신 내용입니다.
+    $('.sch_open').on('focusin', function(){
+        if(device_status == 'pc'){
+            $('header').removeClass('menu_pc');
+        }
+    });
+    
+    // 4. (보완) 혹시 Shift+Tab으로 뒤로가서 헤더 로고 이전을 벗어날 경우 대비
+    $('h1.logo a').on('focusout', function(e){
+        // 로고에서 Shift+Tab을 눌러서 헤더 밖(이전 요소)으로 나가는 경우인지 체크
+        // activeElement가 헤더 안에 없다면 닫기
+        if(device_status == 'pc'){
+             setTimeout(function(){
+                if($(document.activeElement).closest('header').length === 0){
+                    $('header').removeClass('menu_pc');
+                }
+            }, 0);
+        }
+    });
+
+    // header에 menu_mo 클래스 추가
+    $('header .gnb .gnb_open').on('click', function(){
+        $('header').addClass('menu_mo')
+    })
+    $('header .gnb .gnb_wrap .gnb_close').on('click', function(){
+        $('header').removeClass('menu_mo')
+    })
+
+    // li에 open 클래스
+    $('header .gnb .gnb_wrap ul.depth1 > li > a').on('click', function(e){
+        if(device_status == 'mobile'){
+            e.preventDefault()
+            
+            if($(this).parent().hasClass('open') == true){ // 열려있는 메뉴를 다시 클릭했을때
+                // console.log('열림')
+                $(this).parent().removeClass('open') // li에 open 클래스 삭제
+                $(this).next().slideUp() // 2차메뉴를 슬라이드로 닫기
+            }else{ // 열려있지 않은 다른 메뉴를 여는 것
+                // console.log('닫힘')
+                $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('open') // 모든 li의 open 클래스 삭제
+                $('header .gnb .gnb_wrap ul.depth1 > li > ul.depth2').slideUp() // 모든 2차메뉴 닫기
+                $(this).parent().addClass('open')
+                $(this).next().slideDown() // 2차메뉴를 슬라이드로 열기
+            }
+        }
+    })
+
+
+    // 기본 a 태그 막기
+    $("a").click(function(e) {
+        var href = $(this).attr("href");
+        if (href == "#none" || href == "#" || href == "") {
+            e.preventDefault();
+        }
+    });
+
+    // 클릭 오픈 시작
+    $(".clickOpen > a").attr("title","닫힘");
+
+    $(".clickOpen > a").on("click", function(e) {
+        e.preventDefault();
+        
+        let $parent = $(this).parent();
+        let isOn = $parent.hasClass("on");
+
+        // 다른 모든 clickOpen 닫기
+        $(".clickOpen").not($parent).removeClass("on").find("> a").attr("title","닫힘");
+
+        // 현재 클릭한 것 토글
+        if (isOn) {
+            $parent.removeClass("on");
+            $(this).attr("title","닫힘");
+        } else {
+            $parent.addClass("on");
+            $(this).attr("title","열림");
+        }
+    });
+
+    // 외부 클릭 시 모두 닫기
+    $(document).on("click", function(e) {
+        // clickOpen 영역 안에 클릭했다면 무시
+        if ($(e.target).closest(".clickOpen").length) return;
+
+        // 외부 클릭 → 전체 닫기
+        $(".clickOpen").removeClass("on").find("> a").attr("title", "닫힘");
+    });
+
+    /* top 버튼 클릭 시 상단으로 이동 */
+    $('footer .f_util .top').on('click', function(){
+        $('html, body').animate({
+            scrollTop : 0
+        }, 500)
+    })
+
+});

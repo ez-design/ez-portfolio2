@@ -1,0 +1,140 @@
+/***********************
+* 파일명 : main.css 
+* 작성자 : 김영상
+* 작성일 : 25-11-20
+* 설  명 : index파일 (메인페이지)에서만 호출하는 css
+          메인페이지 (index)의 스타일이 이 페이지에서 선언됨 (header/footer 제외)
+          default.css (태그의 초기화 - 브라우저가 주는 기본 스타일 삭제)
+          common.css (wrapper, blind 처럼 모든 페이지에서 반복되는 기본 스타일 
+          - 변수도 여기서 선언, 변수가 너무 많으면 variable이라는 파일을 분리도 함)
+          layout.css (문서의 구조에 영향을 끼치는 요소 - header/footer가 들어감)
+*********************/
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual {
+    position: relative;
+}
+.visual .swiper-slide {
+    height: 100dvh;
+    color: #fff;
+}
+.visual .swiper-slide .video {
+    position: absolute;  /* 부모 기준 절대 위치 */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    overflow: hidden;
+}
+.visual .swiper-slide .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 꽉 채우기, 일부 잘림 발생 */
+}
+.visual .swiper-slide .photo {
+    overflow: hidden;
+    height: 100%;
+}
+.visual .swiper-slide .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.visual .swiper-slide .txt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40dvh;
+    text-align: center;
+}
+.visual .swiper-slide .txt h3 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.visual .swiper .ctl_wrap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 24px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25dvh;
+}
+.visual .swiper .ctl_wrap .prev,
+.visual .swiper .ctl_wrap .next {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 7 11' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.3772 10.7544L0 5.3772L5.3772 0L6.63188 1.25468L2.50936 5.3772L6.63188 9.49971L5.3772 10.7544Z' /%3E%3C/svg%3E%0A");
+}
+.visual .swiper .ctl_wrap .next {
+    transform: rotate(180deg);
+}
+.visual .swiper .ctl_wrap .stop,
+.visual .swiper .ctl_wrap .play {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 11 13' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.1696 12.5468V0H10.7544V12.5468H7.1696ZM0 12.5468V0H3.5848V12.5468H0Z' /%3E%3C/svg%3E%0A");
+}
+.visual .swiper .ctl_wrap .play {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 13' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.9908e-05 12.5468L9.85822 6.2734L1.9908e-05 0V12.5468Z' /%3E%3C/svg%3E%0A");
+    display: none;
+}
+.visual .swiper .progress-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    z-index: 20;
+    background: rgba(255,255,255,0.15); /* 배경 라인 */
+}
+.visual .swiper .progress-bar span {
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: #18A0DC; /* 차오르는 색 */
+    transition: width 6s linear; /* autoplay 시간과 동일 */
+}
+
+@media screen and (max-width:1024px) {
+    .visual .swiper-slide {
+        height: 600px;
+    }
+    .visual .swiper-slide .txt {
+        bottom: 18dvh;
+    }
+    .visual .swiper-slide .txt h3 {
+        font-size: 28px;
+    }
+    .visual .swiper-slide .txt strong {
+        display: none;
+    }
+    .visual .swiper .ctl_wrap {
+        bottom: 5dvh;
+    }
+    .visual .swiper .ctl_wrap .prev,
+    .visual .swiper .ctl_wrap .next {
+        display: none;
+    }
+    .visual .swiper .ctl_wrap .stop,
+    .visual .swiper .ctl_wrap .play {
+        background-size: 13px;
+    }
+}

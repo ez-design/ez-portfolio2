@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 라이브러리파일 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- 내파일 -->
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>군산예술의전당</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header_up">
+            <h1 class="logo"><a href="index.html"><span class="blind">군산예술의전당</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap"><!-- 모바일에서 gnb_wrap 전체가 움직임 -->
+                    <div class="gnb_logo"><span class="blind">군산예술의전당</span></div>
+                    <ul class="depth1">
+                        <!-- 모바일버전에서 메뉴가 열리면 open 클래스 줌 -->
+                        <li>
+                            <a href="#n"><span>ABOUT</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>인사말</span></a></li>
+                                <li><a href="#n"><span>연혁</span></a></li>
+                                <li><a href="#n"><span>CI · 브랜드</span></a></li>
+                                <li><a href="#n"><span>시설안내</span></a></li>
+                                <li><a href="#n"><span>오시는 길</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>PROGRAM</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>현재 프로그램</span></a></li>
+                                <li><a href="#n"><span>예정 프로그램</span></a></li>
+                                <li><a href="#n"><span>월간 일정</span></a></li>
+                                <li><a href="#n"><span>지난 프로그램</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>TICKETS</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>예매 안내</span></a></li>
+                                <li><a href="#n"><span>할인 안내</span></a></li>
+                                <li><a href="#n"><span>좌석 배치도</span></a></li>
+                                <li><a href="#n"><span>관람 예절</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>VENUE</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>대관 절차</span></a></li>
+                                <li><a href="#n"><span>대관 안내</span></a></li>
+                                <li><a href="#n"><span>대관 공지</span></a></li>
+                                <li><a href="#n"><span>대관 신청</span></a></li>
+                                <li><a href="#n"><span>안전 교육</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>COMMUNITY</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>공지사항</span></a></li>
+                                <li><a href="#n"><span>포토갤러리</span></a></li>
+                                <li><a href="#n"><span>영상갤러리</span></a></li>
+                                <li><a href="#n"><span>자유게시판</span></a></li>
+                                <li><a href="#n"><span>고객문의</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div><!-- gnb_wrap -->
+            </nav>
+            <div class="util">
+                <div class="search">
+                    <button class="sch_open"><span class="blind">검색열기</span></button>
+                </div>
+                <div class="mypage">
+                    <a href="#n"><span class="blind">마이페이지</span></a>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide popup01">
+                            <div class="photo"><img src="images/main/popup01.jpg" alt="군산예술의전당 전경"></div>
+                            <div class="txt">
+                                <div class="wrapper">
+                                    <span>CULTURAL CANVAS</span>                        
+                                    <p>시민과 예술이 함께 채우는 공간</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup02">
+                            <div class="photo"><img src="images/main/popup02.jpg" alt="군산예술의전당 입구"></div>
+                            <div class="txt">
+                                <div class="wrapper">
+                                    <span>THE NEXT CURTAIN</span>
+                                    <p>예술의 감동이 시작되는 순간</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup03">
+                            <div class="photo"><img src="images/main/popup03.jpg" alt="군산예술의전당 야경"></div>
+                            <div class="txt">
+                                <div class="wrapper">
+                                    <span>ARTFUL EXPERIENCE</span>
+                                    <p>예술과 감동의 어울림 군산예술의전당</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>  <!-- 컨트롤 요소는 swiper 안에 배치-->
+                </div>
+            </section>
+            <div class="quick_btn">
+                <div class="quick_btn_wrap">
+                    <a href="#n" class="space_rental"><span>대관신청</span></a>
+                    <a href="#n" class="booking"><span>예매하기</span></a>
+                </div>
+            </div>
+            <section class="concerts">
+                <div class="tit">
+                    <div class="wrapper">
+                        <h2>Concerts</h2>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts01.jpg" alt="앤서니 브라운 난 책이 좋아요"></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>제35회 대한민국 새만금 서예·문인화 대전 초대작가전</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산예술의전당 제1전시실</span>
+                                            <span class="date">2025-11-28 ~ 2025-12-03</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts02.jpg" alt="군산시민합창단 제10회 정기연주회"></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>바비의 호두까기 인형</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산어린이공연장</span>
+                                            <span class="date">2025-12-02</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts03.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>고군산군도 선유도령 & 장자아씨</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산예술의전당 대공연장</span>
+                                            <span class="date">2025-12-05</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts04.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>김창옥 토크콘서트 시즌5</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산예술의전당 대공연장</span>
+                                            <span class="date">2025-12-06</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts05.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>버나드와 비앙카의 구출 대모험</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산어린이공연장</span>
+                                            <span class="date">2025-12-09</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts06.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>홀리데이 나이트 (Holiday Night)</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산예술의전당 대공연장</span>
+                                            <span class="date">2025-12-13</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts07.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>톰과 제리의 요술반지</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산어린이공연장</span>
+                                            <span class="date">2025-12-16</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts08.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>군산시립예술단합동공연 송년음악회 (교향악단 주최)</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산예술의전당 대공연장</span>
+                                            <span class="date">2025-12-18</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts09.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>전설의 황금똥</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산어린이공연장</span>
+                                            <span class="date">2025-12-20</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="poster">
+                                        <div class="photo"><img src="images/main/concerts10.jpg" alt=""></div>
+                                    </div>
+                                    <div class="poster_info">
+                                        <h3>스노우버블쇼</h3>
+                                        <div class="spacetime">
+                                            <span class="space">군산예술의전당 대공연장</span>
+                                            <span class="date">2025-12-25</span>
+                                        </div>
+                                        <div class="more"><span class="blind">자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="control">
+                        <div class="progressbar">
+                            <span></span>
+                        </div>
+                        <div class="ctrl_btn">
+                            <button class="btn_prev"><span class="blind">이전버튼</span></button>
+                            <button class="btn_next"><span class="blind">다음버튼</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="calendar_bar">
+                <h2 class="blind">캘린더</h2>
+                <div class="wrapper">
+                    <div class="month_display" id="currentMonthYear"></div>
+                    <div class="date_scroll_container">
+                        <div class="date_wrap">
+                            <div class="date_list"></div>
+                        </div>
+                        <div class="date_more"></div>
+                    </div>
+                    <button class="view_all_btn">전체보기</button>
+                </div>
+            </section>
+            <section class="news">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>News</h2>
+                        <div class="tap_list">
+                            <ul>
+                                <li class="notice active" data-tab="item1"><button>공지사항<span class="blind">선택됨</span></button></li>
+                                <li class="application" data-tab="item2"><button>대관공고/신청서<span class="blind"></span></button></li>
+                                <li class="board" data-tab="item3"><button>자유게시판<span class="blind"></span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tap_contents">
+                        <div class="tab_item item1 active" title="선택됨">
+                            <h3 class="blind">공지사항</h3>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>군산시립교향악단 제161회 정기연주회 [쇼스타코비치 in 군산] 공연안내</h4>
+                                            <span>2025-02-24</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>군산시립교향악단 제75회 기획연주회 [뮤지컬 VS 영화] 공연 안내</h4>
+                                            <span>2024-09-25</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>군산시립교향악단 제74회 특별기획연주회 [Young Artist Concert] 안내</h4>
+                                            <span>2024-09-19</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>군산예술의전당 공연장 안전관리원(House Usher) 모집공고</h4>
+                                            <span>2024-08-22</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more"><a href="#n"><span class="blind">더보기</span></a></div>
+                        </div>
+                        <div class="tab_item item2">
+                            <h3 class="blind">대관공고/신청서</h3>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>2026년도 군산예술의전당 정기대관 공고</h4>
+                                            <span>2025-11-17</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>(★필독★)2026년도 군산예술의전당 정기대관 신청안내</h4>
+                                            <span>2025-11-17</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>2025년도 군산예술의전당 수시대관(11차) 접수안내</h4>
+                                            <span>2025-10-28</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>2025년도 군산예술의전당 수시대관(10차) 접수 안내</h4>
+                                            <span>2025-09-29</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more"><a href="#n"><span class="blind">더보기</span></a></div>
+                        </div>
+                        <div class="tab_item item3">
+                            <h3 class="blind">자유게시판</h3>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>[한국문화예술교육진흥원] 2025 늘봄예술학교x문화예술교육 전문인력 연수 안내 (여름방학)</h4>
+                                            <span>2025-07-10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>쉿!크릿 콘서트를 보고 그냥 있을 수가 없어서...</h4>
+                                            <span>2025-05-17</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>2024년 제1회 태조 이성계 전승기념 오목대잔치</h4>
+                                            <span>2024-10-22</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4>설명 필요합니다.</h4>
+                                            <span>2024-09-28</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more"><a href="#n"><span class="blind">더보기</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>Gallery</h2>
+                        <div class="tap_list">
+                            <ul>
+                                <li class="photo active" data-tab="item1"><button>Photo<span class="blind">선택됨</span></button></li>
+                                <li class="video" data-tab="item2"><button>Video<span class="blind"></span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tap_contents">
+                        <div class="tab_item item1 active" title="선택됨">
+                            <h3 class="blind">Photo</h3>
+                            <div class="list">
+                                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/photo01.jpg" alt="11월 무장애 창극 지지지"></div>
+                                                <h4>11월 무장애 창극 지지지</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/photo02.jpg" alt="10월 트래블 콘서트 (비포선라이즈)"></div>
+                                                <h4>10월 트래블 콘서트 (비포선라이즈)</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/photo03.jpg" alt="10월 발레 헨젤과 그레텔"></div>
+                                                <h4>10월 발레 헨젤과 그레텔</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/photo04.jpg" alt="1월 색채의 마술사 앙리마티스 레플리카전"></div>
+                                                <h4>1월 색채의 마술사 앙리마티스 레플리카전</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/photo05.jpg" alt="어린이 뮤지컬 알사탕"></div>
+                                                <h4>어린이 뮤지컬 알사탕</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/photo06.jpg" alt="9월 쎄시봉 콘서트"></div>
+                                                <h4>9월 쎄시봉 콘서트</h4>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="more"><a href="#n"><span class="blind">더보기</span></a></div>
+                        </div>
+                        <div class="tab_item item2">
+                            <h3 class="blind">Video</h3>
+                            <div class="list">
+                                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/video01.jpg" alt="연극 장녀들"></div>
+                                                <h4>연극 장녀들</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/video02.jpg" alt="연극 신구, 박근형의 고도를 기다리며"></div>
+                                                <h4>연극 신구, 박근형의 고도를 기다리며</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/video03.jpg" alt="뮤지컬 광화문 연가"></div>
+                                                <h4>뮤지컬 광화문 연가</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/video04.jpg" alt="(기획전시) 영원한 빛의화가 모네와 인상파전 온라인 전시관"></div>
+                                                <h4>(기획전시) 영원한 빛의화가 모네와 인상파전 온라인 전시관</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/video05.jpg" alt="8월 기획공연 뮤지컬 하모니"></div>
+                                                <h4>8월 기획공연 뮤지컬 하모니</h4>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="photo"><img src="images/main/video06.jpg" alt="백건우 피아노 리사이틀"></div>
+                                                <h4>백건우 피아노 리사이틀</h4>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="more"><a href="#n"><span class="blind">더보기</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="footer_line">
+            <div class="layout">
+                <div class="wrapper">
+                    <div class="family_site clickOpen">
+                        <a href="#" title="닫힘">부서 누리집</a>
+                        <div class="family_site_info">
+                            <ul>
+                                <li><a href="#n" target="_blank" title="새창">새만금정책담당관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">감사담당관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">인구대응담당관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">디지털정보담당관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">기획예산과</a></li>
+                                <li><a href="#n" target="_blank" title="새창">행정지원과</a></li>
+                                <li><a href="#n" target="_blank" title="새창">공보협력과</a></li>
+                                <li><a href="#n" target="_blank" title="새창">회계과</a></li>
+                                <li><a href="#n" target="_blank" title="새창">세무과</a></li>
+                                <li><a href="#n" target="_blank" title="새창">시민납세과</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="family_site clickOpen">
+                        <a href="#" title="닫힘">읍/면/동 누리집</a>
+                        <div class="family_site_info">
+                            <ul>
+                                <li><a href="#n" target="_blank" title="새창">옥구읍</a></li>
+                                <li><a href="#n" target="_blank" title="새창">옥산면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">회현면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">임피면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">서수면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">대야면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">개정면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">성산면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">나포면</a></li>
+                                <li><a href="#n" target="_blank" title="새창">옥도면</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="family_site clickOpen">
+                        <a href="#" title="닫힘">직속기관/사업소 누리집</a>
+                        <div class="family_site_info">
+                            <ul>
+                                <li><a href="#n" target="_blank" title="새창">보건소</a></li>
+                                <li><a href="#n" target="_blank" title="새창">농업기술센터</a></li>
+                                <li><a href="#n" target="_blank" title="새창">요금조회납부시스템</a></li>
+                                <li><a href="#n" target="_blank" title="새창">예술의전당</a></li>
+                                <li><a href="#n" target="_blank" title="새창">시립도서관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">근대역사박물관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">채만식문학관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">차량등록사업소</a></li>
+                                <li><a href="#n" target="_blank" title="새창">시립예술단</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산콘텐츠팩토리</a></li>
+                                <li><a href="#n" target="_blank" title="새창">금강미래체험관</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="family_site clickOpen">
+                        <a href="#" title="닫힘">유관기관 누리집</a>
+                        <div class="family_site_info">
+                            <ul>
+                                <li><a href="#n" target="_blank" title="새창">군산시의회</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산교육청</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산경찰서</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산교도소</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산의료원</a></li>
+                                <li><a href="#n" target="_blank" title="새창">전주지방법원</a></li>
+                                <li><a href="#n" target="_blank" title="새창">국립군산대학교</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산우체국</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산청년회의소</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산해양경찰서</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="family_site clickOpen">
+                        <a href="#" title="닫힘">기타 누리집</a>
+                        <div class="family_site_info">
+                            <ul>
+                                <li><a href="#n" target="_blank" title="새창">군산시 공공빅데이터 포털</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산시 어린이시청</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산시 평생학습정보망</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산시 사이버 평생학습관</a></li>
+                                <li><a href="#n" target="_blank" title="새창">공유누리(통합예약)</a></li>
+                                <li><a href="#n" target="_blank" title="새창">시민정보화교육</a></li>
+                                <li><a href="#n" target="_blank" title="새창">부모학교예약시스템</a></li>
+                                <li><a href="#n" target="_blank" title="새창">군산시 교통정보센터</a></li>
+                                <li><a href="#n" target="_blank" title="새창">불법주정차위반안내</a></li>
+                                <li><a href="#n" target="_blank" title="새창">주정차단속문자알림서비스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div class="f_logo"><span class="blind">군산예술의전당</span></div>
+                <div class="f_util">
+                    <button class="top"><span>TOP</span></button>
+                </div>
+                <div class="f_inner">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n">개인정보처리방침</a></li>
+                            <li><a href="#n">저작권 정책</a></li>
+                            <li><a href="#n">영상정보처리기기운영·관리방침</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_info">
+                        <address>[54102] 전북특별자치도 군산시 백토로 203 군산예술의전당</address>
+                        <span>전화 : 063-454-5530(5540)</span>
+                        <span>기획공연문의 : 063-454-5535</span>
+                        <span>대관문의 : 063-454-5536</span>
+                        <span>팩스 : 063-462-9309</span>
+                    </div>
+                    <div class="copyright">
+                        <p>ⓒ GUNSANCITY. All rights reserved.</p>
+                        <p>군산시 홈페이지는 운영체제(OS):Windows 7이상, 인터넷 브라우저:IE 9이상, 파이어 폭스, 크롬, 사파리에 최적화 되어있습니다. <br>
+                            본 홈페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

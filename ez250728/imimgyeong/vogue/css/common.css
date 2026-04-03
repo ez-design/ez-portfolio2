@@ -1,0 +1,99 @@
+/* 모든페이지에서 중복되는 스타일 */
+
+:root {
+    --color-font : #1d1d1d;
+    --color-black : #000000;
+    --color-backgroud : #FAF9F7;
+    --color-point : #CB2525;
+    --color-white : #fff;
+    --color-line : #ededed;
+    --header-h : 200px;
+    --wrapper-margin : 30px;
+}
+@media screen and (max-width:1024px){
+                :root {
+                    --header-h : 200px;
+                }
+}
+@media screen and (max-width:768px){
+                :root {
+                    --header-h : 56px;
+                    --wrapper-margin : 16px;
+                }
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato","Vogue", "Pretendard", sans-serif;
+    /* 영문폰트와 한글폰트를 섞어서 쓸 때, 반드시 영문폰트는 한글이 지원되지 않는 폰트를 사용해야함
+       font-family에서 영문폰트를 먼저 선언한 뒤 한글폰트를 선언해야 
+       영문폰트를 먼저 적용하고 지원안되는 한글을 만나면 다음폰트가 적용  */
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-basic);
+    word-break: keep-all; /* 단어별로 줄바꿈 */
+    word-wrap: break-word;/* 단어가 너무 길때 강제줄바꿈*/
+}
+@media screen and (max-width:768px){
+                body {
+                    font-size: 1.6rem;
+                }
+}
+
+#wrap {
+    position: relative; /* header 정렬의 기준 */
+    /* overflow: hidden; */
+}
+/* html문서 구조상 글자를 써줘야하는데 그 글자를 안보이게 하고싶을때 blind class를 주면 사라짐 */
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 1260px;
+    margin: 0 auto; /* 가운데정렬 */
+}
+
+/* 모바일 반응형 */
+/*
+    좌우여백 50px : 1260 + 50 + 50 = 1360px
+    좌우여백 30px : 1260 + 30 + 30 = 1320px
+    좌우여백 5% : 1260 + (1260*0.05=63) + (1260*0.05=63) = 1386px
+    좌우여백 3% : 1260 + (1260*0.03=37.8) + (1260*0.03=37.8) = 1335.6px
+
+*/
+@media screen and (max-width:1320px){
+                .wrapper {
+                    width: auto;
+                    margin: 0 var(--wrapper-margin);
+                }
+}
+
+
+.mo_only {/* 모바일에서만 보임*/
+    display: none;
+}
+@media screen and (max-width:768px){
+                .mo_only {/* 모바일에서만 보임*/
+                    display: block;
+                }
+                .pc_only {/* pc버전에서만 보임*/
+                    display: none;
+                }
+}
+
+/* 글 드래그했을떄 색변하게하는거  */
+/* ::selection {
+    background-color: var(--color-point);
+    color: var(--color-white);
+} */

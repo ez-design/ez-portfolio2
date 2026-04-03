@@ -1,0 +1,111 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: var(--header-h);
+    color: var(--color-title);
+    background-color: #fff;
+    padding: 0 var(--wrapper-margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.35s ease;
+}
+header.hide {
+    transform: translateY(-100%);
+}
+header .logo a {
+    display: block;
+    width: 207px;
+    height: 55px;
+    background: url(../images/logo.png) no-repeat center center / cover;
+}
+
+header .gnb .gnb_open {
+    display: none;
+}
+header .gnb .gnb_wrap ul.depth1 {
+    display: flex;
+}
+header .gnb .gnb_wrap ul.depth1 >li > a {
+    display: block;
+    line-height: var(--header-h);
+    font-weight: 400;
+    padding: 0 clamp(10px, 2vw, 40px);
+}
+header .util {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+}
+header .util .login,
+header .util .signup {
+    display: block;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+header .util .login span,
+header .util .signup span {
+    font-family: 'Lib';
+    color: #1d1d1d;
+}
+@media screen and (min-width:1025px) and (max-width:1280px) {
+    header {
+        padding: 0 20px; /* wrapper-margin이 크면 이쪽도 줄여주기 */
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > a {
+        padding: 0 16px; /* 원래 clamp(10px,2vw,40px) 대신 고정값도 괜찮음 */
+        font-size: 15px;
+    }
+    header .util .login,
+    header .util .signup {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        padding-right: 0;
+    }
+    header .logo a {
+        width: 70px;
+        height: 43px;
+        background: url(../images/logo_L.png) no-repeat center center / cover;
+    }
+    header .gnb .gnb_open {
+        display: block;
+        width: 84px;
+        height: var(--header-h);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='%231D1D1D' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_54_80' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_54_80)'%3E%3Cpath d='M4.5 7C4.35833 7 4.23958 6.952 4.14375 6.856C4.04792 6.76 4 6.64108 4 6.49925C4 6.35742 4.04792 6.23875 4.14375 6.14325C4.23958 6.04775 4.35833 6 4.5 6H19.5C19.6417 6 19.7604 6.048 19.8562 6.144C19.9521 6.24 20 6.35892 20 6.50075C20 6.64258 19.9521 6.76125 19.8562 6.85675C19.7604 6.95225 19.6417 7 19.5 7H4.5ZM4.5 18C4.35833 18 4.23958 17.952 4.14375 17.856C4.04792 17.76 4 17.6411 4 17.4993C4 17.3574 4.04792 17.2388 4.14375 17.1433C4.23958 17.0478 4.35833 17 4.5 17H19.5C19.6417 17 19.7604 17.048 19.8562 17.144C19.9521 17.24 20 17.3589 20 17.5008C20 17.6426 19.9521 17.7613 19.8562 17.8568C19.7604 17.9523 19.6417 18 19.5 18H4.5ZM4.5 12.5C4.35833 12.5 4.23958 12.452 4.14375 12.356C4.04792 12.26 4 12.1411 4 11.9992C4 11.8574 4.04792 11.7388 4.14375 11.6433C4.23958 11.5478 4.35833 11.5 4.5 11.5H19.5C19.6417 11.5 19.7604 11.548 19.8562 11.644C19.9521 11.74 20 11.8589 20 12.0008C20 12.1426 19.9521 12.2613 19.8562 12.3568C19.7604 12.4523 19.6417 12.5 19.5 12.5H4.5Z' /%3E%3C/g%3E%3C/svg%3E%0A");
+        background-size: 24px;
+    }
+    header .gnb .gnb_wrap{
+        display: none;
+    }
+    header .util {
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    header .logo a {
+        width: 40px;
+        height: 24px;
+        background: url(../images/logo_m.png) no-repeat center center / cover;
+    }
+    header .gnb .gnb_open {
+        display: block;
+        width: 68px;
+        height: var(--header-h);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='%231D1D1D' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_54_80' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_54_80)'%3E%3Cpath d='M4.5 7C4.35833 7 4.23958 6.952 4.14375 6.856C4.04792 6.76 4 6.64108 4 6.49925C4 6.35742 4.04792 6.23875 4.14375 6.14325C4.23958 6.04775 4.35833 6 4.5 6H19.5C19.6417 6 19.7604 6.048 19.8562 6.144C19.9521 6.24 20 6.35892 20 6.50075C20 6.64258 19.9521 6.76125 19.8562 6.85675C19.7604 6.95225 19.6417 7 19.5 7H4.5ZM4.5 18C4.35833 18 4.23958 17.952 4.14375 17.856C4.04792 17.76 4 17.6411 4 17.4993C4 17.3574 4.04792 17.2388 4.14375 17.1433C4.23958 17.0478 4.35833 17 4.5 17H19.5C19.6417 17 19.7604 17.048 19.8562 17.144C19.9521 17.24 20 17.3589 20 17.5008C20 17.6426 19.9521 17.7613 19.8562 17.8568C19.7604 17.9523 19.6417 18 19.5 18H4.5ZM4.5 12.5C4.35833 12.5 4.23958 12.452 4.14375 12.356C4.04792 12.26 4 12.1411 4 11.9992C4 11.8574 4.04792 11.7388 4.14375 11.6433C4.23958 11.5478 4.35833 11.5 4.5 11.5H19.5C19.6417 11.5 19.7604 11.548 19.8562 11.644C19.9521 11.74 20 11.8589 20 12.0008C20 12.1426 19.9521 12.2613 19.8562 12.3568C19.7604 12.4523 19.6417 12.5 19.5 12.5H4.5Z' /%3E%3C/g%3E%3C/svg%3E%0A");
+        background-size: 36px;
+    }
+
+}

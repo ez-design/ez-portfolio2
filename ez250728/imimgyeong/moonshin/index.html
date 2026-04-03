@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!--라이브러리파일-->
+    <!--내가 만든 파일-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>창원시립마산문신미술관</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">창원시립마산문신미술관</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_logo"><span class="blind">창원시립마산문신미술관</span></div>
+                    <ul class="depth1">
+                        <li>
+                            <a href="#n"><span>문신미술관</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>문신소개</span></a></li>
+                                <li><a href="#n"><span>미술관소개</span></a></li>
+                                <li><a href="#n"><span>공지사항</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>관람참여</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>관람안내</span></a></li>
+                                <li><a href="#n"><span>단체관람</span></a></li>
+                                <li><a href="#n"><span>전시해설</span></a></li>
+                                <li><a href="#n"><span>오시는 길</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>전시</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>현재 전시</span></a></li>
+                                <li><a href="#n"><span> 예정 전시</span></a></li>
+                                <li><a href="#n"><span>과거 전시</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>교육/행사</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>교육</span></a></li>
+                                <li><a href="#n"><span> 행사</span></a></li>
+                                <li><a href="#n"><span>앨범</span></a></li>
+                                <li><a href="#n"><span>자료실</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>소장품</span></a>
+                        </li>
+                        <li>
+                            <a href="#n"><span>디지털관</span></a>
+                        </li>
+                        <li>
+                            <a href="#n"><span>문신미술상</span></a>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div><!--/gnb_wrap-->
+                <div class="gnb_bg"></div><!--메뉴배경-->
+            </nav><!--/gnb-->
+        </header>
+        <div class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide popup1">
+                            <div class="wrapper">
+                                <h3>마산의 숨, 문신의 형태</h3>
+                                <p>바다를 바라보는 미술관은 문신이 사랑한 고향을 닮았고, 그가 남긴 조형 언어는 이곳에서 끊임없이 확장됩니다.</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup2">
+                            <div class="wrapper">
+                                <h3>돌아온 예술가, 다시 짓는 시간</h3>
+                                <p>유럽을 거쳐 마산으로 돌아온 문신은 삶의 마지막을 이곳에 남겼고, 그 흔적은 지금도 조용히 관람객을 맞이합니다.</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup3">
+                            <div class="wrapper">
+                                <h3>선과 면이 이루는 조형 언어</h3>
+                                <p>날카로운 선, 부드러운 면이 만들어내는 구조는 공간과 대화하며 유기적 리듬을 만들어냅니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="ctrl_btn">
+                        <div class="paging">
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <button class="stop"><span class="blind">일시정지</span></button>
+                        <button class="play"><span class="blind">재생버튼</span></button>
+                    </div><!--/ctrl_btn-->
+                </div><!--/swiper-->
+                <div class="info">
+                    <div class="wrapper">
+                        <div class="info_list">
+                            <ul>
+                                <li class="view">
+                                    <span class="tit">관람시간</span>
+                                    <div class="content">
+                                        <span>개관시간 09:00 - 18:00</span>
+                                        <span class="close">발권은 관람 종료 1시간 전까지만 가능합니다</span>
+                                    </div>
+                                </li>
+                                <li class="holy">
+                                    <span class="tit">휴관일</span>
+                                    <div class="content">
+                                        <span>매주 월요일</span>
+                                        <span>1월 1일</span>
+                                        <span>설, 추석</span>
+                                    </div>
+                                </li>
+                                <li class="cash">
+                                    <span class="tit">관람료</span>
+                                    <div class="content">
+                                        <span>어른(25~64세) 500원</span>
+                                        <span>어린이(7~12세) 200원</span>
+                                        <span>청소년, 군인, 대학생 200원</span>
+                                        <span>예술인(예술인패스 소지자) 200원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!--/info_list-->
+                        <div class="info_btn">
+                            <a href="#n" class="docent"><span>전시해설</span></a>
+                            <a href="#n" class="direction"><span>오시는길</span></a>
+                        </div><!--/info_btn-->
+                    </div><!--/wrapper-->
+                </div><!--/info-->
+            </section><!--/visual-->
+            <section class="time">
+                <div class="rolling">
+                    <p>I toil as a slave, dwell with the people, and create as a god.</p>
+                </div>
+                <div class="time_tit">
+                    <div class="wrapper">
+                        <h2>
+                            <a href="#n"><span>문신의 시간</span></a>
+                        </h2>
+                        <p>한 조각가가 남긴 형태의 여정을 시간의 흐름 속에서 따라가며, 그의 삶과 작품 세계를 만나봅니다.</p>
+                    </div>
+                </div><!--/tit-->
+                <div class="time_list">
+                    <div class="container"> <!-- 홈페이지 전체를 감싸는 요소 또는 콘텐츠를 감싸는 요소 (wrap, container) -->
+                        <div class="list">
+                            <ul> <!-- flex를 적용할 요소, 각각의 좌우로 스크롤 될 요소를 감싸는 요소 -->
+                                <li>
+                                    <a href="#n">
+                                        <div class="year"><span>1995</span></div>
+                                        <div class="content">
+                                            <div class="photo"><img src="images/main/time_01.jpg" alt=""></div>
+                                            <div class="txt">
+                                                <strong>(좌) 무제 <br> (우) 무제</strong>
+                                                <p>석고, 58.5x36x12.5cm <br >석고, 96x45x16cm</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li> <!-- 좌우로 배치될 요소들 -->
+                                <li>
+                                    <a href="#n">
+                                        <div class="year"><span>1994</span></div>
+                                        <div class="content">
+                                            <div class="photo"><img src="images/main/time_02.jpg" alt=""></div>
+                                            <div class="txt">
+                                                <strong>무제</strong>
+                                                <p>석고, 69x26.5x14cm</p>
+                                            </div>
+                                        </div>
+                                    </a>     
+                                </li>
+                                <li> 
+                                    <a href="#n">
+                                        <div class="year"><span>1993</span></div>
+                                        <div class="content">
+                                            <div class="photo"><img src="images/main/time_03.jpg" alt=""></div>
+                                            <div class="txt">
+                                                <strong>무제</strong>
+                                                <p>도자기에 페인팅, 25x26x25cm</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="#n">
+                                        <div class="year"><span>1992</span></div>
+                                        <div class="content">
+                                            <div class="photo"><img src="images/main/time_04.jpg" alt=""></div>
+                                            <div class="txt">
+                                                <strong>무제</strong>
+                                                <p>석고, 89.5x16x56.5cm</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="#n">
+                                        <div class="year"><span>1991</span></div>
+                                        <div class="content">
+                                            <div class="photo"><img src="images/main/time_05.jpg" alt=""></div>
+                                            <div class="txt">
+                                                <strong>(좌) 무제 <br> (우) 무제</strong>
+                                                <p>청동, 50x23x14cm <br> 청동, 44x31x15cm</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="#n">
+                                        <div class="year"><span>1990</span></div>
+                                        <div class="content">
+                                            <div class="photo"><img src="images/main/time_06.png" alt=""></div>
+                                            <div class="txt">
+                                                <strong>(좌) 파리1990 <br>(우) 무제</strong>
+                                                <p>청동, 46x74x22cm <br>청동, 39x16x16cm</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="#n">
+                                        <div class="year"><span>1989</span></div>
+                                        <div class="content">
+                                            <div class="photo"><img src="images/main/time_07.jpg" alt=""></div>
+                                            <div class="txt">
+                                                <strong>(좌) 우주를 향하여 Ⅲ <br>(우) 개미</strong>
+                                                <p>청동, 75x40x25cm <br>청동, 127x25x15cm</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--/list-->
+            </section><!--/time-->
+            <section class="collection">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2><a href="#n"><span>소장품</span></a></h2>
+                        <p>시대와 작가를 넘어 이어지는 조형 예술의 흐름을 소장품으로 엿볼 수 있습니다.</p>
+                    </div><!--/tit-->
+                    <div class="list">
+                        <div class="spec pc_only">
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                                    <li class="swiper-slide">
+                                        <h3>병산서원</h3>
+                                        <ul>
+                                            <li>
+                                                <strong>작가명</strong>
+                                                <span>박대성</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작년도</strong>
+                                                <span>2007</span>
+                                            </li>
+                                            <li>
+                                                <strong>재료</strong>
+                                                <span>종이에 먹</span>
+                                            </li>
+                                            <li>
+                                                <strong>규격</strong>
+                                                <span>150 X 88</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <h3>아기벌레</h3>
+                                        <ul>
+                                            <li>
+                                                <strong>작가명</strong>
+                                                <span>문신</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작년도</strong>
+                                                <span>1980</span>
+                                            </li>
+                                            <li>
+                                                <strong>재료</strong>
+                                                <span>프랑스모래,아크릴릭,유화</span>
+                                            </li>
+                                            <li>
+                                                <strong>규격</strong>
+                                                <span>40 x 30</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <h3>축제</h3>
+                                        <ul>
+                                            <li>
+                                                <strong>작가명</strong>
+                                                <span>이두식 </span>
+                                            </li>
+                                            <li>
+                                                <strong>제작년도</strong>
+                                                <span>2006</span>
+                                            </li>
+                                            <li>
+                                                <strong>재료</strong>
+                                                <span>캔버스에 아크릴</span>
+                                            </li>
+                                            <li>
+                                                <strong>규격</strong>
+                                                <span>130 x 160</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <h3>태평로에서</h3>
+                                        <ul>
+                                            <li>
+                                                <strong>작가명</strong>
+                                                <span>문신</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작년도</strong>
+                                                <span>1959</span>
+                                            </li>
+                                            <li>
+                                                <strong>재료</strong>
+                                                <span>캔버스에 유채</span>
+                                            </li>
+                                            <li>
+                                                <strong>규격</strong>
+                                                <span>30 x 40</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <h3>Myth of Cube</h3>
+                                        <ul>
+                                            <li>
+                                                <strong>작가명</strong>
+                                                <span> 김재관</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작년도</strong>
+                                                <span>2013</span>
+                                            </li>
+                                            <li>
+                                                <strong>재료</strong>
+                                                <span>캔버스에 아크릴, 스테인리스</span>
+                                            </li>
+                                            <li>
+                                                <strong>규격</strong>
+                                                <span>89.4 x 130.3 x 7</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--//spec-->
+                        <div class="art">
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                    <li class="swiper-slide">
+                                        <div class="photo"><img src="images/main/col01.jpg" alt="병산서원"> </div>
+                                        <div class="art_txt mo_only">
+                                            <h3>병산서원</h3>
+                                            <span>박대성</span>
+                                            <span>2007</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="photo"><img src="images/main/col02.jpg" alt="아기벌레"></div>
+                                        <div class="art_txt mo_only">
+                                            <h3>아기벌레</h3>
+                                            <span>문신</span>
+                                            <span>1980</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="photo"><img src="images/main/col03.jpg" alt="축제"></div>
+                                        <div class="art_txt mo_only">
+                                            <h3>축제</h3>
+                                            <span>이두식</span>
+                                            <span>2006</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="photo"><img src="images/main/col04.jpg" alt="태평로에서"></div>
+                                        <div class="art_txt mo_only">
+                                            <h3>태평로에서</h3>
+                                            <span>문신</span>
+                                            <span>1959</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="photo"><img src="images/main/col05.jpg" alt="Myth of Cube"></div>
+                                        <div class="art_txt mo_only">
+                                            <h3>Myth of Cube</h3>
+                                            <span>김재관</span>
+                                            <span>2013</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--/art-->
+                    </div><!--/list-->
+                    <div class="ctrl_btn">
+                        <button class="btn_prev">
+                            <span class="blind">이전버튼</span>
+                            <i>
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.77083 6.50417L7.32083 11.0542C7.53472 11.2681 7.64167 11.5403 7.64167 11.8708C7.64167 12.2014 7.53472 12.4736 7.32083 12.6875C7.10694 12.9014 6.83472 13.0083 6.50417 13.0083C6.17361 13.0083 5.90139 12.9014 5.6875 12.6875L0.320833 7.32083C0.204167 7.20417 0.121528 7.07778 0.0729167 6.94167C0.0243056 6.80556 0 6.65972 0 6.50417C0 6.34861 0.0243056 6.20278 0.0729167 6.06667C0.121528 5.93056 0.204167 5.80417 0.320833 5.6875L5.6875 0.320833C5.90139 0.106944 6.17361 0 6.50417 0C6.83472 0 7.10694 0.106944 7.32083 0.320833C7.53472 0.534722 7.64167 0.806944 7.64167 1.1375C7.64167 1.46806 7.53472 1.74028 7.32083 1.95417L2.77083 6.50417Z" fill="white"/>
+                                </svg>
+                            </i>
+                        </button>
+                        <button class="btn_next">
+                            <span class="blind">다음버튼</span>
+                            <i>
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.87077 6.50462L0.320769 1.95462C0.106881 1.74073 -6.3841e-05 1.46851 -6.38121e-05 1.13795C-6.37832e-05 0.8074 0.106881 0.535178 0.320769 0.321288C0.534659 0.1074 0.80688 0.000455259 1.13744 0.000455288C1.46799 0.000455317 1.74021 0.1074 1.9541 0.321289L7.32077 5.68796C7.43744 5.80462 7.52007 5.93101 7.56869 6.06712C7.6173 6.20323 7.6416 6.34907 7.6416 6.50462C7.6416 6.66018 7.6173 6.80601 7.56869 6.94212C7.52007 7.07823 7.43744 7.20462 7.32077 7.32129L1.9541 12.688C1.74021 12.9018 1.46799 13.0088 1.13743 13.0088C0.806879 13.0088 0.534657 12.9018 0.320768 12.688C0.10688 12.4741 -6.47793e-05 12.2018 -6.47504e-05 11.8713C-6.47215e-05 11.5407 0.10688 11.2685 0.320769 11.0546L4.87077 6.50462Z" fill="white"/>
+                                </svg>
+                            </i>
+                        </button>
+                    </div>
+                </div><!--/wrapper-->
+            </section><!--/collection-->
+            <section class="exhibition">
+                <div class="wrapper">
+                    <div class="sticky">
+                        <div class="tit">
+                            <h2><a href="#n"><span>전시정보</span></a></h2>
+                            <p>현재 진행 중인 전시부터 지난 기록까지, 문신미술관의 전시 흐름을 한눈에 살펴봅니다.</p>
+                        </div><!--/tit-->
+                        <div class=" current">
+                            <a href="#n">
+                                <div class="photo"><img src="images/main/exhibition01.jpg" alt="문신과 사람 포스터"></div>
+                                <div class="info">
+                                    <h3>문신과 사람</h3>
+                                    <strong>전시기간</strong>
+                                    <span>2025-04-22 - 2025-11-15</span>
+                                    <strong>전시장소</strong>
+                                    <span>2025-04-22 - 2025-11-15</span>
+                                    <strong>관람규모</strong>
+                                    <span>회화, 조각, 영상, 아카이브 등</span>
+                                </div><!--/info-->
+                            </a>
+                        </div><!--/current-->
+                    </div><!--/sticky-->
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition02.jpg" alt=""></div></a>
+                            </li>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition03.jpg" alt=""></div></a>
+                            </li>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition04.jpg" alt=""></div></a>
+                            </li>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition05.jpg" alt=""></div></a>
+                            </li>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition06.jpg" alt=""></div></a>
+                            </li>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition07.jpg" alt=""></div></a>
+                            </li>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition08.png" alt=""></div></a>
+                            </li>
+                            <li>
+                                <a href="#n"><div class="photo"><img src="images/main/exhibition09.png" alt=""></div></a>
+                            </li>
+                        </ul>
+                    </div><!--/list-->
+                </div><!--/wrapper-->
+            </section><!--/exhibition-->
+            <section class="notice">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2><a href="#n"><span>알립니다</span></a></h2>
+                        <p>교육·행사 안내부터 공지사항까지, 미술관의 최신 정보를 전해드립니다.</p>
+                    </div><!--/tit-->
+                    <div class="area">
+                        <div class="content">
+                            <div class="tap">
+                                <button data-tab="tap1" class="active">공지<span></span></button>
+                                <button data-tab="tap2">교육<span></span></button>
+                                <button data-tab="tap3">행사<span></span></button>
+                            </div><!--/tap-->
+                            <div class="inner">
+                                <div class="tab_cont tap1 active" title="선택됨">
+                                    <h3 class="blind">공지</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>[안내] 문신미술관 무료관람 연장안내</strong>
+                                                <span>2025.10.10</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>[안내] 문신미술관 10월 추석연휴 운영안내</strong>
+                                                <span>2025.09.24</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>[안내] 2025 광복절 운영안내</strong>
+                                                <span>2025.08.11</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>[안내] 문신미술관 무료관람 안내</strong>
+                                                <span>2025.07.22</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>[안내] 문신미술관 부분휴관 안내</strong>
+                                                <span>2025.06.24</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#n" class="more"><span class="blind">공지사항 더보기</span></a>
+                                </div><!--/tap1-->
+                                <div class="tab_cont tap2">
+                                    <h3 class="blind">교육</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>아기 벌레를 찾아서</strong>
+                                                <span>2025-12-06</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>2025년 문신미술관 수묵화아카데미</strong>
+                                                <span>2025-10-22</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>2025년 꿈다락 문화예술학교 &lt;들리는 조각, 보이는 소리&gt;</strong>
+                                                <span>2025-07-26</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>2025년 꿈다락 문화예술학교 &lt;움직이는 우리, 몸짓의 조각&gt;</strong>
+                                                <span>2025-07-26</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>겨울방학 교육프로그램 『세상을 비추는 예술』</strong>
+                                                <span>2024-12-14</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#n" class="more"><span class="blind">교육 더보기</span></a>
+                                </div><!--/tap2-->
+                                <div class="tab_cont tap3">
+                                    <h3 class="blind">행사</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>제24회 문신미술상 요강</strong>
+                                                <span>2025-04-01</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>제23회 문신미술상 요강</strong>
+                                                <span>2024-04-01</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>문신미술관 2023년 어린이날 이벤트</strong>
+                                                <span>2023-05-01</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>제22회 문신미술상 요강</strong>
+                                                <span>2023-04-03</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#n">
+                                                <strong>문신 탄생 100주년 기념 SNS 축하 댓글 달기 이벤트</strong>
+                                                <span>2000-01-27</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#n" class="more"><span class="blind">행사 더보기</span></a>
+                                </div><!--/tap3-->
+                            </div><!--/inner-->
+                        </div><!--/content-->
+                        <div class="photo">
+                            <img src="images/main/notice_photo.jpg" alt="문신미술관 전경">
+                        </div><!--/photo-->
+                    </div><!--/area-->
+                </div><!--/wrapper-->
+            </section><!--/notice-->
+        </div><!--/container-->
+        <footer>
+            <div class="wrapper">
+                <div class="f_logo"><img src="images/commom/logo.svg" alt="창원시립마산문신미술관"></div>
+                <div class="sns">
+                    <ul>
+                        <li class="insta"><a href="#n"><span class="blind">인스타그램 바로가기</span></a></li>
+                        <li class="face"><a href="#n"><span class="blind">페이스북 바로가기</span></a></li>
+                        <li class="blog"><a href="#n"><span class="blind">블로그 바로가기</span></a></li>
+                    </ul>
+                </div><!--/sns-->
+                <div class="f_inner">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n">공지사항</a></li>
+                            <li><a href="#n"> 일반현황</a></li>
+                            <li><a href="#n">층별안내</a></li>
+                            <li><a href="#n">조직도</a></li>
+                        </ul>
+                    </div><!--/f_nav-->
+                    <div class="f_info">
+                        <strong>창원시립마산문신미술관</strong>
+                        <address>주소 : 경상남도 창원시 마산합포구 문신길 147</address>
+                        <span> TEL : 055-225-7181</span>
+                    </div><!--/f_info-->
+                    <div class="copyright">ⓒ ChangwonCity Masan MoonShin Art Museum, Korea.</div><!--/copyright-->
+                </div><!--/f_inner-->
+            </div>
+        </footer>
+    </div><!--/wrap-->
+</body>
+</html>

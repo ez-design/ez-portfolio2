@@ -1,0 +1,90 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+
+body {
+    background-color: #030E21;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/cover.jpg);
+    color: #868490;
+    position: relative;
+    overflow: hidden;
+}
+.main_tit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 143px;
+}
+.main_tit .top_tit {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+.main_tit .name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin: 40px 0 8px 0;
+    display: block;
+}
+.main_tit h3 {
+    font-size: 120px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+}
+.main_tit p {
+    color: #fff;
+    font-size: 20px;
+    margin: 25px 0 41px 0;
+}
+.main_tit .year {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 62px;
+}
+.main_tit a {
+    position: relative;
+    padding: 12px 28px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color .3s, box-shadow .3s;
+    display: block;
+}
+.main_tit a:hover {
+    border-color: #8f5bff; /* 퍼플 계열 추천 */
+    box-shadow: 0 0 10px rgba(143, 91, 255, 0.6);
+}
+.main_tit a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 0%, 
+        rgba(143, 91, 255, 0.35) 50%, 
+        transparent 100%
+    );
+    transform: skewX(-20deg);
+}
+.main_tit a:hover::before {
+    animation: shine 0.9s forwards;
+}
+
+@keyframes shine {
+    0% { left: -120%; }
+    100% { left: 120%; }
+}

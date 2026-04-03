@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="portfolio/js/jquery-3.7.1.min.js"></script>
+    <script src="portfolio/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="portfolio/css/swiper-bundle.min.css">
+    <script src="portfolio/js/main.js"></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="portfolio/css/main.css">   
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="blind">포트폴리오</h1>
+            <nav class="gnb_menu">
+                <button class="gnb-item home">HOME</button>
+                <button class="gnb-item profile">PROFILE</button>
+                <button class="gnb-item project01">STAR</button>
+                <button class="gnb-item project02">GUNSAN</button>
+                <button class="gnb-item end">CONTACT</button>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="swiper portfolio_v"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                    <li class="swiper-slide home">
+                        <div class="tit">
+                            <h2>Portfolio</h2>
+                            <div class="info">
+                                <span>UI / UX</span>
+                                <span>WEBDESIGH</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide profile">
+                        <div class="wrapper">
+                            <div class="tit">
+                                <h2>Profile</h2>
+                            </div>
+                            <div class="list">
+                                <div class="profile_left">
+                                    <div class="photo"><img src="portfolio/images/profile.jpg" alt="김이름 사진"></div>
+                                    <div class="intro_info">
+                                        <strong class="e_name">KIM Name</strong>
+                                        <h3 class="k_name">김이름</h3>
+                                        <p class="birth">1900.00.00</p>
+                                        <span class="phone">010 1234 1234</span>
+                                        <span class="email">myemail@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="profile_right">
+                                    <div class="education">
+                                        <h3>EDUCATION</h3>
+                                        <ul>
+                                            <li>
+                                                <span>2025.07.28 ~ 2025.12.09</span>
+                                                <p>UI/UX 반응형웹디자인&웹퍼블리셔 과정 수료</p>
+                                            </li>
+                                            <li>
+                                                <span>0000.02</span>
+                                                <p>OO고등학교 졸업</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="license">
+                                        <h3>LICENSE</h3>
+                                        <ul>
+                                            <li>
+                                                <span>2025.10.24</span>
+                                                <p>GTQ 포토샵 1급</p>
+                                            </li>
+                                            <li>
+                                                <span>2017.11.17</span>
+                                                <p>컴퓨터활용능력 2급</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills">
+                                        <h3>SKILLS</h3>
+                                        <ul>
+                                            <li class="photoshop"><span class="blind">photoshop</span></li>
+                                            <li class="illustrator"><span class="blind">illustrator</span></li>
+                                            <li class="figma"><span class="blind">figma</span></li>
+                                            <li class="vscode"><span class="blind">vscode</span></li>
+                                            <li class="github"><span class="blind">github</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>  
+                    <li class="swiper-slide project">
+                        <div class="swiper portfolio_h"> 
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide project01">
+                                    <h2>Project01</h2>
+                                    <div class="wrapper">
+                                        <div class="tit">
+                                            <a href="star/index.html" target="_blank" title="새창열기">
+                                                <h3>
+                                                    <span>01.</span>
+                                                    <span>충북대학교 <br>천문대</span>
+                                                </h3>   
+                                            </a>
+                                            <a href="star/index.html" target="_blank" title="새창열기" class="star"><span class="blind">Visit the Website</span></a>
+                                        </div>
+                                        <div class="list">
+                                            <div class="overview">
+                                                <h4>OVERVIEW</h4>
+                                                <div class="project_info">
+                                                    <p>밤하늘의 깊이와 은은한 색감을 담아 고요한 관측의 감성을 전달하는 분위기로 디자인했습니다. 간결한 구성으로 천문대의 품격과 몰입감을 표현했습니다.</p>
+                                                </div>
+                                            </div>
+                                            <div class="typography">
+                                                <h4>TYPOGRAPHY</h4>
+                                                <div class="project_info">
+                                                    <div class="main_font">
+                                                        <div class="font_wrap">
+                                                            <h5>MAIN FONT</h5>
+                                                            <p class="paper">PAPERLOGY REGULAR</p>
+                                                        </div>
+                                                        <span class="paper">가 나 다 라 마 바 사 아 자 차 카</span>
+                                                    </div>
+                                                    <div class="basic_font">
+                                                        <div class="font_wrap">
+                                                            <h5>BASIC FONT</h5>
+                                                            <p class="paper">PAPERLOGY REGULAR</p>
+                                                        </div>
+                                                        <span class="paper">가 나 다 라 마 바 사 아 자 차 카 타 파 하</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="color">
+                                                <h4>COLOR</h4>
+                                                <div class="project_info">
+                                                    <ul>
+                                                        <li class="star_color01"><span class="blind">#735E96</span></li>
+                                                        <li class="star_color02"><span class="blind">#162246</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="star/index.html" target="_blank" title="새창열기" class="cursor_target"></a>
+                                    </div>
+                                </li> 
+                                <li class="swiper-slide project02">
+                                    <h2>Project02</h2>
+                                    <div class="wrapper">
+                                        <div class="tit">
+                                            <a href="gunsan/index.html" target="_blank" title="새창열기">
+                                                <h3>
+                                                    <span>02.</span>
+                                                    <span>군산 <br>예술의전당</span>
+                                                </h3>
+                                            </a>
+                                            <a href="gunsan/index.html" target="_blank" title="새창열기" class="gunsan"><span class="blind">Visit the Website</span></a>
+                                        </div>
+                                        <div class="list">
+                                            <div class="overview">
+                                                <h4>OVERVIEW</h4>
+                                                <div class="project_info">
+                                                    <p>군산 예술의전당의 건축적 선과 구조미를 모던하게 해석해 단정한 여백과 절제된 레이아웃으로 예술 공간의 세련된 분위기를 전달하고자 했습니다.</p>
+                                                </div>
+                                            </div>
+                                            <div class="typography">
+                                                <h4>TYPOGRAPHY</h4>
+                                                <div class="project_info">
+                                                    <div class="main_font">
+                                                        <div class="font_wrap">
+                                                            <h5>MAIN FONT</h5>
+                                                            <p class="genti">GENTIUM BOOK PLUS BOLD</p>
+                                                        </div>
+                                                        <span class="genti">A B C D E F G H I J K L M N O</span>
+                                                    </div>
+                                                    <div class="basic_font">
+                                                        <div class="font_wrap">
+                                                            <h5>BASIC FONT</h5>
+                                                            <p>PRETENDARD REGULAR</p>
+                                                        </div>
+                                                        <span>가 나 다 라 마 바 사 아 자 차 카 타 파 하</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="color">
+                                                <h4>COLOR</h4>
+                                                <div class="project_info">
+                                                    <ul>
+                                                        <li class="gunsan_color01"><span class="blind">#2A2A2A</span></li>
+                                                        <li class="gunsan_color02"><span class="blind">#3574BB</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="gunsan">
+                                            <a href="gunsan/index.html">
+                                                <img src="portfolio/images/spin.png" alt="홈페이지 이동" class="spin_txt">
+                                                <img src="portfolio/images/fixed_icon.png" alt="별 아이콘" class="center_icon">
+                                            </a>
+                                        </div> -->
+                                        <a href="gunsan/index.html" target="_blank" title="새창열기" class="cursor_target"></a>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div>
+                    </li>  
+                    <li class="swiper-slide end">
+                        <div class="wrapper">
+                            <div class="tit">
+                                <h2>
+                                    <span class="tit_t">Thank you</span> <br>
+                                    <span class="tit_b">for watching</span>
+                                </h2>
+                                <div class="info">
+                                    <h3>CONTACT ME</h3>
+                                    <span>myemail@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

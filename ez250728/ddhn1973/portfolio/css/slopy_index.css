@@ -1,0 +1,110 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: var(--header-h);
+    color: var(--color-title);
+    padding: 0 var(--wrapper-margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    background-color: #fff;
+}
+header .logo a {
+    display: block;
+    width: 75px;
+    height: 55px;
+    background: url(../images/logo.png) no-repeat center center / cover;
+}
+header .gnb li:hover a span{
+    font-weight: 700;
+}
+header .gnb .gnb_wrap ul.depth1 {
+    display: flex;
+}
+header .gnb .gnb_wrap ul.depth1 >li > a {
+    display: block;
+    line-height: var(--header-h);
+    font-family: 'on';
+    font-size: 32px;
+    padding: 0 clamp(10px, 2vw, 40px);
+}
+.project .wrapper {
+    margin-top: 140px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project .wrapper .concept p {
+    font-size: 17px;
+}
+.project .wrapper .txt {
+    width: 40%;
+}
+.mockup img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.project .wrapper .txt .tit strong {
+    font-family: 'on';
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.project .wrapper .txt .tit h3 {    
+    font-size: 60px;
+    font-weight: 700;
+    margin: 20px 0 40px 0;
+    color: #1d1d1d;
+}
+.project .wrapper .txt .tit a {
+    display: block;
+    border: 1px solid #1d1d1d;
+    border-radius: 50px;
+    color: #1d1d1d;
+    font-weight: 700;
+    padding: 16px 20px;
+    width: 192px;
+}
+.skill {
+    margin-top: 16px;
+    display: flex;
+    gap: 0 12px;
+}
+.skill img {
+    width: 60px;
+}
+.project .wrapper .txt .tit a:hover {
+    background-color: #1d1d1d;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.project .wrapper .concept {
+    margin: 60px 0 40px 0;
+}
+.project .wrapper .concept h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+}
+.project .wrapper .tag {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.project .wrapper .tag strong {
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.project .wrapper .tag .date strong,
+.project .wrapper .tag .key strong {
+    margin-right: 16px;
+}

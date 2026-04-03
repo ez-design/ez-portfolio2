@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--라이브러리 파일-->
+    <!--내가 만든 파일-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>프릳츠커피컴퍼니</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">프릳츠커피컴퍼니</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_logo"><span class="blind">프릳츠커피컴퍼니</span></div>
+                    <ul class="depth1">
+                        <li>
+                            <a href="#n"><span>소개</span><strong class="mo_only">ABOUT</strong></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>소개</span></a></li>
+                                <li><a href="#n"><span>구성원</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>상점</span><strong class="mo_only">SHOP</strong></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>커피</span></a></li>
+                                <li><a href="#n"><span>선물세트</span></a></li>
+                                <li><a href="#n"><span>디자인</span></a></li>
+                                <li><a href="#n"><span>도서</span></a></li>
+                                <li><a href="#n"><span>클래스</span></a></li>
+                                <li><a href="#n"><span>슈톨렌</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>커피구독</span><strong class="mo_only">COFFEE CLUB</strong></a>
+                        </li>
+                        <li>
+                            <a href="#n"><span>도매</span><strong class="mo_only">WHOLESALE</strong></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>상점</span></a></li>
+                                <li><a href="#n"><span>원두 설명</span></a></li>
+                                <li><a href="#n"><span>샘플 신청</span></a></li>
+                                <li><a href="#n"><span>공지사항 / 문의하기</span></a></li>
+                                <li><a href="#n"><span>자주 묻는 질문</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>커핑클래스</span><strong class="mo_only">EDUCATION</strong></a>
+                        </li>
+                        <li>
+                            <a href="#n"><span>매장안내</span><strong class="mo_only">STORE</strong></a>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div><!--gnb_wrap-->
+            </nav><!--gnb-->
+            <div class="util">
+                <button class="sch_open"><span class="mo_only">검색열기</span></button>
+                <button class="mypage"><span class="mo_only">마이페이지</span></button>
+                <button class="cart"><span class="mo_only">장바구니</span></button>
+            </div><!--util-->
+        </header>
+        <div class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide popup1"></li>
+                        <li class="swiper-slide popup2"></li>
+                        <li class="swiper-slide popup3"></li>
+                    </ul>
+                        <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                        <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+                </div>
+            </section><!--/visual-->
+            <section class="signature">
+                <div class="content">
+                    <ul>
+                        <li class="olddog">
+                            <a href="#n">
+                                <div class="txt">
+                                    <h2>올드독</h2>
+                                    <p>달콤 쌉싸름한 향미와 <br>묵직한 바디를 즐길 수 있는 <br>&lt;올드독&gt;만의 풍부한 풍미를.</p>
+                                </div>
+                                <div class="photo"><img src="images/main/sig01.png" alt="올드독원두"></div>
+                            </a>
+                        </li>
+                        <li class="good">
+                            <a href="#n">
+                                <div class="txt">
+                                    <h2>잘 되어 가시나</h2>
+                                    <p>단맛을 바탕으로 훌륭한 밸런스를 <br>&lt;잘 되어 가시나&gt;에서 구현합니다. <br>길고 달콤한 애프터 테이스트도 더불어.</p>
+                                </div>
+                                <div class="photo"><img src="images/main/sig02.png" alt="잘되어가시나원두"></div>
+                            </a>
+                        </li>
+                        <li class="cinema">
+                            <a href="#n">
+                                <div class="txt">
+                                    <h2>서울 시네마</h2>
+                                    <p>커피는 과일입니다. <br>&lt;서울 시네마&gt;에서는 커피가 가진 <br>고유한 밝은 산미와 깨끗한 단맛을 즐겨주시길.</p>
+                                </div>
+                                <div class="photo"><img src="images/main/sig03.png" alt="서울시네마원두"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/content-->
+            </section><!--/signature-->
+            <section class="shop">
+                <div class="wrapper">
+                    <h2>상점<strong>SHOP</strong></h2>
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide pro01">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/shop01.png" alt=""></div>
+                                        <div class="txt">
+                                            <h3>크리스마스 블렌드</h3>
+                                            <p>20,000원</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                 <li class="swiper-slide pro02">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/shop06.png" alt=""></div>
+                                        <div class="txt">
+                                            <h3>디카페인</h3>
+                                            <p>16,000원</p>
+                                        </div>
+                                    </a>
+                                </li> 
+                                 <li class="swiper-slide pro03">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/shop02.png" alt=""></div>
+                                        <div class="txt">
+                                            <h3>콜드브루와 유리잔 듀오</h3>
+                                            <p>25,000원</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide pro04">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/shop03.png" alt=""></div>
+                                        <div class="txt">
+                                            <h3>커핑컵 물개</h3>
+                                            <p>14,000원</p>
+                                        </div>
+                                    </a>
+                                </li> 
+                                <li class="swiper-slide pro05">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/shop04.png" alt=""></div>
+                                        <div class="txt">
+                                            <h3>샷글라스 120ml</h3>
+                                            <p>8,500원</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide pro06">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/shop05.png" alt=""></div>
+                                        <div class="txt">
+                                            <h3>물개 파우치</h3>
+                                            <p>12,000원</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/list-->
+                </div><!--/wrapper-->
+                <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
+                <button class="btn_next"><span class="blind">다음팝업보기</span></button>
+            </section><!--/shop-->
+            <section class="coffeeclub">
+                <div class="wrapper">
+                    <h2>커피 구독<strong>COFFEE CLUB</strong></h2>
+                    <div class="list">
+                        <ul>
+                            <li class="home">
+                                <a href="#n">
+                                    <h3>커피클럽 홈 - 200g</h3>
+                                    <p>즐거운 커피 생활을 위해 다채로운 원두, 궁금했던 커피 이야기 <br>
+                                        한 잔이 특별해지는 레시피까지 모두 보내드려요.</p>
+                                </a>
+                            </li>
+                            <li class="office">
+                                <a href="#n">
+                                    <h3>커피클럽 오피스 - 1kg</h3>
+                                    <p>즐거운 커피 생활을 위해 좋은 품질의 원두를 대용량으로!</p>
+                                </a>
+                            </li>
+                            <li class="simple">
+                                <a href="#n">
+                                    <h3>커피클럽 간편커피 - 드립백, 콜드브루</h3>
+                                    <p>간편하게 드실 수 있는 커피를 편리하게 받아보세요!</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--/list-->
+                    <div class="more">
+                        <a href="#n"><span>구독하기</span></a>
+                    </div>
+                </div><!--/wrapper-->
+            </section><!--/coffeeclub-->
+            <section class="wholesale">
+                <div class="wrapper">
+                    <h2>도매<strong>wholesale</strong></h2>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/wholsale01.jpg" alt=""></div>
+                                    <span>원두 설명</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/wholsale02.jpg" alt=""></div>
+                                    <span>샘플 신청</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/wholsale03.jpg" alt=""></div>
+                                    <span>자주 묻는 질문</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--/list-->
+                    <div class="more">
+                        <a href="#n"><span>문의하기</span></a>
+                    </div>
+                </div><!--/wrapper-->
+            </section><!--/wholesale-->
+            <section class="store">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a href="#n">
+                                <div class="txt">
+                                    <h3>도화점</h3>
+                                    <p>전화번호 : 02-3275-2045 <br>
+                                        주소 : 서울시 마포구 새창로 2길 17 <br>
+                                        영업시간 : 평일 오전 8시 - 오후 10시 <br>
+                                        (주말, 공휴일 오전 10시 - 오후 10시)</p>
+                                </div><!--/txt-->
+                                <div class="photo"><img src="images/main/store01.jpg" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <div class="txt">
+                                    <h3>원서점</h3>
+                                    <p>전화번호 : 02-747-8101 <br>
+                                        주소 : 서울시 종로구 율곡로 83 <br>
+                                        영업시간 : 오전 9시 - 오후 7시 30분</p>
+                                </div><!--/txt-->
+                                <div class="photo"><img src="images/main/store02.jpg" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <div class="txt">
+                                    <h3>양재점</h3>
+                                    <p>전화번호 : 02-521-4148 <br>
+                                        주소 : 서울시 서초구 강남대로37길 24-11 <br>
+                                        영업시간 : 오전 8시 - 오후 8시 <br>
+                                        (주말, 공휴일 오전 10시 - 오후 8시)</p>
+                                </div><!--/txt-->
+                                <div class="photo"><img src="images/main/store03.jpg" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <div class="txt">
+                                    <h3>성산점</h3>
+                                    <p>전화번호 : 064-782-2045 <br>
+                                        주소 : 제주특별자치도 서귀포시 성산읍 일출로 222 <br>
+                                        영업시간 : 오전 8시 - 오후 7시</p>
+                                </div><!--/txt-->
+                                <div class="photo"><img src="images/main/store04.jpg" alt=""></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/inner-->
+            </section><!--/store-->
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div class="f_logo"><span class="blind">프릳츠커피컴퍼니</span></div>
+                <div class="inner">
+                    <div class="f_left">
+                        <ul>
+                            <li>전화 : 02 3275 2047 (MON-FRI. 9AM-6PM)</li>
+                            <li>원두 납품 : 010 4504 1799 (MON-FRI. 9AM-6PM)</li>
+                            <li>제휴/협업/대량구매 : BIZ@FRITZ.CO.KR</li>
+                            <li><a href="#n">SNS :</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_rignt">
+                        <div class="f_nav">
+                            <span><a href="#n">이용약관</a></span>
+                            <span><a href="#n">개인정보처리방침</a></span>
+                        </div><!--/f_nav-->
+                        <div class="f_info">
+                            <div class="f_info01">
+                                <span>(주)프리츠(FRITZ CO.,LTD.)</span>
+                                <span>대표 : 김병기, 박근하</span>
+                            </div>
+                            <div class="f_info02">
+                                <span>통신판매업 : 제2015-서울마포-1772호</span>
+                                <span>사업자등록번호 : 105-88-01127</span>
+                            </div>
+                        </div><!--/f_info-->
+                        <div class="copyright">© 2014 FRITZCOFFEECOMPANY</div>
+                    </div><!--/f_rignt-->
+                </div><!--/inner-->
+            </div><!--/wrapper-->
+        </footer>
+        <aside class="quick">
+            <button class="top"><span class="blind">TOP</span></button>
+            <button class="call"><span class="blind">상담</span></button>
+        </aside>
+    </div>
+</body>
+</html>

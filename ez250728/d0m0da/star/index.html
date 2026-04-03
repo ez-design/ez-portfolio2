@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 라이브러리 파일 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- 내파일 -->
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>충북대학교 천문대</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">충북대학교 천문대</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_logo"><span class="blind">충북대학교 천문대</span></div>
+                    <ul class="depth1">
+                        <li>
+                            <a href="#n"><span>천문대소개</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>인사말</span></a></li>
+                                <li><a href="#n"><span>조직 및 운영</span></a></li>
+                                <li><a href="#n"><span>연혁</span></a></li>
+                                <li><a href="#n"><span>주요 실적</span></a></li>
+                                <li><a href="#n"><span>시설안내</span></a></li>
+                                <li><a href="#n"><span>오시는 길</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>연구활동</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>천체관측</span></a></li>
+                                <li><a href="#n"><span>천체연구</span></a></li>
+                                <li><a href="#n"><span>천문대 밤하늘</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>천문체험학교</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>시설 및 장비</span></a></li>
+                                <li><a href="#n"><span>이용 안내 및 규정</span></a></li>
+                                <li><a href="#n"><span>프로그램 정보</span></a></li>
+                                <li><a href="#n"><span>실시간예약</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>천문자료실</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>천체사진 갤러리</span></a></li>
+                                <li><a href="#n"><span>천문현상</span></a></li>
+                                <li><a href="#n"><span>보도자료</span></a></li>
+                                <li><a href="#n"><span>자주묻는 질문</span></a></li>
+                                <li><a href="#n"><span>체험후기</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div>
+                <div class="gnb_bg"></div>
+            </nav>
+            <div class="util">
+                <div class="search">
+                    <button class="sh_open"><span class="blind">검색열기</span></button>
+                </div>
+                <a href="#n"><span>예약하기</span></a>
+            </div>
+        </header>
+        <div class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide popup1">
+                            <div class="wrapper">
+                                <h3>별을 품은 대학, <br>
+                                    우주를 향한 문을 열다</h3>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup2">
+                            <div class="wrapper">
+                                <h3>눈으로 직접 발견하는 <br>
+                                    우주의 경이로움</h3>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup3">
+                            <div class="wrapper">
+                                <h3>탐구와 감동, <br>
+                                    우주 과학의 현재를 만나보세요</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="wrapper">
+                        <div class="ctrl_btn">
+                            <div class="paging">
+                                <div class="bar">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <button class="stop"><span class="blind">일시정지</span></button>
+                            <button class="play"><span class="blind">재생</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>오늘의 하늘</h2>
+                        <a href="#n"><span>월별 해 / 달 출몰시각 바로가기</span></a>
+                    </div>
+                    <ul class="weather_wrap">
+                        <li class="weather_calendar">
+                            <div class="list icon_calendar">
+                                <p><span>양력</span> 11월 11일</p>
+                                <p class="sub-text"><span>음력</span> 09월 22일</p>
+                            </div>
+                        </li>
+                        <li class="weather_weather" >
+                            <div class="list icon_sun">
+                                <p><span>12°C</span></p>
+                                <p class="sub-text">미세먼지 35㎍/㎥ 보통</p>
+                            </div>
+                        </li>
+                        <li class="weather_moon">
+                            <div class="list icon_moon">
+                                <p><span>달의 모양</span></p>
+                                <p class="sub-text">하현망간의 달</p>
+                            </div>
+                        </li>
+                        <li class="weather_sun">
+                            <div class="list icon_clock">
+                                <p><span>일출</span> 07시 04분 &nbsp; <span>일몰</span> 17시 24분</p>
+                                <p class="sub-text"><span>월출</span> 23시 03분 &nbsp; <span>월몰</span> 12시 53분</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="weather_header">
+                        <p class="status"><span>오늘 야외 관측이 가능합니다</span></p>
+                        <p class="disclaimer">*실제 상황과 예보는 다를 수 있습니다</p>
+                    </div>
+                </div>
+            </section>
+            <section class="program">
+                <div class="tit">
+                    <div class="wrapper">
+                        <h2>
+                            <span>별을 따라 만나는 프로그램</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide top">
+                                <div class="photo"><img src="images/main/program01.jpg" alt="3월 올해의 천문현상 : 해 마다 찾아오는 우주쇼"></div>
+                                <div class="txt">
+                                    <strong>3월</strong>
+                                    <h3>올해의 천문현상</h3>
+                                    <p>올 한해 일어나는 천문 현상의 종류와 그 원리를 배워본다</p>
+                                    <span>실습 : 달력 만들기 <br>
+                                        이해 연령대 : 초등 3학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide mid">
+                                <div class="photo"><img src="images/main/program02.jpg" alt="4월 태양계 : 수, 금, 지, 화, 목, 토, 천, 해"></div>
+                                <div class="txt">
+                                    <strong>4월</strong>
+                                    <h3>태양계</h3>
+                                    <p>우리가 살고 있는 태양계의 구성과 특징을 배워본다</p>
+                                    <span>실습 : 태양계 팔찌 만들기 <br>
+                                        이해 연령대 : 초등 3학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide bot">
+                                <div class="photo"><img src="images/main/program03.jpg" alt="5월 별의 일생 : 별의 탄생부터 죽음까지"></div>
+                                <div class="txt">
+                                    <strong>5월</strong>
+                                    <h3>별의 일생</h3>
+                                    <p>별의 탄생부터 죽음까지 그 과정을 배워본다</p>
+                                    <span>실습 : 별의 일생 액자 만들기 <br>
+                                        이해 연령대 : 초등 3학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide mid">
+                                <div class="photo"><img src="images/main/program04.jpg" alt="6월 망원경 : 우주 탐험을 위한 인류의 발명"></div>
+                                <div class="txt">
+                                    <strong>6월</strong>
+                                    <h3>망원경</h3>
+                                    <p>천체망원경의 역사와 원리, 종류에 대하여 배워본다</p>
+                                    <span>실습 : 망원경 무드등 만들기 <br>
+                                        이해 연령대 : 초등 1학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide bot">
+                                <div class="photo"><img src="images/main/program05.jpg" alt="7월 은하 : 별들의 가장 큰 집단"></div>
+                                <div class="txt">
+                                    <strong>7월</strong>
+                                    <h3>은하</h3>
+                                    <p>별들의 가장 큰 집단인 은하의 종류와 특징을 배워본다</p>
+                                    <span>실습 : 은하 액자 만들기 <br>
+                                        이해 연령대 : 초등 3학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide mid">
+                                <div class="photo"><img src="images/main/program06.jpg" alt="8월 외계인 : 지구 밖 또 다른 생명체"></div>
+                                <div class="txt">
+                                    <strong>8월</strong>
+                                    <h3>외계인</h3>
+                                    <p>외계 생명체가 살 수 있을 만한 환경에 대해 생각하는 시간을 가져본다</p>
+                                    <span>실습 : 외계인 키링 만들기 <br>
+                                        이해 연령대 : 초등 3학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide bot">
+                                <div class="photo"><img src="images/main/program07.jpg" alt="9월 달 : 지구의 동반자"></div>
+                                <div class="txt">
+                                    <strong>9월</strong>
+                                    <h3>달</h3>
+                                    <p>달의 탄생 과정과 위상 변화 과정을 배워본다</p>
+                                    <span>실습 : 달 에코백 만들기 <br>
+                                        이해 연령대 : 초등 3학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide top">
+                                <div class="photo"><img src="images/main/program08.jpg" alt="10월 우주개발 : 지구 넘어 우주에 대한 인류의 호기심"></div>
+                                <div class="txt">
+                                    <strong>10월</strong>
+                                    <h3>우주개발</h3>
+                                    <p>우주 탐험의 역사와 현재 탐사중인 탐사선의 특징에 대해 배워본다</p>
+                                    <span>실습 : 우주선 키링 만들기 <br>
+                                        이해 연령대 : 초등 3학년 이상</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide mid">
+                                <div class="photo"><img src="images/main/program09.jpg" alt="11월 일상생활 속 천문학 : 생활 속에 숨어있는 천문학은 어떤 것이 있을까?"></div>
+                                <div class="txt">
+                                    <strong>11월</strong>
+                                    <h3>일상생활 속 천문학</h3>
+                                    <p>지구를 위협하는 지구 근접 천체에 대해 알아보고, 이로부터 지구를 지킬 방법을 생각해본다</p>
+                                    <span>실습 : 천문학 컵 만들기 <br>
+                                        이해 연령대 : 초등 1학년 이상</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="#n"><span class="blind">더보기</span></a>
+                </div>
+            </section>
+            <section class="community">
+                <h2 class="blind">다양한 소식</h2>
+                <div class="wrapper">
+                    <div class="half_left">
+                        <div class="news">
+                            <div class="tit">
+                                <h3>천문체험학교 소식</h3>
+                            </div>
+                            <div class="list">
+                                <div class="inner news01">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/commu01.jpg" alt="2025년 7월 천문체험학교"></div>
+                                        <div class="txt">
+                                            <h4>2025년 7월 천문체험학교</h4>
+                                            <p>안녕하세요~! 천문대지기입니다. 갑자기 폭우가 왔던 7월입니다. 피해 없으셨길 바랍니다. 7월 한 달동안 총 31가족이 저희 천문체험학교를 방문해 주셨습니다. 방문해 주신 모든 분들께 감사드리고, 좋은 추억 만들고 가셨기를 바랍니다!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="inner news02">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/commu02.jpg" alt="2025년 6월 천문체험학교"></div>
+                                        <div class="txt">
+                                            <h4>2025년 6월 천문체험학교</h4>
+                                            <p>안녕하세요!! 천문대지기입니다~ 낮의 길이가 제일 긴 태양의 달 6월입니다. 6월 한 달동안 총 30가족이 저희 천문체험학교를 방문해 주셨습니다. 방문해 주신 모든 분들께 감사드리고, 좋은 추억 만들고 가셨기를 바랍니다!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="inner news03">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/commu03.jpg" alt="2025년 5월 천문체험학교"></div>
+                                        <div class="txt">
+                                            <h4>2025년 5월 천문체험학교</h4>
+                                            <p>안녕하세요~! 천문대지기입니다. 가정의 달 5월입니다. 작년과 달리 사뭇 쌀쌀한 날씨입니다. 5월 한 달동안 총 76가족이 저희 천문체험학교를 방문해 주셨습니다. 방문해 주신 모든 분들께 감사드리고, 좋은 추억 만들고 가셨기를 바랍니다!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="more"><a href="#n"><span class="blind">더보기</span></a></div>
+                        </div>
+                        <div class="data">
+                            <div class="tit">
+                                <h3>보도자료</h3>
+                            </div>
+                            <div class="list">
+                                <div class="inner">
+                                    <a href="#n">
+                                        <div class="date">
+                                            <strong class="days">19</strong> <br>
+                                            <span class="year_month">2019.05</span>
+                                        </div>
+                                        <div class="txt">
+                                            <h4>덕산청소년문화의 집 `별별 청소년 가족 소통캠프' 성료</h4>
+                                            <p>진천군 덕산청소년문화의집은 18~19일 청소년 및 가족 70명이 참여한 `별별 청소년 가족 소통캠프'를 진행했다. 이번 소통캠프는 덕산청소년문화의집에서 추진하고 있는 가족 체험 프로그램의 일환으로 추진됐다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="inner">
+                                    <a href="#n">
+                                        <div class="date">
+                                            <strong class="days">22</strong> <br>
+                                            <span class="year_month">2019.03</span>
+                                        </div>
+                                        <div class="txt">
+                                            <h4>소행성 파에톤의 민낯을 밝히다</h4>
+                                            <p>소행성 파에톤'은 무엇? 2022년 발사 예정인 일본우주항공 연구개발기구(JAXA)의 데스티니 플러스 탐사선이 근접탐사 입무를 수행하게 될 천체입니다. 파에톤은 1983년 10월 영국 천문학자인 사이먼 그린(Simon F. Green)과 존 데이비스(John K. Davies)가 적외선천문위성 아이라스의 관측 영상을 보다가 우연히 발견했습니다. 이는 인공위성으로 찾은 첫 소행성으로 기록됐습니다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="inner">
+                                    <a href="#n">
+                                        <div class="date">
+                                            <strong class="days">19</strong> <br>
+                                            <span class="year_month">2019.03</span>
+                                        </div>
+                                        <div class="txt">
+                                            <h4>시린 계곡물 '콸콸' 피톤치드 '빵빵'...자연휴양 이 맛이지</h4>
+                                            <p>[중부매일 최동일 기자] 한여름 도심은 더위와의 전쟁으로 하루하루를 보내게 된다. 이럴때면 산과 계곡, 바닷가 등 자연을 찾아 더위에 지친 몸과 마음을 달래는 힐링의 시간이 간절해진다. 답답한 도시생활을 벗어나 가족, 친지들과 함께 자연속에서 시원한 여름을 보내고 즐거운 추억을 쌓는데는 캠핑이 제격이다. 여름휴가철을 앞두고 충북도내에 운영중인 명품 캠핑장 20곳을 살펴본다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="more"><a href="#n"><span class="blind">더보기</span></a></div>
+                        </div>
+                    </div>
+                    <div class="half_right">
+                        <div class="guide">
+                            <div class="tit">
+                                <h3>방문 가이드</h3>
+                            </div>
+                            <div class="list">
+                                <div class="map_area">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.5326369026725!2d127.47269597629584!3d36.781777868737045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3564db15951caeeb%3A0xb5b7f178472f9f91!2z7Lap67aB64yA7LKc66y464yA7Lqg7ZWR7J6l!5e0!3m2!1sko!2skr!4v1763091454227!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="map_info">
+                                    <div class="guide_address">
+                                        <h4>주소</h4>
+                                        <p>충청북도 진천군 문백면 은진로 29, 충북대학교 천문대</p>
+                                        <p>Tel. 043-532-2341(2342)</p>
+                                    </div>
+                                    <div class="guide_howto">
+                                        <h4>이용 안내</h4>
+                                        <p>1박 요금 및 장비 : 하계 8만원 / 동계 5만원 (장비 대여료 8만원 별도) </p>
+                                        <p>입·퇴실 시간 : 입실 12시 / 퇴실 1시 (체험학교 입장은 정오 12시, 퇴실은 익일 오후 1시까지 완료)</p>
+                                        <p>필수사항 : 매너타임 23시~07시, 애완동물/카라반/5M 초과 텐트 예약 자제</p>
+                                    </div>
+                                    <div class="detail_btn">
+                                        <a href="#n" class="map_quick"><span>지도 보기</span></a>
+                                        <a href="#n" class="howto_quick"><span>이용 안내 보기</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div class="f_logo"><span class="blind">충북대학교 천문대</span></div>
+                <div class=f_util>
+                    <div class="family_site">
+                        <button class="family_open" title="열기"><span>관련사이트</span></button>
+                        <div class="family_wrap">
+                            <ul>
+                                <li><a href="#n"><span>한국천문연구원</span></a></li>
+                                <li><a href="#n"><span>보현산 천문대</span></a></li>
+                                <li><a href="#n"><span>소백산 천문대</span></a></li>
+                                <li><a href="#n"><span>한국항공우주연구원</span></a></li>
+                                <li><a href="#n"><span>한국우주과학회</span></a></li>
+                                <li><a href="#n"><span>한국천문학회</span></a></li>
+                                <li><a href="#n"><span>국립전파연구원 우주전파센터</span></a></li>
+                            </ul>
+                        </div>
+                        <button class="family_close" title="닫기"><span>관련사이트</span></button>
+                    </div>
+                </div>
+                <div class="f_inner">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n">개인정보처리방침</a></li>
+                            <li><a href="#n">이메일무단수집거부</a></li>
+                            <li><a href="#n">저작권안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_info">
+                        <address>충청북도 진천군 문백면 은진로 29, 충북대학교 천문대</address> <br>
+                        <span>관리자메일 : antalece@chungbuk.ac.kr</span>
+                        <span>전화 : 043-532-2341(2342)</span>
+                        <span>팩스 : 043-274-2312</span>
+                    </div>
+                    <div class="copyright">
+                        <p>ⓒ cbnuo.chungbuk.ac.kr. All right reserved.</p>
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li class="blog"><a href="#n"><span>블로그</span></a></li>
+                            <li class="facebook"><a href="#n"><span>페이스북</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="fixed_btns">
+        <button id="top" class="top_btn"><span class="blind">TOP</span></button>
+        <a href="#" class="only_mobile_btn">예약하기</a>
+    </div>
+</body>
+</html>

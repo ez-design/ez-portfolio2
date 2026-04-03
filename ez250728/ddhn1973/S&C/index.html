@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- 여기서부터 내꺼 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <script src="js/full.js"></script> --> <!-- 풀페이지 일단 멈춤 -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>서가앤쿡</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html"><span class="blind">서가앤쿡</span></a></h1>
+        <nav class="gnb">
+            <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+            <div class="gnb_wrap">
+                <ul class="depth1">
+                    <li><a href="#n"><span>서가앤쿡</span></a></li>
+                    <li><a href="#n"><span>메뉴</span></a></li>
+                    <li><a href="#n"><span>매장</span></a></li>
+                    <li><a href="#n"><span>창업안내</span></a></li>
+                    <li><a href="#n"><span>고객문의</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="util">
+            <div class="lang">
+                <button class="lang_open"><span class="blind">언어 선택 열기</span></button>
+            </div>
+        </div>
+    </header>
+    <!-- *********************** header 끝 *********************** -->
+    <!-- *********************** visual 시작 *********************** -->
+        <section class="visual">
+            <div class="video"><video src="images/visual_02.mp4" autoplay muted loop></video></div>
+            <!-- <div class="photo"><img src="images/visual_01.jpg" alt="스테이크 굽는 모습"></div> -->
+            <div class="wrapper">
+                <div class="txt">
+                    <h3>
+                        한 상 가득, <br>
+                        뜨거운 맛을 굽다
+                    </h3>
+                </div>
+            </div>
+        </section>
+    <!-- *********************** visual 끝 *********************** -->
+    <!-- *********************** split 시작 *********************** -->
+    <div class="split">
+        <div class="slogan_wrap"></div>
+            <div class="slogan">
+                <p>
+                    작은 서가에서
+                    <span>작은 서가에서</span>
+                </p>
+                <p>
+                    레스토랑 서가앤쿡으로
+                    <span>레스토랑 서가앤쿡으로</span>
+                </p>
+            </div>
+    </div>
+    <!-- *********************** split 끝 *********************** -->
+    <!-- *********************** egg 시작 *********************** -->
+    <div class="egg">
+        <div class="egg_wrap"></div>
+        <div class="txt">
+            <span class="top">SEOGA</span>
+            <div class="and-line">
+                <span class="bracket left">[</span>
+                <span class="and-text">&, 그리고</span>
+                <span class="bracket right">]</span>
+            </div>
+            <span class="bottom">COOK</span>
+        </div>
+    </div>
+    <!-- *********************** egg 끝 *********************** -->
+    <!-- *********************** accordion 시작 *********************** -->
+    <div class="accordion_wrap"> <!-- 고정요소를 감싸는 요소 -->
+        <div class="accordion"> <!-- 고정요소, 이름은 자유롭게 설정가능 -->
+            <div class="cont bg1"> 
+                <h3>두 사람이 나누는 <br>
+                    <span>&한 상</span>의 기준</h3>
+                <p>서가앤쿡의 모든 메뉴는 두 사람이 함께 나눌 수 있도록 설계되어, <br>
+                    풍성한 한 상의 즐거움을 제공합니다.</p>
+            </div> <!-- 내용 -->
+        </div>
+        <div class="accordion"> <!-- 고정요소, 이름은 자유롭게 설정가능 -->
+            <div class="cont bg2">
+                <h3><span>&스테이크</span>의 본질, <br>
+                    그릴 위에서 완성되다</h3>
+                <p>직화 그릴에서 구워낸 스테이크는 겉은 바삭, 속은 촉촉하게. <br>
+                    숙성된 고기 본연의 풍미를 느껴보세요.</p>
+            </div> <!-- 내용 -->
+        </div>
+        <div class="accordion last"> <!-- 고정요소, 이름은 자유롭게 설정가능 반드시 마지막 요소에는 last라는 클래스를 줘야함 -->
+            <div class="cont bg3">
+                <h3>따뜻한 기억 위에 올린 <br>
+                    <span>&계란후라이</span> 한 점</h3>
+                <p>계란후라이 하나로 완성되는 따뜻한 한 상. 
+                    서가앤쿡만의 감각적 메뉴 구성으로 식탁 위의 행복을 더합니다.</p>
+            </div> <!-- 내용 -->
+        </div>
+    </div>
+    <!-- *********************** accordion 끝 *********************** -->
+    <!-- *********************** menu 시작 *********************** -->
+    <section class="menu">
+        <div class="wrapper">
+            <div class="tit">
+                <h3>HOT & MENU</h3>
+            </div>
+            <div class="content">
+                <div  class="plate"><img src="images/plate.png" alt="접시"></div>
+                <div class="list">
+                    <div class="center"> <!-- slick에서 호출하는 이름 -->
+                        <div class="menu-item">
+                            <img class="food" src="images/menu01.png" alt="">
+                            <div class="name">
+                                <p>짚불 그릴드 <br>목살 스테이크</p>
+                            </div>
+                            <div class="more"><a href="#n"><span>MORE</span></a></div>
+                        </div>
+                        <div class="menu-item">
+                            <img class="food" src="images/menu02.png" alt="">
+                            <div class="name">
+                                <p>오리지날 목살 <br>스테이크 샐러드</p>
+                            </div>
+                            <div class="more"><a href="#n"><span>MORE</span></a></div>
+                        </div>
+                        <div class="menu-item">
+                            <img class="food" src="images/menu03.png" alt="">
+                            <div class="name">
+                                <p>짚불 그릴드 <br>돈-LA갈비 스테이크</p>
+                            </div>
+                            <div class="more"><a href="#n"><span>MORE</span></a></div>
+                        </div>
+                        <div class="menu-item">
+                            <img class="food" src="images/menu04.png" alt="">
+                            <div class="name">
+                                <p>짚불 폭립</p>
+                            </div>
+                            <div class="more"><a href="#n"><span>MORE</span></a></div>
+                        </div>
+                        <div class="menu-item">
+                            <img class="food" src="images/menu05.png" alt="">
+                            <div class="name">
+                                <p>짚불 그릴드 <br>한우 떡갈비스테이크</p>
+                            </div>
+                            <div class="more"><a href="#n"><span>MORE</span></a></div>
+                        </div>
+                        <div class="menu-item">
+                            <img class="food" src="images/menu06.png" alt="">
+                            <div class="name">
+                                <p>짚불 떡갈비 <br>토마토 파스타</p>
+                            </div>
+                            <div class="more"><a href="#n"><span>MORE</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- *********************** menu 끝 *********************** -->
+    <!-- *********************** event 시작 *********************** -->
+    <section class="event">
+        <div class="wrapper">
+            <div class="tit">
+                <h3>&EVENT</h3>
+            </div>
+            <div class="list">
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <h4>서가앤쿡 신메뉴 런칭!</h4>
+                                <p>캐주얼 다이닝 브랜드 서가앤쿡이 고객 취향 변화에 발맞춰 새로운 시즌 신메뉴를 정식 출시했다. 이번 신메뉴는 ‘짚불 그릴드 스테이크’ 라인업을 확장하는 동시에, 보다 건강하고 균형 잡힌 식사를 원하는 고객 니즈를 반영해 구성된 것이 특징이다. </p>
+                                <div class="photo">
+                                    <img src="images/event_pop1.jpg" alt="신메뉴 런칭 팝업">
+                                </div>
+                            </a>
+                        </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <h4>서가앤쿡 타임테라스 동탄점 Open Event</h4>
+                                <p>서가앤쿡이 최신 플래그십 매장인 서가앤쿡 타임테라스 동탄점(직영)을 새롭게 오픈했다. 새 매장은 동탄 중심 상업지구에 위치해 높은 접근성을 확보했으며, 보다 차별화된 공간 경험을 제공하는 프리미엄 콘셉트로 운영된다. </p>
+                                <div class="photo">
+                                    <img src="images/event_pop2.jpg" alt="서가앤쿡 동탄 타임테라스점 오픈 이벤트 팝업">
+                                </div>
+                            </a>
+                        </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <h4>서가앤쿡 레몬생맥주 먹고 여행가자!</h4>
+                                <p>서가앤쿡이 여름 시즌을 맞아 고객 참여형 이벤트 ‘레몬 생맥주 인증샷 챌린지’를 진행한다.
+                                    이번 이벤트는 상큼한 레몬 생맥주를 즐기는 순간을 사진으로 공유하는 방식으로, 남녀노소 누구나 손쉽게 참여할 수 있는 것이 특징이다.
+                                    참여 방법은 간단하다. 매장에서 제공되는 레몬 생맥주와 함께 촬영한 인증샷을 개인 인스타그램 계정에 업로드한 뒤, 서가앤쿡 공식 계정을 팔로우하고 필수 해시태그 #서가앤쿡 #서가앤쿡레몬생맥주 #생맥주맛집을 함께 기재하면 된다.
+                                    이 세 가지 조건을 충족하면 자동으로 응모가 완료된다.</p>
+                                <div class="photo">
+                                    <img src="images/event_pop3.jpg" alt="레몬생맥주 이벤트 팝업">
+                                </div>
+                            </a>
+                        </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                    </ul>
+                </div>
+            </div>
+            <div class="more"><a href="#n"><span>MORE</span></a></div>
+        </div>
+    </section> <!-- event -->
+    <!-- *********************** event 끝 *********************** -->
+    <!-- *********************** youtube 시작 *********************** -->
+    <section class="youtube">
+            <div class="long">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h3>&한 끼의 순간</h3>
+                    </div>
+                    <div class="list">
+                        <div class="swiper long-swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="https://youtu.be/gTK1frnLsxo?si=yIiZpo4weEvkysRo">
+                                        <div class="photo">
+                                            <img src="images/long01.jpg" alt="쯔양">
+                                        </div>
+                                    </a>
+                                </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                <li class="swiper-slide">
+                                    <a href="https://youtu.be/xOMwcdeWdXE?si=XasgdiZv_FdFe0E8">
+                                        <div class="photo">
+                                            <img src="images/long02.jpg" alt="최신근황">
+                                        </div>
+                                    </a>
+                                </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                <li class="swiper-slide">
+                                    <a href="https://youtu.be/4xRT_zW5Tek?si=_VAs4TSdwspxRqWC">
+                                        <div class="photo">
+                                            <img src="images/long03.jpg" alt="그때 그시절">
+                                        </div>
+                                    </a>
+                                </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                <li class="swiper-slide">
+                                    <a href="https://youtu.be/TELwG3bTTyc?si=BNn8BhcV84xsrODY">
+                                        <div class="photo">
+                                            <img src="images/long04.jpg" alt="서가앤쿡 근황">
+                                        </div>
+                                    </a>
+                                </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                <li class="swiper-slide">
+                                    <a href="https://youtu.be/f9OLOiQGWio?si=p0YPxrTdqfjKLMy1">
+                                        <div class="photo">
+                                            <img src="images/long05.jpg" alt="서가앤쿡 한상">
+                                        </div>
+                                    </a>
+                                </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn_prev"><span class="blind">이전</span></button>
+                        <div class="more"><a href="#n"><span>MORE</span></a></div>
+                        <button class="btn_next"><span class="blind">다음</span></button>
+                    </div>
+                </div>
+            </div><!-- long -->
+            <div class="short">
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/lepMlH_K_m0?si=00Z62jFWUu9caq40">
+                                    <div class="photo">
+                                        <img src="images/short01.jpg" alt="신메뉴 런칭 팝업">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/B0U9pKgv2Q4?si=2BDKX0QFwzf8hv7d">
+                                    <div class="photo">
+                                        <img src="images/short02.jpg" alt="신메뉴 런칭 팝업">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/rnPf_prOjss?si=D1f7bqnArNp7y9G4">
+                                    <div class="photo">
+                                        <img src="images/short03.jpg" alt="신메뉴 런칭 팝업">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/7wL8CR1GRlM?si=PXLeQgALxY_UIy-H">
+                                    <div class="photo">
+                                        <img src="images/short04.jpg" alt="서가앤쿡 근황">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/_6uc1aF1p2c?si=bFK0HUboPQIlCemZ">
+                                    <div class="photo">
+                                        <img src="images/short05.jpg" alt="청주서가앤쿡">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/MqWCdufDCyo?si=SH2WpQhkwzYPiJK9">
+                                    <div class="photo">
+                                        <img src="images/short06.jpg" alt="목살한상">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/9mT9apaW1Cs?si=6k7koNxv7M28nc_s">
+                                    <div class="photo">
+                                        <img src="images/short07.jpg" alt="어렸을때">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <a href="https://youtube.com/shorts/AvSGq8axv_c?si=PP4llbbKFnrgaE2z">
+                                    <div class="photo">
+                                        <img src="images/short08.jpg" alt="1kg스테이크">
+                                    </div>
+                                </a>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- short -->
+    </section> <!-- youtube -->
+    <!-- *********************** youtube 끝 *********************** -->
+    <!-- *********************** footer 시작 *********************** -->
+    <footer class="section fp-auto-height">
+        <div class="f_sub">
+            <div class="wrapper">
+                    <div class="f_logo"><a href="index.html"><img src="images/logo_w.png" alt="서가앤쿡"></a></div>
+                    <div class="inner">
+                        <div class="f_nav">
+                            <ul>
+                                <li><a href="#n">서가앤쿡</a></li>
+                                <li><a href="#n">개인정보처리방침</a></li>
+                            </ul>
+                        </div>
+                        <div class="f_info">
+                            <div class="f_ff"><span>Tel : 1577-4761</span><span>Fax : 1577-4761</span><br></div>
+                            <span>고객정보책임담당자 : 김혜민</span><br>
+                            <div class="ceo"><span>사업자등록번호 : 502-86-10105</span><span>대표자 : 이성민</span></div>
+                            <address>(주)에스앤에스컴퍼니 대구광역시 수성구 수성로 354 3F, 4F, 5F</address>
+                            </div>
+                        <div class="copyright">
+                            <p>COPYRIGHT © 2013 SEOGAANDCOOK. ALL RIGHT RESERVED.</p>
+                        </div>
+                    </div>
+                <button class="top"><span>TOP</span></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

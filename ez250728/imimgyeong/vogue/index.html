@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--라이브러리파일-->
+    <!--내가 만든 파일-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>보그 코리아</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo"><a href="index.html"><span class="blind">보그 코리아</span></a></h1>
+                <nav class="gnb">
+                    <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                    <div class="gnb_wrap">
+                        <div class="gnb_logo"><span class="blind">보그 코리아</span></div>
+                        <div class="mo_search">
+                            <button class="mo_sch"><span class="blind">검색열기</span></button>
+                        </div><!--mo_search-->
+                        <ul class="depth1 ">
+                            <li>
+                                <a href="#n"><span>FASHION</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>패션 트렌드</span></a></li>
+                                    <li><a href="#n"><span>패션 아이템</span></a></li>
+                                    <li><a href="#n"><span>셀러브리티 스타일</span></a></li>
+                                    <li><a href="#n"><span>패션 화보</span></a></li>
+                                    <li><a href="#n"><span>인터뷰</span></a></li>
+                                    <li><a href="#n"><span>패션 뉴스</span></a></li>
+                                    <li><a href="#n"><span>워치&주얼리</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>RUNWAY</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>이미지 아카이브</span></a></li>
+                                    <li><a href="#n"><span>최신 쇼</span></a></li>
+                                    <li><a href="#n"><span>시즌 컬렉션</span></a></li>
+                                    <li><a href="#n"><span>디자이너</span></a></li>
+                                    <li><a href="#n"><span>특집</span></a></li>
+                                    <li><a href="#n"><span>보그 비즈니스</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>BEAUTY</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>뷰티 트렌드 </span></a></li>
+                                    <li><a href="#n"><span>뷰티 아이템</span></a></li>
+                                    <li><a href="#n"><span>웰니스</span></a></li>
+                                    <li><a href="#n"><span>뷰티 화보</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>LIVING</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>여행</span></a></li>
+                                    <li><a href="#n"><span>푸드</span></a></li>
+                                    <li><a href="#n"><span>데코</span></a></li>
+                                    <li><a href="#n"><span>라이프</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>CULTURE</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>엔터테인먼트</span></a></li>
+                                    <li><a href="#n"><span>아트</span></a></li>
+                                    <li><a href="#n"><span>셀럽 뉴스</span></a></li>
+                                    <li><a href="#n"><span>뷰 포인트</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>VIDEO</span></a>
+                            </li>
+                        </ul>
+                        <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                        <div class="sns">
+                            <ul>
+                                <li class="insta"><a href="#n"><span class="blind">인스타그램</span></a></li>
+                                <li class="youtube"><a href="#n"><span class="blind">유튜브</span></a></li>
+                                <li class="face"><a href="#n"><span class="blind">페이스북</span></a></li>
+                                <li class="twiter"><a href="#n"><span class="blind">트위터</span></a></li>
+                            </ul>
+                        </div><!--/sns-->
+                    </div><!--/gnb_wrap-->
+                </nav><!--/gnb-->
+                <div class="util">
+                    <a href="#n" class="lang"><span>KOR</span></a>
+                    <div class="search">
+                        <button class="sch_open"><span class="blind">검색열기</span></button>
+                    </div><!--search-->
+                </div><!--util-->
+            </div><!--inner-->
+        </header>
+        <div class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper "> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide popup1">
+                            <div class="txt">
+                                <a href="#n">
+                                    <h3>정호연 “인간을 사랑할 수밖에 없어요”</h3>
+                                    <p><strong>패션화보</strong> 2025.11.18</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup2">
+                            <div class="txt">
+                                <a href="#n">
+                                    <h3>가장 강렬한 데뷔, 마티유 블라지의 새로운 샤넬</h3>
+                                    <p><strong>패션뉴스</strong> 2025.10.20</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide popup3">
+                            <div class="txt">
+                                <a href="#n">
+                                    <h3>‘2025 APEC’ 무대인 경주에서, 패션과 함께 걸었다</h3>
+                                    <p><strong>패션화보</strong> 2025.10.24</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--/swiper-->
+            </section>
+            <section class="runway">
+                <div class="wrapper">
+                    <div class="sticky">
+                        <div class="tit">
+                            <h2>RUNWAY</h2>
+                            <p>2026 S/S Highlight</p>
+                        </div><!--tit-->
+                        <a href="#n" class="more"><span>더보기</span></a>
+                    </div><!--sticky-->
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway01.webp" alt="Vogue World"></div>
+                                    <strong>Vogue World</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway02.webp" alt="Chanel"></div>
+                                    <strong>Chanel</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway03.webp" alt=""></div>
+                                    <strong>Miu Miu</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway04.webp" alt=""></div>
+                                    <strong>Celine</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway05.jpg" alt="Saint Laurent"></div>
+                                    <strong>Saint Laurent</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway06.webp" alt="Cecilie Bahnsen"></div>
+                                    <strong>Cecilie Bahnsen</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway07.webp" alt="COMME des GARÇONS"></div>
+                                    <strong>COMME des GARÇONS</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/runway08.webp" alt="Prada"></div>
+                                    <strong>Prada</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--wrapper-->
+            </section><!--runway-->
+            <section class="video">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>VIDEO</h2>
+                        <p>패션·뷰티부터 셀럽·이벤트까지 영상 콘텐츠로 즐기는 보그 코리아</p>
+                    </div>
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/youtube01.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <strong>MY VOGUE</strong>
+                                            <h3>송혜교의 가방 속을 ‘보그’에서 최초 공개합니다</h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/youtube02.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <strong>MY VOGUE</strong>
+                                            <h3>[ENG] 서울에서 팩도 사고 퍼스널 컬러 진단도 받은 그레타 리(주얼리, 마스크 팩, 안경, 틴트)</h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/youtube03.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <strong>VOGUE MEETS</strong>
+                                            <h3>[ENG] ‘이 유행어’를 몰라서 잠시 억울했던 젠지(Gen-Z) 로제</h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/youtube04.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <strong>VOGUE ZIP</strong>
+                                            <h3>[ENG] 1700년대 곡물 창고를 집으로? 코펜하겐 건축가 커플의 갈색 집</h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/youtube05.jpg" alt=""></div>
+                                        <div class="txt">
+                                            <strong>8PM CONCERT</strong>
+                                            <h3>요즘 ‘너드’는 노래도 잘 부르나요? 레트로 전문 아티스트 죠지(george)의 ‘처음 보는 나’ & ‘내 탓이지 뭐’ 라이브</h3>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--list-->
+                    <div class="ctrl_btn">
+                        <button class="btn_prev">
+                            <span class="blind">이전버튼</span>
+                            <i>
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.52401 7.78692L8.46417 13.7267C8.6659 13.9287 8.7692 14.1826 8.77406 14.4883C8.77868 14.7938 8.67538 15.0523 8.46417 15.2638C8.25271 15.475 7.99653 15.5806 7.69562 15.5806C7.39472 15.5806 7.13854 15.475 6.92708 15.2638L0.372968 8.70968C0.236614 8.57308 0.140364 8.42907 0.0842187 8.27765C0.0280728 8.12623 0 7.96265 0 7.78692C0 7.61119 0.0280728 7.44762 0.0842187 7.29619C0.140364 7.14477 0.236614 7.00076 0.372968 6.86416L6.92708 0.310044C7.12906 0.108308 7.38293 0.00500933 7.6887 0.000148215C7.99422 -0.00446984 8.25271 0.0988288 8.46417 0.310044C8.67538 0.521502 8.78099 0.777684 8.78099 1.07859C8.78099 1.37949 8.67538 1.63567 8.46417 1.84713L2.52401 7.78692Z" fill="#1C1B1F"/>
+                                </svg>
+                            </i>
+                        </button>
+                        <button class="btn_next">
+                            <span class="blind">다음버튼</span>
+                            <i>
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.25698 7.7937L0.316823 1.85391C0.115087 1.65193 0.0117883 1.39806 0.00692717 1.09229C0.00230912 0.786772 0.105608 0.528281 0.316823 0.316823C0.528281 0.105608 0.784461 0 1.08536 0C1.38627 0 1.64245 0.105608 1.85391 0.316823L8.40802 6.87094C8.54437 7.00754 8.64062 7.15155 8.69677 7.30297C8.75292 7.45439 8.78099 7.61797 8.78099 7.7937C8.78099 7.96943 8.75292 8.133 8.69677 8.28443C8.64062 8.43585 8.54437 8.57986 8.40802 8.71646L1.85391 15.2706C1.65193 15.4723 1.39806 15.5756 1.09229 15.5805C0.78677 15.5851 0.528281 15.4818 0.316823 15.2706C0.105608 15.0591 0 14.8029 0 14.502C0 14.2011 0.105608 13.9449 0.316823 13.7335L6.25698 7.7937Z" fill="#1C1B1F"/>
+                                </svg>
+                            </i>
+                        </button>
+                    </div><!--ctrl_btn-->
+                    <div class="more"><a href="#n"><span>더보기</span></a></div>
+             </div><!--wrapper-->
+            </section><!--video-->
+            <section class="fashion">
+                <div class="fashion_wrap">
+                    <div class="tit">
+                        <h2>FASHION</h2>
+                        <p>스타일 영감을 책임지는 패션 아카이브</p>
+                        <div class="more"><a href="#n"><span>더보기</span></a></div>
+                    </div><!--tit-->
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/fashion01.webp" alt="">
+                                            <p>스웨이드는 안녕, 보드라운 벨벳 슈즈로 멋 내기!</p>
+                                        </div>
+                                        <div class="cate">패션 아이템</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/fashion02.webp" alt="">
+                                            <p>막스마라 2026 리조트 컬렉션의 이토록 아름다운 태양</p>
+                                        </div>
+                                        <div class="cate">패션 뉴스</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/fashion03.webp" alt="">
+                                            <p>벨라 하디드의 수트가 비즈니스에 부적절한가요?</p>
+                                        </div>
+                                        <div class="cate">셀러브리티 스타일</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/fashion04.webp" alt="">
+                                            <p>고현정, 패션, 꾸뛰르!</p>
+                                        </div>
+                                        <div class="cate">패션 화보</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/fashion05.webp" alt="">
+                                            <p>샤넬 데뷔 컬렉션까지, 마티유 블라지의 4개월을 기록하다</p>
+                                        </div>
+                                        <div class="cate">인터뷰</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/fashion06.webp" alt="">
+                                            <p>보석이 색채로 영원과 영혼을 말할 때</p>
+                                        </div>
+                                        <div class="cate">워치&주얼리</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--list-->
+                </div><!--fashion_wrap-->
+            </section><!--fashion-->
+            <section class="beauty">
+                <div class="beauty_wrap">
+                    <div class="tit">
+                        <h2>BEAUTY</h2>
+                        <p>당신만의 룩을 완성할 최신 뷰티 무드와 팁</p>
+                        <div class="more"><a href="#n"><span>더보기</span></a></div>
+                    </div><!--tit-->
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/beauty04.webp" alt="">
+                                            <p>모두를 위한 절정의 헤어</p>
+                                        </div>
+                                        <div class="cate">뷰티 화보</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/beauty05.webp" alt="">
+                                            <p>킹 카일리 시대가 돌아왔다</p>
+                                        </div>
+                                        <div class="cate">뷰티 트렌드</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/beauty06.webp" alt="">
+                                            <p>가장 유혹적인 블랙의 향기 8</p>
+                                        </div>
+                                        <div class="cate">뷰티 화보</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/beauty01.webp" alt="">
+                                            <p>연말엔 새로운 분위기! 의외로 활용도 높은 ‘이 컬러’ 메이크업</p>
+                                        </div>
+                                        <div class="cate">뷰티 트렌드</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/beauty02.webp" alt="">
+                                            <p>발렌시아가, 과거에 대한 찬사를 담은 향수 컬렉션 공개</p>
+                                        </div>
+                                        <div class="cate">뷰티 아이템</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/beauty03.webp" alt="">
+                                            <p>달걀보다 단백질이 풍부한 식품 9</p>
+                                        </div>
+                                        <div class="cate">웰니스</div>
+                                    </a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </div><!--list-->
+                </div><!--beauty_wrap-->
+            </section><!--beauty-->
+            <section class="living">
+                <div class="living_wrap">
+                    <div class="tit">
+                        <h2>LIVING</h2>
+                        <p>당신의 취향을 확장시키는 라이프스타일</p>
+                        <div class="more"><a href="#n"><span>더보기</span></a></div>
+                    </div><!--tit-->
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/living01.webp" alt="">
+                                            <p>제니와 하리보의 달콤한 협업! ‘루비 하츠’ 젤리</p>
+                                        </div>
+                                        <div class="cate">푸드</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/living02.webp" alt="">
+                                            <p>K-직장인의 통근 시간은 얼마나 긴 편일까?</p>
+                                        </div>
+                                        <div class="cate">라이프</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/living03.webp" alt="">
+                                            <p>리스본을 파리의 아파트에 담아낸다면</p>
+                                        </div>
+                                        <div class="cate">데코</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/living04.webp" alt="">
+                                            <p>겨울 나라 슬로베니아의 소도시 여행</p>
+                                        </div>
+                                        <div class="cate">여행</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/living05.webp" alt="">
+                                            <p>마린 세르가 선보인 첫 테이블웨어 컬렉션</p>
+                                        </div>
+                                        <div class="cate">라이프</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/living06.webp" alt="">
+                                            <p>화려함과 따분함이 조화를 이룬 화가 샘 맥키니스의 집</p>
+                                        </div>
+                                        <div class="cate">데코</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--list-->
+                </div><!--living_wrap-->
+            </section><!--living-->
+            <section class="culture">
+                <div class="culture_wrap">
+                    <div class="tit">
+                        <h2>CULTURE</h2>
+                        <p>세계가 주목하는 문화 흐름과 이야기</p>
+                        <div class="more"><a href="#n"><span class="pc_only">더보기</span></a></div>
+                    </div><!--tit-->
+                    <div class="list">
+                        <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/culture01.webp" alt="">
+                                            <p>미국 대중음악계를 뒤집은 이야기 ‘숀 콤스: 더 레코닝’</p>
+                                        </div>
+                                        <div class="cate">엔터테인먼트</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/culture02.webp" alt="">
+                                            <p>문화 예술에 대한 샤넬의 진심, 그리고 미래</p>
+                                        </div>
+                                        <div class="cate">아트</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/culture03.webp" alt="">
+                                            <p>애플 뮤직 선정 ‘올해의 아티스트’ 타일러, 더 크리에이터</p>
+                                        </div>
+                                        <div class="cate">셀럽 뉴스</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/culture04.webp" alt="">
+                                            <p>AI에 마음을 꺼내면</p>
+                                        </div>
+                                        <div class="cate">뷰 포인트</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/culture05.webp" alt="">
+                                            <p>어른이 된 해리 포터가, 새로운 해리 포터에게</p>
+                                        </div>
+                                        <div class="cate">셀럽 뉴스</div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo">
+                                            <img src="images/main/culture06.webp" alt="">
+                                            <p>장 폴 고티에 여성복 컬렉션 아카이브를 총망라한 책 출간</p>
+                                        </div>
+                                        <div class="cate">아트</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--list-->
+                </div><!--culture_wrap-->
+            </section><!--/culture-->
+            <section class="pick">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>VOGUE PICK’S</h2>
+                    </div><!--/tit-->
+                    <div class="keyword">
+                        <div class="key_list">
+                            <a href="#n"><span>Democratic Fashion,</span></a>
+                            <a href="#n"><span>Runway,</span></a>
+                            <a href="#n"><span>Emerging Designers,</span></a>
+                            <a href="#n"><span>Future of Appearance,</span></a>
+                            <a href="#n"><span>Fragmented Identity,</span></a>
+                            <a href="#n"><span>Icon Models,</span></a>
+                            <a href="#n"><span>Celebrity Fashion Event,</span></a>
+                            <a href="#n"><span>New Generation Attitude,</span></a>
+                            <a href="#n"><span>Beauty Routine Transformation,</span></a>
+                            <a href="#n"><span>Cultural Crossroads,</span></a>
+                            <a href="#n"><span>Inclusive Fashion,</span></a>
+                            <a href="#n"><span>Self-Expression,</span></a>
+                            <a href="#n"><span>Digital Fashion,</span></a>
+                            <a href="#n"><span>Wellness & Self-Care,</span></a>
+                            <a href="#n"><span>City Identity,</span></a>
+                            <a href="#n"><span>Beauty Science,</span></a>
+                            <a href="#n"><span>Cinematic Fashion,</span></a>
+                            <a href="#n"><span>Next Gen Models,</span></a>
+                            <a href="#n"><span>Future Beauty Trends,</span></a>
+                        </div>
+                    </div><!--/keyword-->
+                </div><!--/wrapper-->
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick01.webp" alt=""></div>
+                                    <p>라이즈가 사는 동화 속으로</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick02.webp" alt=""></div>
+                                    <p>티모시 샬라메가 몰고 온 ‘마티 슈프림’ 재킷 열풍</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick03.webp" alt=""></div>
+                                    <p>‘휘어진’ 청바지의 거부할 수 없는 매력</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick04.webp" alt=""></div>
+                                    <p>복부인 스타일 말고, 요즘 모피는 이렇게 입습니다</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick05.webp" alt=""></div>
+                                    <p>뎀나의 첫 구찌 크루즈 컬렉션 공개는 뉴욕에서!</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick06.webp" alt=""></div>
+                                    <p>‘보그’ 에디터들이 꼽은 최고의 블랙 팬츠</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick07.webp" alt=""></div>
+                                    <p>사진으로 골라보세요! 2026 봄 트렌드 스타일 11가지</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick08.webp" alt=""></div>
+                                    <p>‘보그’ 12월호 커버 스타들이 청바지 입는 법! #패션인스타그램</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick09.webp" alt=""></div>
+                                    <p>2025 올해의 모델, 아녹 야이</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/pick10.webp" alt=""></div>
+                                    <p>2026 봄/여름의 ‘첫’ 컬렉션, ‘보그 코리아’ 에디터들은 어떻게 봤을까?</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--/list-->
+            </section><!--/pick-->
+            <section class="sub">
+                <div class="wrapper">
+                    <div class="photo"><img src="images/main/sub01.png" alt="보그잡지"></div>
+                    <div class="left_area">
+                        <div class="txt">
+                            <h2>
+                                <strong class="tit">
+                                    <strong class="line1">
+                                        <span>FAHSHION</span>
+                                        <span>BEAUTY</span>
+                                    </strong>
+                                    <strong class="line2">
+                                        <span>LIVING</span>
+                                        <span>CULTURE</span>
+                                    </strong>
+                                </strong>
+                            </h2>
+                            <p>패션, 뷰티, 라이프, 문화 트렌드를 한눈에! 보그 코리아 정기구독으로 트렌드를 먼저 경험하세요.</p>
+                        </div><!--/txt-->
+                        <div class="more"><a href="#n"><span>구독하기</span></a></div>
+                    </div><!--/left_area-->
+                </div><!--/wrapper-->
+            </section><!--/sub-->
+        </div><!--/container-->
+        <footer>
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="f_logo"><span class="blind">보그코리아</span></div>
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n">정기구독</a></li>
+                            <li><a href="#n">회사소개</a></li>
+                            <li><a href="#n">광고/제휴</a></li>
+                            <li><a href="#n">개인정보 처리방침</a></li>
+                            <li><a href="#n">공지사항</a></li>
+                        </ul>
+                    </div><!--/f_nav-->
+                    <div class="copyright">VOGUE.CO.KR IS OPERATED BY DOOSAN MAGAZINE</div>
+                </div><!--/inner-->
+                <div class="sns">
+                    <ul>
+                        <li class="insta"><a href="#n"><span class="blind">인스타그램</span></a></li>
+                        <li class="youtube"><a href="#n"><span class="blind">유튜브</span></a></li>
+                        <li class="face"><a href="#n"><span class="blind">페이스북</span></a></li>
+                        <li class="twiter"><a href="#n"><span class="blind">트위터</span></a></li>
+                    </ul>
+                </div><!--/sns-->
+            </div><!--/wrapper-->
+        </footer>
+    </div>
+</body>
+</html>

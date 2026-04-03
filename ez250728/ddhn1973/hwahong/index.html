@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>화홍산업</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html"><span class="blind">화홍</span></a></h1>
+        <nav class="gnb">
+            <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+            <div class="gnb_wrap">
+                <ul class="depth1">
+                    <li><a href="#n"><span>ABOUT US</span></a></li>
+                    <li><a href="#n"><span>PRODUCT</span></a></li>
+                    <li><a href="#n"><span>COMMUNITY</span></a></li>
+                    <li><a href="#n"><span>CONTACT US</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="util">
+            <div class="lang">
+                <button class="lang_open"><span class="blind">언어 선택 열기</span></button>
+            </div>
+        </div>
+    </header>
+    <!-- *********************** header 끝 *********************** -->
+    <div class="continar">
+        <section class="visual">
+            <h2 class="blind">팝업</h2>
+            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                    <li class="swiper-slide popup1">
+                        <div class="slide-inner"><span class="blind">명화1</span></div>
+                        <h3>Le Repos (Jeune Fille Couchée) (1880)</h3>
+                    </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                    <li class="swiper-slide popup2">
+                        <div class="slide-inner"><span class="blind">명화2</span></div>
+                        <h3>Sirk-Ecke (Ringstraße) (1900)</h3>
+                    </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                    <li class="swiper-slide popup3">
+                        <div class="slide-inner"><span class="blind">명화3</span></div>
+                        <h3>Fortunes</h3>
+                    </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                    <li class="swiper-slide popup4">
+                        <div class="slide-inner"><span class="blind">명화4</span></div>
+                        <h3>Herod’s Feast (1895)</h3>
+                    </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                </ul>
+                <div class="btn">
+                    <button class="btn_prev"></button>
+                    <div class="swiper-pagination"></div>
+                    <button class="btn_next"></button>
+                </div>
+            </div>
+        </section>
+        <section class="contents">
+            <div class="wrapper">
+                <div class="tit">
+                    <h2>CONTENTS</h2>
+                    <span></span>
+                </div>
+                <div class="cont1">
+                    <div class="cont1_left">
+                        <div class="inner">
+                            <a href="#n"><img src="images/cont01.jpg" alt=""></a>
+                            <h3>Notice</h3>
+                        </div>
+                    </div>
+                    <div class="cont1_right">
+                        <div class="inner">
+                            <a href="#n"><img src="images/cont02.jpg" alt=""></a>
+                            <h3>Product Tip</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <div class="cont2_left">
+                        <div class="inner">
+                            <a href="#n"><img src="images/cont03.jpg" alt=""></a>
+                            <h3>SNS</h3>
+                        </div>
+                    </div>
+                    <div class="cont2_right">
+                        <div class="inner">
+                            <a href="#n"><img src="images/cont04.jpg" alt=""></a>
+                            <h3>Catalogue</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ex">
+            <div class="wrapper">
+                <div class="ex_inner">
+                    <div class="ex_left">
+                        <div class="inner">
+                            <h3>EXHIBITIONS</h3>
+                            <p>국내 곳곳에서 펼쳐지는 예술의 순간들. <br>
+                                지금, 화홍이 전하는 전시의 깊이와 흐름을 만나보세요.</p>
+                        </div>
+                        <div class="btn_wrap">
+                            <button class="btn_prev"><span class="blind">이전</span></button>
+                            <button class="btn_next"><span class="blind">다음</span></button>
+                        </div>
+                    </div>
+                    <div class="ex_right">
+                        <div class="inner">
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/ex01.jpg" alt="거장의 비밀: 희귀 컬렉션"></div>
+                                            <h4>거장의 비밀: 희귀 컬렉션</h4>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/ex02.jpg" alt="오랑주리-오르세미술관 특별전"></div>
+                                            <h4>오랑주리ㅣ오르세미술관 특별전</h4>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/ex03.jpg" alt="향수(鄕愁), 고향을 그리다"></div>
+                                            <h4>향수(鄕愁), 고향을 그리다</h4>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popup">
+            <div class="pu">
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide">
+                            <div class="photo photo01"></div><span class="blind">팝업1</span>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo photo02"></div><span class="blind">팝업2</span>
+                        </li>
+                        <!-- <li class="swiper-slide">
+                            <div class="photo photo03"></div><span class="blind">팝업3</span>
+                        </li> -->
+                    </ul>
+                    <div class="swiper-pagination"></div>  <!-- 컨트롤 요소는 swiper 안에 배치-->
+                </div>
+            </div>
+        </section>
+        <section class="best">
+            <div class="wrapper">
+                <div class="section"> <!-- 좌우 요소를 감싸는 요소 -->
+                    <div class="tit">
+                        <h3>BEST</h3>
+                        <p>가장 많은 선택을 받은 화홍의 대표 붓 컬렉션.<br>
+                            표현의 폭을 넓혀주는 인기 제품들을 지금 만나보세요.</p>
+                    </div> <!-- 고정될 요소 -->
+                    <div class="mo_brush">
+                        <div class="inner">
+                            <a href="#n"><img src="images/mo_brush01.jpg" alt=""></a>
+                            <p>가장 많은 선택을 받은 화홍의 대표 붓 컬렉션.
+                                표현의 폭을 넓혀주는 인기 제품들을 지금 만나보세요.</p>
+                        </div>
+                    </div>
+                    <div class="cont_wrap"> <!-- 스크롤될 요소를 감싸는 요소 -->
+                        <div class="cont"> <!-- 스크롤될 요소 (이 내부에 콘텐츠를 코딩해야함, 스크롤될 요소가 여러개면 안됨) -->
+                            <ul class="brush-list">
+                                <li class="brush-item">
+                                    <h3 class="brush-title">Green</h3>
+                                    <div class="exp">
+                                        <div class="brush-img">
+                                            <img src="images/brush01.png" alt="Green Brush">
+                                        </div>
+                                        <p class="brush-desc">짧고 밝은 색상의 자루는 성장기 아이들 뿐 아니라 성인이 사용하기에 좋은 다용도성의 디자인 붓, 디자인 붓 뿐만이 아니라 다용도로 사용하기에 편안함을 주는 운필감. 고급 인조모를 사용하여 탄력이 좋아 터치감이 탁월함.</p>
+                                        <div class="brush-spec">
+                                            <div class="spec">
+                                                <span class="label">WATERCOLOR</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">OIL</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">ACRYLIC</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">SOFT</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="brush-item">
+                                    <h3 class="brush-title">Orange</h3>
+                                    <div class="exp">
+                                        <div class="brush-img">
+                                            <img src="images/brush02.png" alt="Orange Brush">
+                                        </div>
+                                        <p class="brush-desc">성장기 아이들뿐 아니라 성인들도 사용하기에 가볍고 좋은 짧은 자루의 수채화붓.
+                                            풍경화부터 정물화 등의 세밀한 작업도 가능한 터치감과 운필감.
+                                            뛰어난 담수력은 배경과 같이 면적이 넓은 곳에 사용자가 물조절이 가능하여 작업하기에 용이함.</p>
+                                        <div class="brush-spec">
+                                            <div class="spec">
+                                                <span class="label">WATERCOLOR</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">OIL</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">ACRYLIC</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">SOFT</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="brush-item">
+                                    <h3 class="brush-title">300</h3>
+                                    <div class="exp">
+                                        <div class="brush-img">
+                                            <img src="images/brush03.png" alt="300 Brush">
+                                        </div>
+                                        <p class="brush-desc">천연 콜린스키와 다람쥐털의 이중모. 풍부한 담수력과 탄력성이 좋은 최고의 수채화 제품. 섬세한 붓의 끝모임이 세밀한 표현을 지속적으로 가능하게 함. 부드러운 다람쥐털은 종이의 손상을 최소화하고 화면에서의 자연스러운 혼색이 가능.</p>
+                                        <div class="brush-spec">
+                                            <div class="spec">
+                                                <span class="label">WATERCOLOR</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">OIL</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">ACRYLIC</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">SOFT</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="brush-item">
+                                    <h3 class="brush-title">782F</h3>
+                                    <div class="exp">
+                                        <div class="brush-img">
+                                            <img src="images/brush04.png" alt="782F Brush">
+                                        </div>
+                                        <p class="brush-desc">묵직하고 따뜻한 느낌의 외관이 돋보이며 안정된 느낌의 그립감이 돋보이는 제품. 물의 양 조절에 따라 다양하게 표현이 가능한 터치감. 뛰어난 담수력은 천연모에서 느낄 수 있는 자연스러움이 돋보이는 표현 가능.</p>
+                                        <div class="brush-spec">
+                                            <div class="spec">
+                                                <span class="label">WATERCOLOR</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">OIL</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">ACRYLIC</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">SOFT</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="brush-item">
+                                    <h3 class="brush-title">972</h3>
+                                    <div class="exp">
+                                        <div class="brush-img">
+                                            <img src="images/brush05.png" alt="972 Brush">
+                                        </div>
+                                        <p class="brush-desc">사선 모양의 붓끝이 면과 선의 표현에 탁월. 최고급 인조모로 탄력성이 뛰어나 운필감이 돋보이는 디자인 붓. 수채화, 아크릴 외 다양한 용도로 사용이 가능하여 활용도가 높음.
+                                            </p>
+                                        <div class="brush-spec">
+                                            <div class="spec">
+                                                <span class="label">WATERCOLOR</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">OIL</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">ACRYLIC</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="label">SOFT</span>
+                                                <ul class="rating">
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li class="on"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="brush-item">
+                                    <h3 class="brush-title">채색화</h3>
+                                    <div class="exp">
+                                        <div class="brush-img">
+                                            <img src="images/brush06.png" alt="채색화 Brush">
+                                        </div>
+                                        <p class="brush-desc">탄력성이 매우 뛰어난 최고급 자연모로 만든 최고급 명품 동양화붓
+                                            동양화 또는 서예에 유용하게 사용되는 채색필
+                                            붓끝이 일정하여 갖은 터치가 필요한 한국화에 많이 사용</p>
+                                    </div>
+                                </li>
+                                <li class="brush-item">
+                                    <h3 class="brush-title">산수화</h3>
+                                    <div class="exp">
+                                        <div class="brush-img">
+                                            <img src="images/brush07.png" alt="산수화 Brush">
+                                        </div>
+                                        <p class="brush-desc">탄력성이 매우 뛰어난 최고급 자연모로 만든 최고급 명품 동양화붓.
+                                            동양화 또는 캘리그라피에 유용하게 사용되는 산수필
+                                            탄성이 좋고 뛰어난 담수력과 가는 붓끝은 초보자분들도 사용하기에 좋음</p>
+                                    </div>
+                                </li>
+                                <!-- 여기 다음 brush-item 반복 -->
+                            </ul>
+                        </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- *********************** footer 시작 *********************** -->
+    <footer>
+        <div class="logo_group">
+            <div class="logo_group_inner">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="화홍"></a></div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#n">화홍산업(주)</a></li>
+                        <li><a href="#n">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="call_group">
+            <div class="call_group_inner">
+                <button class="top"><span>TOP</span></button>
+                <ul class="num">
+                    <li><span>TEL.031.223.1994</span></li>
+                    <li><span>FAX.031.223.4748</span></li>
+                </ul>
+            </div>
+        </div>
+        <address>경기도 화성시 효행로 205번길 81-18</address>
+        <div class="copyright">Copyright(C) 2017 meere dp All Rights Reserved</div>
+    </footer>
+</body>
+</html>

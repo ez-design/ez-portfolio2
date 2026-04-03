@@ -1,0 +1,1053 @@
+@import url(common.css);
+@import url(default.css);
+@import url(fonts.css);
+@import url(layout.css);
+
+h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* visual 전체: 화면에서 40px씩 떨어뜨린 크기 */
+.visual {
+    width: calc(100% - (var(--wrapper-margin) * 2));
+    height: calc(100dvh - (var(--wrapper-margin) * 2));
+    margin: var(--wrapper-margin);
+    position: relative;
+    color: var(--color-white);
+    padding-top: var(--header-h);
+}
+/* swiper가 visual 영역을 100% 채우게 */
+.visual .swiper {
+    width: 100%;
+    height: 100%;
+}
+  /* 슬라이드 하나가 visual 영역 전체를 채우게 */
+.visual .swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* 이미지가 영역을 완전히 채우도록 */
+.visual .swiper-slide .photo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.visual .swiper-slide .photo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none; /* 이미지 클릭이나 인터랙션 방해하지 않음 */
+    z-index: 2; /* 이미지보다 위, 텍스트보다 아래에 위치시키려면 z-index 조정 */
+}
+.visual .swiper-slide .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 사진 비율 깨짐 방지, 영역 꽉 채움 */
+}
+/* 텍스트 영역이 이미지 위 레이어로 올라오도록 */
+.visual .swiper-slide .txt {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    width: 100%;
+    z-index: 3;
+    text-align: right;
+}
+.visual .swiper-slide .txt .wrapper {
+    max-width: 1392px;  /* 기존 wrapper 최대 폭 */
+    margin: 0 auto;     /* 항상 중앙 정렬 */
+    padding: 0 var(--wrapper-margin); /* 반응형 여백 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 텍스트 오른쪽 정렬 */
+}
+.visual .swiper-slide .txt span {
+    font-size: clamp(32px, 7vw, 90px);
+    line-height: 1.2;
+}
+.visual .swiper-slide .txt p {
+    font-size: clamp(16px, 2vw, 24px);
+}
+/* 모든 bullet 기본 점 */
+.visual .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-white50);
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+/* 현재 슬라이드 bullet (길쭉한 원형) */
+.visual .swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 20px;
+    background-color: var(--color-point02);
+}
+@media screen and (max-width:1024px) {
+    .visual {
+        height: calc(100dvh - (var(--wrapper-margin) * 2) - 48px);
+    }
+    .visual .swiper-slide .txt {
+        bottom: 18%;
+    }
+    /* 모든 bullet 기본 점 */
+    .visual .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+    }
+    /* 현재 슬라이드 bullet (길쭉한 원형) */
+    .visual .swiper-pagination-bullet-active {
+        width: 25px;
+    }
+}
+
+.quick_btn {
+    position: relative;
+}
+.quick_btn .quick_btn_wrap {
+    position: absolute;
+    right: 4%;
+    top: -122px;
+    z-index: 100;
+
+    display: flex;
+    gap: 0 12px;
+}
+.quick_btn .quick_btn_wrap a {
+    display: block;
+    width: 158px;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--color-white);
+}
+.quick_btn .quick_btn_wrap a.space_rental {
+    background-color: var(--color-black);
+}
+.quick_btn .quick_btn_wrap a.booking {
+    background-color: var(--color-point02);
+}
+.quick_btn .quick_btn_wrap a span {
+    padding-left: 30px;
+    position: relative;
+}
+.quick_btn .quick_btn_wrap a.space_rental span::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    width: 27px;
+    height: 27px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 20' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.09612 19.44C1.5409 18.2068 1.83604 16.9457 1.98152 15.6567C2.127 14.3678 2.21641 13.0716 2.24974 11.7679C1.59981 11.5434 1.06238 11.138 0.637426 10.5515C0.212475 9.9651 0 9.26168 0 8.44127V6.86446C1.87795 6.24403 3.79181 5.29997 5.74159 4.03228C7.69136 2.76443 9.36042 1.42034 10.7488 0C12.1371 1.42034 13.8062 2.76443 15.7559 4.03228C17.7057 5.29997 19.6196 6.24403 21.4975 6.86446V8.44127C21.4975 9.26168 21.285 9.9651 20.8601 10.5515C20.4351 11.138 19.8977 11.5434 19.2478 11.7679C19.2811 13.0716 19.3705 14.3678 19.516 15.6567C19.6615 16.9457 19.9566 18.2068 20.4014 19.44H1.09612ZM3.57259 6.94145H17.9249C16.4969 6.23386 15.1772 5.45095 13.9656 4.59272C12.7543 3.73448 11.682 2.8855 10.7488 2.04576C9.81553 2.8855 8.74324 3.73448 7.53188 4.59272C6.32035 5.45095 5.00059 6.23386 3.57259 6.94145ZM13.2485 10.441C13.7612 10.441 14.1811 10.2423 14.5081 9.84486C14.8349 9.44757 14.9983 8.97971 14.9983 8.44127H11.4987C11.4987 8.97971 11.6621 9.44757 11.9889 9.84486C12.3158 10.2423 12.7357 10.441 13.2485 10.441ZM8.24905 10.441C8.76182 10.441 9.18169 10.2423 9.50865 9.84486C9.83545 9.44757 9.99884 8.97971 9.99884 8.44127H6.49925C6.49925 8.97971 6.66264 9.44757 6.98944 9.84486C7.3164 10.2423 7.73627 10.441 8.24905 10.441ZM3.24962 10.441C3.7624 10.441 4.18227 10.2423 4.50923 9.84486C4.83602 9.44757 4.99942 8.97971 4.99942 8.44127H1.49983C1.49983 8.97971 1.66322 9.44757 1.99002 9.84486C2.31698 10.2423 2.73685 10.441 3.24962 10.441ZM3.07264 17.9402H6.29552C6.45834 16.8761 6.58299 15.8189 6.66948 14.7685C6.75597 13.718 6.82104 12.6575 6.86471 11.5872C6.6569 11.4845 6.45717 11.3585 6.26552 11.2092C6.07388 11.0599 5.90182 10.8705 5.74933 10.641C5.5057 10.9871 5.21406 11.2666 4.87444 11.4794C4.53464 11.6922 4.15969 11.8306 3.74957 11.8946C3.71624 12.9215 3.65466 13.9375 3.56484 14.9425C3.47518 15.9476 3.31112 16.9468 3.07264 17.9402ZM7.8106 17.9402H13.6869C13.5344 16.9403 13.4174 15.942 13.336 14.9453C13.2546 13.9486 13.1921 12.9419 13.1485 11.9254C12.651 11.9242 12.1928 11.8073 11.7736 11.5747C11.3545 11.3419 11.0129 11.023 10.7488 10.618C10.4846 11.023 10.1378 11.3419 9.70838 11.5747C9.27893 11.8073 8.82581 11.9242 8.34903 11.9254C8.30537 12.9419 8.24288 13.9486 8.16156 14.9453C8.08006 15.942 7.96308 16.9403 7.8106 17.9402ZM15.202 17.9402H18.4249C18.1864 16.9468 18.0223 15.9476 17.9327 14.9425C17.8429 13.9375 17.7813 12.9215 17.7479 11.8946C17.3378 11.8306 16.9571 11.6922 16.6058 11.4794C16.2545 11.2666 15.9687 10.9807 15.7482 10.6218C15.6085 10.8576 15.4396 11.0518 15.2415 11.2045C15.0435 11.3569 14.8406 11.4845 14.6328 11.5872C14.6765 12.6575 14.7441 13.718 14.8358 14.7685C14.9274 15.8189 15.0495 16.8761 15.202 17.9402ZM18.2479 10.441C18.7607 10.441 19.1805 10.2423 19.5075 9.84486C19.8343 9.44757 19.9977 8.97971 19.9977 8.44127H16.4981C16.4981 8.97971 16.6615 9.44757 16.9883 9.84486C17.3152 10.2423 17.7351 10.441 18.2479 10.441Z' /%3E%3C/svg%3E%0A");
+}
+.quick_btn .quick_btn_wrap a.booking span::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 23 18' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.0836 14.1794C11.3317 14.1794 11.5395 14.0955 11.7069 13.9277C11.8745 13.7601 11.9583 13.5522 11.9583 13.3041C11.9583 13.056 11.8744 12.8482 11.7066 12.6808C11.5388 12.5132 11.331 12.4294 11.083 12.4294C10.8349 12.4294 10.6272 12.5133 10.4598 12.6811C10.2921 12.8489 10.2083 13.0568 10.2083 13.305C10.2083 13.5529 10.2922 13.7606 10.46 13.9283C10.6278 14.0957 10.8357 14.1794 11.0836 14.1794ZM11.0836 9.625C11.3317 9.625 11.5395 9.5411 11.7069 9.37329C11.8745 9.20549 11.9583 8.99763 11.9583 8.74971C11.9583 8.5016 11.8744 8.29383 11.7066 8.12642C11.5388 7.95881 11.331 7.875 11.083 7.875C10.8349 7.875 10.6272 7.9589 10.4598 8.12671C10.2921 8.29451 10.2083 8.50238 10.2083 8.75029C10.2083 8.9984 10.2922 9.20617 10.46 9.37358C10.6278 9.54119 10.8357 9.625 11.0836 9.625ZM11.0836 5.07062C11.3317 5.07062 11.5395 4.98672 11.7069 4.81892C11.8745 4.65111 11.9583 4.44315 11.9583 4.19504C11.9583 3.94713 11.8744 3.73936 11.7066 3.57175C11.5388 3.40433 11.331 3.32062 11.083 3.32062C10.8349 3.32062 10.6272 3.40453 10.4598 3.57233C10.2921 3.73994 10.2083 3.94781 10.2083 4.19592C10.2083 4.44403 10.2922 4.65179 10.46 4.81921C10.6278 4.98682 10.8357 5.07062 11.0836 5.07062ZM20.0576 17.5H2.10904C1.52901 17.5 1.0325 17.2935 0.6195 16.8805C0.2065 16.4675 0 15.971 0 15.391V11.5547C0.664222 11.4275 1.21917 11.1017 1.66483 10.5773C2.1105 10.0531 2.33333 9.44397 2.33333 8.75C2.33333 8.05603 2.1105 7.44693 1.66483 6.92271C1.21917 6.39829 0.664222 6.0725 0 5.94533V2.10904C0 1.52901 0.2065 1.0325 0.6195 0.6195C1.0325 0.2065 1.52901 0 2.10904 0H20.0576C20.6377 0 21.1342 0.2065 21.5472 0.6195C21.9602 1.0325 22.1667 1.52901 22.1667 2.10904V5.94533C21.5024 6.0725 20.9475 6.39829 20.5018 6.92271C20.0562 7.44693 19.8333 8.05603 19.8333 8.75C19.8333 9.44397 20.0562 10.0531 20.5018 10.5773C20.9475 11.1017 21.5024 11.4275 22.1667 11.5547V15.391C22.1667 15.971 21.9602 16.4675 21.5472 16.8805C21.1342 17.2935 20.6377 17.5 20.0576 17.5ZM20.0576 15.75C20.1624 15.75 20.2485 15.7164 20.3158 15.6491C20.383 15.5818 20.4167 15.4958 20.4167 15.391V12.775C19.6972 12.3472 19.1285 11.7785 18.7104 11.0688C18.2924 10.359 18.0833 9.58611 18.0833 8.75C18.0833 7.91389 18.2924 7.14097 18.7104 6.43125C19.1285 5.72153 19.6972 5.15278 20.4167 4.725V2.10904C20.4167 2.00424 20.383 1.9182 20.3158 1.85092C20.2485 1.78364 20.1624 1.75 20.0576 1.75H2.10904C2.00424 1.75 1.91819 1.78364 1.85092 1.85092C1.78364 1.9182 1.75 2.00424 1.75 2.10904V4.725C2.46944 5.15278 3.03819 5.72153 3.45625 6.43125C3.87431 7.14097 4.08333 7.91389 4.08333 8.75C4.08333 9.58611 3.87431 10.359 3.45625 11.0688C3.03819 11.7785 2.46944 12.3472 1.75 12.775V15.391C1.75 15.4958 1.78364 15.5818 1.85092 15.6491C1.91819 15.7164 2.00424 15.75 2.10904 15.75H20.0576Z'/%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width:1024px) {
+    .quick_btn .quick_btn_wrap {
+        gap: 0 10px;
+    }
+    .quick_btn .quick_btn_wrap a {
+        width: 156px;
+        height: 48px;
+        line-height: 48px;
+    }
+}
+@media screen and (max-width:768px) {
+    .quick_btn .quick_btn_wrap {
+        position: static;
+        display: flex;
+        gap: 0;
+    }
+    .quick_btn .quick_btn_wrap a {
+        width: 50%;
+        height: 48px;
+        border-radius: 0;
+        line-height: 48px;
+    }
+    .quick_btn .quick_btn_wrap a span {
+        padding-left: 30px;
+        position: relative;
+    }
+    .quick_btn .quick_btn_wrap a.space_rental span::before {
+        top: -1px;
+        background-size: 20px;
+    }
+    .quick_btn .quick_btn_wrap a.booking span::before {
+        background-size: 21px;
+    }
+}
+
+.concerts {
+    padding: 130px 0 100px 0;
+    background-color: var(--color-background);
+    position: relative;
+}
+.concerts::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 410px;
+    background-color: var(--color-white);
+}
+.concerts .tit h2 {
+    font-size: 6rem;
+    text-align: center;
+}
+.concerts .list {
+    max-width: calc(50% + 696px);
+    padding: 50px 0 0 calc((100% - 1392px) / 2);
+}
+.concerts .list .swiper-slide {
+    width: 168px;
+}
+.concerts .list .swiper-slide a {
+    display: block;
+}
+.concerts .list ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.concerts .list .control {
+    margin: 0 var(--wrapper-margin) 0 0;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.concerts .list .control .progressbar {
+    width: calc(100% - 182px);
+    height: 3px;
+    background-color: var(--color-background);
+    position: relative;
+}
+.concerts .list .control .progressbar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: var(--color-point01);
+}
+.concerts .ctrl_btn {
+    display: flex;
+    gap: 16px;
+}
+.concerts .ctrl_btn button {
+    width: 50px;
+    height: 50px;
+    background: var(--color-background);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.concerts .ctrl_btn button::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 13px;
+}
+.concerts .ctrl_btn button.btn_prev::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 24' fill='%232A2A2A' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.6347 23.2694L0 11.6347L11.6347 0L12.9641 1.32937L2.65875 11.6347L12.9641 21.94L11.6347 23.2694Z' /%3E%3C/svg%3E%0A");
+}
+.concerts .ctrl_btn button.btn_next::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 24' fill='%232A2A2A' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.32918 23.2694L12.9639 11.6347L1.32918 0L-0.00019455 1.32937L10.3051 11.6347L-0.00019455 21.94L1.32918 23.2694Z' /%3E%3C/svg%3E%0A");
+}
+
+/* wrapper가 깨지는 구간 */
+@media screen and (max-width:1432px) {
+    .concerts .list {
+        max-width: calc(100% - var(--wrapper-margin));
+        margin: 0 0 0 var(--wrapper-margin);
+    }
+}
+
+/* 1025이상 pc버전 */
+@media screen and (min-width:1025px) {
+    .concerts .list .swiper {
+        min-height: 550px;
+    }
+    .concerts .list .swiper-wrapper {
+        align-items: flex-end;
+    }
+    .concerts .list ul li.swiper-slide-active {
+        width: 700px;
+    }
+    .concerts .list ul li.swiper-slide-active a {
+        display: flex;
+        gap: 36px;
+        width: 100%;
+        height: 100%;
+        padding-right: 30px;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster {
+        width: 55%;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+    .concerts .list .swiper-slide a .poster_info h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+        /* 1줄 제한 */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .concerts .list .swiper-slide a .poster_info .spacetime,
+    .concerts .list .swiper-slide a .poster_info .more {
+        display: none;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info h3 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 24px;
+        /* 1줄 제한 해제 */
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .spacetime,
+    .concerts .list ul li.swiper-slide-active a .poster_info .more {
+        display: block;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .spacetime {
+        position: absolute;
+        left: 0;
+        bottom: 67px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .spacetime span {
+        padding-left: 29px;
+        position: relative;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .spacetime span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 24px;
+        height: 24px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .spacetime span.space {
+        margin-bottom: 2px;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .spacetime span.space::before {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 19' fill='%23111111' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.54975 9.36525C8.04725 9.36525 8.47258 9.18808 8.82575 8.83375C9.17908 8.47942 9.35575 8.0535 9.35575 7.556C9.35575 7.0585 9.17858 6.63308 8.82425 6.27975C8.46992 5.92658 8.04392 5.75 7.54625 5.75C7.04875 5.75 6.62342 5.92717 6.27025 6.2815C5.91692 6.63583 5.74025 7.06183 5.74025 7.5595C5.74025 8.057 5.91742 8.48233 6.27175 8.8355C6.62608 9.18867 7.05208 9.36525 7.54975 9.36525ZM7.548 17.0135C9.50433 15.2622 11.0014 13.5823 12.0393 11.974C13.0771 10.3657 13.596 8.957 13.596 7.748C13.596 5.925 13.0168 4.42633 11.8585 3.252C10.7002 2.07767 9.26333 1.4905 7.548 1.4905C5.83267 1.4905 4.39583 2.07767 3.2375 3.252C2.07917 4.42633 1.5 5.925 1.5 7.748C1.5 8.957 2.01892 10.3657 3.05675 11.974C4.09458 13.5823 5.59167 15.2622 7.548 17.0135ZM7.548 19.0095C5.03133 16.8288 3.14417 14.7994 1.8865 12.9212C0.628833 11.0429 0 9.3185 0 7.748C0 5.44033 0.746417 3.57208 2.23925 2.14325C3.73225 0.714416 5.50183 0 7.548 0C9.59417 0 11.3637 0.714416 12.8567 2.14325C14.3496 3.57208 15.096 5.44033 15.096 7.748C15.096 9.3185 14.4672 11.0429 13.2095 12.9212C11.9518 14.7994 10.0647 16.8288 7.548 19.0095Z' /%3E%3C/svg%3E%0A");
+        background-size: 16px;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .spacetime span.date::before {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 17 20' fill='%23111111' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.80775 19.1152C1.30258 19.1152 0.875 18.9403 0.525 18.5903C0.175 18.2402 0 17.8127 0 17.3075V3.923C0 3.41783 0.175 2.99025 0.525 2.64025C0.875 2.29025 1.30258 2.11525 1.80775 2.11525H3.19225V0H4.73075V2.11525H12.3077V0H13.8077V2.11525H15.1923C15.6974 2.11525 16.125 2.29025 16.475 2.64025C16.825 2.99025 17 3.41783 17 3.923V17.3075C17 17.8127 16.825 18.2402 16.475 18.5903C16.125 18.9403 15.6974 19.1152 15.1923 19.1152H1.80775ZM1.80775 17.6152H15.1923C15.2692 17.6152 15.3398 17.5832 15.4038 17.519C15.4679 17.455 15.5 17.3845 15.5 17.3075V7.923H1.5V17.3075C1.5 17.3845 1.53208 17.455 1.59625 17.519C1.66025 17.5832 1.73075 17.6152 1.80775 17.6152ZM1.5 6.423H15.5V3.923C15.5 3.846 15.4679 3.7755 15.4038 3.7115C15.3398 3.64733 15.2692 3.61525 15.1923 3.61525H1.80775C1.73075 3.61525 1.66025 3.64733 1.59625 3.7115C1.53208 3.7755 1.5 3.846 1.5 3.923V6.423ZM8.5 11.6922C8.25517 11.6922 8.0465 11.606 7.874 11.4335C7.70167 11.2612 7.6155 11.0525 7.6155 10.8075C7.6155 10.5627 7.70167 10.354 7.874 10.1815C8.0465 10.0092 8.25517 9.923 8.5 9.923C8.74483 9.923 8.9535 10.0092 9.126 10.1815C9.29833 10.354 9.3845 10.5627 9.3845 10.8075C9.3845 11.0525 9.29833 11.2612 9.126 11.4335C8.9535 11.606 8.74483 11.6922 8.5 11.6922ZM4.5 11.6922C4.25517 11.6922 4.0465 11.606 3.874 11.4335C3.70167 11.2612 3.6155 11.0525 3.6155 10.8075C3.6155 10.5627 3.70167 10.354 3.874 10.1815C4.0465 10.0092 4.25517 9.923 4.5 9.923C4.74483 9.923 4.9535 10.0092 5.126 10.1815C5.29833 10.354 5.3845 10.5627 5.3845 10.8075C5.3845 11.0525 5.29833 11.2612 5.126 11.4335C4.9535 11.606 4.74483 11.6922 4.5 11.6922ZM12.5 11.6922C12.2552 11.6922 12.0465 11.606 11.874 11.4335C11.7017 11.2612 11.6155 11.0525 11.6155 10.8075C11.6155 10.5627 11.7017 10.354 11.874 10.1815C12.0465 10.0092 12.2552 9.923 12.5 9.923C12.7448 9.923 12.9535 10.0092 13.126 10.1815C13.2983 10.354 13.3845 10.5627 13.3845 10.8075C13.3845 11.0525 13.2983 11.2612 13.126 11.4335C12.9535 11.606 12.7448 11.6922 12.5 11.6922ZM8.5 15.6152C8.25517 15.6152 8.0465 15.529 7.874 15.3565C7.70167 15.1842 7.6155 14.9756 7.6155 14.7308C7.6155 14.4858 7.70167 14.2771 7.874 14.1047C8.0465 13.9322 8.25517 13.846 8.5 13.846C8.74483 13.846 8.9535 13.9322 9.126 14.1047C9.29833 14.2771 9.3845 14.4858 9.3845 14.7308C9.3845 14.9756 9.29833 15.1842 9.126 15.3565C8.9535 15.529 8.74483 15.6152 8.5 15.6152ZM4.5 15.6152C4.25517 15.6152 4.0465 15.529 3.874 15.3565C3.70167 15.1842 3.6155 14.9756 3.6155 14.7308C3.6155 14.4858 3.70167 14.2771 3.874 14.1047C4.0465 13.9322 4.25517 13.846 4.5 13.846C4.74483 13.846 4.9535 13.9322 5.126 14.1047C5.29833 14.2771 5.3845 14.4858 5.3845 14.7308C5.3845 14.9756 5.29833 15.1842 5.126 15.3565C4.9535 15.529 4.74483 15.6152 4.5 15.6152ZM12.5 15.6152C12.2552 15.6152 12.0465 15.529 11.874 15.3565C11.7017 15.1842 11.6155 14.9756 11.6155 14.7308C11.6155 14.4858 11.7017 14.2771 11.874 14.1047C12.0465 13.9322 12.2552 13.846 12.5 13.846C12.7448 13.846 12.9535 13.9322 13.126 14.1047C13.2983 14.2771 13.3845 14.4858 13.3845 14.7308C13.3845 14.9756 13.2983 15.1842 13.126 15.3565C12.9535 15.529 12.7448 15.6152 12.5 15.6152Z' /%3E%3C/svg%3E%0A");
+        background-size: 16px;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .more {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: var(--color-point01);
+        position: relative;
+    }
+    .concerts .list ul li.swiper-slide-active a .poster_info .more::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.375 20V10.625H0V9.375H9.375V0H10.625V9.375H20V10.625H10.625V20H9.375Z'/%3E%3C/svg%3E%0A");
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .concerts {
+        padding: 105px 0 85px 0;
+    }
+    .concerts::before {
+        height: 50%;
+    }
+    .concerts .tit h2 {
+        font-size: 4.5rem;
+    }
+    .concerts .list {
+        margin: 50px 0 0 var(--wrapper-margin);
+        min-height: 100%;
+    }
+    .concerts .list .swiper-slide a .poster_info h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-top: 10px;
+        /* 2줄 제한 */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .concerts .list .swiper-slide a .poster_info .spacetime {
+        line-height: 1.2;
+        font-size: 1.4rem;
+        margin-top: 6px;
+        word-break: break-all;
+    }
+    .concerts .list .control {
+        margin: 48px var(--wrapper-margin) 0 0;
+    }
+    .concerts .list .control .progressbar {
+        width: calc(100% - 120px);
+    }
+    .concerts .list .swiper-slide a .poster_info .spacetime span.date {
+        display: none;
+    }
+    .concerts .ctrl_btn {
+        gap: 8px;
+    }
+    .concerts .ctrl_btn button {
+        width: 40px;
+        height: 40px;
+    }
+    .concerts .ctrl_btn button::before {
+        background-size: 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    .concerts {
+        padding: 83px 0 70px 0;
+    }
+    .concerts .tit h2 {
+        font-size: 3rem;
+    }
+    .concerts .list {
+        margin: 30px 0 0 var(--wrapper-margin);
+    }
+    .concerts .list .swiper-slide {
+        width: 130px;
+    }
+    .concerts .list .swiper-slide a .poster_info h3 {
+        font-size: 1.6rem;
+        margin-top: 8px;
+    }
+    .concerts .list .control {
+        margin: 30px var(--wrapper-margin) 0 0;
+    }
+    .concerts .list .control .progressbar {
+        width: calc(100% - 100px);
+    }
+    .concerts .ctrl_btn {
+        gap: 8px;
+    }
+    .concerts .ctrl_btn button {
+        width: 30px;
+        height: 30px;
+    }
+    .concerts .ctrl_btn button::before {
+        background-size: 8px;
+    }
+}
+
+
+.calendar_bar {
+    background-color: var(--color-point01); 
+    color: var(--color-white);
+    padding: 20px 0 15px 0;
+}
+.calendar_bar .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 월 표시 영역 */
+.calendar_bar .month_display {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+/* 날짜 스크롤 컨테이너 */
+.calendar_bar .date_scroll_container {
+    position: relative;
+    max-width: calc(100% - 350px);
+    text-align: center;
+}
+.calendar_bar .date_scroll_container .date_wrap {
+    overflow-y: visible;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* 부드러운 스크롤 */
+    
+    /* 스크롤바 숨기기 (선택 사항) */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.calendar_bar .date_scroll_container .date_wrap::-webkit-scrollbar {
+    display: none;
+}
+/* 날짜 리스트 (모든 날짜 요소를 한 줄에 나열) */
+.calendar_bar .date_scroll_container .date_list {
+    display: inline-flex;
+    align-items: center;
+    gap: 0 14px;
+}
+/* 개별 날짜 아이템 스타일 */
+.calendar_bar .date_scroll_container .date_list .date_item {
+    display: inline-block; 
+    text-align: center;
+    margin: 0 12px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0 20px 0;
+}
+.calendar_bar .date_scroll_container .date_list .date_item.show::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-background) transparent;
+    z-index: 10000;
+}
+.calendar_bar .date_scroll_container .date_list .date_item .day {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+.calendar_bar .date_scroll_container .date_list .date_item .num {
+    display: block;
+    font-weight: 700;
+}
+/* 활성화된 오늘 날짜 스타일 */
+.calendar_bar .date_scroll_container .date_list .date_item.show .num {
+    background-color: var(--color-point02); 
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 auto;
+}
+.calendar_bar .date_scroll_container .detail {
+    display: none;
+}
+.calendar_bar .date_scroll_container .date_more {
+    display: none;
+    position: absolute;
+    top: 76px;
+    z-index: 100;
+    width: 250px;
+    padding: 10px;
+    background-color: var(--color-background);
+    border-radius: 5px;
+    border: 1px solid var(--color-point01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: var(--color-tit);
+    transform: translateX(-18px);
+    word-break: break-all;
+}
+.calendar_bar .date_scroll_container .date_more .detail_item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+.calendar_bar .date_scroll_container .date_more .detail_item:last-child {
+    margin-bottom: 0;
+}
+.calendar_bar .date_scroll_container .date_more .detail_item strong {
+    padding: 2px 5px;
+    background-color: #F9ECA8;
+    border: 1px solid var(--color-black20);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.calendar_bar .date_scroll_container .date_more .detail_item span {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+/* 버튼 스타일 */
+.calendar_bar .view_all_btn {
+    background-color: var(--color-background);
+    color: var(--color-tit);
+    border: none;
+    padding: 9px 24px 8px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.calendar_bar .date_list .date_item {
+    position: relative;
+} 
+
+@media screen and (max-width:1024px) {
+    .calendar_bar {
+        padding: 30px 0 25px 0;
+    }
+    .calendar_bar .wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+        gap: 6px 0;
+    }
+    /* 월 표시 영역 */
+    .calendar_bar .month_display {
+        font-size: 3.6rem;
+    }
+    /* 날짜 스크롤 컨테이너 */
+    .calendar_bar .date_scroll_container {
+        max-width: 100%;
+    }
+    .calendar_bar .date_scroll_container .date_more {
+        padding: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        max-width: 100%;
+    }
+    
+    /* 버튼 스타일 */
+    .calendar_bar .view_all_btn {
+        position: absolute;
+        right: 0;
+        top: 8px;
+        padding: 6px 12px;
+    }
+}
+@media screen and (max-width:768px) {
+    .calendar_bar {
+        padding: 28px 0 23px 0;
+    }
+    /* 월 표시 영역 */
+    .calendar_bar .month_display {
+        font-size: 2.8rem;
+    }
+    /* 버튼 스타일 */
+    .calendar_bar .view_all_btn {
+        padding: 4px 10px;
+    }
+}
+
+
+.news {
+    margin: 130px 0 125px 0;
+}
+.news .wrapper {
+    position: relative;
+}
+.news .tit {
+    display: flex;
+    align-items: flex-end;
+    gap: 0 36px;
+}
+.news .tit h2 {
+    font-size: 6rem;
+}
+.news .tit .tap_list ul {
+    display: flex;
+    gap: 0 12px;
+}
+.news .tit .tap_list ul li button {
+    display: block;
+    padding: 8px 18px;
+    border-radius: 5px;
+    background-color: var(--color-black10);
+    color: var(--color-black20);
+    font-size: 2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.news .tit .tap_list ul li.active button {
+    background-color: var(--color-point01);
+    color: var(--color-white);
+}
+.news .tap_contents {
+    margin-top: 36px;
+}
+.news .tap_contents .tab_item {
+    display: none;
+}
+.news .tap_contents .tab_item.active {
+    display: block;
+}
+.news .tap_contents .tab_item .list {
+    border-top: 2px solid var(--color-black80);
+    border-bottom: 1px solid var(--color-black20);
+    position: relative;
+}
+.news .tap_contents .tab_item .list::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black20);
+}
+.news .tap_contents .tab_item .list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.news .tap_contents .tab_item .list ul li {
+    width: 50%;
+}
+.news .tap_contents .tab_item .list ul li:nth-child(odd){
+    padding: 62px 50px 62px 24px;
+}
+.news .tap_contents .tab_item .list ul li:nth-child(even){
+    padding: 62px 24px 62px 50px;
+}
+.news .tap_contents .tab_item .list ul li a {
+    display: block;
+}
+.news .tap_contents .tab_item .list ul li a h4 {
+    font-size: 2.8rem;
+    margin-bottom: 32px;
+    /* 2줄 제한 */
+    line-height: 1.2;
+    height: 2.4em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news .tap_contents .tab_item .list ul li:hover a h4 {
+    text-decoration: underline;
+}
+.news .tap_contents .tab_item .list ul li a span {
+    padding-left: 25px;
+    position: relative;
+}
+.news .tap_contents .tab_item .list ul li a span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 17 20' fill='%23111111' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.80775 19.1152C1.30258 19.1152 0.875 18.9403 0.525 18.5903C0.175 18.2402 0 17.8127 0 17.3075V3.923C0 3.41783 0.175 2.99025 0.525 2.64025C0.875 2.29025 1.30258 2.11525 1.80775 2.11525H3.19225V0H4.73075V2.11525H12.3077V0H13.8077V2.11525H15.1923C15.6974 2.11525 16.125 2.29025 16.475 2.64025C16.825 2.99025 17 3.41783 17 3.923V17.3075C17 17.8127 16.825 18.2402 16.475 18.5903C16.125 18.9403 15.6974 19.1152 15.1923 19.1152H1.80775ZM1.80775 17.6152H15.1923C15.2692 17.6152 15.3398 17.5832 15.4038 17.519C15.4679 17.455 15.5 17.3845 15.5 17.3075V7.923H1.5V17.3075C1.5 17.3845 1.53208 17.455 1.59625 17.519C1.66025 17.5832 1.73075 17.6152 1.80775 17.6152ZM1.5 6.423H15.5V3.923C15.5 3.846 15.4679 3.7755 15.4038 3.7115C15.3398 3.64733 15.2692 3.61525 15.1923 3.61525H1.80775C1.73075 3.61525 1.66025 3.64733 1.59625 3.7115C1.53208 3.7755 1.5 3.846 1.5 3.923V6.423ZM8.5 11.6922C8.25517 11.6922 8.0465 11.606 7.874 11.4335C7.70167 11.2612 7.6155 11.0525 7.6155 10.8075C7.6155 10.5627 7.70167 10.354 7.874 10.1815C8.0465 10.0092 8.25517 9.923 8.5 9.923C8.74483 9.923 8.9535 10.0092 9.126 10.1815C9.29833 10.354 9.3845 10.5627 9.3845 10.8075C9.3845 11.0525 9.29833 11.2612 9.126 11.4335C8.9535 11.606 8.74483 11.6922 8.5 11.6922ZM4.5 11.6922C4.25517 11.6922 4.0465 11.606 3.874 11.4335C3.70167 11.2612 3.6155 11.0525 3.6155 10.8075C3.6155 10.5627 3.70167 10.354 3.874 10.1815C4.0465 10.0092 4.25517 9.923 4.5 9.923C4.74483 9.923 4.9535 10.0092 5.126 10.1815C5.29833 10.354 5.3845 10.5627 5.3845 10.8075C5.3845 11.0525 5.29833 11.2612 5.126 11.4335C4.9535 11.606 4.74483 11.6922 4.5 11.6922ZM12.5 11.6922C12.2552 11.6922 12.0465 11.606 11.874 11.4335C11.7017 11.2612 11.6155 11.0525 11.6155 10.8075C11.6155 10.5627 11.7017 10.354 11.874 10.1815C12.0465 10.0092 12.2552 9.923 12.5 9.923C12.7448 9.923 12.9535 10.0092 13.126 10.1815C13.2983 10.354 13.3845 10.5627 13.3845 10.8075C13.3845 11.0525 13.2983 11.2612 13.126 11.4335C12.9535 11.606 12.7448 11.6922 12.5 11.6922ZM8.5 15.6152C8.25517 15.6152 8.0465 15.529 7.874 15.3565C7.70167 15.1842 7.6155 14.9756 7.6155 14.7308C7.6155 14.4858 7.70167 14.2771 7.874 14.1047C8.0465 13.9322 8.25517 13.846 8.5 13.846C8.74483 13.846 8.9535 13.9322 9.126 14.1047C9.29833 14.2771 9.3845 14.4858 9.3845 14.7308C9.3845 14.9756 9.29833 15.1842 9.126 15.3565C8.9535 15.529 8.74483 15.6152 8.5 15.6152ZM4.5 15.6152C4.25517 15.6152 4.0465 15.529 3.874 15.3565C3.70167 15.1842 3.6155 14.9756 3.6155 14.7308C3.6155 14.4858 3.70167 14.2771 3.874 14.1047C4.0465 13.9322 4.25517 13.846 4.5 13.846C4.74483 13.846 4.9535 13.9322 5.126 14.1047C5.29833 14.2771 5.3845 14.4858 5.3845 14.7308C5.3845 14.9756 5.29833 15.1842 5.126 15.3565C4.9535 15.529 4.74483 15.6152 4.5 15.6152ZM12.5 15.6152C12.2552 15.6152 12.0465 15.529 11.874 15.3565C11.7017 15.1842 11.6155 14.9756 11.6155 14.7308C11.6155 14.4858 11.7017 14.2771 11.874 14.1047C12.0465 13.9322 12.2552 13.846 12.5 13.846C12.7448 13.846 12.9535 13.9322 13.126 14.1047C13.2983 14.2771 13.3845 14.4858 13.3845 14.7308C13.3845 14.9756 13.2983 15.1842 13.126 15.3565C12.9535 15.529 12.7448 15.6152 12.5 15.6152Z' /%3E%3C/svg%3E%0A");
+}
+.news .tap_contents .tab_item .more a {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+}
+.news .tap_contents .tab_item .more a:hover {
+    transform: rotate(90deg);
+}
+.news .tap_contents .tab_item .more a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 34px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 34 34' fill='%232A2A2A' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.625 33.3333V17.7083H0V15.625H15.625V0H17.7083V15.625H33.3333V17.7083H17.7083V33.3333H15.625Z' /%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width:1024px) {
+    .news {
+        margin: 100px 0 80px 0;
+    }
+    .news .tit h2 {
+        font-size: 4.5rem;
+    }
+    .news .tit .tap_list ul {
+        gap: 0 10px;
+    }
+    .news .tit .tap_list ul li button {
+        padding: 7px 16px;
+        font-size: 1.8rem;
+    }
+    .news .tap_contents {
+        margin-top: 28px;
+    }
+    .news .tap_contents .tab_item .list ul li:nth-child(odd){
+        padding: 50px 40px 50px 20px;
+    }
+    .news .tap_contents .tab_item .list ul li:nth-child(even){
+        padding: 50px 20px 50px 40px;
+    }
+    .news .tap_contents .tab_item .list ul li a h4 {
+        font-size: 2.4rem;
+        margin-bottom: 24px;
+    }
+    .news .tap_contents .tab_item .list ul li a span::before {
+        background-size: 13px;
+    }
+    .news .tap_contents .tab_item .more a::before {
+        background-size: 26px;
+    }
+}
+@media screen and (max-width:768px) {
+    .news {
+        margin: 83px 0 63px 0;
+    }
+    .news .tit {
+        display: block;
+    }
+    .news .tit h2 {
+        font-size: 3rem;
+    }
+    .news .tit .tap_list {
+        margin-top: 24px;
+    }
+    .news .tit .tap_list ul {
+        gap: 0;
+    }
+    .news .tit .tap_list ul li {
+        width: 100%;
+    }
+    .news .tit .tap_list ul li button {
+        width: 100%;
+        height: 41px;
+        padding: 0 5px;
+        font-size: 1.6rem;
+    }
+    .news .tit .tap_list ul li:first-child button {
+        border-radius: 5px 0 0 5px;
+    }
+    .news .tit .tap_list ul li:nth-child(2) button {
+        border-radius: 0;
+    }
+    .news .tit .tap_list ul li:last-child button {
+        border-radius: 0 5px 5px 0;
+    }
+    .news .tap_contents {
+        margin-top: 22px;
+    }
+    .news .tap_contents .tab_item .list ul {
+        flex-direction: column;
+    }
+    .news .tap_contents .tab_item .list ul li:nth-child(odd){
+        padding: 34px 0 32px 0;
+        width: 100%;
+    }
+    .news .tap_contents .tab_item .list ul li:nth-child(even){
+        padding: 34px 0 32px 0;
+        width: 100%;
+    }
+    .news .tap_contents .tab_item .list ul li:nth-child(2)~li {
+        display: none;
+    }
+    .news .tap_contents .tab_item .list ul li a h4 {
+        font-size: 2rem;
+        margin-bottom: 19px;
+    }
+    .news .tap_contents .tab_item .list ul li a span::before {
+        background-size: 13px;
+    }
+    .news .tap_contents .tab_item .more a::before {
+        background-size: 20px;
+    }
+}
+
+
+.gallery {
+    padding: 130px 0 125px 0;
+    background-color: var(--color-background);
+}
+.gallery .wrapper {
+    position: relative;
+}
+.gallery .tit {
+    display: flex;
+    align-items: flex-end;
+    gap: 0 36px;
+}
+.gallery .tit h2 {
+    font-size: 6rem;
+}
+.gallery .tit .tap_list ul {
+    display: flex;
+    gap: 0 12px;
+}
+.gallery .tit .tap_list ul li button {
+    display: block;
+    padding: 8px 18px;
+    border-radius: 5px;
+    background-color: var(--color-black10);
+    color: var(--color-black20);
+    font-size: 2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.gallery .tit .tap_list ul li.active button {
+    background-color: var(--color-point01);
+    color: var(--color-white);
+}
+.gallery .tap_contents {
+    margin-top: 36px;
+}
+.gallery .tap_contents .tab_item {
+    display: none;
+}
+.gallery .tap_contents .tab_item.active {
+    display: block;
+}
+.gallery .tap_contents .tab_item .list .swiper-slide a .photo {
+    height: clamp(187px, 24vw, 312px);
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.gallery .tap_contents .tab_item .list .swiper-slide a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.gallery .tap_contents .tab_item .list .swiper-slide:hover a .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.gallery .tap_contents .tab_item .list .swiper-slide a h4 {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    /* 1줄제한 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.gallery .tap_contents .tab_item .more a {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+}
+.gallery .tap_contents .tab_item .more a:hover {
+    transform: rotate(90deg);
+}
+.gallery .tap_contents .tab_item .more a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 34px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 34 34' fill='%232A2A2A' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.625 33.3333V17.7083H0V15.625H15.625V0H17.7083V15.625H33.3333V17.7083H17.7083V33.3333H15.625Z' /%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width:1024px) {
+    .gallery {
+        padding: 100px 0 80px 0;
+    }
+    .gallery .tit h2 {
+        font-size: 4.5rem;
+    }
+    .gallery .tit .tap_list ul {
+        gap: 0 10px;
+    }
+    .gallery .tit .tap_list ul li button {
+        padding: 7px 16px;
+        font-size: 1.8rem;
+    }
+    .gallery .tap_contents {
+        margin-top: 28px;
+    }
+    .gallery .tap_contents .tab_item .list .swiper-slide a .photo {
+        margin-bottom: 10px;
+    }
+    .gallery .tap_contents .tab_item .list .swiper-slide a h4 {
+        font-size: 2rem;
+    }
+    .gallery .tap_contents .tab_item .more a::before {
+        background-size: 26px;
+    }
+}
+@media screen and (max-width:768px) {
+    .gallery {
+        padding: 83px 0 63px 0;
+    }
+    .gallery .tit {
+        display: block;
+    }
+    .gallery .tit h2 {
+        font-size: 3rem;
+    }
+    .gallery .tit .tap_list {
+        margin-top: 24px;
+    }
+    .gallery .tit .tap_list ul {
+        gap: 0;
+    }
+    .gallery .tit .tap_list ul li {
+        width: 100%;
+    }
+    .gallery .tit .tap_list ul li button {
+        width: 100%;
+        height: 41px;
+        padding: 0 5px;
+        font-size: 1.6rem;
+    }
+    .gallery .tit .tap_list ul li:first-child button {
+        border-radius: 5px 0 0 5px;
+    }
+    .gallery .tit .tap_list ul li:last-child button {
+        border-radius: 0 5px 5px 0;
+    }
+    .gallery .tap_contents {
+        margin-top: 22px;
+    }
+    .gallery .tap_contents .tab_item .list .swiper-slide {
+        width: 269px;
+    }
+    .gallery .tap_contents .tab_item .list .swiper-slide a .photo {
+        margin-bottom: 8px;
+    }
+    .gallery .tap_contents .tab_item .list .swiper-slide a h4 {
+        font-size: 1.8rem;
+    }
+    .gallery .tap_contents .tab_item .more a::before {
+        background-size: 20px;
+    }
+}

@@ -1,0 +1,295 @@
+/***********************
+* 파일명 : layout.css 
+* 작성자 : 김영상
+* 작성일 : 25-11-28
+* 설  명 : header/footer 스타일을 선언함
+*********************/
+
+
+/* header공통스타일 */
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--header-h);
+    z-index: 999;
+    padding: 0 var(--wrapper-margin);
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+}
+header .logo a {
+    display: block;
+    width: 150px;
+    height: 38px;
+    background: url(../images/common/logo_w.svg) no-repeat center center / contain;
+    margin-top: 27px;
+}
+
+/* header가 pc 버전일 때 */
+@media screen and (min-width:1024px){
+    header .gnb .menu_open,
+    header .gnb .gnb_wrap .gnb_logo,
+    header .gnb .gnb_wrap .menu_close {
+        display: none; /* 모바일에서만 보임 */
+    }
+    header .gnb .gnb_wrap {
+        display: flex;
+        align-items: center;
+    }
+    header .gnb .gnb_wrap ul.depth1 {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li:first-child {
+        position: relative;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > a {
+        display: block;
+        width: 100%;
+        line-height: var(--header-h);
+        font-size: 19px;
+        font-weight: 700;
+        padding: 0 24px;
+    }
+    header .gnb .gnb_wrap ul.depth1 li a span {
+        position: relative;
+    }
+    header .gnb .gnb_wrap ul.depth1 li a span::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background-color: #003C85;
+        transition: .3s;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li:hover > a > span::after {
+        width: 100%;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li:hover > a {
+        color: #003C85;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: var(--header-h);
+        background-color: #fff;
+        border-radius: 0 0 7px 7px;
+        padding-top: 5px;
+        color: var(--color-title-sub);
+        text-align: center;
+        display: none; /* 회사소개에 마우스를 오버 할 때 나타남 */
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a {
+        display: block;
+        padding: 10px 24px;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a:hover {
+        color: #003C85;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a > span {
+        position: relative;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a > span::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background-color: #003C85;
+        transition: .3s;
+    }
+    header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a:hover > span::after {
+        width: 100%;
+    }
+    header.default {
+        background-color: transparent;
+        color: #fff;
+        transform: translateY(0);
+    }
+    header.scrolled {
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        transform: translateY(0);
+    }
+    header.scrolled .gnb .gnb_wrap ul.depth1 {
+        color: #121212;
+    }
+    header.scrolled .logo a {
+        background: url(../images/common/logo_col.svg);
+    }
+    header.hidden {
+        transform: translateY(-100%);
+    }
+}
+
+/* 모바일 공통 */
+@media screen and (max-width:1024px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--header-h);
+        background-color: #fff; /* 스크롤 시 흰색 대신 다크 배경 */
+        z-index: 999;
+        padding-right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo a {
+        display: block;
+        width: 68px;
+        height: 17px;
+        background: url(../images/common/logo_col.svg) no-repeat center center / contain;
+        margin-top: 5px;
+    }
+
+    /* 모바일 로고 */
+    header .gnb .gnb_wrap .gnb_logo {
+        display: block;
+        width: 120px;
+        height: 38px;
+        margin: 35px auto;
+        background: url(../images/common/logo_w.svg) no-repeat center center / contain;
+    }
+
+    /* 메뉴 버튼 보이기 */
+    header .gnb .menu_open {
+        display: block;
+        width: var(--header-h);
+        height: var(--header-h);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 12' fill='%23121212' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z' /%3E%3C/svg%3E%0A");
+    }
+
+    .gnb .menu_close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: var(--header-h);
+        height: var(--header-h);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z' /%3E%3C/svg%3E%0A");
+    }
+
+    /* 모바일 메뉴 숨김 초기 상태 */
+    .gnb_wrap {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100dvh;
+        background-color: #121212;
+        display: flex;
+        flex-direction: column;
+        padding-top: var(--header-h); /* 상단 헤더 공간 */
+        overflow-y: auto; /* 스크롤 가능 */
+        transition: left 0.3s ease;
+        z-index: 998;
+    }
+
+    .gnb_wrap.active {
+        left: 0;
+    }
+
+    /* depth1 메뉴 */
+    .gnb_wrap ul.depth1 {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        padding-bottom: 40px; /* 하단 여백 */
+    }
+
+    .gnb_wrap ul.depth1 > li > a {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        padding: 8px 16px;
+    }
+
+    /* depth2 메뉴 */
+    .gnb_wrap ul.depth1 > li > ul.depth2 {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 8px;
+    }
+
+    .gnb_wrap ul.depth1 > li.active > ul.depth2 {
+        display: flex;
+    }
+
+    .gnb_wrap ul.depth1 > li > ul.depth2 > li {
+        padding: 8px 0;
+    }
+
+    .gnb_wrap ul.depth1 > li > ul.depth2 > li > a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    header.default {
+        background: transparent;
+        color: #fff;
+    }
+    header.default .logo a {
+        display: block;
+        width: 68px;
+        height: 17px;
+        background: url(../images/common/logo_w.svg) no-repeat center center / contain;
+        margin-top: 5px;
+    }
+    header.default .gnb .menu_open {
+        display: block;
+        width: var(--header-h);
+        height: var(--header-h);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 12' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z' /%3E%3C/svg%3E%0A");
+    }
+
+    header.scrolled {
+        background: #fff;
+        color: #121212;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header.hidden {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    header.scrolled:not(.hidden) {
+        transform: translateY(0);
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+}
+
+
+
+
+footer {
+    margin-top: 600px;
+}

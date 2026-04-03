@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--라이브러리 css-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    
+    <!--컨트롤 css-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>청주한국병원</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class="">
+            <h1 class="logo"><a href="index.html"><span class="blind">청주한국병원</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_logo"><span class="blind">청주한국병원</span></div>
+                    <ul class="depth1">
+                        <li>
+                            <a href="#n"><span>진료예약</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>예약안내</span></a></li>
+                                <li><a href="#n"><span>온라인예약</span></a></li>
+                                <li><a href="#n"><span>건강검진예약</span></a></li>
+                                <li><a href="#n"><span>학생건강검진 예약</span></a></li>
+                                <li><a href="#n"><span>예약조회</span></a></li>
+                                <li><a href="#n"><span>자주하시는 질문</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>진료안내</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>진료과소개</span></a></li>
+                                <li><a href="#n"><span>센터소개</span></a></li>
+                                <li><a href="#n"><span>진료시간표</span></a></li>
+                                <li><a href="#n"><span>외래진료</span></a></li>
+                                <li><a href="#n"><span>응급진료</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>병원안내</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>인사말</span></a></li>
+                                <li><a href="#n"><span>병원연혁</span></a></li>
+                                <li><a href="#n"><span>HI</span></a></li>
+                                <li><a href="#n"><span>조직도</span></a></li>
+                                <li><a href="#n"><span>층별안내도</span></a></li>
+                                <li><a href="#n"><span>오시는길</span></a></li>
+                                <li><a href="#n"><span>공지사항</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>고객서비스</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>온라인상담</span></a></li>
+                                <li><a href="#n"><span>온라인웹진</span></a></li>
+                                <li><a href="#n"><span>이달의 우수사원</span></a></li>
+                                <li><a href="#n"><span>고객의 소리</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div>
+            </nav>
+            <div class="gnb_util">
+                <a href="#n" class="login"><span>로그인</span></a>
+                <a href="#n" class="login staff"><span>직원로그인</span></a>
+            </div>
+        </header>
+        <div class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide pop1">
+                            <div class="wrapper">
+                                <div class="tit">
+                                    <strong>청주한국병원은 언제나 여러분의 빠른 쾌유와 건강한 내일을 함께 응원합니다</strong>
+                                    <h3>모든 진료의 시작과 끝<br> 신뢰로 완성되는 청주한국병원</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide pop2">
+                            <div class="wrapper">
+                                <div class="tit">
+                                    <strong>몸과 마음이 지친 순간에도 회복의 길은 있습니다</strong>
+                                    <h3>신뢰와 전문의 조화<br> 국민 건강 종합의료의 중심</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide pop3">
+                            <div class="wrapper">
+                                <div class="tit">
+                                    <strong>희망을 잃지 마세요. 청주한국병원이 언제나 곁에서 함께하겠습니다</strong>
+                                    <h3>의학의 발전과 사람의<br> 행복을 함께 추구합니다</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide pop4">
+                            <div class="wrapper">
+                                <div class="tit">
+                                    <strong>청주한국병원이 따뜻한 진료와 정성으로 당신의 회복 여정에 함께하겠습니다</strong>
+                                    <h3>모든 세대의 건강과<br> 행복을 지키는 청주한국병원</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="ctrl_btn">
+                        <button class="btn_prev"><span class="blind">이전팝업버튼</span></button>
+                        <div class="paging"></div>
+                        <button class="btn_stop"><span class="blind">일시정지</span></button>
+                        <button class="btn_play"><span class="blind">재생버튼</span></button>
+                        <button class="btn_next"><span class="blind">다음팝업버튼</span></button>
+                    </div>
+                </div>
+                <div class="floating">
+                    <div class="wrapper">
+                        <div class="floating_wrap">
+                            <strong>진료시간</strong>
+                            <ul>
+                                <li>평일 : 오전 08 : 30 - 12 : 30</li>
+                                <li>토요일 : 오전 08 : 30 - 12 : 30</li>
+                                <li>일/공휴일 : 365일 24시간 응급실 진료</li>
+                            </ul>
+                            <a href="#n"><span>상담예약 신청하기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="res">
+                <div class="wrapper">
+                    <div class="tit">
+                        <strong>청주한국병원을 빠르게 만나보세요</strong>
+                        <h2>청주한국병원 이용안내</h2>
+                    </div>
+                    <div class="res_inner">
+                        <div class="fast">
+                            <a href="#n"><span>빠른 진료예약</span></a>
+                        </div>
+                        <div class="num">
+                            <div class="num_come">
+                                <a href="#n" class="co"><span>오시는길</span></a>
+                                <p>충청북도 청주시 상당구 단재로 106</p>
+                                <div class="inner_nav">
+                                    <a href="#n"><span class="naver">네이버 길찾기</span></a>
+                                    <a href="#n"><span class="kakao">카카오 길찾기</span></a>
+                                </div>
+                            </div>
+                            <div class="num_phone">
+                                <h3>병원전화번호</h3>
+                                <p>043-222-7000</p>
+                                <ul>
+                                    <li>평일 : 오전 08 : 30 - 12 : 30</li>
+                                    <li>토요일 : 오전 08 : 30 - 12 : 30</li>
+                                    <li>일/공휴일 : 365일 24시간 응급실 진료</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo"><img src="../hospital/images/contents/Doctor1.png" alt=""></div>
+            </section>
+            <section class="clinic">
+                <div class="wrapper">
+                    <div class="cli_tit">
+                        <strong>건강한 내일을 위한 진료과 안내</strong>
+                        <h2>전문 진료과 소개</h2>
+                    </div>
+                    <div class="cli_list">
+                        <div class="brick b01">
+                            <h3>심장내과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b02">
+                            <h3>신장내과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b03">
+                            <h3>소화기내과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b04">
+                            <h3>류마티스내과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b05">
+                            <h3>호흡기/알레르기내과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b06">
+                            <h3>흉부외과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b07">
+                            <h3>외과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b08">
+                            <h3>정형외과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b09">
+                            <h3>척추센터</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b10">
+                            <h3>뇌혈관센터</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b11">
+                            <h3>소아청소년과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b12">
+                            <h3>산부인과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b13">
+                            <h3>정신건강의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b14">
+                            <h3>치과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b15">
+                            <h3>신경과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b16">
+                            <h3>피부비뇨기과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b17">
+                            <h3>이비인후과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b18">
+                            <h3>가정의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b19">
+                            <h3>마취통증의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b20">
+                            <h3>재활의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b21">
+                            <h3>작업환경의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b22">
+                            <h3>응급의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b23">
+                            <h3>진단검사의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b24">
+                            <h3>영상의학과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                        <div class="brick b25">
+                            <h3>안과</h3> <!--진료과-->
+                            <a href="#n"><span>의료진안내</span></a> <!--바로가기-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="profess">
+                <div class="wrapper">
+                    <div class="profess_tit">
+                        <strong>진료 분야 전문센터를 소개합니다</strong>
+                        <h2>진료 분야별 전문센터</h2>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide bg1">
+                            <div class="photo"><img src="images/contents/profess_01.jpg" alt=""></div>
+                            <h3>심장·뇌혈관센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide bg2">
+                            <div class="photo"><img src="images/contents/profess_02.jpg" alt=""></div>
+                            <h3>인공관절센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_03.jpg" alt=""></div>
+                            <h3>인공신장센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_04.jpg" alt=""></div>
+                            <h3>종합검진센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_05.jpg" alt=""></div>
+                            <h3>치과센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_06.jpg" alt=""></div>
+                            <h3>척추센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_07.jpg" alt=""></div>
+                            <h3>피부·비뇨기센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_08.jpg" alt=""></div>
+                            <h3>충북장애인구강진료센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_09.jpg" alt=""></div>
+                            <h3>직업환경의학센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/contents/profess_10.jpg" alt=""></div>
+                            <h3>진료협력센터</h3>
+                            <a href="#n"><span>자세히 보기</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrapper">
+                    <div class="btn_wrap">
+                        <button class="prev"><span class="blind">이전</span></button>
+                        <a href="#n"><span>전문센터 전체 보기</span></a>
+                        <button class="next"><span class="blind">다음</span></button>
+                    </div>
+                </div>
+            </section>
+            <section class="notice">
+                <div class="wrapper">
+                    <div class="notice_tit">
+                        <strong>청주한국병원의 새로운 소식을 알려드립니다</strong>
+                        <h2>청주한국병원 언론보도, 공지사항</h2>
+                    </div>
+                </div>
+                <div class="notice_list">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide bg1">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원, 2026년 대학수학능력시험 임직원 수험생 자녀 격려품 지급</h3>
+                                        <p>청주한국병원은 11월 5일 본관8층 회의실에서 오는 13일 2026년 대학수학능력시험일을 맞아 임직원 수험생 자녀를 격려하기 위해 초콜릿, 합격엿 등 격려품을 전달 하였습니다. <br>한 해 동안 고생 많았던 28명의 수험생과 그 옆에서 응원해 주신 가족분들에게 노력한 만큼의 더 좋은 결과가 있기를 청주한국병원 임직원 모두가 기원드립니다! <br> 감사합니다.</p>
+                                    </div>
+                                    <span class="hot">공지사항</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg2">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원, 결핵·만성폐쇄성폐질환·천식 적정성 ‘1등급’</h3>
+                                        <p>청주한국병원이 건강보험심사평가원이 발표한 ▲제7차 결핵 적정성 평가 ▲제10차 만성폐쇄성폐질환(COPD) 적정성 평가 ▲제11차 천식 적정성 평가에서 모두 최우수 등급인 1등급을 획득했습니다.<br>
+                                            결핵 적정성 평가는 2024년 1~6월까지 결핵 산정특례가 적용된 입원 또는 외래 청구가 발생한 요양기관이 대상이었습니다.<br>
+                                            청주한국병원은 ▲결핵균 확인검사 실시율 ▲통상감수성검사 실시율 ▲신속감수성검사 실시율 등 평가·모니터링 지표에서 높은 평가를 받아 종합점수 99.2점으로 전국 평균 94.5점, 종별 평균 94.0점을 크게 상회하며 1등급을 획득했습니다.<br>
+                                            만성폐쇄성폐질환 적정성 평가는 종합점수 85.8점으로 전국 평균 70.2점, 종별 평균 80.9점을 모두 웃돌며 1등급을 획득, ‘5회 연속 1등급’을 달성했습니다.<br>
+                                            주요 평가지표 중 ▲폐기능 검사 시행률 ▲지속방문 환자비율 ▲흡입기관지확장제 처방일수율 등에서 전국 평균을 크게 상회해 치료의 연속성과 환자 관리체계의 우수성을 입증했습니다.<br>
+                                            천식 적성성 평가는 주요 지표인 ▲폐기능 검사 시행률 ▲지속 방문 환자비율 ▲ICS 처방 환자비율 등 모두 전국 평균을 크게 상회 했습니다. 또한 ICS 없이 SABA나 OCS 처방 환자비율이 매우 낮게 유지되어, 진료의 표준화와 적정 처방이 잘 이루어지고 있음을 보여 주었습니다.<br>
+                                            청주한국병원 송재승 병원장은 “결핵, 만성폐쇄성폐질환, 천식 등 주요 호흡기 질환 적정성 평가에서 모두 1등급을 받은 것은 환자 중심의 진료 철학과 체계적인 관리 시스템이 인정받은 결과”라며, “앞으로도 조기 진단과 지속적 치료, 재발 예방을 통해 지역사회 호흡기 건강 증진에 최선을 다하겠다”고 말했습니다.<br>
+                                            청주한국병원은 건강보험심사평가원에서 7월에 발표한 ‘제6차 폐렴 적정성 평가’에서도 5회 연속 최우수 등급인 1등급을 획득했습니다. 감사합니다.</p>
+                                    </div>
+                                    <span class="hot ice">언론보도</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg3">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원, 2025년 소방훈련 실시</h3>
+                                        <p>청주한국병원은 10월 29일, 2025년 소방훈련을 실시하였습니다.<br>
+                                            화재 발생시, 신속한 대응으로 화재로부터 인명 및 재산의 피해를 최소화하고 환자의 안전을 위해 신속하게 화재를 진압하는 훈련을 진행하였습니다.<br> 또한 자위소방대 임무 숙지 및 환자를 빠른 시간내에 안전한 장소로 대피시키는 데 중점을 두었습니다.<br>
+                                            앞으로도 한국병원은 이와 같은 훈련을 통하여 화재시 환자 안전에 만전을 기하도록 노력하겠습니다. 감사합니다.</p>
+                                    </div>
+                                    <span class="hot">공지사항</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg4">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원 8기 PS리더 4회차 교육</h3>
+                                        <p>안녕하세요. 25년 10월 22일, 장애인구강진료센터 구강보건교육실에서 청주한국병원 8기 PS리더 4회차 교육을 실시하였습니다.<br>
+                                            본원에서 9월 17일부터 9월 19일까지 “제 9회 환자안전의 날 행사” 진행하였습니다. 환자들을 케어하느라 행사에 참가하지 못한 PS리더들에게 QI실에서 제작한 다같이 더가치 환자안전 캠페인 활동 영상을 보여 주며 교육을 시작했습니다.<br>
+                                            4회차 교육에서는 사전에 PS리더들에게 공지한 주제에 대해 4개의 팀으로 나누어 팀별 브레인스토밍 시간을 가졌습니다. 팀빌딩 실습 주제는 『투약 오류 발생』 과 『정확한 환자확인 미비』입니다.<br>
+                                            PS리더들이 곰곰이 생각해 온 문제 원인에 대해 토의하고 타부서와 의견을 나누며 피시본(Fish bone)을 채워보고 주제에 맞는 원인분석과 개선계획을 정리하여 발표하였습니다.<br>
+                                            이번 교육을 통해 서로의 고충에 대해 공감하고 타부서를 이해하며 개선방법을 도출해 내었고 어느 교육시간보다도 PS리더들의 적극적인 참여가 보이는 시간이었습니다.<br>
+                                            또한, 현장의 목소리를 듣고 PS리더들의 기발한 의견을 들을 수 QI실에도 값진 시간이었습니다.<br>
+                                            PS리더들과 함께 논의한 다양한 개선방안 중 구체적으로 실행할 수 있는 부분은 경영진과 상의하여 진행하도록 노력할 예정입니다.</p>
+                                    </div>
+                                    <span class="hot">공지사항</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg5">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원 “제9회 환자안전의 날” 행사 3탄</h3>
+                                        <p>2025년 9월 17일(수) ~ 9월 19일(금), 3일간 청주 한국병원에서 “제9회 환자안전의 날” 행사가 진행되었습니다.<br>
+                                            9월 17일은 세계보건기구(WHO)에서 지정한 ‘세계 환자안전의 날’로 세계 각국에서 동일한 주제로 캠페인을 진행하고 있습니다. 2025년 글로벌 체인지 주제는 『모든 신생아와 아동을 위한 안전한 의료』입니다.<br>
+                                            9월 19일(금)에는 소아환자 및 외래 내원객을 대상으로 “소아의 안전한 의료 함께 지켜요” 캠페인을 진행했습니다.<br>
+                                            의료기간평가인증원의 새로운 환자안전 마스코트 “세이포”의 탄생 배경을 설명해 주며 이름을 같이 맞추어 보았습니다. 소아환자 및 내원객 분들께서 세이포의 이름을 함께 찾아보며 재미있는 시간이었다 라고 의견을 주었습니다.<br>
+                                            소아관련 환자안전 OX퀴즈, 환자안전보고학습시스템(KOPS)에서 공유한 환자대상 정보소식 ‘소아의 안전한 의료, 함게 지켜요. 다같이 해서 더가치 있는 실천’ 카드뉴스를 교육자료로 제작하여 소아의 눈높이에 맞는 환자안전 교육을 시행하였습니다. 특히, 요즘 사회에서 이슈되고 있는 소아유괴와 관련하여 OX퀴즈와 유괴예방 안전수칙을 다함께 숙지하는 시간을 가졌습니다.<br>
+                                            마지막으로 환자안전 사진 공모전을 같이 감상한 후 느낀점을 이야기 나누는 뜻깊은 시간을 가졌습니다.<br>
+                                            제9회 환자안전의 날 행사에 참석해주고 협조해주신 모든 내원객,및 직원분들께 감사의 인사를 드립니다. 앞으로도 청주한국병원 QI실은 더욱 알차고 뜻깊은 환자 안전의 날 행사를 위해 열심히 노력하겠습니다.</p>
+                                    </div>
+                                    <span class="hot">공지사항</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg6">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원, 4주기 급성기병원 의료기관 인증 획득</h3>
+                                        <p>청주한국병원이 보건복지부 산하 의료기관인증평가원의 4주기 평가에서 급성기병원 의료기관 인증을 획득했다고 26일 밝혔다.<br>
+                                            평가는 지난 5월 13~16일 4일 동안 환자 진료체계 등 90개 기준, 487개 조사 항목에 대해 진행됐다.<br> 
+                                            조사위원들은 총평에서 "직원들의 태도와 실천을 통해 고객 중심의 차별화된 의료서비스, 사랑나눔, 생명 존중의 정신, 환자와의 공감과 의료의 전문성을 보였다"고 호평했다. <br>
+                                            인증은 오는 2029년 7월 3일까지 4년 동안 유효하다.<br>
+                                            송재승 병원장은 "앞으로도 환자들이 믿고 찾을 수 있는 병원, 질 높은 의료서비스를 제공하는 중부권 최고의 중증환자 전문 치료병원이 되는데 최선을 다하겠다"고 말했다.</p>
+                                    </div>
+                                    <span class="hot ice">언론보도</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg7">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원-초록우산 청주사회복지관, 아동 건강 증진 위해 협력</h3>
+                                        <p>청주한국병원(병원장 송재승)과 초록우산 청주사회복지관(관장 한전복)은 8월 18일 지역 아동의 건강한 성장과 복지 증진을 골자로 업무 협약했다.<br>
+                                            이번 협약에 따라 초록우산 청주사회복지관은 건강 점검이 필요한 아동을 발굴·연계하고, 청주한국병원은 연계된 아동을 대상으로 무료 건강검진을 지원하는 등 지역 아동의 건강한 성장 및 발달을 위해 협력할 예정이다.<br>
+                                            청주한국병원은 지난달 초록우산 청주사회복지관 이용 아동 30명에게 무료 건강검진을 제공했다.<br>
+                                            이번 협약을 통해 양기관은 아동의 건강 문제를 조기에 발견하고, 필요한 의료 서비스를 안정적으로 지원함으로써 지역사회 아동 복지 향상에 기여할 것으로 보인다.<br>
+                                            한전복 관장은 “아동이 건강하게 성장하기 위해서는 지역사회의 관심과 지원이 꼭 필요하다”며 “이번 협약은 질병 예방은 물론 조기 개입을 통해 건강한 성장을 지원한다는 점에서 매우 의미가 크다”고 말했다.<br>
+                                            송준오 청주한국병원 기획총괄이사는 “의료와 복지는 함께해야 하는 중요한 영역”이라며 “초록우산 청주사회복지관과 긴밀한 협력관계를 이어가고, 지역사회 복지 증진을 위한 다양한 나눔 활동을 이어가겠다”고 강조했다.
+                                            </p>
+                                    </div>
+                                    <span class="hot ice">언론보도</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg8">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원, '폐렴 적정성 평가' 5회 연속 '1등급'</h3>
+                                        <p>청주한국병원이 건강보험심사평가원에서 실시한 '6차 폐렴 적정성 평가'에서 5회 연속 최우수 등급인 1등급을 획득했다.<br>
+                                            폐렴은 암, 심장질환에 이어 우리나라 전체 사망원인 3위를 차지하는 위험한 질환으로 고령층에서 사망률이 높다.<br>
+                                            이에 심평원은 지난 2014년부터 폐렴 진단과 치료의 질 향상을 위해 적정성 평가를 시행하고 그 결과를 매년 공개하고 있다.<br>
+                                            이번 평가는 2023년 10월부터 2024년 3월까지 지역사회획득 폐렴으로 입원해 항생제(정맥내)를 3일 이상 투여한 18세 이상 성인 환자가 10건 이상인 전국 599개 병원급 의료기관을 대상으로 진행됐다.<br>
+                                            평가지표는 △산소포화도검사 실시율 △중증도 판정도구 사용률 △객담배양검사 처방률 △첫 항생제 투여 전 혈액배양검사 실시율 △병원도착 8시간 이내 적합한 첫 항생제 투여율 △건당입원일수 장기도지표 △ 건당진료비 고가도지표 △재입원율 △사망률 등이다.<br>
+                                            평가결과 청주한국병원은 모든 항목에서 높은 점수를 받으며 전국 종합병원 평균 92.2점 보다 월등히 높은 98.5점을 기록했다.<br>
+                                            송재승 청주한국병원장은 "폐렴은 특히 고령층에게 생명을 위협하는 심각한 질환으로 환자 한분 한분의 생명을 지킨다는 사명감으로 진료에 임해왔다"며 "이번 평가 결과는 의료진의 전문성과 헌신이 만들어낸 소중한 성과로, 앞으로도 환자 중심의 양질 의료서비스 제공을 위해 꾸준히 힘쓸 것"이라고 말했다.</p>
+                                    </div>
+                                    <span class="hot ice">언론보도</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg9">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원, 보건복지부 ‘포괄 2차 종합병원’ 선정</h3>
+                                        <p>충북 청주한국병원(병원장 송재승)이 보건복지부의 ‘포괄 2차 종합병원 지원사업’에 선정됐다고 1일 밝혔다.<br>
+                                            ‘포괄 2차 종합병원 지원사업’은 정부가 종합병원의 포괄적 진료역량을 강화하고 의료전달체계를 정상화하기 위해 추진하는 사업이다.<br>
+                                            전국 2차 종합병원의 필수의료 역량을 강화하고, 지역 주민이 응급 등 필수의료를 적시에 이용할 수 있도록 의료전달체계를 개편하는게 핵심이다.<br>
+                                            청주한국병원은 이번 선정으로 중등도 질환 치료, 24시간 진료체계, 응급대응, 진료협력 등에서 핵심역활을 수행할 수 있는 역량을 인정받았다는 점에서 큰 의미가 있다.<br>
+                                            청주한국병원은 이번 사업 참여를 통해 지역의 중등도 환자 치료는 물론, 응급수술 및 중환자 진료 기능 강화, 의료진의 당직 체계 안정화, 지역 병·의원과 진료협력 강화 등에 집중할 계획이다.<br>
+                                            또한, 지역 내 응급상황 대응과 24시간 진료체계 유지를 통해 지역주민이 수도권까지 가지 않도록 양질의 의료서비스를 받을 수 있는 기반을 더욱 강화할 예정이다.<br>
+                                            송재승 병원장은 “이번 선정은 우리병원이 지역 필수의료를 책임지는 중심 병원으로 거듭날 수 있는 전환점”이라며 “지속적인 의료질 향상과 진료협력 강화로 지역사회에 더 큰 신뢰를 주는 병원이 되겠다”고 말했다.</p>
+                                    </div>
+                                    <span class="hot ice">언론보도</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide bg10">
+                                <a href="#n">
+                                    <div class="box">
+                                        <h3>청주한국병원 2025년 금연캠페인 활동 및 포상</h3>
+                                        <p>청주한국병원 보건관리실은 직원들의 건강한 근무환경을 만들기 위해 매년 금연 캠페인과 다양한 건강증진 활동을 이어가고 있습니다.<br>
+                                            특히 올해는 금연의 중요성을 널리 알리고 직원들의 건강한 변화를 응원하기 위해 MBC 충북 & 생활력 스페셜 & 촬영에도 참여하여 우리 병원의 금연 활동을 소개하였습니다.<br>
+                                            또한 상당보건소와 협력하여 올해 3월부터 8월까지 찾아가는 금연 캠페인을 진행했는데요,<br>
+                                            캠페인에 참여한 직원들에게는<br><br>
+                                            ▶ 흡연의 폐해와 금연의 필요성 안내<br>
+                                            ▶ 장기 흡연이 가져오는 질병 정보<br>
+                                            ▶ 비흡연자를 위한 간접흡연 예방 활동<br>
+                                            ▶ 금연 교육 프로그램 홍보<br><br>
+                                            와 함께 금연 패치·기념품을 제공하고, 금연 성공 포상제도를 운영하여 총 2명의 직원이 금연에 성공하는 성과도 거두었습니다.<br>
+                                            앞으로도 청주한국병원은 직원 모두가 건강하게 근무할 수 있도록 다양한 건강 캠페인을 이어가겠습니다. 감사합니다.</p>
+                                    </div>
+                                    <span class="hot">공지사항</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notice_btn">
+                    <div class="wrapper">
+                        <div class="notice_btn_wrap">
+                            <button class="prev"><span class="blind">이전</span></button>
+                            <a href="#n"><span>병원소식 전체 보기</span></a>
+                            <button class="next"><span class="blind">다음</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <aside class="tail">
+            <ul>
+                <li><a href="#n"><span>예약/상담</span></a></li>
+                <li><a href="#n"><span class="tail_2">오시는길</span></a></li>
+                <li><a href="#n"><span class="tail_3">진료안내</span></a></li>
+                <li><a href="#n"><span class="tail_4">서류발급</span></a></li>
+                <li><a href="#n"><span class="tail_5">자가진단</span></a></li>
+            </ul>
+        </aside>
+        <footer>
+            <div class="wrapper">
+                <div class="top"><button><span>TOP</span></button></div>
+                <div class="f_inner">
+                    <div class="f_left">
+                        <div class="f_logo"><img src="images/common/logo_f.svg" alt=""></div>
+                        <div class="privercy">
+                            <ul>
+                                <li><a href="#n"><span>개인정보처리방침</span></a></li>
+                                <li><a href="#n">찾아오시는길</a></li>
+                                <li><a href="#n">온라인예약</a></li>
+                                <li><a href="#n">고객센터</a></li>
+                            </ul>
+                        </div>
+                        <div class="f_info">
+                            <ul>
+                                <li>충청북도 청주시 상당구 단재로 106</li>
+                                <li>사업자등록번호 : 301-82-06242</li>
+                                <li>대표 : 송재승</li>
+                            </ul>
+                            <div class="copyright"><p>ⓒ2025 <span>Hankook general hospital,</span> All rights Reserved.</p></div>
+                        </div>
+                    </div>
+                    <div class="f_right">
+                        <span class="bold">전화 043-222-7000</span>
+                        <span class="bold">팩스 043-255-7007</span>
+                        <span class="desk">전화예약 및 문의는 정상근무 시간표를<br> 참조하여 주시면 친절하게 안내 드리겠습니다</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

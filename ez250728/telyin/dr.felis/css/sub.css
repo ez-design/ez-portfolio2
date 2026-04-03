@@ -1,0 +1,222 @@
+/***********************
+* 파일명 : sub.css 
+* 작성자 : 문미영
+* 작성일 : 25-10-23
+* 설  명 : 메인을 제외한 모든 페이지에서 호출되는 css 파일
+           서브에 필요한 css를 import하는 역할과 
+           서브의 레이아웃을 퍼블리싱함 (서브의 공통스타일)
+*********************/
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+@import url(layout.css);
+@import url(contents.css);
+
+
+.sub_visual {
+    height: 450px;
+    background: url(../images/sub/sub_visual\ 01.jpg) no-repeat center center / cover;
+    color: #fff;
+    display: flex; /* wrapper를 바닥으로 끌어내리기 위함 */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.sub_visual.bg2 {
+    background-image: url(../images/sub/sub_visual\ 02.jpg);
+}
+.sub_visual.bg3 {
+    background-image: url(../images/sub/sub_visual\ 03.jpg);
+}
+.sub_visual.bg4 {
+    background-image: url(../images/sub/sub_visual\ 04.jpg);
+}
+.sub_visual.bg5 {
+    background-image: url(../images/sub/sub_visual\ 05.jpg);
+}
+.sub_visual .breadcrumb ol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1.8824em;
+}
+.sub_visual .breadcrumb ol li {
+    position: relative; /* after정렬의 기준 */
+    height: 1.5em;
+}
+.sub_visual .breadcrumb ol li::after {
+    content: "";
+    position: absolute;
+    right: -1.0588em;
+    top: 0.2941em;
+    width: 0.5294em;
+    height: 0.5294em;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+}
+.sub_visual .breadcrumb ol li:last-child::after {
+    display: none;
+}
+.sub_visual .breadcrumb ol li.home a {
+    display: block;
+    width: 0.9412em;
+    height: 1.0294em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 18' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15.5V6.5C0 6.18333 0.0708333 5.88333 0.2125 5.6C0.354167 5.31667 0.55 5.08333 0.8 4.9L6.8 0.4C7.15 0.133333 7.55 0 8 0C8.45 0 8.85 0.133333 9.2 0.4L15.2 4.9C15.45 5.08333 15.6458 5.31667 15.7875 5.6C15.9292 5.88333 16 6.18333 16 6.5V15.5C16 16.05 15.8042 16.5208 15.4125 16.9125C15.0208 17.3042 14.55 17.5 14 17.5H11C10.7167 17.5 10.4792 17.4042 10.2875 17.2125C10.0958 17.0208 10 16.7833 10 16.5V11.5C10 11.2167 9.90417 10.9792 9.7125 10.7875C9.52083 10.5958 9.28333 10.5 9 10.5H7C6.71667 10.5 6.47917 10.5958 6.2875 10.7875C6.09583 10.9792 6 11.2167 6 11.5V16.5C6 16.7833 5.90417 17.0208 5.7125 17.2125C5.52083 17.4042 5.28333 17.5 5 17.5H2C1.45 17.5 0.979167 17.3042 0.5875 16.9125C0.195833 16.5208 0 16.05 0 15.5Z' /%3E%3C/svg%3E%0A");
+    margin-bottom: 0.4706em;
+}
+.sub_visual .sub_tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 27px 0 0 0 ;
+}
+.sub_visual .snb ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin: 1.5294em 0 1.1765em 0;
+}
+.sub_visual .snb ul li a {
+    display: block;
+    line-height: 60px;
+    padding: 0 26px;
+}
+.sub_visual .snb ul li a span {
+    position: relative;
+    transition: .1s;
+}
+.sub_visual .snb ul li.active a span {
+    font-weight: 700;
+}
+.sub_visual .snb ul li.active a span::after {
+    width: 100%;
+}
+.sub_visual .snb ul li a:hover span {
+    font-weight: 700;
+}
+.sub_visual .snb ul li a span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: .5s;
+}
+.sub_visual .snb ul li a:hover span::after {
+    width: 100%;
+}
+.contents {
+    min-height: 300px;
+}
+.contents .page_tit {
+    margin: 135px 0 60px 0;
+}
+.contents .page_tit h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--color-title);
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .sub_visual {
+        height: 400px;
+    }
+    .sub_visual .wrapper {
+        margin: 0;
+    }
+    .sub_visual .breadcrumb,
+    .sub_visual .sub_tit {
+        margin-left: var(--wrapper-margin);
+    }
+    .sub_visual .sub_tit {
+        font-size: 3.2rem;
+        margin: 30px 0 0 0 ;
+    }
+    .sub_visual .snb ul::-webkit-scrollbar {
+        display: none;
+    }
+    .sub_visual .snb ul {
+        justify-content: flex-start;
+        position: relative;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        overflow-y: hidden;/* 위아래 스크롤 바는 숨김 */
+        overflow-x: auto; /* 좌우 스크롤바 생성 */
+        border-radius: 0;
+    }
+    .sub_visual .snb ul li a {
+        padding: 0 15px;
+    }
+    .contents .page_tit {
+        margin: 66px 0 25px 0;
+    }
+    .contents .page_tit h2 {
+        font-size: 2.8rem;
+    }
+}
+
+/* table 공통 스타일 */
+
+.table_wrap {
+    overflow-x: auto;
+}
+.table_wrap table {
+    width: 100%;
+    min-width: 768px;
+    border-collapse: collapse;
+    /* 
+       테이블에는 각 칸의 테두리를 th, td의 border로 줌
+       이때 각 칸 사이의 여백이 발생함, 이 여백을 없애고
+       칸과 칸 사이에 선이 중첩되어 두께가 두꺼워지는 현상을 방지한다
+       이는 오직 table 태그에만 적용되는 속성이다<<★
+     */
+    border-top: 2px solid #1d1d1d;
+}
+.table_wrap table th,
+.table_wrap table td {
+    border: 1px solid #ccc;
+    padding: 16px 32px 13px 32px;
+}
+.table_wrap table th:first-child,
+.table_wrap table td:first-child {
+    border-left: 0;
+}
+.table_wrap table th:last-child,
+.table_wrap table td:last-child {
+    border-right: 0;
+}
+.table_wrap table thead th,
+.table_wrap table thead td {
+    background-color: #f7f7f7;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-title);
+    padding: 21px 32px 18px 32px;
+    text-align: center;
+}
+.table_wrap table tbody th {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 10px;
+}
+.table_wrap table tbody td {
+    text-align: center;
+}
+.table_wrap.count table tbody td {
+    text-align: right;
+}

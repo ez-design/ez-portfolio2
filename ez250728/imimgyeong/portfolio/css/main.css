@@ -1,0 +1,382 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+
+* {
+    cursor: url(../images/main/hand_cursor\ 1.svg) 2 2, auto;
+}
+.visual {
+    min-height: 100vh;   /* 화면 높이를 꽉 채움 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 가운데 정렬 */
+    align-items: center;
+    background-color: var(--color-main);
+    position: relative;
+}
+.visual h1 {
+    font-size: 7rem;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--color-main2);
+}
+.visual h1.typing {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--color-main2); /* 커서 색 - 빨간색 */
+    font-size: 7rem;
+    animation: typing 3s steps(24, end) forwards,
+               blink 5s step-end forwards;
+}
+/* 타이핑되는 효과 */
+@keyframes typing {
+    from { width: 0ch; }
+    to { width: 24ch; }
+}
+/* 커서 깜박임 */
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: var(--color-main2); }
+    100% { border-color: transparent; }
+}
+
+.visual .scroll::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 78px;
+    width: 21.25px;
+    height: 20.19px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 21' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.4361 8.81121C19.8511 8.39628 20.5239 8.39628 20.9389 8.81121C21.3537 9.22614 21.3537 9.89887 20.9389 10.3138L11.3763 19.8764C10.9614 20.2912 10.2886 20.2912 9.87371 19.8764L0.311212 10.3138C-0.103737 9.89887 -0.103737 9.22614 0.311212 8.81121C0.726139 8.39626 1.39887 8.39626 1.8138 8.81121L10.625 17.6224L19.4361 8.81121ZM19.4361 0.311212C19.8511 -0.103716 20.5239 -0.103716 20.9389 0.311212C21.3537 0.726139 21.3537 1.39887 20.9389 1.8138L11.3763 11.3763C10.9614 11.7912 10.2886 11.7912 9.87371 11.3763L0.311212 1.8138C-0.103737 1.39887 -0.103737 0.726139 0.311212 0.311212C0.726139 -0.103737 1.39887 -0.103737 1.8138 0.311212L10.625 9.1224L19.4361 0.311212Z' /%3E%3C/svg%3E%0A");
+    animation: scroll 2s linear infinite;
+}
+@keyframes scroll {
+    0% {bottom: 78px}
+    50% {bottom: 56px}
+    100% {bottom: 78px}
+}
+
+
+.insta {
+    background-color: var(--color-main2);
+    font-family: 'Pretendard';
+}
+.insta .phone {
+    padding: 156px 0 178px 0;
+}
+.insta .phone .phone_photo {
+    overflow: hidden;
+    width: 915px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.insta .phone .phone_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.insta .phone .phone_photo .profile {
+    position: absolute;
+    top: 260px;
+    left: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px 0;
+}
+.insta .phone .phone_photo .profile .top {
+    display: flex;
+    align-items: center;
+    gap: 0 60px;
+}
+.insta .phone .phone_photo .profile .top .photo {
+    width: 200px;
+    height: 200px;
+}
+.insta .phone .phone_photo .profile .top .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.insta .phone .phone_photo .profile .top .photo img:hover {
+    border: 5px solid #F500B7;
+}
+.insta .phone .profile .top .birth {
+    display: flex;
+    gap: 0 90px;
+    text-align: center;
+}
+.insta .phone .profile .top .birth h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.insta .phone .profile .bottom h2 {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.insta .phone .profile .bottom p {
+    font-size: 2.8rem;
+    margin: 14px 0 0 0;
+}
+.insta .phone .phone_photo .profile .btn_wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 버튼 사이 간격 있으면 더 깔끔 */
+}
+.insta .phone .phone_photo .profile .btn_wrap button {
+    box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+}
+.insta .phone .phone_photo .profile .btn_wrap button:active {
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top: 2px;
+}
+.insta .phone .phone_photo .profile .btn_wrap button.follow,
+.insta .phone .phone_photo .profile .btn_wrap button.call {
+    width: 238px;
+    height: 53px;
+    background-color: var(--color-point);
+    border-radius: 10px;
+    font-size: 2.8rem;
+    color: var(--color-white);
+}
+.insta .phone .phone_photo .profile .btn_wrap button.icon {
+    width: 53px;
+    height: 53px;
+    background-color: var(--color-point);
+    border-radius: 10px;
+    position: relative;
+}
+.insta .phone .phone_photo .profile .btn_wrap button.icon::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    width: 21.78px;
+    height: 18.78px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 19' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9262 18.7771C10.7271 18.7771 10.528 18.7009 10.3756 18.55L1.72044 9.89333C0.84 9.016 0 7.60667 0 5.75244C0 3.024 2.06578 0 5.80222 0C7.31889 0 8.83711 0.555334 9.94778 1.66444L10.8842 2.59933L11.8051 1.67378C12.922 0.558445 14.4169 0.00311126 15.9149 0.00311126C20.5427 0.00311126 21.7778 4.17511 21.7778 5.83644C21.7778 7.32511 21.2147 8.81222 20.0885 9.94467L11.4769 18.5516C11.3244 18.704 11.1253 18.7771 10.9262 18.7771Z' /%3E%3C/svg%3E%0A");
+}
+
+.insta .phone .phone_photo .profile .Licenses {
+    display: flex;
+    gap: 0 52px;
+    text-align: center;
+}
+.insta .phone .phone_photo .profile .Licenses .photo {
+    overflow: hidden;
+    width: 97.14px;
+    height: 97.14px;
+    margin: 0 0 15px 0;
+}
+.insta .phone .phone_photo .profile .Licenses .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.insta .phone .phone_photo .profile .Licenses .photo img:hover {
+    border: 3px solid #F500B7;
+}
+
+.insta .phone .phone_photo .feed {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 250px;
+}
+.insta .phone .phone_photo .feed .info ul {
+    display: flex;
+}
+.insta .phone .phone_photo .feed .info ul li {
+    width: 222px;
+    height: 306px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.insta .phone .phone_photo .feed .info ul li::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.2608 1.62141C20.9138 1.18603 21.2403 0.968348 21.5961 1.00358C21.9519 1.0388 22.2294 1.3163 22.7844 1.87129L29.8406 8.92753C30.3956 9.48253 30.6731 9.76002 30.7083 10.1158C30.7436 10.4716 30.5259 10.7981 30.0905 11.4511L25.2557 18.7033C24.3807 20.0159 23.9431 20.6722 23.6432 21.3962C23.3433 22.1203 23.1886 22.8937 22.8793 24.4406L22.1861 27.9066C21.9502 29.0859 21.8323 29.6755 21.4248 29.8996C21.3553 29.9379 21.2814 29.9677 21.2048 29.9885C20.756 30.1103 20.2616 29.768 19.2728 29.0835C14.683 25.9059 12.3882 24.3172 10.3841 22.3979C10.0197 22.049 9.66293 21.6922 9.31398 21.3278C7.39474 19.3238 5.80597 17.0289 2.62845 12.4391C1.94389 11.4503 1.60161 10.9559 1.72339 10.5071C1.74418 10.4305 1.77403 10.3566 1.81229 10.2871C2.0364 9.87963 2.62604 9.7617 3.80534 9.52585L7.27126 8.83266C8.81817 8.52328 9.59162 8.36859 10.3157 8.06868C11.0397 7.76877 11.696 7.33124 13.0086 6.45617L20.2608 1.62141Z' stroke='white' stroke-width='2'/%3E%3Cpath d='M1 30.7119L9.4375 22.2744' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+}
+
+.insta .phone .phone_photo .feed .info ul li.edu {
+    padding: 76px 0 0 12px;
+    background-image: url(../images/main/feed01.jpg);
+    color: var(--color-white);
+    border-width: 1px 1px 1px 1px;
+    border-color: #1d1d1d;
+}
+.insta .phone .phone_photo .feed .info ul li.edu span {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+}
+
+.insta .phone .phone_photo .feed .info ul li.work {
+    padding: 102px 0 0 12px;
+    background-image: url(../images/main/feed02.jpg);
+    color: var(--color-white);
+    border-width: 1px 1px 1px 0;
+    border-color: #1d1d1d;
+}
+.insta .phone .phone_photo .feed .info ul li.work span {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+} 
+.insta .phone .phone_photo .feed .info ul li.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 76px 0 57px 0;
+    gap:  18px 14px;
+    background-image: url(../images/main/feed03.jpg);
+    border-width: 1px 1px 1px 0;
+    border-color: #1d1d1d;
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon {
+    position: relative;
+    width: 47px;
+    height: 45px;
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 47px;
+    height: 45px;
+    border-radius: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.ps::after {
+    background-image: url(../images/main/Photoshop.jpg);
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.ai::after {
+    background-image: url(../images/main/Illustrator.jpg);
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.figma::after {
+    background-image: url(../images/main/Figma.jpg);
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.html::after {
+    background-image: url(../images/main/html.jpg);
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.css::after {
+    background-image: url(../images/main/css.jpg);
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.js::after {
+    background-image: url(../images/main/js.jpg);
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.vs::after {
+    background-image: url(../images/main/vs.jpg);
+}
+.insta .phone .phone_photo .feed .info ul li.skill .icon.git::after {
+    background-image: url(../images/main/git.jpg);
+}
+
+.insta .phone .phone_photo .feed .project ul {
+    display: flex;
+}
+.insta .phone .phone_photo .feed .project ul li {
+    width: 222px;
+    height: 306px;
+    font-weight: 700;
+    padding: 20px 0 0 0;
+}
+.insta .phone .phone_photo .feed .project ul li.pro01 {
+    background-color: #D5CBBF;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #1d1d1d;
+}
+.insta .phone .phone_photo .feed .project ul li.pro02 {
+    background-color: #000000;
+    color: var(--color-white);
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #1d1d1d;
+}
+.insta .phone .phone_photo .feed .project ul li.pro03 {
+    background-color: #B8121A;
+    color: var(--color-white);
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #1d1d1d;
+}
+.insta .phone .phone_photo .feed .project ul li a .photo {
+    overflow: hidden;
+    height: 184px;
+    margin: 0 0 20px 0;
+    transition: 0.5s;
+}
+.insta .phone .phone_photo .feed .project ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.insta .phone .phone_photo .feed .project ul li a .txt {
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.insta .phone .phone_photo .feed .project ul li a:hover .photo  {
+    transform: translateY(-10px);
+    
+}
+.insta .phone .phone_photo .feed .project ul li a:hover .txt {
+    transform: translateY(-10px);
+}
+
+
+.last {
+    background-color: var(--color-main);
+}
+.last h2 {
+    font-size: 7rem;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--color-main2);
+    padding: 465px 0 438px 0;
+}
+.last h2.typing {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--color-main2); /* 커서 색 - 빨간색 */
+    font-size: 7rem;
+    animation: typing 3s steps(40, end) forwards,
+               blink 6s step-end forwards;
+}
+/* 타이핑되는 효과 */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+/* 커서 깜박임 */
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: var(--color-main2); }
+    100% { border-color: transparent; }
+}
